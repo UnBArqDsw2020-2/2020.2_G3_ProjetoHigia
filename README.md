@@ -1,25 +1,18 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-Demais diretrizes sobre a organização da wiki constam no Moodle Aprender 3.
-
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto)*. !!** 
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2020.1_G1_ProjetoPandora*. !!** 
- 
- (Apague essa seção)
-
-# Nome do Projeto
+# Projeto Hígia
 
 **Código da Disciplina**: FGA0208<br>
-**Número do Grupo**: XX<br>
+**Número do Grupo**: 03<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 18/0011961  | Aline Helena Lermen |
+|18/0013637	| Arthur Paiva Tavares |
+|17/0139981	|Danillo Gonçalves de Souza|
+|18/0063723	|Fellipe dos Santos Araujo|
+|17/0103200	|Gabriel Alves Hussein|
+|17/0069800	|Ithalo Luiz de Azevedo Mendes|
+|17/0164411	|Victor Amaral Cerqueira|
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
