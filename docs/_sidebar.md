@@ -1,6 +1,6 @@
-<!-- <a href="/">
-    <img src="assets/images/logo.svg" class="sidebar-logo">
-</a> -->
+<a href="/">
+    <img src="assets/images/higia/higia.png" class="sidebar-logo">
+</a>
 
 -   [Home](README.md)
 -   Entrega 1

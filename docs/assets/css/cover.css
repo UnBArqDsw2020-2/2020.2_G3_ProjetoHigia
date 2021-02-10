@@ -27,3 +27,7 @@
 pre::after {
     display: none !important;
 }
+
+.cover-main img {
+    max-width: 65%;
+}
