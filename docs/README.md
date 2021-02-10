@@ -22,18 +22,42 @@
 <!-- [Victor Cerqueira]() -->
 
 ## Sobre
+O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicação mobile voltada para o armazenamento e fácil controle de documentos médicos, além de inovar o compartilhamento de informações e arquivos entre pacientes e médicos.
 
-Descreva o seu projeto em linhas gerais.
 
-## Alunos
+## Membros do projeto
+<div class="members">
+  <div class="member">
+    <p>Aline Lermen</p>
+    <img src="assets/images/members/aline.jpeg">
+  </div>
+  <div class="member">
+    <p>Arthur Paiva</p>
+    <img src="assets/images/members/arthur.jpeg">
+  </div>
+  <div class="member">
+    <p>Danillo Souza</p>
+    <img src="assets/images/members/danillo.jpeg">
+  </div>
+  <div class="member">
+    <p>Fellipe Araujo</p>
+    <img src="assets/images/members/fellipe.jpeg">
+  </div>
+</div>
+<div class="members">
+   <div class="member">
+    <p>Gabriel Hussein</p>
+    <img src="assets/images/members/hussein.jpg">
+  </div>
+  <div class="member">
+    <p>Ithalo Azevedo</p>
+    <img src="assets/images/members/ithalo.jpg">
+  </div>
+  <div class="member">
+    <p>Victor Cerqueira</p>
+    <img src="assets/images/members/victor.jpeg">
+  </div>
+</div>
+   
 
-| Matrícula  | Aluno                         |
-| ---------- | ----------------------------- |
-| 18/0011961 | Aline Helena Lermen           |
-| 18/0013637 | Arthur Paiva Tavares          |
-| 17/0139981 | Danillo Gonçalves de Souza    |
-| 18/0063723 | Fellipe dos Santos Araujo     |
-| 17/0103200 | Gabriel Alves Hussein         |
-| 17/0069800 | Ithalo Luiz de Azevedo Mendes |
-| 17/0164411 | Victor Amaral Cerqueira       |
 
