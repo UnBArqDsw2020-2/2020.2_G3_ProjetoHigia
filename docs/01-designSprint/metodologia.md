@@ -11,7 +11,7 @@ As 5 etapas são:
 **Para adaptar melhor ao nosso objetivo, a fase de teste não foi executada.** 
 
 ### 1. [Unpack]()
-### 2. [Sketch](protipoPapel.md)
+### 2. [Sketch](../01-designSprint/protipoPapel.md)
 ### 3. [Decide]()
 ### 4. [Prototype]()
 

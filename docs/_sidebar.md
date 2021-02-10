@@ -16,10 +16,7 @@
             -   [Rich Pictures]()
             -   [Léxicos]()
         -   Elicitação
-            -   [Storytelling]()
-            -   [Introspecção]()
-            -   [Questionário]()
-            -   [Personas]()
-            -   [Requisitos Elicitados]()
+            -   [Storyboard](./02-requisitos/elicitacao/storyboard.md)
+            -   [Personas](./02-requisitos/elicitacao/personas.md)
         -   Priorização
             -   [MoSCoW]()
