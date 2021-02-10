@@ -7,7 +7,7 @@
     -   Design Sprint
     -   Requisitos
         -   Pré-rastreabilidade
-            -   [5W2H]()
+            -   [5W2H](./02-requisitos/pre-rastreabilidade/5w2h)
             -   [Rich Pictures]()
             -   [Léxicos]()
         -   Elicitação
