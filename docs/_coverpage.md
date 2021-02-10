@@ -1,2 +1,2 @@
-![](assets/assets/logo.svg)
+![](assets/images/higia/logo.png)
 <span></span>
