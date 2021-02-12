@@ -20,6 +20,6 @@
         -   Elicitação
             -   [Storyboard](./02-requisitos/elicitacao/storyboard.md)
             -   [Personas](./02-requisitos/elicitacao/personas.md)
-            -   [Questionario](./02-requisitos/elicitacao/questionario.md)
+            -   [Questionário](./02-requisitos/elicitacao/questionario.md)
         -   Priorização
             -   [MoSCoW]()
