@@ -10,7 +10,7 @@
         - [Metodologia](01-designSprint/metodologia.md)  
         - [Unpack](./01-designSprint/brainstorming.md)   
         - [Sketch](./01-designSprint/protipoPapel.md)  
-        - [Decide]()
+        - [Decide](./01-designSprint/prototipoMediaFidelidade.md)
         - [Prototype]() 
     -   Requisitos
         -   Pré-rastreabilidade
