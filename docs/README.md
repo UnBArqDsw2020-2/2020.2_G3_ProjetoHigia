@@ -7,8 +7,8 @@
 <!-- Aline / email do git -->
 <!-- Arthur / email do git -->
 <!-- Danillo Souza <danillosouza1704@gmail.com> -->
-<!-- Fellipe / email do git -->
-<!-- Gabriel / email do git -->
+<!-- Fellipe Araujo / email do git <araujo.fellipe@hotmail.com> -->
+<!-- Gabriel Hussein / email do git <gabrielhussein83@gmail.com> -->
 <!-- Ithalo Azevedo <ithaloazevedoo@gmail.com> -->
 <!-- Victor / email do git -->
 
