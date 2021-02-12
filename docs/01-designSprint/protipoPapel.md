@@ -29,6 +29,10 @@ Para a fase de Sketch, nós escolhemos o protótipo de baixa fidelidade. Os prot
 
 ![Ithalo Azevedo](../assets/images/protótipos/prototipoPapel/ithalo.jpeg)
 
+### Victor Cerqueira
+
+![Victor Cerqueira](../assets/images/protótipos/prototipoPapel/victor.jpg)
+
 ## Referências
 
 - https://startupsorocaba.com/startup-sorocaba-o-que-sao-prototipos-de-baixa-e-alta-fidelidade/

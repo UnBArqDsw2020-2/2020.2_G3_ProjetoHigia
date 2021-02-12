@@ -6,7 +6,13 @@ O storyboard foi criado através da ferramenta [Storyboard That](https://www.sto
 
 ## Storyboards
 - Criador: Ithalo Azevedo
-  ![João]()
+  ![](../../assets/images/02-requisitos/storyboards/ithalo.png)
+- Criador: Ithalo Azevedo
+  ![](../../assets/images/02-requisitos/storyboards/ithalo2.png)
+- Criador: Victor Cerqueira
+  ![](../../assets/images/02-requisitos/storyboards/victor1.jpg)
+- Criador: Victor Cerqueira
+  ![](../../assets/images/02-requisitos/storyboards/victor2.jpg)
 
 ## Referências
 - StoryBoardThat. https://www.storyboardthat.com/pt. Ultimo acesso em: 11/02/2021.
@@ -14,6 +20,8 @@ O storyboard foi criado através da ferramenta [Storyboard That](https://www.sto
 
 ## Históricos de Revisões
 
-|    Data    | Versão |                   Descrição                    |                     Autor(es)                      |
-| :--------: | :----: | :--------------------------------------------: | :------------------------------------------------: |
-| 10/02/2020 |  0.1   | Criação do documento e adição dos storyboards. | [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+|    Data    | Versão |                   Descrição                    |                      Autor(es)                       |
+| :--------: | :----: | :--------------------------------------------: | :--------------------------------------------------: |
+| 10/02/2020 |  0.1   | Criação do documento e adição dos storyboards. |  [Ithalo Azevedo](https://github.com/ithaloazevedo)  |
+| 11/02/2020 |  0.2   |            Adição dos storyboards.             | [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 12/02/2020 |  1.0   | Revisão do documento e adição dos storyboards. |  [Ithalo Azevedo](https://github.com/ithaloazevedo)  |
