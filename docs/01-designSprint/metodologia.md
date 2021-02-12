@@ -12,7 +12,7 @@ As 5 etapas são:
 
 ### 1. [Unpack](../01-designSprint/brainstorming.md)
 ### 2. [Sketch](../01-designSprint/protipoPapel.md)
-### 3. [Decide]()
+### 3. [Decide](../01-designSprint/prototipoMediaFidelidade.md)
 ### 4. [Prototype]()
 
 ## Referências
