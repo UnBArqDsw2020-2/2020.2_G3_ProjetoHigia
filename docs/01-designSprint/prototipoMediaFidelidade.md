@@ -20,10 +20,11 @@ Para a etapa Decide, nós utilizamos as ideias exteriorizadas através das etapa
 <br/>
 ![prototipoMedioFellipe2](../assets/images/protótipos/medio/prototipoMedioFellipe2.png)
 
-
 ## Referências
+
 - Fidelidade de protótipos. https://www.vitaminaweb.com.br/fidelidade-de-prototipos-baixa-media-ou-alta/. Acesso em: 11/02/2021.
 - Protótipos de baixa, média e alta fidelidade. https://jeffersonalex.medium.com/protótipos-de-baixa-média-e-alta-fidelidade-bf04870325a6. Acesso em: 11/02/2021.
+
 ## Históricos de Revisões
 
 |    Data    | Versão |       Descrição        |                                                                      Autor(es)                                                                       |

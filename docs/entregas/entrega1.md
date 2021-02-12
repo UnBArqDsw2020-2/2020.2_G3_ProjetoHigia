@@ -6,6 +6,8 @@
 - [Unpack](../01-designSprint/brainstorming.md)
 - [Sketch](../01-designSprint/protipoPapel.md)
 - [Decide](../01-designSprint/prototipoMediaFidelidade.md)
+- [Prototype](../01-designSprint/prototipoAlta.md)
+
 
 ### Requisitos
 

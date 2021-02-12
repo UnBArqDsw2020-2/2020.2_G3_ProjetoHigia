@@ -139,4 +139,4 @@ Léxico é definido como um conjunto dos vocábulos de uma língua, dispostos em
 ## Históricos de Revisões
 |    Data    |  Versão  |         Descrição           |                   Autor(es)                      |
 | :--------: | :------: | :-------------------------: | :----------------------------------------------: |
-| 11/02/2021 |   1.0    |     Criação dos Léxicos     |         Fellipe Araujo e Gabriel Hussein         |
+| 11/02/2021 |   1.0    |     Criação dos Léxicos     |         [Fellipe Araujo](https://github.com/fellipe-araujo) e [Gabriel Hussein](https://github.com/GabrielHussein)         |
