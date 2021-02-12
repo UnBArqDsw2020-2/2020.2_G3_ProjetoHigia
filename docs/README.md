@@ -13,13 +13,14 @@
 <!-- Victor / email do git -->
 
 <!-- Colinha pros histórico de revisão -->
-<!-- [Aline Lermen]() -->
-<!-- [Arthur Paiva]() -->
+<!-- [Aline Lermen](https://github.com/AlineLermen) -->
+<!-- [Arthur Paiva](https://github.com/ArthurPaivaT) -->
 <!-- [Danillo Souza](https://github.com/DanilloGS) -->
-<!-- [Fellipe Araujo]() -->
-<!-- [Gabriel Hussein]() -->
+<!-- [Fellipe Araujo](https://github.com/fellipe-araujo) -->
+<!-- [Gabriel Hussein](https://github.com/GabrielHussein) -->
 <!-- [Ithalo Azevedo](https://github.com/ithaloazevedo) -->
-<!-- [Victor Cerqueira]() -->
+<!-- [Victor Cerqueira](https://github.com/VictorAmaralC) -->
+
 
 ## Sobre
 O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicação mobile voltada para o armazenamento e fácil controle de documentos médicos, além de inovar o compartilhamento de informações e arquivos entre pacientes e médicos.

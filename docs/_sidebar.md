@@ -3,6 +3,8 @@
 </a>
 
 -   [Home](README.md)
+-    Sprint
+    - [Sprint 0](./00-sprint/sprint0)
 -    Base
     -   Design Sprint
         - [Metodologia](01-designSprint/metodologia.md)  
