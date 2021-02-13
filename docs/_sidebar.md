@@ -16,10 +16,11 @@
         -   Pré-rastreabilidade
             -   [5W2H](./02-requisitos/pre-rastreabilidade/5w2h)
             -   [Rich Pictures]()
-            -   [Léxicos](./02-requisitos/pre-rastreabilidade/lexicos.md)
         -   Elicitação
             -   [Storyboard](./02-requisitos/elicitacao/storyboard.md)
             -   [Personas](./02-requisitos/elicitacao/personas.md)
             -   [Questionário](./02-requisitos/elicitacao/questionario.md)
         -   Priorização
             -   [MoSCoW]()
+    -   Modelagem
+        -   [Léxicos](./modelagem/lexicos.md)
