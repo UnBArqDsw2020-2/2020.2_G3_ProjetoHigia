@@ -16,7 +16,6 @@
         -   Pré-rastreabilidade
             -   [5W2H](./02-requisitos/pre-rastreabilidade/5w2h)
             -   [Rich Pictures]()
-	    -   [Mapa Mental](./02-requisitos/pre-rastreabilidade/mapaMental.md)
         -   Elicitação
             -   [Storyboard](./02-requisitos/elicitacao/storyboard.md)
             -   [Personas](./02-requisitos/elicitacao/personas.md)
