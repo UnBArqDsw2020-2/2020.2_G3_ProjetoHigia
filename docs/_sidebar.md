@@ -25,3 +25,4 @@
             -   [MoSCoW]()
     -   Modelagem
         -   [Léxicos](./modelagem/lexicos.md)
+        -   [Cenários](./modelagem/cenarios.md)

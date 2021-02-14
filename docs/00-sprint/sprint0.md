@@ -23,6 +23,7 @@
 | [#12](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/12) |                        MoSCoW                         |     2     |                                                                 Todos os integrantes                                                                 |
 | [#13](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/13) |    [Persona](02-requisitos/elicitacao/personas.md)    |     3     | [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
 | [#14](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/14) |             Protótipo de alta fidelidade              |     5     | [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
-| [#15](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/15) |          Criar e configurar wiki do projeto           |     2     |                                                  [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                  |
+| [#15](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/15) |          Criar e configurar wiki do projeto           |     2     |                                                  [Ithalo Azevedo](https://github.com/ithaloazevedo)   
+| [#16](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/16) |                        [Cenários](./modelagem/cenarios.md)                      |     2     |  [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Gabriel Hussein](https://github.com/GabrielHussein)             |
 
-<h3>Pontuação total: 38</h3>
+<h3>Pontuação total: 40</h3>
