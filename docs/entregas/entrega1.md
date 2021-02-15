@@ -28,3 +28,4 @@
 - [BPMN](../03-modelagem/bpmn.md)
 - [Cenários](../03-modelagem/cenarios.md)
 - [Léxicos](../03-modelagem/lexicos.md)
+- [Estimativa](../03-modelagem/estimativas.md)
