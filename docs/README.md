@@ -5,13 +5,13 @@
 **Repositório**: https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia<br>
 
 <!-- Colinha pros co-authored -->
-<!-- Aline / email do git <aline.helena.lermen@gmail.com> -->
-<!-- Arthur / email do git <arthur001123@gmail.com> -->
+<!-- Aline <aline.helena.lermen@gmail.com> -->
+<!-- Arthur <arthur001123@gmail.com> -->
 <!-- Danillo Souza <danillosouza1704@gmail.com> -->
-<!-- Fellipe Araujo / email do git <araujo.fellipe@hotmail.com> -->
-<!-- Gabriel Hussein / email do git <gabrielhussein83@gmail.com> -->
+<!-- Fellipe Araujo <araujo.fellipe@hotmail.com> -->
+<!-- Gabriel Hussein <gabrielhussein83@gmail.com> -->
 <!-- Ithalo Azevedo <ithaloazevedoo@gmail.com> -->
-<!-- Victor / email do git <victoramaralce@gmail.com> -->
+<!-- Victor <victoramaralce@gmail.com> -->
 
 <!-- Colinha pros histórico de revisão -->
 <!-- [Aline Lermen](https://github.com/AlineLermen) -->

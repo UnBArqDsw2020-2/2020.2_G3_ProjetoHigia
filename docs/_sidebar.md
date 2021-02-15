@@ -21,8 +21,7 @@
             -   [Storyboard](./02-requisitos/elicitacao/storyboard.md)
             -   [Personas](./02-requisitos/elicitacao/personas.md)
             -   [Questionário](./02-requisitos/elicitacao/questionario.md)
-        -   Priorização
-            -   [MoSCoW]()
+            -   [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
     -   Modelagem
         -   [Léxicos](./modelagem/lexicos.md)
         -   [Cenários](./modelagem/cenarios.md)
