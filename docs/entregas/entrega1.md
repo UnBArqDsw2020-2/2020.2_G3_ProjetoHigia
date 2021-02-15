@@ -13,6 +13,7 @@
 #### Pré-Rastreabilidade
 
 - [5W2H](../02-requisitos/pre-rastreabilidade/5w2h.md)
+- [Rich Picture](../02-requisitos/pre-rastreabilidade/richPicture.md)
 - [Mapa Mental](../02-requisitos/pre-rastreabilidade/mapaMental.md)
 
 ### Elicitação
