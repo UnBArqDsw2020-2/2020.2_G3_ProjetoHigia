@@ -3,8 +3,8 @@
 </a>
 
 - [Home](README.md)
-- Sprint
-- [Sprint 0](./00-sprint/sprint0)
+- Sprints
+  - [Sprint 0](./00-sprint/sprint0)
 - Base
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
@@ -24,5 +24,6 @@
     - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
     - [Brainstorming](../02-requisitos/elicitacao/brainstorming.md)
 - Modelagem
-  - [Léxicos](./modelagem/lexicos.md)
-  - [Cenários](./modelagem/cenarios.md)
+  - [Léxicos](./03-modelagem/lexicos.md)
+  - [Cenários](./03-modelagem/cenarios.md)
+  - [BPMN](./03-modelagem/bpmn.md)
