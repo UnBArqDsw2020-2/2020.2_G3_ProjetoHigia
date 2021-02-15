@@ -8,10 +8,10 @@ O diagrama de Ishikawa, também conhecido como diagrama de Causa-efeito, é uma 
 
 Os diagramas produzidos tem como objetivo ilustrar possíveis causas que levariam ao fracasso do projeto.
 
-![Ishikawa](../assets/images/02-requisitos/ishikawa/ishikawa_VictorAmaral.png)
+![Ishikawa1](../assets/images/02-requisitos/ishikawa/ishikawa_VictorAmaral.png)
 Autor - Victor Amaral
 
-![Ishikawa](../assets/images/02-requisitos/ishikawa/diagramaIshikawaHussein.jpg)
+![Ishikawa2](../assets/images/02-requisitos/ishikawa/diagramaIshikawaHussein.jpg)
 Autor - Gabriel Hussein
 
 ## Históricos de Revisões
