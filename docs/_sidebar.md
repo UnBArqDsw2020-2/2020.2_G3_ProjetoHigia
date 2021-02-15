@@ -23,7 +23,9 @@
     - [Questionário](./02-requisitos/elicitacao/questionario.md)
     - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
     - [Brainstorming](../02-requisitos/elicitacao/brainstorming.md)
+    - [Diagrama de Ishikawa](./02-requisitos/elicitacao/ishikawa.md)
 - Modelagem
   - [Léxicos](./03-modelagem/lexicos.md)
   - [Cenários](./03-modelagem/cenarios.md)
+  - [Backlog](./03-modelagem/backlog.md)
   - [BPMN](./03-modelagem/bpmn.md)
