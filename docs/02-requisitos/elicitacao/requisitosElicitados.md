@@ -58,6 +58,3 @@ Siglas da coluna "Backward From":
 |    Data    | Versão |                   Descrição                   | Autor(es)                                                                                                                                         |
 | :--------: | :----: | :-------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 14/02/2021 |  1.0   | Criação do documento de requisitos elicitados | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-
-<!-- Co-authored-by: Aline <aline.helena.lermen@gmail.com> -->
-<!-- Co-authored-by: Ithalo Azevedo <ithaloazevedoo@gmail.com> -->

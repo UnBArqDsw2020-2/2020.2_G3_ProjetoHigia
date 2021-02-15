@@ -20,3 +20,4 @@
 - [Storyboard](../02-requisitos/elicitacao/storyboard.md)
 - [Questionário](./02-requisitos/elicitacao/questionario.md)
 - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
+- [Brainstorming](../02-requisitos/elicitacao/brainstorming.md)

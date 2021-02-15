@@ -2,26 +2,27 @@
     <img src="assets/images/higia/higia.png" class="sidebar-logo">
 </a>
 
--   [Home](README.md)
--    Sprint
-    - [Sprint 0](./00-sprint/sprint0)
--    Base
-    -   Design Sprint
-        - [Metodologia](01-designSprint/metodologia.md)  
-        - [Unpack](./01-designSprint/brainstorming.md)   
-        - [Sketch](./01-designSprint/protipoPapel.md)  
-        - [Decide](./01-designSprint/prototipoMediaFidelidade.md)
-        - [Prototype](../01-designSprint/prototipoAlta.md)
-    -   Requisitos
-        -   Pré-rastreabilidade
-            -   [5W2H](./02-requisitos/pre-rastreabilidade/5w2h)
-            -   [Rich Pictures]()
-	        -   [Mapa Mental](./02-requisitos/pre-rastreabilidade/mapaMental.md)
-        -   Elicitação
-            -   [Storyboard](./02-requisitos/elicitacao/storyboard.md)
-            -   [Personas](./02-requisitos/elicitacao/personas.md)
-            -   [Questionário](./02-requisitos/elicitacao/questionario.md)
-            -   [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
-    -   Modelagem
-        -   [Léxicos](./modelagem/lexicos.md)
-        -   [Cenários](./modelagem/cenarios.md)
+- [Home](README.md)
+- Sprint
+- [Sprint 0](./00-sprint/sprint0)
+- Base
+- Design Sprint
+  - [Metodologia](01-designSprint/metodologia.md)
+  - [Unpack](./01-designSprint/brainstorming.md)
+  - [Sketch](./01-designSprint/protipoPapel.md)
+  - [Decide](./01-designSprint/prototipoMediaFidelidade.md)
+  - [Prototype](../01-designSprint/prototipoAlta.md)
+- Requisitos
+  - Pré-rastreabilidade
+    - [5W2H](./02-requisitos/pre-rastreabilidade/5w2h)
+    - [Rich Pictures]()
+    - [Mapa Mental](./02-requisitos/pre-rastreabilidade/mapaMental.md)
+  - Elicitação
+    - [Storyboard](./02-requisitos/elicitacao/storyboard.md)
+    - [Personas](./02-requisitos/elicitacao/personas.md)
+    - [Questionário](./02-requisitos/elicitacao/questionario.md)
+    - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
+    - [Brainstorming](../02-requisitos/elicitacao/brainstorming.md)
+- Modelagem
+  - [Léxicos](./modelagem/lexicos.md)
+  - [Cenários](./modelagem/cenarios.md)
