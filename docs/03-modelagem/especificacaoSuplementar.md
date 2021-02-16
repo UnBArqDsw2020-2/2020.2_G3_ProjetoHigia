@@ -93,3 +93,15 @@ A linguagem de programação utilizada no desenvolvimento do aplicativo deve ser
 <p style="text-align: justify;"> &emsp;&emsp;
 Como o aplicativo será acessível em dispositivos Android e IOS, é importante a utilização de linguagem de programação e frameworks que não necessitem a escrita do mesmo código duas vezes. Uma vez implementada determinada funcionalidade, estará disponível para todas as plataformas mobile que irão utilizá-las.
 </p>
+
+## Referências
+
+* [Uma Ferramenta de Apoio à Especificação de
+Requisitos para Sistemas Autoadaptativos](http://dspace.unipampa.edu.br/bitstream/riu/875/1/Uma%20ferramenta%20de%20apoio%20%C3%A0%20especifica%C3%A7%C3%A3o%20de%20requisitos%20para%20sistemas%20autoadaptativos.pdf
+) Acesso em: 16 de Fevereiro, 2021.
+
+## Históricos de Revisões
+
+|  Data  | Versão | Descrição | Autor(es) |
+| :----: | :----: | :-------: | :-------: |
+| 16/02/2021 | 1.0 | Criação da Especificação Suplementar | [Fellipe Araujo](https://github.com/fellipe-araujo) |
