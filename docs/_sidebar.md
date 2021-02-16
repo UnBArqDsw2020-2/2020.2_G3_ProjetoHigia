@@ -3,9 +3,11 @@
 </a>
 
 - [Home](README.md)
+- Projeto
+  - [BPMN](./03-projeto/bpmn.md)
+  - [Estimativa](./03-projeto/estimativas.md)
 - Sprints
   - [Sprint 0](./00-sprint/sprint0)
-- Base
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
@@ -17,18 +19,15 @@
     - [5W2H](./02-requisitos/pre-rastreabilidade/5w2h)
     - [Rich Pictures](./02-requisitos/pre-rastreabilidade/richPicture.md)
     - [Mapa Mental](./02-requisitos/pre-rastreabilidade/mapaMental.md)
+    - [Diagrama de Ishikawa](./02-requisitos/pre-rastreabilidade/ishikawa.md)
   - Elicitação
     - [Storyboard](./02-requisitos/elicitacao/storyboard.md)
     - [Personas](./02-requisitos/elicitacao/personas.md)
     - [Questionário](./02-requisitos/elicitacao/questionario.md)
     - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
-    - [Brainstorming](../02-requisitos/elicitacao/brainstorming.md)
-    - [Diagrama de Ishikawa](./02-requisitos/elicitacao/ishikawa.md)
-- Modelagem
-  - [Léxicos](./03-modelagem/lexicos.md)
-  - [Cenários](./03-modelagem/cenarios.md)
-  - [Backlog](./03-modelagem/backlog.md)
-  - [BPMN](./03-modelagem/bpmn.md)
-  - [Especificação Suplementar](./03-modelagem/especificacaoSuplementar.md)
-- Projeto
-  - [Estimativa](../04-projeto/estimativas.md)
+    - [Brainstorming](./02-requisitos/elicitacao/brainstorming.md)
+  - Modelagem
+    - [Léxicos](./02-requisitos/modelagem/lexicos.md)
+    - [Cenários](./02-requisitos/modelagem/cenarios.md)
+    - [Backlog](./02-requisitos/modelagem/backlog.md)
+    - [Especificação Suplementar](./02-requisitos/modelagem/especificacaoSuplementar.md)

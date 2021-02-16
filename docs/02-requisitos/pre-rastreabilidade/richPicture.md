@@ -20,12 +20,12 @@ Rich picture é uma técnica que tem como objetivo entender o processo da intera
 
 
 ## Referências
-- Rich Pictures: http://systems.open.ac.uk/materials/T552/pages/rich/richAppendix.html. Último acesso em: 13/11/2021.
+- Rich Pictures: http://systems.open.ac.uk/materials/T552/pages/rich/richAppendix.html. Último acesso em: 13/02/2021.
 
 
 ## Históricos de Revisões
 
-|    Data    | Versão |       Descrição        |                     Autor(es)                      |
-| :--------: | :----: | :--------------------: | :------------------------------------------------: |
-| 11/02/2021 |  0.1   | Elaboração dos rich pictures |                Todos os integrantes          |
-| 15/02/2021 |  1.0   |  Criação do documento  | [Aline Lermen](https://github.com/AlineLermen) |
+|    Data    | Versão |          Descrição           |                   Autor(es)                    |
+| :--------: | :----: | :--------------------------: | :--------------------------------------------: |
+| 11/02/2021 |  0.1   | Elaboração dos rich pictures |              Todos os integrantes              |
+| 15/02/2021 |  1.0   |     Criação do documento     | [Aline Lermen](https://github.com/AlineLermen) |
