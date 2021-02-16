@@ -29,5 +29,6 @@
   - [Cenários](./03-modelagem/cenarios.md)
   - [Backlog](./03-modelagem/backlog.md)
   - [BPMN](./03-modelagem/bpmn.md)
+  - [Especificação Suplementar](./03-modelagem/especificacaoSuplementar.md)
 - Projeto
   - [Estimativa](../04-projeto/estimativas.md)
