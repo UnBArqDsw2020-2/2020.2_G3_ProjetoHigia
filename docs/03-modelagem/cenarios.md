@@ -6,8 +6,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 01 - Cadastro de Médico
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Cadastro de um médico no App |
 | Contexto | | Local: Tela inicial ao entrar na aplicação pela primeira vez <br /> Tempo: Dois a Cinco minutos <br /> Pré-condição: Possuir CRM e CPF Válido |
 | Atores | | Usuário com Login ativo |
@@ -18,8 +18,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 02 - Cadastro de Paciente
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Cadastro de um médico no App |
 | Contexto | | Local: Tela inicial ao entrar na aplicação pela primeira vez <br /> Tempo: Dois a Cinco minutos <br /> Pré-condição: CPF válido |
 | Atores | | Usuário ainda não cadastrado |
@@ -30,8 +30,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 03 - Efetuar Login
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Realizar login no app |
 | Contexto | |Local: Tela inicial <br /> Tempo: 30 segundos a 1 minuto <br /> Pré-condição: Já ter realizado o cadastro. |
 | Atores | | Usuário paciente e usuário médico. |
@@ -42,8 +42,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 04 - Edição de Perfil
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Editar informações do perfil |
 | Contexto | | Local: Tela inicial após realizar login <br /> Tempo: Dois a dez minutos <br /> Pré-condição: Estar logado |
 | Atores | | Usuário logado |
@@ -54,8 +54,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 05 - Upload de Arquivos
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Fazer Upload de arquivos para o aplicativo |
 | Contexto | | Local: Tela inicial após realizar login <br /> Tempo: Um a Cinco minutos <br /> Pré-condição: Estar Logado, Estar com o arquivo disponível no dispositivo |
 | Atores | | Usuário logado |
@@ -66,8 +66,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 06 - Exclusão de perfil
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Excluir perfil cadastrado no Hígia|
 | Contexto | | Local: Tela de configurações <br /> Tempo: Um a três minutos <br /> Pré-condição: Estar logado |
 | Atores | | Usuário logado |
@@ -78,8 +78,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 07 - Download de Arquivos
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Fazer download de arquivos salvos no app |
 | Contexto | | Local: Tela de arquivos <br /> Tempo: Um a Cinco minutos <br /> Pré-condição: Estar Logado, já ter feito upload de algum arquivo |
 | Atores | | Usuário com Login ativo |
@@ -90,8 +90,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 08 - Buscar paciente
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Usuário médico deseja encontrar dados de um paciente específico |
 | Contexto | | Local: Tela de busca de pacientes <br /> Tempo: Um a três minutos <br /> Pré-condição: Estar logado, ser usuário médico |
 | Atores | | Usuário com Login ativo |
@@ -102,8 +102,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 09 - Buscar paciente
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Acessar os arquivos médicos de um paciente |
 | Contexto | | Local: Tela de busca de pacientes <br /> Tempo: Um a Cinco minutos <br /> Pré-condição: Estar logado, ser usuário médico |
 | Atores | | Usuário com Login ativo |
@@ -114,8 +114,8 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 
 ### Cenário 10 - Conceder permissão
 
-|| | |
-| -------- | | --------------------------- |
+|     |  |  |
+| --- || --------------------------- |
 | Objetivo | | Conceder acesso de arquivos a um médico solicitante |
 | Contexto | | Local: App hígia <br /> Tempo: Dez a cinquenta segundos <br /> Pré-condição: Estar conectado a internet |
 | Atores | | Usuário paciente com Login ativo |
@@ -123,3 +123,13 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios | | Usuário recebe notificação de solicitação de acesso <br /> Usuário acessa o app <br /> Usuário permite acesso |
 | Episódios Alternativos | | Usuário rejeita o acesso |
 | Restrição | | Internet Indisponível|
+
+## Referências
+Uso de cenário para especificação de requisitos. https://www.devmedia.com.br/uso-de-cenarios-para-especificacao-de-requisitos-de-qualidade-e-avaliacao-de-arquitetura-revista-engenharia-de-software-magazine-41/22528. Último acesso em: 15/02/2021.
+
+## Históricos de Revisões
+
+|    Data    | Versão |        Descrição        |                                                                         Autor(es)                                                                         |
+| :--------: | :----: | :---------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 14/02/2020 |  1.0   |  Criação do documento.  | [Arthur Paiva](https://github.com/ArthurPaivaT), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+| 15/02/2020 |  1.1   | Adição das referências. |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
