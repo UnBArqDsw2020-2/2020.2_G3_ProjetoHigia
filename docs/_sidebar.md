@@ -29,4 +29,5 @@
   - [Cenários](./03-modelagem/cenarios.md)
   - [Backlog](./03-modelagem/backlog.md)
   - [BPMN](./03-modelagem/bpmn.md)
-  - [Estimativa](../03-modelagem/estimativas.md)
+- Projeto
+  - [Estimativa](../04-projeto/estimativas.md)

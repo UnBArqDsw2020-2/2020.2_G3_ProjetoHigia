@@ -30,3 +30,6 @@
 - [Cenários](../03-modelagem/cenarios.md)
 - [Léxicos](../03-modelagem/lexicos.md)
 - [Estimativa](../03-modelagem/estimativas.md)
+
+### Projeto
+- [Estimativa](../04-projeto/estimativas.md)
