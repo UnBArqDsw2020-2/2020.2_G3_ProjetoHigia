@@ -10,10 +10,10 @@ As 5 etapas são:
  
 **Para adaptar melhor ao nosso objetivo, a fase de teste não foi executada.** 
 
-### 1. [Unpack](../01-designSprint/brainstorming.md)
-### 2. [Sketch](../01-designSprint/protipoPapel.md)
-### 3. [Decide](../01-designSprint/prototipoMediaFidelidade.md)
-### 4. [Prototype](../01-designSprint/prototipoAlta.md)
+### 1. [Unpack](./01-designSprint/brainstorming.md)
+### 2. [Sketch](./01-designSprint/protipoPapel.md)
+### 3. [Decide](./01-designSprint/prototipoMediaFidelidade.md)
+### 4. [Prototype](./01-designSprint/prototipoAlta.md)
 
 ## Referências
 - Google Design Sprint como funciona e como aplicar no seu projeto: https://brasil.uxdesign.cc/google-design-sprint-como-funciona-e-como-aplicar-no-seu-projeto-279107363659. Ultimo acesso em: 10/02/2021.
