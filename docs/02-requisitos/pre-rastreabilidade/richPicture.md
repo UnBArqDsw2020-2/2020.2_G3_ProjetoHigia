@@ -14,6 +14,10 @@ Rich picture é uma técnica que tem como objetivo entender o processo da intera
 
 ![Fellipe Araujo](../../assets/images/richPictures/richPicture_FellipeAraujo.jpg)
 
+### Ithalo Azevedo
+
+![Ithalo Azevedo](../../assets/images/richPictures/richPicture_Ithalo.jpg)
+
 ### Victor Cerqueira
 
 ![Victor Cerqueira](../../assets/images/richPictures/richPicture_VictorAmaral.jpg)
