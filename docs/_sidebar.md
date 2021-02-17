@@ -21,11 +21,11 @@
     - [Mapa Mental](./02-requisitos/pre-rastreabilidade/mapaMental.md)
     - [Diagrama de Ishikawa](./02-requisitos/pre-rastreabilidade/ishikawa.md)
   - Elicitação
-    - [Storyboard](./02-requisitos/elicitacao/storyboard.md)
+    - [Brainstorming](./02-requisitos/elicitacao/brainstorming.md)
     - [Personas](./02-requisitos/elicitacao/personas.md)
+    - [Storyboard](./02-requisitos/elicitacao/storyboard.md)
     - [Questionário](./02-requisitos/elicitacao/questionario.md)
     - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
-    - [Brainstorming](./02-requisitos/elicitacao/brainstorming.md)
   - Modelagem
     - [Léxicos](./02-requisitos/modelagem/lexicos.md)
     - [Cenários](./02-requisitos/modelagem/cenarios.md)
