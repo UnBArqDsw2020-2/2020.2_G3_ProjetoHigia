@@ -6,6 +6,10 @@ Rich picture é uma técnica que tem como objetivo entender o processo da intera
 
 ![Aline Lermen](../../assets/images/richPictures/richPicture_Aline.jpg)
 
+### Arthur Paiva
+
+![Arthur Paiva](../../assets/images/richPictures/richPicture_ArthurPaiva.jpg)
+
 ### Danillo Souza
 
 ![Danillo Souza](../../assets/images/richPictures/richPictureDanillo.jpg)
@@ -13,6 +17,10 @@ Rich picture é uma técnica que tem como objetivo entender o processo da intera
 ### Fellipe Araujo
 
 ![Fellipe Araujo](../../assets/images/richPictures/richPicture_FellipeAraujo.jpg)
+
+### Gabriel Hussein
+
+![Gabriel Hussein](../../assets/images/richPictures/richPicture_GabrielHussein.jpg)
 
 ### Ithalo Azevedo
 
@@ -33,3 +41,4 @@ Rich picture é uma técnica que tem como objetivo entender o processo da intera
 | :--------: | :----: | :--------------------------: | :--------------------------------------------: |
 | 11/02/2021 |  0.1   | Elaboração dos rich pictures |              Todos os integrantes              |
 | 15/02/2021 |  1.0   |     Criação do documento     | [Aline Lermen](https://github.com/AlineLermen) |
+| 17/02/2021 |  1.0   |     Adição de mais Rich pictures     | [Arthur Paiva](https://github.com/ArthurPaivaT) |
