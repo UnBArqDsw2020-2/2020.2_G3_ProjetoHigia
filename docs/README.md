@@ -4,14 +4,14 @@
 **Número do Grupo**: 03<br>
 **Repositório**: https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia<br>
 
-<!-- Colinha pros co-authored -->
-<!-- Aline <aline.helena.lermen@gmail.com> -->
-<!-- Arthur <arthur001123@gmail.com> -->
-<!-- Danillo Souza <danillosouza1704@gmail.com> -->
-<!-- Fellipe Araujo <araujo.fellipe@hotmail.com> -->
-<!-- Gabriel Hussein <gabrielhussein83@gmail.com> -->
-<!-- Ithalo Azevedo <ithaloazevedoo@gmail.com> -->
-<!-- Victor <victoramaralce@gmail.com> -->
+<!-- Colinha pros Co-Authored-by -->
+<!-- Co-Authored-by: Aline <aline.helena.lermen@gmail.com> -->
+<!-- Co-Authored-by: Arthur <arthur001123@gmail.com> -->
+<!-- Co-Authored-by: Danillo Souza <danillosouza1704@gmail.com> -->
+<!-- Co-Authored-by: Fellipe Araujo <araujo.fellipe@hotmail.com> -->
+<!-- Co-Authored-by: Gabriel Hussein <gabrielhussein83@gmail.com> -->
+<!-- Co-Authored-by: Ithalo Azevedo <ithaloazevedoo@gmail.com> -->
+<!-- Co-Authored-by: Victor <victoramaralce@gmail.com> -->
 
 <!-- Colinha pros histórico de revisão -->
 <!-- [Aline Lermen](https://github.com/AlineLermen) -->
