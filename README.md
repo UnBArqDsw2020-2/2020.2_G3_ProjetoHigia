@@ -3,6 +3,9 @@
 **Código da Disciplina**: FGA0208<br>
 **Número do Grupo**: 03<br>
 
+## Wiki
+https://unbarqdsw2020-2.github.io/2020.2_G3_ProjetoHigia
+
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
@@ -15,7 +18,7 @@
 |17/0164411	|Victor Amaral Cerqueira|
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicação mobile voltada para o armazenamento e fácil controle de documentos médicos, além de inovar o compartilhamento de informações e arquivos entre pacientes e médicos.
 
 ## Screenshots Primeira Entrega <<FOCO: DSW(Base)>>
 Adicione 2 ou mais screenshots do projeto em termos de artefatos da Primeira Entrega.
