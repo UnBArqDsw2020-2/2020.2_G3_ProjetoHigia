@@ -43,7 +43,9 @@ O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicaçã
 
 ## Vídeo(s) Primeira Entrega <<FOCO: DSW(Base)>>
 
-Adicione o(s)s vídeo(s) da Primeira Entrega.
+[Módulo Projeto Não Orientado a Abordagens Específicas](https://www.youtube.com/watch?v=1i1FSKLa3sw&feature=youtu.be)
+
+[Módulo Processos/Metodologias/Abordagens](https://www.youtube.com/watch?v=WFZWljNopaQ&feature=youtu.be)
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 
