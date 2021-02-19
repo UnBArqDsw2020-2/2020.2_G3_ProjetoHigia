@@ -4,9 +4,9 @@ Devido a pandemia causada pelo novo coronavírus, SARS-CoV2, a disciplina foi of
 
 # Apresentacao
 
-[Link para apresentacao 1 - Desing Sprint](https://www.youtube.com/watch?v=1i1FSKLa3sw&feature=youtu.be)
+[Desing Sprint](https://www.youtube.com/watch?v=1i1FSKLa3sw&feature=youtu.be)
 
-[Link para apresentacao 1 - BPMN](https://www.youtube.com/watch?v=WFZWljNopaQ&feature=youtu.be)
+[BPMN](https://www.youtube.com/watch?v=WFZWljNopaQ&feature=youtu.be)
 
 ## Histórico de Versão 
 | Data | Descrição | Versão | Autores |
