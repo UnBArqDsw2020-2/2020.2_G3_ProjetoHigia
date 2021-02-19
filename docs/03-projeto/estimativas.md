@@ -1,5 +1,14 @@
 # Estimativas
 
+## Histórico de versionamento
+
+|    Data    | Versão |          Descrição           |                                                                     Autor(es)                                                                      |
+| :--------: | :----: | :--------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 15/02/2021 |  0.1   |     Criação do documento     |                         [Danillo Souza](https://github.com/DanilloGS) e [Victor Amaral](https://github.com/VictorAmaralc)                          |
+| 15/02/2021 |  1.0   |  Aplicação das estimativas   | [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS) e [Victor Amaral](https://github.com/VictorAmaralc) |
+| 16/02/2021 |  1.1   | Desenvolvimento do documento | [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS) e [Victor Amaral](https://github.com/VictorAmaralc) |
+
+
 ## COCOMO (COnstructive COst MOdel)
 
 O método COCOMO é um modelo de estimativa do tempo de desenvolvimento de um software. É baseado no estudo de sessenta e três projetos. Os programas examinaram de 2.000 a 100.000 linhas de código em linguagens de programação de Assembly a PL/I.
@@ -522,11 +531,3 @@ T = 3,62 Meses
 [3] **Método COCOMO**, Disponível em: <<https://pt.wikipedia.org/wiki/M%C3%A9todo_COCOMO>>, Último acesso: 15 de fevereiro, 2021.
 
 [4] **Monitoria**, Disponível em: https://2019-2-arquitetura-desenho.github.io/wiki/dinamica_seminario_I/estimativas_de_custo/, Último acesso: 15 de fevereiro, 2021.
-
-## Histórico de versionamento
-
-|    Data    | Versão |          Descrição           |                                                                     Autor(es)                                                                      |
-| :--------: | :----: | :--------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 15/02/2021 |  0.1   |     Criação do documento     |                         [Danillo Souza](https://github.com/DanilloGS) e [Victor Amaral](https://github.com/VictorAmaralc)                          |
-| 15/02/2021 |  1.0   |  Aplicação das estimativas   | [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS) e [Victor Amaral](https://github.com/VictorAmaralc) |
-| 16/02/2021 |  1.1   | Desenvolvimento do documento | [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS) e [Victor Amaral](https://github.com/VictorAmaralc) |

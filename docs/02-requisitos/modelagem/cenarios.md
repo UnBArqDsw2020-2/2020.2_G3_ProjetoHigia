@@ -1,10 +1,19 @@
 # Cenários
 
+## Históricos de Revisões
+
+|    Data    | Versão |        Descrição        |                                                                         Autor(es)                                                                         |
+| :--------: | :----: | :---------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 14/02/2020 |  1.0   |  Criação do documento.  | [Arthur Paiva](https://github.com/ArthurPaivaT), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+| 15/02/2020 |  1.1   | Adição das referências. |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
+
+## Introdução
+
 <p style="text-align: justify;"> &emsp;&emsp;
 Um cenário é uma estratégia reconhecida para compreender as interações entre ambiente e sistema, bem como elicitar a parte comportamental do software, sua dinâmica e/ou seu fluxos,apresentando os envolvidos e como eles interagem como o sistema, em uma tentativa de demonstrar de forma mais dinâmica como os requisitos levantados aparecem no aplicativo.
 </p>
 
-### Cenário 01 - Cadastro de Médico
+## Cenário 01 - Cadastro de Médico
 
 |     |  |  |
 | --- || --------------------------- |
@@ -16,7 +25,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Não existe episódio alternativo |
 | Restrição | | Internet Indisponível |
 
-### Cenário 02 - Cadastro de Paciente
+## Cenário 02 - Cadastro de Paciente
 
 |     |  |  |
 | --- || --------------------------- |
@@ -28,7 +37,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Não existe episódio alternativo |
 | Restrição | | Internet Indisponível |
 
-### Cenário 03 - Efetuar Login
+## Cenário 03 - Efetuar Login
 
 |     |  |  |
 | --- || --------------------------- |
@@ -40,7 +49,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Usuário acessa o app <br /> Usuário insere os dados de login <br /> Usuário confirma o login <br /> Sistema retorna mensagem “A senha informada está incorreta”. |
 | Restrição | | Internet Indisponível <br /> Usuário Não Cadastrado|
 
-### Cenário 04 - Edição de Perfil
+## Cenário 04 - Edição de Perfil
 
 |     |  |  |
 | --- || --------------------------- |
@@ -52,7 +61,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Usuário cancela alterações pendentes |
 | Restrição | | Internet Indisponível |
 
-### Cenário 05 - Upload de Arquivos
+## Cenário 05 - Upload de Arquivos
 
 |     |  |  |
 | --- || --------------------------- |
@@ -64,7 +73,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Não existe episódio alternativo |
 | Restrição | | Internet Indisponível |
 
-### Cenário 06 - Exclusão de perfil
+## Cenário 06 - Exclusão de perfil
 
 |     |  |  |
 | --- || --------------------------- |
@@ -76,7 +85,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Usuário cancela o processo de exclusão de perfil |
 | Restrição | | Internet Indisponível |
 
-### Cenário 07 - Download de Arquivos
+## Cenário 07 - Download de Arquivos
 
 |     |  |  |
 | --- || --------------------------- |
@@ -88,7 +97,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Não existe episódio alternativo |
 | Restrição | | Internet Indisponível |
 
-### Cenário 08 - Buscar paciente
+## Cenário 08 - Buscar paciente
 
 |     |  |  |
 | --- || --------------------------- |
@@ -100,7 +109,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Não existe episódio alternativo |
 | Restrição | | Internet Indisponível <br /> CPF inválido|
 
-### Cenário 09 - Buscar paciente
+## Cenário 09 - Buscar paciente
 
 |     |  |  |
 | --- || --------------------------- |
@@ -112,7 +121,7 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 | Episódios Alternativos | | Usuário acessa o app <br /> Usuário acessa menu lateral <br /> Usuário seleciona opção de “Buscar Paciente” <br /> Usuário insere CPF do paciente que deseja encontrar <br /> Usuário aperta o botão ‘ficha médica’ <br /> Usuário aperta o botão de solicitar permissão <br /> |
 | Restrição | | Internet Indisponível <br /> CPF inválido|
 
-### Cenário 10 - Conceder permissão
+## Cenário 10 - Conceder permissão
 
 |     |  |  |
 | --- || --------------------------- |
@@ -127,9 +136,3 @@ Um cenário é uma estratégia reconhecida para compreender as interações entr
 ## Referências
 Uso de cenário para especificação de requisitos. https://www.devmedia.com.br/uso-de-cenarios-para-especificacao-de-requisitos-de-qualidade-e-avaliacao-de-arquitetura-revista-engenharia-de-software-magazine-41/22528. Último acesso em: 15/02/2021.
 
-## Históricos de Revisões
-
-|    Data    | Versão |        Descrição        |                                                                         Autor(es)                                                                         |
-| :--------: | :----: | :---------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 14/02/2020 |  1.0   |  Criação do documento.  | [Arthur Paiva](https://github.com/ArthurPaivaT), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-| 15/02/2020 |  1.1   | Adição das referências. |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |

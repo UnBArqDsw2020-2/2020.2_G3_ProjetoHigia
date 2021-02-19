@@ -1,5 +1,12 @@
 # BPMN
 
+## Históricos de Revisões
+
+|    Data    | Versão |      Descrição       |                                                                                                                             Autor(es)                                                                                                                              |
+| :--------: | :----: | :------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 15/02/2021 |  0.1   |   Criação do BPMN    |                           [Danillo Souza](https://github.com/DanilloGS), [Fellipe Araujo](https://github.com/fellipe-araujo), [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo)                            |
+| 15/02/2021 |  1.0   | Criação do documento | [Danillo Souza](https://github.com/DanilloGS),[Fellipe Araujo](https://github.com/fellipe-araujo), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+
 BPMN (Business Process Model and Notation) é um conjunto de padrões gráficos e simbólicos utilizados para a representação e modelagem simplicada de processos. Por meio dessa representação, foi possível diagramar todo o processo das sprints do desenvolvimento do projeto Hígia.
 Como o grupo a princípio não utiliza papéis da metodologia Scrum, Project Owner, Scrum Master, Dev Ops, etc.., os agentes, de forma geral, foram o time inteiro trabalhando em equipe por meio de reuniões, integrantes que tiveram algumas participações individuais além de algumas duplas ou trios em pareamentos.
 ![BPMN](../assets/images/03-modelagem/bpmn/higiaBPMN.svg)
@@ -46,18 +53,18 @@ As issues no Github serão utilizadas para representar todas as tarefas que a eq
 
 ### Ferramentas utilizadas
 
-| Ferramenta                                                                                                | Descrição                                                                                                                       |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Git](https://git-scm.com/)                                                                               | Ferramenta utilizada para o controle e versionamento do código.                                                                 |
-| [Github](https://github.com/)                                                                             | Plataforma onde será hospedado o repositório do código da aplicação.                                                            |
+| Ferramenta                                                                                               | Descrição                                                                                                                       |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| [Git](https://git-scm.com/)                                                                              | Ferramenta utilizada para o controle e versionamento do código.                                                                 |
+| [Github](https://github.com/)                                                                            | Plataforma onde será hospedado o repositório do código da aplicação.                                                            |
 | [Zenhub](https://app.zenhub.com/workspaces/projeto-higia-60230d95feefb4001515bb04/board?repos=335453556) | Utilizado para gerenciar as issues do projeto.                                                                                  |
-| [Telegram](https://telegram.org/)                                                                         | Utilizado para comunicação rápida entre a equipe.                                                                               |
-| [Discord](https://discord.com)                                                                            | Utilizado para fazer chamadas de voz e vídeo entre o grupo durante as dailys, os pareamentos, as sprint reviews e os plannings. |
-| [MindMeister](https://www.mindmeister.com/pt/)                                                            | Utilizado para fazer os brainstormings e o mapa mental.                                                                         |
-| [StoryboardThat](https://www.storyboardthat.com/pt)                                                       | Ferramenta para criação dos storyboards.                                                                                        |
-| [Figma](https://www.figma.com/)                                                                           | Ferramenta utilizada na prototipação.                                                                                           |
-| [Bizagi modeler](bizagi.com)                                                                              | Software utilizado para criação dos diagramas.                                                                                  |
-| [Youtube](https://www.youtube.com/)                                                                       | Plataforma para postarmos os videos das apresentações                                                                           |
+| [Telegram](https://telegram.org/)                                                                        | Utilizado para comunicação rápida entre a equipe.                                                                               |
+| [Discord](https://discord.com)                                                                           | Utilizado para fazer chamadas de voz e vídeo entre o grupo durante as dailys, os pareamentos, as sprint reviews e os plannings. |
+| [MindMeister](https://www.mindmeister.com/pt/)                                                           | Utilizado para fazer os brainstormings e o mapa mental.                                                                         |
+| [StoryboardThat](https://www.storyboardthat.com/pt)                                                      | Ferramenta para criação dos storyboards.                                                                                        |
+| [Figma](https://www.figma.com/)                                                                          | Ferramenta utilizada na prototipação.                                                                                           |
+| [Bizagi modeler](bizagi.com)                                                                             | Software utilizado para criação dos diagramas.                                                                                  |
+| [Youtube](https://www.youtube.com/)                                                                      | Plataforma para postarmos os videos das apresentações                                                                           |
 
 ## Métricas de gerenciamento
 
@@ -74,10 +81,3 @@ O Cumulative Flow é um instrumento valioso para rastrear e prever projetos áge
 ### Programação pareada
 
 É uma técnica de desenvolvimento de software ágil em que dois programadores trabalham juntos com o intuito de produzir uma única feature. Assim se evita distrações e o desenvolvimento é mais produtivo.
-
-## Históricos de Revisões
-
-|    Data    | Versão |      Descrição       |                                                                                                                           Autor(es)                                                                                                                           |
-| :--------: | :----: | :------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 15/02/2021 |  0.1   |   Criação do BPMN    |                         [Danillo Souza](https://github.com/DanilloGS), [Fellipe Araujo](https://github.com/fellipe-araujo), [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo)                         |
-| 15/02/2021 |  1.0   | Criação do documento |[Danillo Souza](https://github.com/DanilloGS),[Fellipe Araujo](https://github.com/fellipe-araujo), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |

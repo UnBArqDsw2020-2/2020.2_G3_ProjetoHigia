@@ -1,5 +1,14 @@
 # Requisitos Elicitados
 
+
+## Históricos de Revisões
+
+|    Data    | Versão |                   Descrição                   | Autor(es)                                                                                                                                         |
+| :--------: | :----: | :-------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 14/02/2021 |  1.0   | Criação do documento de requisitos elicitados | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+
+## Introdução
+
 Neste documento são apresentados os requisitos funcionais (RF) e não-funcionais (RNF), elicitados através das técnicas de Brainstorming, Personas, Questionário e Storyboard.
 
 ### Legenda
@@ -53,8 +62,3 @@ Siglas da coluna "Backward From":
 - Projeto Stock: https://unbarqdsw.github.io/2020.1_G12_Stock/#/Elicitation/RequisitosElicitados. Ultimo acesso em: 14/02/2021.
 - 10 heuristicas de Nielsen: https://brasil.uxdesign.cc/10-heurísticas-de-nielsen-para-o-design-de-interface-58d782821840. Ultimo acesso em: 14/02/2021.
 
-## Históricos de Revisões
-
-|    Data    | Versão |                   Descrição                   | Autor(es)                                                                                                                                         |
-| :--------: | :----: | :-------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 14/02/2021 |  1.0   | Criação do documento de requisitos elicitados | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo) |

@@ -1,5 +1,13 @@
 # Especificação Suplementar
 
+## Históricos de Revisões
+
+|  Data  | Versão | Descrição | Autor(es) |
+| :----: | :----: | :-------: | :-------: |
+| 16/02/2021 | 1.0 | Criação da Especificação Suplementar | [Fellipe Araujo](https://github.com/fellipe-araujo) |
+
+## introdução
+
 <p style="text-align: justify;"> &emsp;&emsp;
 Uma especificação suplementar lista os requisitos não-funcionais do sistema. Junto com outras técnicas de modelagem e elicitação, é possível traçar um conjunto completo de requisitos do sistema. O projeto Hígia é um aplicativo de acesso público, que visa o fácil armazenamento e controle de documentos médicos (saúde), além de inovar o compartilhamento de informações e arquivos entre os pacientes e médicos. Logo abaixo, é possível ver os requisitos não-funcionais elicitados.
 </p>
@@ -100,8 +108,3 @@ Como o aplicativo será acessível em dispositivos Android e IOS, é importante 
 Requisitos para Sistemas Autoadaptativos](http://dspace.unipampa.edu.br/bitstream/riu/875/1/Uma%20ferramenta%20de%20apoio%20%C3%A0%20especifica%C3%A7%C3%A3o%20de%20requisitos%20para%20sistemas%20autoadaptativos.pdf
 ) Acesso em: 16 de Fevereiro, 2021.
 
-## Históricos de Revisões
-
-|  Data  | Versão | Descrição | Autor(es) |
-| :----: | :----: | :-------: | :-------: |
-| 16/02/2021 | 1.0 | Criação da Especificação Suplementar | [Fellipe Araujo](https://github.com/fellipe-araujo) |
