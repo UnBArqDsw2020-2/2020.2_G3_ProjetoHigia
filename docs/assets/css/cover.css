@@ -1,0 +1,33 @@
+.cover {
+    background: white !important;
+}
+
+.cover.show {
+    border-bottom: 0.2rem solid #8f1b1b;
+}
+
+.cover-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.cover-main h1 {
+    color: white !important;
+    font-size: 2rem !important;
+}
+
+.cover-main p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+pre::after {
+    display: none !important;
+}
+
+.cover-main img {
+    max-width: 65%;
+}
