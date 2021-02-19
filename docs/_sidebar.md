@@ -28,3 +28,5 @@
   - [Léxicos](./modelagem/lexicos.md)
   - [Cenários](./modelagem/cenarios.md)
   - [Backlog](./modelagem/backlog.md)
+- Apresentações
+  - [Entrega-01] (./videos/entrega1.md)
