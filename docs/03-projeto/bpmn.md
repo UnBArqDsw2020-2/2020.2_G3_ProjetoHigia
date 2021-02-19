@@ -7,6 +7,8 @@
 | 15/02/2021 |  0.1   |   Criação do BPMN    |                           [Danillo Souza](https://github.com/DanilloGS), [Fellipe Araujo](https://github.com/fellipe-araujo), [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo)                            |
 | 15/02/2021 |  1.0   | Criação do documento | [Danillo Souza](https://github.com/DanilloGS),[Fellipe Araujo](https://github.com/fellipe-araujo), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 
+## Introdução
+
 BPMN (Business Process Model and Notation) é um conjunto de padrões gráficos e simbólicos utilizados para a representação e modelagem simplicada de processos. Por meio dessa representação, foi possível diagramar todo o processo das sprints do desenvolvimento do projeto Hígia.
 Como o grupo a princípio não utiliza papéis da metodologia Scrum, Project Owner, Scrum Master, Dev Ops, etc.., os agentes, de forma geral, foram o time inteiro trabalhando em equipe por meio de reuniões, integrantes que tiveram algumas participações individuais além de algumas duplas ou trios em pareamentos.
 ![BPMN](../assets/images/03-modelagem/bpmn/higiaBPMN.svg)

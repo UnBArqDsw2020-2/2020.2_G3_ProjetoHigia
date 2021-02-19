@@ -8,7 +8,7 @@
 | 13/02/2021 |  0.1   | Realização do backlog por meio de brainstorm |               Todos os integrantes                |
 | 15/02/2021 |  1.0   |             Criação do documento             | [Victor Amaral](https://github.com/VictorAmaralC) |
 
-## introdução
+## Introdução
 
 O Product Backlog é uma lista de funcionaidades desejadas de um produto, ou seja, os requisitos que um cliente espera receber ao final do projeto, descrito com sua própria linguagem. Ele cresce e muda à medida que se aprende mais sobre o produto e seus usuários.
 
