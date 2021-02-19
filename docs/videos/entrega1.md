@@ -12,6 +12,6 @@ Devido a pandemia causada pelo novo coronavírus, SARS-CoV2, a disciplina foi of
 
 # Apresentacao
 
-[Desing Sprint](https://www.youtube.com/watch?v=1i1FSKLa3sw&feature=youtu.be)
+[Módulo Projeto Não Orientado a Abordagens Específicas](https://www.youtube.com/watch?v=1i1FSKLa3sw&feature=youtu.be)
 
-[BPMN](https://www.youtube.com/watch?v=WFZWljNopaQ&feature=youtu.be)
+[Módulo Processos/Metodologias/Abordagens](https://www.youtube.com/watch?v=WFZWljNopaQ&feature=youtu.be)
