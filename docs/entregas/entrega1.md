@@ -1,5 +1,8 @@
 # Entrega 1
 
+### Apresentação
+- [Videos](./videos/entrega1.md)
+
 ### Projeto
 - [BPMN](./03-projeto/bpmn.md)
 - [Estimativa](./03-projeto/estimativas.md)
@@ -33,6 +36,3 @@
 - [Léxicos](./02-requisitos/modelagem/lexicos.md)
 
 
-### Apresentação
-
-- [Video](./videos/entrega1.md)
