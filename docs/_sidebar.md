@@ -31,6 +31,6 @@
     - [Brainstorming](../02-requisitos/elicitacao/brainstorming.md)
     - [Diagrama de Ishikawa](./02-requisitos/elicitacao/ishikawa.md)
 - Modelagem
-  - [Léxicos](./modelagem/lexicos.md)
-  - [Cenários](./modelagem/cenarios.md)
-  - [Backlog](./modelagem/backlog.md)
+  - [Léxicos](./02-requisitos/modelagem/lexicos.md)
+  - [Cenários](./02-requisitos/modelagem/cenarios.md)
+  - [Backlog](./02-requisitos/modelagem/backlog.md)
