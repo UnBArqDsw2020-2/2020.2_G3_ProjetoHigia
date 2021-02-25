@@ -34,3 +34,5 @@
   - [Léxicos](./02-requisitos/modelagem/lexicos.md)
   - [Cenários](./02-requisitos/modelagem/cenarios.md)
   - [Backlog](./02-requisitos/modelagem/backlog.md)
+- Diagramas UML
+  - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
