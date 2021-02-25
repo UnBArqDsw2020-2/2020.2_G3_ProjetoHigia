@@ -28,8 +28,6 @@
     - [Storyboard](./02-requisitos/elicitacao/storyboard.md)
     - [Questionário](./02-requisitos/elicitacao/questionario.md)
     - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
-    - [Brainstorming](../02-requisitos/elicitacao/brainstorming.md)
-    - [Diagrama de Ishikawa](./02-requisitos/elicitacao/ishikawa.md)
 - Modelagem
   - [Léxicos](./02-requisitos/modelagem/lexicos.md)
   - [Cenários](./02-requisitos/modelagem/cenarios.md)
