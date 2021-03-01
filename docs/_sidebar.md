@@ -36,3 +36,4 @@
   - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
   - [Estados](./04-diagramasUML/diagramaEstado.md)
   - [Atividade](./04-diagramasUML/diagramaAtividade.md)
+  - [Classe](./04-diagramasUML/diagramaClasse.md)
