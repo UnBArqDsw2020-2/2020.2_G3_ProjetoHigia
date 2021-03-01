@@ -38,3 +38,4 @@
   - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
   - [Estados](./04-diagramasUML/diagramaEstado.md) 
   - [Componentes](./04-diagramasUML/diagramaComponentes.md)
+  - [Pacotes](./04-diagramasUML/diagramaPacote.md)
