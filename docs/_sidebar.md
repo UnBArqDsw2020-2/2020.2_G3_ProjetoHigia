@@ -33,7 +33,7 @@
   - [Cenários](./02-requisitos/modelagem/cenarios.md)
   - [Backlog](./02-requisitos/modelagem/backlog.md)
 - Diagramas UML
-  - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
-  - [Estados](./04-diagramasUML/diagramaEstado.md)
   - [Atividade](./04-diagramasUML/diagramaAtividade.md)
   - [Classe](./04-diagramasUML/diagramaClasse.md)
+  - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
+  - [Estados](./04-diagramasUML/diagramaEstado.md)
