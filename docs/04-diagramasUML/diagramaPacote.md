@@ -1,5 +1,12 @@
 # Diagrama de Pacotes
 
+## Histórico de Revisões
+
+|  Data  | Versão | Descrição | Autor(es) |
+| :----: | :----: | :-------: | :-------: |
+| 27/02/2021 | 0.1 | Elaboração da versão V.0 dos diagramas mobile e backend | [Fellipe Araujo](https://github.com/fellipe-araujo) |
+| 01/03/2021 | 0.2 | Criação do Documento | [Fellipe Araujo](https://github.com/fellipe-araujo) |
+
 ## Introdução
 
 <p style="text-align: justify;"> &emsp;&emsp;
