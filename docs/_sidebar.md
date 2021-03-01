@@ -34,3 +34,4 @@
   - [Backlog](./02-requisitos/modelagem/backlog.md)
 - Diagramas UML
   - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
+  - [Atividade](./04-diagramasUML/diagramaAtividade.md)
