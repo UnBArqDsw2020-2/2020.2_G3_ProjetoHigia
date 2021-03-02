@@ -7,6 +7,7 @@
 | 25/02/2021 |  0.1   |           Criação do documento           | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
 | 25/02/2021 |  1.0   | Criação da primeira versão dos diagramas | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
 | 02/03/2021 |  1.1   | Alteração do diagrama de editar perfil médico | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 02/03/2021 |  1.2   | Alteração do diagrama de buscar paciente e permissão de acesso| [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
 
 ## Introdução
 
@@ -18,7 +19,15 @@ Após revisões decidimos mudar alguns aspectos dos diagramas de comunicação
 
 ### Editar perfil médico
 
-![editProfile](../assets/images/04-diagramasUML/diagramaComunicacao/editProfileV1.svg)
+![editProfileV1](../assets/images/04-diagramasUML/diagramaComunicacao/editProfileV1.svg)
+
+### Buscar Paciente V1
+
+![searchPatientV1](../assets/images/04-diagramasUML/diagramaComunicacao/searchPatientV1.svg)
+
+### Permissão de acesso V1
+
+![allowAccessV1](../assets/images/04-diagramasUML/diagramaComunicacao/allowAccessV1.svg)
 
 ## Diagramas V0
 
