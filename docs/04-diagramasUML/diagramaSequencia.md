@@ -35,6 +35,6 @@ O diagrama de sequência é um diagrama de interação dinâmica que serve para 
 
 ## Referências
 
-[1] **Stock**, Disponível em: <<https://unbarqdsw.github.io/2020.1_G12_Stock/#/Modeling/Diagrams/Sequencia>>, Último acesso: 02 de fevereiro, 2021.
+[1] **Stock**, Disponível em: <<https://unbarqdsw.github.io/2020.1_G12_Stock/#/Modeling/Diagrams/Sequencia>>, Último acesso: 02 de março, 2021.
 
-[2] **Tutorial do Diagrama de Sequência: Guia completo com exemplos**, Disponível em:<<https://creately.com/blog/pt/diagrama/tutorial-do-diagrama-de-sequencia/>>, Último acesso: 02 de fevereiro, 2021.
+[2] **Tutorial do Diagrama de Sequência: Guia completo com exemplos**, Disponível em:<<https://creately.com/blog/pt/diagrama/tutorial-do-diagrama-de-sequencia/>>, Último acesso: 02 de março, 2021.

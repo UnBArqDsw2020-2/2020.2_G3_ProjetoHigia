@@ -51,4 +51,4 @@ Após revisões decidimos mudar alguns aspectos dos diagramas de comunicação
 
 [1] **UML Communication Diagrams Overview**, Disponível em: <https://www.uml-diagrams.org/communication-diagrams.html> Acesso em: 25 de fevereiro, 2021.
 
-[2] **Stock**, Disponível em: <<https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Evaluation>>, Último acesso: 15 de fevereiro, 2021.
+[2] **Stock**, Disponível em: <<https://unbarqdsw.github.io/2020.1_G12_Stock/#/Modeling/Diagrams/Comunicacao>>, Último acesso: 25 de fevereiro, 2021.

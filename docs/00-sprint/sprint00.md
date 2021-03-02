@@ -1,7 +1,7 @@
-# Sprint 0
+# Sprint 00
 
 - **Data de início da sprint**: 09/02/2020
-- **Data de início do fim da sprint**: 23/02/2020
+- **Data do fim da sprint**: 19/02/2020
 - **Horário da Planning**:
   - **Início**: 19:00
   - **Fim**: 21:00
