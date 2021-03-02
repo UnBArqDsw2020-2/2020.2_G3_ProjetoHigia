@@ -32,11 +32,13 @@
   - [Léxicos](./02-requisitos/modelagem/lexicos.md)
   - [Cenários](./02-requisitos/modelagem/cenarios.md)
   - [Backlog](./02-requisitos/modelagem/backlog.md)
-- Diagramas UML
-  - [Atividade](./04-diagramasUML/diagramaAtividade.md)
-  - [Classe](./04-diagramasUML/diagramaClasse.md)
-  - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
-  - [Estados](./04-diagramasUML/diagramaEstado.md) 
-  - [Componentes](./04-diagramasUML/diagramaComponentes.md)
-  - [Pacotes](./04-diagramasUML/diagramaPacote.md)
-  - [Sequência](./04-diagramasUML/diagramaSequencia.md)
+- Desenho de Software (Modelagem)
+  - Notação UML - Diagramas Estáticos
+    - [Pacotes](./04-diagramasUML/diagramaPacote.md)
+    - [Componentes](./04-diagramasUML/diagramaComponentes.md)
+    - [Classe](./04-diagramasUML/diagramaClasse.md)
+  - Notação UML - Diagramas Dinâmicos
+    - [Sequência](./04-diagramasUML/diagramaSequencia.md)
+    - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
+    - [Atividade](./04-diagramasUML/diagramaAtividade.md)
+    - [Estados](./04-diagramasUML/diagramaEstado.md) 
