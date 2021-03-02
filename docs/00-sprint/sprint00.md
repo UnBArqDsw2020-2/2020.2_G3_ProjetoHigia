@@ -44,3 +44,5 @@ Foi adicionado também o documento [BPMN](/03-projeto/bpmn.md), porém não foi 
 ### Resultado
 
 Todas as issues propostas ao decorrer da sprint foram realizadas. Não houve dívida técnica.
+
+![culmutativeFlow00](../assets/images/00-sprint/culmutativeFlow00.png)

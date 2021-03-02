@@ -24,3 +24,5 @@
 
 ### Resultado
 Todas as issues propostas ao decorrer da sprint foram realizadas e todos os documentos foram revisados . Não houve dívida técnica.
+
+![culmutativeFlow01](../assets/images/00-sprint/culmutativeFlow01.png)
