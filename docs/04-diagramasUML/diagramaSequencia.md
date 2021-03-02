@@ -20,6 +20,12 @@
 
 ![fileStorage](../assets/images/04-diagramasUML/diagramaSequencia/FileStorage.svg)
 
+
+### Buscar paciente
+
+![searchPatient](../assets/images/04-diagramasUML/diagramaSequencia/SearchPatient.svg)
+
+
 ## Referências
 
 [1] **Stock**, Disponível em: <<https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Evaluation>>, Último acesso: 15 de fevereiro, 2021.
