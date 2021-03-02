@@ -15,6 +15,11 @@
 
 ![editProfile](../assets/images/04-diagramasUML/diagramaSequencia/EditProfile.svg)
 
+
+### Gerenciamento de arquivos
+
+![fileStorage](../assets/images/04-diagramasUML/diagramaSequencia/FileStorage.svg)
+
 ## Referências
 
 [1] **Stock**, Disponível em: <<https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Evaluation>>, Último acesso: 15 de fevereiro, 2021.
