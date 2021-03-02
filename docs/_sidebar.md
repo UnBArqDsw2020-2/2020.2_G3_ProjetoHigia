@@ -10,6 +10,7 @@
   - [Estimativa](./03-projeto/estimativas.md)
 - Sprints
   - [Sprint 0](./00-sprint/sprint0)
+  - [Sprint 1](./00-sprint/sprint01)
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
