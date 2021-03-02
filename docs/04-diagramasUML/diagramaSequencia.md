@@ -25,6 +25,10 @@
 
 ![searchPatient](../assets/images/04-diagramasUML/diagramaSequencia/SearchPatient.svg)
 
+### Permissão de acesso
+
+![allowAccess](../assets/images/04-diagramasUML/diagramaSequencia/AllowAccess.svg)
+
 
 ## Referências
 
