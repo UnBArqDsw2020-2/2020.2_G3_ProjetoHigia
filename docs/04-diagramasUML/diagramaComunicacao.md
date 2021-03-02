@@ -6,12 +6,21 @@
 | :--------: | :----: | :--------------------------------------: | :--------------------------------------------------------------------------------------------------: |
 | 25/02/2021 |  0.1   |           Criação do documento           | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
 | 25/02/2021 |  1.0   | Criação da primeira versão dos diagramas | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 02/03/2021 |  1.1   | Alteração do diagrama de editar perfil médico | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
 
 ## Introdução
 
 O diagrama de comunicação, também conhecido como diagrama de colaboração, é um diagrama UML, esse diagrama serve para mostrar o funcionamento de diversas funcionalidades da aplicação via demonstração da interação entre os objetos e suas partes e o comportamento de diferentes fluxos. É equivalente ao diagrama de sequência mas sem os mecanismos de estrutura.
 
-## Diagrama
+## Diagramas V1
+
+Após revisões decidimos mudar alguns aspectos dos diagramas de comunicação
+
+### Editar perfil médico
+
+![editProfile](../assets/images/04-diagramasUML/diagramaComunicacao/editProfileV1.svg)
+
+## Diagramas V0
 
 ### Editar perfil médico
 
