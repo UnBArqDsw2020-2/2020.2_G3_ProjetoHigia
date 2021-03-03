@@ -33,7 +33,9 @@
 
 - [Léxicos](./02-requisitos/modelagem/lexicos.md)
 - [Cenários](./02-requisitos/modelagem/cenarios.md)
+- [Especificação Suplementar](./02-requisitos/modelagem/especificacaoSuplementar.md)
 - [Backlog](./02-requisitos/modelagem/backlog.md)
+
 
 #### Projeto
 - [Estimativa](./03-projeto/estimativas.md)
@@ -45,8 +47,9 @@
 ### Iniciativas Extras
 
 - [Sprint 0](./00-sprint/sprint00.md)
-- [Backlog](./02-requisitos/modelagem/backlog.md)
 - [Cenários](./02-requisitos/modelagem/cenarios.md)
+- [Especificação Suplementar](./02-requisitos/modelagem/especificacaoSuplementar.md)
+- [Backlog](./02-requisitos/modelagem/backlog.md)
 
   
 

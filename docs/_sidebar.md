@@ -32,6 +32,7 @@
   - Modelagem
     - [Léxicos](./02-requisitos/modelagem/lexicos.md)
     - [Cenários](./02-requisitos/modelagem/cenarios.md)
+    - [Especificação Suplementar](./02-requisitos/modelagem/especificacaoSuplementar.md)
     - [Backlog](./02-requisitos/modelagem/backlog.md)
 - Desenho de Software (Modelagem)
   - Notação UML - Diagramas Estáticos
