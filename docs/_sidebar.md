@@ -9,7 +9,7 @@
   - [BPMN](./03-projeto/bpmn.md)
   - [Estimativa](./03-projeto/estimativas.md)
 - Sprints
-  - [Sprint 0](./00-sprint/sprint0)
+  - [Sprint 0](./00-sprint/sprint00)
   - [Sprint 1](./00-sprint/sprint01)
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
@@ -29,10 +29,10 @@
     - [Storyboard](./02-requisitos/elicitacao/storyboard.md)
     - [Questionário](./02-requisitos/elicitacao/questionario.md)
     - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
-- Modelagem
-  - [Léxicos](./02-requisitos/modelagem/lexicos.md)
-  - [Cenários](./02-requisitos/modelagem/cenarios.md)
-  - [Backlog](./02-requisitos/modelagem/backlog.md)
+  - Modelagem
+    - [Léxicos](./02-requisitos/modelagem/lexicos.md)
+    - [Cenários](./02-requisitos/modelagem/cenarios.md)
+    - [Backlog](./02-requisitos/modelagem/backlog.md)
 - Desenho de Software (Modelagem)
   - Notação UML - Diagramas Estáticos
     - [Pacotes](./04-diagramasUML/diagramaPacote.md)
