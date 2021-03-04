@@ -7,8 +7,9 @@
   - [Entrega 01](./videos/entrega1.md)
   - [Entrega 02](./videos/entrega2.md)
 - Projeto
+  - [Metodologias](./03-projeto/metodologias.md)
+  - [Estimativas](./03-projeto/estimativas.md)
   - [BPMN](./03-projeto/bpmn.md)
-  - [Estimativa](./03-projeto/estimativas.md)
 - Sprints
   - [Sprint 0](./00-sprint/sprint00)
   - [Sprint 1](./00-sprint/sprint01)
