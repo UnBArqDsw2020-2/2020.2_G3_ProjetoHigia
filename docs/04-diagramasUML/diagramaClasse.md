@@ -19,7 +19,7 @@ Os diagramas foram produzidos utilizando a ferramenta Draw.io. Nele há todas as
 ### V.1
 Após uma revisão foram feitas algumas alterações de nomenclatura.
 
-![Classe](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_V1.jpg)
+![Classev1](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v1.jpg)
 
 ### V.0
 
@@ -29,4 +29,4 @@ Após uma revisão foram feitas algumas alterações de nomenclatura.
 
 [1] **Oque e um diagrama de Classe UML**, Disponível em: <https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml> Acesso em: 01 de março, 2021.
 
-[2] **Stock**, Disponível em: <<https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Evaluation>>, Último acesso: 01 de março, 2021.
+[2] **Stock**, Disponível em: <<https://unbarqdsw.github.io/2020.1_G12_Stock/#/Modeling/Diagrams/Classes>>, Último acesso: 01 de março, 2021.
