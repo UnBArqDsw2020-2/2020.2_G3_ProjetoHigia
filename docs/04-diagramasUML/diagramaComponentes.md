@@ -18,7 +18,7 @@ Diagrama de componentes descreve como os componentes são conectados para formar
 
 Para elaborar o diagrama de componentes, tentamos identificar a comunicação entre os componentes do sistema durante os processos da aplicação e utilizamos o draw.io para representar eles graficamente.
 ## Diagrama de Componentes(V.1)
-![V1](../assets/images/04-diagramasUML/diagramaComponentes/diagramaComponentesv1.png)
+![V1](../assets/images/04-diagramasUML/diagramaComponentes/diagramaComponentesV1.png)
 ## Diagrama de Componentes (V.0)
 ![V0](../assets/images/04-diagramasUML/diagramaComponentes/diagramaComponentes.jpg)
 
