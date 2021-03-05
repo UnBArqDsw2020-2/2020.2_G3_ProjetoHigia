@@ -1,33 +1,36 @@
 # Diagrama de Atividade
 
-Diagramas de atividade são considerados diagramas de comportamento, pois descrevem o que é necessário acontecer no sistema sendo modelado. Eles ajudam a unir as pessoas das áreas de negócios e de desenvolvimento de uma organização para entender o mesmo processo e comportamento.
-
 ## Histórico de versionamento
 
 |    Data    | Versão |                Descrição                 |                                              Autor(es)                                               |
 | :--------: | :----: | :--------------------------------------: | :--------------------------------------------------------------------------------------------------: |
 | 26/02/2021 |  0.1   |           Criação do documento           | [Victor Amaral](https://github.com/VictorAmaralc)|
 | 26/02/2021 |  1.0   | Criação da primeira versão dos diagramas | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Luiz](https://github.com/ithaloazevedo) e [Victor Amaral](https://github.com/VictorAmaralc) |
+| 05/03/2021 |  1.1   | Revisão do documento | [Arthur Paiva](https://github.com/ArthurPaivaT), [Fellipe Araujo](https://github.com/fellipe-araujo) e [Victor Amaral](https://github.com/VictorAmaralc) |
 
 ## Introdução
 
-Os diagramas foram produzidos pelo Draw.io. Eles descrevem ações consideradas essenciais para o nosso sistema, detalhadas em fluxos que podem se dividir entre raias de responsabilidade.
+Diagramas de atividade são considerados diagramas de comportamento, pois descrevem o que é necessário acontecer no sistema sendo modelado. Eles ajudam a unir as pessoas das áreas de negócios e de desenvolvimento de uma organização para entender o mesmo processo e comportamento.
+
+## Metodologia
+
+Os diagramas foram produzidos utilizando a ferramenta Draw.io. Eles descrevem ações consideradas essenciais para o nosso sistema, detalhadas em fluxos que podem se dividir entre raias de responsabilidade.
 
 ## Diagrama
 
-### Autenticação
+### Autenticação (V.0)
 
 ![autenticacao](../assets/images/04-diagramasUML/diagramaAtividade/Autenticacao.jpg)
 
-## Gerenciar Perfil
+### Gerenciar Perfil (V.0)
 
 ![gerenciarPerfil](../assets/images/04-diagramasUML/diagramaAtividade/gerenciarPerfil.jpg)
 
-## Gerenciar Arquivos
+### Gerenciar Arquivos (V.0)
 
 ![gerenciarArquivo](../assets/images/04-diagramasUML/diagramaAtividade/gerenciarArquivo.jpg)
 
-## Busca
+### Busca (V.0)
 
 ![busca](../assets/images/04-diagramasUML/diagramaAtividade/Busca.jpg)
 
