@@ -36,12 +36,12 @@
     - [Cenários](./02-requisitos/modelagem/cenarios.md)
     - [Especificação Suplementar](./02-requisitos/modelagem/especificacaoSuplementar.md)
     - [Backlog](./02-requisitos/modelagem/backlog.md)
-- Desenho de Software (Modelagem)
-  - Notação UML - Diagramas Estáticos
+- Diagramas UML
+  - Diagramas Estáticos
     - [Pacotes](./04-diagramasUML/diagramaPacote.md)
     - [Componentes](./04-diagramasUML/diagramaComponentes.md)
     - [Classe](./04-diagramasUML/diagramaClasse.md)
-  - Notação UML - Diagramas Dinâmicos
+  - Diagramas Dinâmicos
     - [Sequência](./04-diagramasUML/diagramaSequencia.md)
     - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
     - [Atividade](./04-diagramasUML/diagramaAtividade.md)
