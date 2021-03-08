@@ -5,11 +5,14 @@
 - [Home](README.md)
 - Apresentações
   - [Entrega 01](./videos/entrega1.md)
+  - [Entrega 02](./videos/entrega2.md)
 - Projeto
+  - [Metodologias](./03-projeto/metodologias.md)
+  - [Estimativas](./03-projeto/estimativas.md)
   - [BPMN](./03-projeto/bpmn.md)
-  - [Estimativa](./03-projeto/estimativas.md)
 - Sprints
-  - [Sprint 0](./00-sprint/sprint0)
+  - [Sprint 0](./00-sprint/sprint00)
+  - [Sprint 1](./00-sprint/sprint01)
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
@@ -28,9 +31,18 @@
     - [Storyboard](./02-requisitos/elicitacao/storyboard.md)
     - [Questionário](./02-requisitos/elicitacao/questionario.md)
     - [Requisitos Elicitados](./02-requisitos/elicitacao/requisitosElicitados.md)
-    - [Brainstorming](../02-requisitos/elicitacao/brainstorming.md)
-    - [Diagrama de Ishikawa](./02-requisitos/elicitacao/ishikawa.md)
-- Modelagem
-  - [Léxicos](./02-requisitos/modelagem/lexicos.md)
-  - [Cenários](./02-requisitos/modelagem/cenarios.md)
-  - [Backlog](./02-requisitos/modelagem/backlog.md)
+  - Modelagem
+    - [Léxicos](./02-requisitos/modelagem/lexicos.md)
+    - [Cenários](./02-requisitos/modelagem/cenarios.md)
+    - [Especificação Suplementar](./02-requisitos/modelagem/especificacaoSuplementar.md)
+    - [Backlog](./02-requisitos/modelagem/backlog.md)
+- Diagramas UML
+  - Diagramas Estáticos
+    - [Pacotes](./04-diagramasUML/diagramaPacote.md)
+    - [Componentes](./04-diagramasUML/diagramaComponentes.md)
+    - [Classe](./04-diagramasUML/diagramaClasse.md)
+  - Diagramas Dinâmicos
+    - [Sequência](./04-diagramasUML/diagramaSequencia.md)
+    - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
+    - [Atividade](./04-diagramasUML/diagramaAtividade.md)
+    - [Estados](./04-diagramasUML/diagramaEstado.md) 
