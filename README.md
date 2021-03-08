@@ -49,11 +49,21 @@ O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicaçã
 
 ## Screenshots Segunda Entrega <<FOCO: DSW(Modelagem)>>
 
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Segunda Entrega.
+### Backlog
+
+![Backlog](./assets/primeiraEntrega/backlog.png)
+
+### Diagrama de classes
+
+![Diagrama de Classes](./assets/primeiraEntrega/diagramaClasse.png)
+
+### Diagrama
+
+![Diagrama de Atividade](./assets/primeiraEntrega/diagramaAtividade.png)
 
 ## Vídeo(s) Segunda Entrega <<FOCO: DSW(Modelagem)>>
 
-Adicione o(s)s vídeo(s) da Segunda Entrega.
+[Módulo Projeto Orientado a Abordagens Tradicionais](https://unbarqdsw2020-2.github.io/2020.2_G3_ProjetoHigia/#/./videos/entrega2)
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 
