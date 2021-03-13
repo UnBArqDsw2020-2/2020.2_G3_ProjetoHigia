@@ -7,7 +7,7 @@ const Login = () => {
 
   return (
     <View style={styles.container}>
-      <Button title="Login" onPress={signIn} />
+      <Button title="Login" onPress={() => signIn('teste@gmail.com', '123456')} />
     </View>
   );
 };

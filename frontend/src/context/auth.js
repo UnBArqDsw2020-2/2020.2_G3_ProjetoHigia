@@ -1,13 +1,14 @@
 import React, { useContext, createContext, useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import * as auth from '../services/auth';
+import firebase from 'firebase';
 import api from '../services/api';
+import apiKeys from '../utils/firebaseKeys.js';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function loadStoragedData() {
@@ -24,17 +25,33 @@ export const AuthProvider = ({ children }) => {
     loadStoragedData();
   }, []);
 
-  async function signIn() {
+  async function signIn(email, password) {
     setLoading(true);
 
-    const response = await auth.signIn();
+    console.log(apiKeys)
 
-    setUser(response.user);
+    try {
+      const response = await firebase
+        .auth()
+        .signInWithEmailAndPassword(email, password);
 
-    api.defaults.headers.Authorization = `Bearer ${response.token}`;
+      setUser(response.user.providerData[0]);
 
-    await AsyncStorage.setItem('@RNAuth:user', JSON.stringify(response.user));
-    await AsyncStorage.setItem('@RNAuth:token', response.token);
+      api.defaults.headers.Authorization = `Bearer ${JSON.stringify(
+        response.user.toJSON().stsTokenManager.accessToken
+      )}`;
+
+      await AsyncStorage.setItem(
+        '@RNAuth:user',
+        JSON.stringify(response.user.providerData[0])
+      );
+      await AsyncStorage.setItem(
+        '@RNAuth:token',
+        JSON.stringify(response.user.toJSON().stsTokenManager.accessToken)
+      );
+    } catch (err) {
+      console.log(err);
+    }
 
     setLoading(false);
   }
