@@ -2,7 +2,6 @@ import React, { useContext, createContext, useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
 import firebase from 'firebase';
 import api from '../services/api';
-import apiKeys from '../utils/firebaseKeys.js';
 
 const AuthContext = createContext();
 
@@ -27,8 +26,6 @@ export const AuthProvider = ({ children }) => {
 
   async function signIn(email, password) {
     setLoading(true);
-
-    console.log(apiKeys)
 
     try {
       const response = await firebase
