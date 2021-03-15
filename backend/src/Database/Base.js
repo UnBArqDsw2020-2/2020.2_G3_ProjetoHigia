@@ -1,4 +1,4 @@
-class Base {
+export default class Base {
 	constructor(collectionType) {
 		this.collectionType = collectionType;
 	}
@@ -6,8 +6,8 @@ class Base {
 		const res = await this.collectionType.create(data);
 		return res;
 	}
-	async update(data) {
-		const res = await this.collectionType.update(data);
+	async updateOne(data, update) {
+		const res = await this.collectionType.updateOne(data, update);
 		return res;
 	}
 	async findOne(data) {
@@ -19,5 +19,3 @@ class Base {
 		return res;
 	}
 }
-
-module.exports = Base;

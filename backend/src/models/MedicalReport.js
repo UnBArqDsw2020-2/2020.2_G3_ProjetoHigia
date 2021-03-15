@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const MedicalReportSchema = new mongoose.Schema({
 	cpf: { type: String, required: true, unique: true },
@@ -10,4 +10,4 @@ const MedicalReportSchema = new mongoose.Schema({
 	exams: [String],
 });
 
-module.exports = mongoose.model("MedicalReport", MedicalReportSchema);
+export default mongoose.model("MedicalReport", MedicalReportSchema);
