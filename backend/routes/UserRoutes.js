@@ -1,15 +1,11 @@
 const express = require("../config/customExpress");
-const User = require("../models/User");
+const UserController = require("../controller/UserController");
+const isAuthenticated = require("../middleware/firebaseAuth");
 
 const routes = express();
 
-routes.get("/", (req, res) => {
-	return res.send("Teste");
-});
-
-routes.post("/", async (req, res) => {
-	await User.create(req.body);
-	return res.send("Terminou");
-});
+routes.post("/", () => UserController.createUser);
+routes.get("/user/:id", isAuthenticated, () => UserController.findOneUser);
+routes.put("/user/:id", isAuthenticated, () => UserController.updateUser);
 
 module.exports = routes;
