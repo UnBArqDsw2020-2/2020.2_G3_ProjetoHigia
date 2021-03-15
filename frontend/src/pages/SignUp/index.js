@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Platform} from 'react-native';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
-import { css } from '../assets/CSS/Css'
+import {css} from '../../../assets/CSS/Css';
 
 export default function SignUp(props){
     const navigation = useNavigation();
@@ -16,10 +16,10 @@ export default function SignUp(props){
                 
                 <View style={css.container3}>
                     <TouchableOpacity style={css.cadastroButton}>
-                        <Text style={css.buttonText} onPress={()=> navigation.navigate('CadastroMedico')}>Médico</Text>
+                        <Text style={css.buttonText} onPress={()=> navigation.navigate('SignUpDoctor')}>Médico</Text>
                     </TouchableOpacity>
                     <TouchableOpacity style={css.cadastroButton}>
-                        <Text style={css.buttonText} onPress={()=> navigation.navigate('CadastroPaciente')}>Paciente</Text>
+                        <Text style={css.buttonText} onPress={()=> navigation.navigate('SignUpPatient')}>Paciente</Text>
                     </TouchableOpacity>
                 </View>
             </View>

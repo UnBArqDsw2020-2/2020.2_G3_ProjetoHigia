@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, Platform, Image} from 'react-native';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
-import { css } from '../assets/CSS/Css'
+import {css} from '../../../assets/CSS/Css';
 
 export default function SignUpEmergency(props){
     return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Platform} from 'react-native';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
-import { css } from '../assets/CSS/Css'
+import {css} from '../../../assets/CSS/Css';
 
 export default function SignUpPatient(props){
     const navigation = useNavigation();
