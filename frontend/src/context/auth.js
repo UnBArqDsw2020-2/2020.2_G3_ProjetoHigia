@@ -53,6 +53,35 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   }
 
+  async function signIn(email, password) {
+    setLoading(true);
+
+    try {
+      const response = await firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password);
+
+      setUser(response.user.providerData[0]);
+
+      api.defaults.headers.Authorization = `Bearer ${JSON.stringify(
+        response.user.toJSON().stsTokenManager.accessToken
+      )}`;
+
+      await AsyncStorage.setItem(
+        '@RNAuth:user',
+        JSON.stringify(response.user.providerData[0])
+      );
+      await AsyncStorage.setItem(
+        '@RNAuth:token',
+        JSON.stringify(response.user.toJSON().stsTokenManager.accessToken)
+      );
+    } catch (err) {
+      console.log(err);
+    }
+
+    setLoading(false);
+  }
+
   function signOut() {
     AsyncStorage.clear().then(() => {
       setUser(null);
