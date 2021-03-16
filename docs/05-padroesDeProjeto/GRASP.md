@@ -8,6 +8,7 @@
 | 16/03/2021 |  0.2   |  Adição de imagens   |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
 | 16/03/2021 |  0.3   | Introduzindo padrões GRASP | [Gabriel Hussein](https://github.com/GabrielHussein) |
 | 16/03/2021 |  0.4   | Adição dos padrões Criador e Especialista | [Aline Lermen](https://github.com/AlineLermen) |
+| 16/03/2021 |  0.5   | Adição do padrão de polimorfismo | [Gabriel Hussein](https://github.com/GabrielHussein) |
 
 ## Introdução
  
@@ -53,5 +54,14 @@ No [diagrama de componentes](https://unbarqdsw2020-2.github.io/2020.2_G3_Projeto
 #### Nível de código
 - [**Link para o github**](SetupServer.js)
 ![](../assets/images/05-padroesDeProjeto/GRASP/especialista.png)
+
+
+### Polimorfismo
+O padrão Polimorfismo é utilizado para solucionar o problema de evitar variação condicional (*if* e *else*) e a troca de componentes sem afetar o cliente final. O padrão atribui responsabilidade as classes por meio de operações polimórficas quando temos comportamentos dinâmicos, ou seja, comportamentos que variam de acordo com o tipo (classe). É um padrão que facilita futuras manutenções e possibilita acoplamento de código.
+#### Nível de modelagem
+#### Nível de código
+- [**Link para o github**](Base.js)
+![](../assets/images/05-padroesDeProjeto/GRASP/polimorfismo.png)
+
 
 
