@@ -2,14 +2,14 @@
 
 ## Histórico de versionamento                                                                                    
 
-|    Data    | Versão |      Descrição       |                                                                         Autor(es)                                                                         |
-| :--------: | :----: | :------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 16/03/2021 |  0.1   | Criação do documento | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-| 16/03/2021 |  0.2   |  Adição de imagens   |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
-| 16/03/2021 |  0.3   | Introduzindo padrões GRASP | [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 16/03/2021 |  0.4   | Adição dos padrões Criador e Especialista | [Aline Lermen](https://github.com/AlineLermen) |
-| 16/03/2021 |  0.5   | Adição do padrão de polimorfismo | [Gabriel Hussein](https://github.com/GabrielHussein) |
-
+|    Data    | Versão |                   Descrição                   |                                                                         Autor(es)                                                                         |
+| :--------: | :----: | :-------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 16/03/2021 |  0.1   |             Criação do documento              | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+| 16/03/2021 |  0.2   |               Adição de imagens               |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
+| 16/03/2021 |  0.3   |          Introduzindo padrões GRASP           |                                                   [Gabriel Hussein](https://github.com/GabrielHussein)                                                    |
+| 16/03/2021 |  0.4   |   Adição dos padrões Criador e Especialista   |                                                      [Aline Lermen](https://github.com/AlineLermen)                                                       |
+| 16/03/2021 |  0.5   |       Adição do padrão de polimorfismo        |                                                   [Gabriel Hussein](https://github.com/GabrielHussein)                                                    |
+| 16/03/2021 |  1.0   | Revisão do documento e adição das referências |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
 ## Introdução
  
 Os padrões GRASP (*General responsibility assignment software patterns*), ou Padrões de Software para Atribuição de Responsabilidades Gerais, são um conjunto de diretrizes que auxiliam na atribuição de responsabilidades para classes e objetos em projetos orientado a objetos. Essas responsabilidades levam em conta o papel do objeto dentro de um determinado contexto. Também é considerada a possibilidade de interação entre diferentes objetos. A responsabilidade pode ser dividida entre o "fazer" do objeto e o "saber" do objeto. Há um total de nove padrões GRASPs, destes nove, quatro foram escolhidos pelo grupo para auxiliar na modelagem e desenvolvimento da aplicação, são eles:
@@ -65,3 +65,7 @@ O padrão Polimorfismo é utilizado para solucionar o problema de evitar variaç
 
 
 
+## Referências
+- GRASP: Designing Objetos com Responsabilidades. Acesso em: https://www.ic.unicamp.br/~ariadne/mc436/1s2017/Lar16GRASP.pdf. Último de acesso: 16/03/2021.
+- Padrões GRASP. Acesso em: http://www.facom.ufu.br/~bacala/ESOF/05a-Padrões%20GRASP.pdf. Último de acesso: 16/03/2021.
+- Desenvolvimento com qualidade com GRASP. Acesso em: https://www.devmedia.com.br/desenvolvimento-com-qualidade-com-grasp/28704. Último de acesso: 16/03/2021.
