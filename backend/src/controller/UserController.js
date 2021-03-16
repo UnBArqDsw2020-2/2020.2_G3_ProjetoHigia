@@ -13,7 +13,7 @@ class UserController {
 	}
 
 	async findOneUser(req, res) {
-		const { cpf, email } = req.body;
+		const { cpf } = req.body;
 		const user = await UserBase.findOne({ cpf });
 		if (user) return res.status(200).json({ status: "Success", data: user });
 		else
