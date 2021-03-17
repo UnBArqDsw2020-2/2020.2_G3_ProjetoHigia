@@ -39,12 +39,6 @@ class SetupServer {
 			});
 	}
 
-	connectFirebase() {
-		admin.initializeApp({
-			credential: admin.credential.cert(serviceAccount),
-		});
-	}
-
 	getApp() {
 		return this._app;
 	}

@@ -4,7 +4,6 @@ const server = new SetupServer();
 const express = server.getApp();
 
 express.listen(3000, () => {
-	server.connectFirebase();
 	server.connectDatabase();
 	console.log("Server Up");
 });
