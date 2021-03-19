@@ -1,19 +1,42 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { FontAwesome as Icon } from '@expo/vector-icons';
 import styles from './styles';
 
-const Card = ({ emergencyContact }) => {
+const Card = ({
+  emergencyContact,
+  onPress,
+  value,
+  onChangeText,
+  edit,
+  name,
+  number,
+}) => {
   return (
     <View style={[styles.container]}>
       <View>
-        {emergencyContact ? (
-          <Text style={[styles.description, { color: '#86172D' }]}>
-            descrição
+        {edit ? (
+          <Text
+            style={[
+              styles.description,
+              { color: emergencyContact ? '#86172D' : '#39393a' },
+            ]}
+          >
+            {name}
           </Text>
+        ) : (
+          <TextInput value={value} onChangeText={onChangeText} />
+        )}
+        {emergencyContact ? (
+          <Text style={styles.description}>{number}</Text>
         ) : null}
-        <Text style={styles.description}>descrição</Text>
       </View>
-      <View />
+
+      {edit ? null : (
+        <TouchableOpacity onPress={onPress}>
+          <Icon name="trash" size={20} color="#86172D" />
+        </TouchableOpacity>
+      )}
     </View>
   );
 };
