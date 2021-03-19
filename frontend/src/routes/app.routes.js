@@ -1,12 +1,12 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../pages/Home';
+import SearchPacient from '../pages/SearchPacient';
 
 const AppStack = createStackNavigator();
 
 const AppRoutes = () => (
   <AppStack.Navigator>
-    <AppStack.Screen name="Home" component={Home} />
+    <AppStack.Screen name="SearchPacient" component={SearchPacient} />
   </AppStack.Navigator>
 );
 
