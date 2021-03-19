@@ -18,6 +18,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
+  userName: {
+    fontSize: 20,
+  },
+
   heightWeight: {
     width: '100%',
     flexDirection: 'row',
@@ -32,9 +36,13 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
 
+  titleContainer: {
+    flexDirection: 'row'
+  },
+
   title: {
     alignSelf: 'flex-start',
-    marginLeft: 20,
+    marginHorizontal: 20,
     color: '#86172D',
   },
 });
