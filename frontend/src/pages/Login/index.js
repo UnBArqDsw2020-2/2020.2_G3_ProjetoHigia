@@ -12,11 +12,13 @@ import styles from "./styles";
 import { useAuth } from "../../context/auth";
 import TextInputComponent from "../../components/TextInputComponent";
 
-const Login = () => {
+const Login = (props) => {
+
   const { signIn } = useAuth();
   const navigation = useNavigation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS == "ios" ? "padding" : "height"}
@@ -55,7 +57,7 @@ const Login = () => {
               <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => navigation.navigate("SignUp")}
+              onPress={() => props.navigation.navigate('SignUp')}
               style={styles.login__button1}
             >
               <Text style={styles.buttonText1}>Criar uma conta</Text>

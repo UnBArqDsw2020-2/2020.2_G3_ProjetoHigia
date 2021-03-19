@@ -11,7 +11,7 @@ const AuthStack = createStackNavigator();
 
 const AuthRoutes = () => (
     <AuthStack.Navigator>
-      <AuthStack.Screen name="SignIn" options={{headerShown:false}} component={Login} />
+      <AuthStack.Screen name="Login" options={{headerShown:false}} component={Login} />
       <AuthStack.Screen name="SignUp" component={SignUp} />
       <AuthStack.Screen name="SignUpEmergency" component={SignUpEmergency} />
       <AuthStack.Screen name="SignUpDoctor" component={SignUpDoctor} />
