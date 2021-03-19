@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
-import Animated, { Easing, timing } from 'react-native-reanimated';
-import { TouchableOpacity, View } from 'react-native';
-import {
-  FontAwesome,
-  FontAwesome5,
-  MaterialCommunityIcons,
-} from '@expo/vector-icons';
-import styles from './styles';
+import React, { useState } from "react";
+import Animated, { Easing, timing } from "react-native-reanimated";
+import { TouchableOpacity, View } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
+import styles from "./styles";
 
 const buttonsTransleY = new Animated.Value(0);
 const BUTTON_MAX_HEIGHT = 120;
@@ -49,7 +45,7 @@ const FloatingButton = ({ setEdit, edit }) => {
       <TouchableOpacity
         style={[
           styles.plusButton,
-          { backgroundColor: edit ? '#86172D' : '#FF0000' },
+          { backgroundColor: edit ? "#86172D" : "#FF0000" },
         ]}
         activeOpacity={1}
         onPress={() => {
@@ -58,9 +54,9 @@ const FloatingButton = ({ setEdit, edit }) => {
         }}
       >
         {edit ? (
-          <MaterialCommunityIcons name="pencil" size={30} color="#fff" />
+          <MaterialIcons name="create" size={24} color="#fff" />
         ) : (
-          <FontAwesome name="close" size={30} color="#FFF" />
+          <MaterialIcons name="close" size={30} color="#FFF" />
         )}
       </TouchableOpacity>
     </Animated.View>
@@ -83,8 +79,8 @@ const FloatingButton = ({ setEdit, edit }) => {
         },
       ]}
     >
-      <View style={[styles.helpButton, { backgroundColor: '#86172D' }]}>
-        <FontAwesome5 name="save" size={30} color="#FFF" />
+      <View style={[styles.helpButton, { backgroundColor: "#86172D" }]}>
+        <MaterialIcons name="save" size={30} color="#FFF" />
       </View>
     </HelpButtonAnimated>
   );
