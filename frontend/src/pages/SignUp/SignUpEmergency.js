@@ -1,20 +1,20 @@
 import React from 'react';
 import { Text, View, Platform, Image} from 'react-native';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
-import {css} from '../../../assets/CSS/Css';
+import styles from '../../../assets/CSS/styles';
 
 export default function SignUpEmergency(props){
     return (
-        <View style={css.container}>
-            <View style={css.login__form}>
+        <View style={styles.container}>
+            <View style={styles.login__form}>
                 <Text style={{fontSize: 25, alignSelf:'center', fontWeight:'bold'}}>Contato de emergência</Text>
-                <TextInput style={css.login__input} placeholder='Nome completo' />
-                <TextInput style={css.login__input} placeholder='Celular' />
-                <TextInput style={css.login__input} placeholder='Relação' />
+                <TextInput style={styles.login__input} placeholder='Nome completo' />
+                <TextInput style={styles.login__input} placeholder='Celular' />
+                <TextInput style={styles.login__input} placeholder='Relação' />
                 
-                <View style={css.container3}>
-                    <TouchableOpacity style={css.cadastroButton}>
-                        <Text style={css.buttonText} >Finalizar</Text>
+                <View style={styles.container3}>
+                    <TouchableOpacity style={styles.cadastroButton}>
+                        <Text style={styles.buttonText} >Finalizar</Text>
                     </TouchableOpacity>
                 </View>
             </View>

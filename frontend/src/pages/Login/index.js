@@ -1,37 +1,70 @@
-import React, { useState } from 'react';
-import { Text, View, KeyboardAvoidingView, Image, Touchable, Platform} from 'react-native';
-import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
-import { useNavigation } from '@react-navigation/native';
-import {css} from '../../../assets/CSS/Css';
-import { useAuth } from '../../context/auth';
+import React, { useState } from "react";
+import {
+  Text,
+  View,
+  KeyboardAvoidingView,
+  Image,
+  Platform,
+} from "react-native";
+import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
+import { useNavigation } from "@react-navigation/native";
+import styles from "./styles";
+import { useAuth } from "../../context/auth";
+import TextInputComponent from "../../components/TextInputComponent";
 
-export default function Login(props){
-    const { signIn } = useAuth();
-    const navigation = useNavigation();
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    console.log(props)
-    return(
-        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={css.container}>
-            <View>
-                <Text style={css.login__Text}>Hígia</Text>
-                <Image source={require('../../../assets/img/icon.png')} />
-                {/* <Text style={css.login__msg}>Usuario ou Senha invalidos!</Text> */}
-            </View>
+const Login = () => {
+  const { signIn } = useAuth();
+  const navigation = useNavigation();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  return (
+    <KeyboardAvoidingView
+      behavior={Platform.OS == "ios" ? "padding" : "height"}
+      style={styles.container}
+    >
+      <View
+        style={styles.fieldsView}
+      >
+        <Image
+          source={require("../../../assets/img/icon.png")}
+          style={{
+            width: 100,
+            height: 100,
+            alignSelf: "center",
+          }}
+        />
 
-            <View style={css.login__form}>
-                <TextInput style={css.login__input} placeholder='Email' value={email} onChangeText={setEmail}/>
-                <TextInput style={css.login__input} placeholder='Senha' secureTextEntry={true} value={password} onChangeText={setPassword}/>
+        <View style={styles.login__form}>
+          <TextInputComponent
+            placeholder={"Email"}
+            value={email}
+            onChangeText={setEmail}
+          />
+          <TextInputComponent
+            placeholder="Senha"
+            value={password}
+            onChangeText={setPassword}
+            secureTextEntry={true}
+          />
+       
+          <View style={styles.container2}>
+            <TouchableOpacity
+              style={styles.login__button}
+              onPress={() => signIn({ email }, { password })}
+            >
+              <Text style={styles.buttonText}>Entrar</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate("SignUp")}
+              style={styles.login__button1}
+            >
+              <Text style={styles.buttonText1}>Criar uma conta</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </View>
+    </KeyboardAvoidingView>
+  );
+};
 
-                <View style={css.container2}>
-                    <TouchableOpacity style={css.login__button} onPress={() => signIn({email}, {password})}>
-                        <Text style={css.buttonText}>Entrar</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
-                        <Text style={css.buttonText1}>Criar uma conta</Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
-        </KeyboardAvoidingView>
-    );
-}
+export default Login;
