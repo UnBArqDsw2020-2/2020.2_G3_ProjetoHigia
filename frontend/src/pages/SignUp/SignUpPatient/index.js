@@ -15,13 +15,14 @@ export default function SignUpPatient(props){
                 <TextInput style={styles.inputText} placeholder='Ultimo Nome' />
                 <TextInput style={styles.inputText} placeholder='Data de Nascimento' />
                 {/* TO DO Ternario para CRM ou CPF */}
-                <TextInput style={styles.inputText} placeholder='CPF/CRM' />
+                <TextInput style={styles.inputText} placeholder='CPF' />
+                {/* <TextInput style={styles.inputText} placeholder='CRM' /> */}
                 <TextInput style={styles.inputText} placeholder='Altura' />
                 <TextInput style={styles.inputText} placeholder='Peso' />
                 <TextInput style={styles.inputText} placeholder='Tipo Sanguineo' />
                 <View s tyle={styles.container1}>
                     <TouchableOpacity style={styles.btn}>
-                        <Text style={styles.btnText} onPress={() => navigation.navigate('SignUpEmergency')}>Proximo</Text>
+                        <Text style={styles.btnText} onPress={() => navigation.navigate('SignUpEmergency')}>Próximo</Text>
                     </TouchableOpacity>
                 </View>
             </View>

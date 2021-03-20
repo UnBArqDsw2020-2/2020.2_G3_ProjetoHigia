@@ -1,26 +1,28 @@
 import React, { useState } from "react";
-import { Text, View, KeyboardAvoidingView, Image, Platform } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import {
+  Text,
+  View,
+  KeyboardAvoidingView,
+  Image,
+  Platform,
+} from "react-native";
+import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 import { useAuth } from "../../context/auth";
-import TextInputComponent from "../../components/TextInputComponent";
 
 const Login = (props) => {
-
   const { signIn } = useAuth();
   const navigation = useNavigation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS == "ios" ? "padding" : "height"}
       style={styles.container}
     >
-      <View
-        style={styles.fieldsView}
-      >
+      <View style={styles.fieldsView}>
         <Image
           source={require("../../../assets/img/iconBackground.png")}
           style={{
@@ -32,18 +34,21 @@ const Login = (props) => {
         />
 
         <View style={styles.form}>
-          <TextInputComponent
+          <TextInput
+            style={styles.input}
             placeholder={"Email"}
             value={email}
             onChangeText={setEmail}
           />
-          <TextInputComponent
-            placeholder="Senha"
+
+          <TextInput
+            style={styles.input}
+            placeholder={"Senha"}
             value={password}
             onChangeText={setPassword}
             secureTextEntry={true}
           />
-       
+
           <View style={styles.container2}>
             <TouchableOpacity
               style={styles.btn}
@@ -52,7 +57,7 @@ const Login = (props) => {
               <Text style={styles.btnText}>Entrar</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => props.navigation.navigate('SignUp')}
+              onPress={() => props.navigation.navigate("SignUp")}
               style={styles.btn1}
             >
               <Text style={styles.btnText1}>Criar uma conta</Text>

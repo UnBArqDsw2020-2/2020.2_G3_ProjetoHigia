@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  fieldsView: { 
-    display: "flex", 
-    flex: 1, 
-    justifyContent: "center", 
+  fieldsView: {
+    display: "flex",
+    flex: 1,
+    justifyContent: "center",
   },
 
   container: {
@@ -18,7 +18,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-
+  input: {
+    backgroundColor: "#FFF",
+    borderColor: "#7E162B",
+    fontSize: 15,
+    padding: 7,
+    marginBottom: 15,
+    borderBottomWidth: 1.0,
+  },
   form: {
     width: "80%",
   },
@@ -54,7 +61,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 15,
     color: "#7E162B",
-  }
+  },
 });
 
 export default styles;
