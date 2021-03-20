@@ -14,7 +14,7 @@ export default function SignUp(props){
 
     return (
         <ImageBackground style={styles.container} source={require('../../../assets/img/background.jpg')} imageStyle={{ width: '100%', height: '100%' }}>
-                    <View style={styles.form}>
+                    <View style={{width:"80%"}}>
                         <Text style={styles.text}>Dados para Login</Text>
                         <TextInputComponent
                             style = {styles.inputText}

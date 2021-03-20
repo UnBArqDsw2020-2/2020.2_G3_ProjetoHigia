@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     },
 
     form: {
-        width: "80%",
+        width: "100%",
     },
 
     text:{
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         marginTop: 20,
         marginHorizontal: 20,
+        marginBottom:20
     },
 
     btnText:{
