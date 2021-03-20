@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import {
-  Text,
-  View,
-  KeyboardAvoidingView,
-  Image,
-  Platform,
-} from "react-native";
-import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
+import { Text, View, KeyboardAvoidingView, Image, Platform } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 import { useAuth } from "../../context/auth";
@@ -28,15 +22,16 @@ const Login = (props) => {
         style={styles.fieldsView}
       >
         <Image
-          source={require("../../../assets/img/icon.png")}
+          source={require("../../../assets/img/iconBackground.png")}
           style={{
             width: 100,
             height: 100,
             alignSelf: "center",
+            marginBottom: 20,
           }}
         />
 
-        <View style={styles.login__form}>
+        <View style={styles.form}>
           <TextInputComponent
             placeholder={"Email"}
             value={email}
@@ -51,16 +46,16 @@ const Login = (props) => {
        
           <View style={styles.container2}>
             <TouchableOpacity
-              style={styles.login__button}
+              style={styles.btn}
               onPress={() => signIn({ email }, { password })}
             >
-              <Text style={styles.buttonText}>Entrar</Text>
+              <Text style={styles.btnText}>Entrar</Text>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => props.navigation.navigate('SignUp')}
-              style={styles.login__button1}
+              style={styles.btn1}
             >
-              <Text style={styles.buttonText1}>Criar uma conta</Text>
+              <Text style={styles.btnText1}>Criar uma conta</Text>
             </TouchableOpacity>
           </View>
         </View>

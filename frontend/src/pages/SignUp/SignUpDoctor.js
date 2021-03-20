@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Platform} from 'react-native';
+import { Text, View, ImageBackground } from 'react-native';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 import SignUpEmergency from './SignUpEmergency'
@@ -8,6 +8,7 @@ import styles from './styles';
 export default function SignUpDoctor(props){
     const navigation = useNavigation();
     return (
+        <ImageBackground style={styles.container} source={require('../../../assets/img/background.jpg')} imageStyle={{ width: '100%', height: '100%' }}>
         <View style={styles.container}>
             <View style={styles.form}>
                 <Text style={styles.text}>Dados para Perfil</Text>
@@ -27,5 +28,6 @@ export default function SignUpDoctor(props){
                 </View>
             </View>
         </View>
+        </ImageBackground>
     );
 }
