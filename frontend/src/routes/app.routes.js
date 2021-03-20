@@ -1,12 +1,12 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../pages/Home';
+import BottomBar from '../pages/BottomBar';
 
 const AppStack = createStackNavigator();
 
 const AppRoutes = () => (
-  <AppStack.Navigator>
-    <AppStack.Screen name="Home" component={Home} />
+  <AppStack.Navigator headerMode={'none'}>
+    <AppStack.Screen name="BottomBar" component={BottomBar} />
   </AppStack.Navigator>
 );
 
