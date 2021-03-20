@@ -4,6 +4,7 @@ import Login from '../pages/Login';
 import SignUp from '../pages/SignUp/index';
 import SignUpPatient from '../pages/SignUp/SignUpPatient';
 import SignUpEmergency from '../pages/SignUp/SignUpEmergency';
+import BottomBar from '../pages/BottomBar';
 
 const AppStack = createStackNavigator();
 
