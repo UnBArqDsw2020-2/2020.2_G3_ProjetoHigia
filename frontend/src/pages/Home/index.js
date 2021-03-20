@@ -1,23 +1,17 @@
 import React from 'react';
 import { View, StyleSheet, Button } from 'react-native';
 import { useAuth } from '../../context/auth';
+import Header from '../Header/index'
+import styles from './style'
 
-const Home = () => {
+const Home = ({navigation}) => {
   const { signOut } = useAuth();
 
   return (
     <View style={styles.container}>
-      <Button title="Logout" onPress={signOut} />
+      <Header title='Perfil' navigation = {navigation}></Header>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 export default Home;
