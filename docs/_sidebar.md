@@ -46,3 +46,5 @@
     - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
     - [Atividade](./04-diagramasUML/diagramaAtividade.md)
     - [Estados](./04-diagramasUML/diagramaEstado.md) 
+- Padrões de Projeto
+  - [GRASP](./05-padroesDeProjeto/GRASP.md)
