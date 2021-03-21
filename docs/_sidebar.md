@@ -48,3 +48,4 @@
     - [Estados](./04-diagramasUML/diagramaEstado.md) 
 - Padrões de Projeto
   - [GRASP](./05-padroesDeProjeto/GRASP.md)
+  - [GoF Criacional](./05-padroesDeProjeto/GoFCriacional.md)
