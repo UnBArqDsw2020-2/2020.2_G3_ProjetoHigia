@@ -7,6 +7,7 @@
 | 21/03/2021 |  0.1   |             Criação do GoF Singleton             | [Danillo Souza](https://github.com/danillogs) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
 | 22/03/2021 |  0.2   | Adição da descrição do GoF Builder e referências |                         [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
 | 22/03/2021 |  0.3   |       Alteração da imagem do GoF Singleton       |                         [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
+| 22/03/2021 |  0.4   |       Adição dos pontos positivos e negativos do Builder       |                         [Aline Lermen](https://github.com/AlineLermen)
 
 ## Singleton
 
@@ -42,6 +43,14 @@ Em nosso Backend, criamos uma classe especialista em personalizar o Express (Fra
 O objetivo principal do GoF Builder é permitir a construção de um objeto gradativamente. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder para evitar passar todos os parâmetros sempre que o método for chamado.
 </p>
 
+### Pontos positivos
+- Com esse padrão é possível construir objetos passo a passo, adiar etapas da construção ou até executar etapas recursivamente;
+- É possível reutilizar o mesmo código de construção quando estiver construindo várias representações de produtos ;
+- *Princípio de responsabilidade única*. Pode-se realizar a manutenção do código sem afetar outros componentes diretamente.
+
+
+### Pontos negativos
+- A complexidade do código aumenta, pois esse padrão exige a criação de classes novas.
 
 ### Aplicação
 
