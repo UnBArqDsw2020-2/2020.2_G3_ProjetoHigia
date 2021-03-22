@@ -26,26 +26,31 @@ class MedicalReportBase extends Base {
 
 	async editExam(cpf, id, name, base64) {
 		let medicalReport = await this.collectionType.findOne(cpf);
+		let dataBaseUpdated = false;
 		if (medicalReport) {
 			medicalReport.exams.forEach((exam) => {
-				if (exam._id === id) {
+				if (JSON.stringify(exam._id) === JSON.stringify(id)) {
 					if (name) {
 						exam.name = name;
 					}
 					if (base64) {
 						exam.base64 = base64;
 					}
+					dataBaseUpdated = true;
+					this.collectionType.updateOne(cpf, medicalReport);
 				}
 			});
-			await this.collectionType.updateOne(cpf, medicalReport);
-		} else throw Error("Não foi possível editar o exame");
+		}
+		if (!dataBaseUpdated) {
+			throw Error("Não foi possível editar o exame");
+		}
 	}
 
 	async deleteExam(cpf, id) {
-		let medicalReport = this.collectionType.findOne(cpf);
+		let medicalReport = await this.collectionType.findOne(cpf);
 		if (medicalReport) {
 			const examUpdated = medicalReport.exams.filter(
-				(exam) => exam._id !== id
+				(exam) => JSON.stringify(exam._id) !== JSON.stringify(id)
 			);
 			medicalReport.exams = examUpdated;
 			await this.collectionType.updateOne(cpf, medicalReport);
@@ -53,4 +58,4 @@ class MedicalReportBase extends Base {
 	}
 }
 
-export default MedicalReportBase(MedicalReport);
+export default new MedicalReportBase(MedicalReport);
