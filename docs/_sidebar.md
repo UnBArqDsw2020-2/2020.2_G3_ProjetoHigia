@@ -50,3 +50,4 @@
   - [GRASP](./05-padroesDeProjeto/GRASP.md)
   - [GoF Criacional](./05-padroesDeProjeto/GoFCriacional.md)
   - [GoF Decorator](./05-padroesDeProjeto/decorator.md)
+  - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
