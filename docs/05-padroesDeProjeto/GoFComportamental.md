@@ -22,3 +22,18 @@ O padrão GoF Observer é um padrão de projeto comportamental que permite defin
 - Os assinantes são notificados em ordem aleatória.
 
 
+### Aplicação
+
+-  Subject
+
+![Auth Subject](../assets/images/05-padroesDeProjeto/GoFComportamental/authController.png)
+
+- Controller
+
+![Auth Controller](../assets/images/05-padroesDeProjeto/GoFComportamental/authSubject.png)
+
+
+## Referências
+
+- Projeto Diário da Saúde. Acesso em: https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#gofs_comportamentais/. Último de acesso: 22/03/2021.
+- Refactoring.Guru. Acesso em: https://refactoring.guru/pt-br/design-patterns/observer. Último de acesso: 22/03/2021.
