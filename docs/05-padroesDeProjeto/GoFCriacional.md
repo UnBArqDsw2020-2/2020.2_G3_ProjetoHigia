@@ -2,9 +2,11 @@
 
 ## Histórico de versionamento
 
-|    Data    | Versão | Descrição | Autor(es) |
-| :--------: | :----: | :-------: | :-------: |
-| 21/03/2021 | 0.1 | Criação do GoF Singleton | [Danillo Souza](https://github.com/danillogs) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
+|    Data    | Versão |                    Descrição                     |                                              Autor(es)                                              |
+| :--------: | :----: | :----------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| 21/03/2021 |  0.1   |             Criação do GoF Singleton             | [Danillo Souza](https://github.com/danillogs) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
+| 22/03/2021 |  0.2   | Adição da descrição do GoF Builder e referências |                         [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
+| 22/03/2021 |  0.3   |       Alteração da imagem do GoF Singleton       |                         [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
 
 ## Singleton
 
@@ -34,8 +36,20 @@ Em nosso Backend, criamos uma classe especialista em personalizar o Express (Fra
 
 ![singleton](../assets/images/05-padroesDeProjeto/GoFCriacional/singleton.png)
 
+
+## Builder 
+<p style="text-align: justify;"> &emsp;&emsp;
+O objetivo principal do GoF Builder é permitir a construção de um objeto gradativamente. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder para evitar passar todos os parâmetros sempre que o método for chamado.
+</p>
+
+
+### Aplicação
+
+
+
 ## Referências
 
 - Refactoring.Guru. Acesso em: https://refactoring.guru/pt-br/design-patterns/singleton. Último de acesso: 21/03/2021.
 - Projeto Recipebuk. Acesso em: https://www.recipebukdocs.tk/#/05-padroes-de-projeto/Estudos/gof-criacional?id=estudo-dirigido-gofs-criacional. Último de acesso: 21/03/2021.
 - Projeto Stock. Acesso em: https://unbarqdsw.github.io/2020.1_G12_Stock/#/DesignPatterns/Singleton?id=aplica%c3%a7%c3%a3o-do-singleton. Último de acesso: 21/03/2021.
+- Refactoring.Guru. Acesso em: https://refactoring.guru/pt-br/design-patterns/builder. Último de acesso: 22/03/2021.
