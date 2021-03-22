@@ -12,7 +12,7 @@
 
 O decorator permite adicionar novos comportamentos a objetos através da adição de uma nova camada de um objeto externo que possui os comportamentos que deseja-se ser acrescentados.
 
-[decorator-scheme](../../../assets/images/05-padroesDeProjeto/Gofs/decoratorExample.png)
+![decoratorExample](../assets/images/05-padroesDeProjeto/GoFDecorator/decoratorExample.png)
 
 Como no exemplo de decorator base acima, o mesmo irá servir como uma ponte entre o Client e os Decorators que realmente irão alterar o comportamento do objeto concreto. Todos devem implementar a mesma interface.
 
@@ -20,9 +20,19 @@ Como no exemplo de decorator base acima, o mesmo irá servir como uma ponte entr
 
 Aqui o objetivo é criar uma nova camada para os métodos principais que o mongoose oferece como findAll, findOne, create e assim por diante para utilização pelas classes, porém cada uma irá alterar o comportamento de acordo com sua necessidade. Para isso, utilizaremos o método Decorator, onde o Decorator Base irá implementar os métodos do mongoose e assim cada classe poderá herdar desse Decorator Base.
 
-[decorator1]()
 
+## Decorator Base
+
+![decoratorBase](../assets/images/05-padroesDeProjeto/GoFDecorator/decoratorBase.png)
+
+## Medical Report
+
+Neste caso, o Medical Report é uma classe cujos objetos serão gerenciados pelo banco usando os métodos da classe Base
+
+![decoratorWindow](../assets/images/05-padroesDeProjeto/GoFDecorator/decoratorWindow.png)
 
 ## Referências
 
-- 
+- Padrão de projeto decorator, Disponível em <https://www.devmedia.com.br/padrao-de-projeto-decorator-em-java/26238>, último acesso: 22 de março de 2021
+- Refactoring Guru - Decorator Pattern, Disponível em <https://refactoring.guru/design-patterns/decorator>, último acesso: 22 de março de 2021
+- Projeto Stock, Disponível em <https://unbarqdsw.github.io/2020.1_G12_Stock/#/DesignPatterns/Decorator>, último acesso: 22 de março de 2021
