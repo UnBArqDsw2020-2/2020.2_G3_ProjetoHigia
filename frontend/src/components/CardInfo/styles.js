@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
   description: {
     alignSelf: 'center',
     paddingVertical: 5,
+    color: '#39393A',
   },
 });
 
