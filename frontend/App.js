@@ -6,7 +6,6 @@ import apiKeys from './src/utils/firebaseKeys.js';
 import { useFonts, Junge_400Regular } from '@expo-google-fonts/junge';
 import AppLoading from 'expo-app-loading';
 import Routes from './src/routes';
-import MedicalReport from './src/pages/MedicalReport';
 
 const App = () => {
   var [fontsLoaded] = useFonts({ Junge_400Regular });
@@ -22,10 +21,9 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      <MedicalReport/>
-      {/* <AuthProvider>
+      <AuthProvider>
         <Routes />
-      </AuthProvider> */}
+      </AuthProvider>
     </NavigationContainer>
   );
 };

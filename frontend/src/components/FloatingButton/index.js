@@ -45,7 +45,7 @@ const FloatingButton = ({ setEdit, edit }) => {
       <TouchableOpacity
         style={[
           styles.plusButton,
-          { backgroundColor: edit ? "#86172D" : "#FF0000" },
+          { backgroundColor: edit ? "#FF0000" : "#86172D" },
         ]}
         activeOpacity={1}
         onPress={() => {
@@ -54,9 +54,9 @@ const FloatingButton = ({ setEdit, edit }) => {
         }}
       >
         {edit ? (
-          <MaterialIcons name="create" size={24} color="#fff" />
-        ) : (
           <MaterialIcons name="close" size={30} color="#FFF" />
+          ) : (
+          <MaterialIcons name="create" size={24} color="#fff" />
         )}
       </TouchableOpacity>
     </Animated.View>
