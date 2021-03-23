@@ -41,7 +41,7 @@ Em nosso Backend, criamos uma classe especialista em personalizar o Express (Fra
 ## Builder
  
 <p style="text-align: justify;"> &emsp;&emsp;
-O objetivo principal do GoF Builder é permitir a construção de um objeto gradativamente. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder para evitar passar todos os parâmetros sempre que o método for chamado.
+O objetivo principal do GoF Builder é permitir a construção de um objeto gradativamente. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder, para evitar passar todos os parâmetros sempre que o método for chamado, escolhendo qual parâmetro deve ser passado ou não. 
 </p>
  
 ### Pontos positivos
