@@ -24,13 +24,8 @@ class UserController {
 	}
 
 	async updateUser(req, res) {
-		// Possível problema de segurança
-		// TO DO: 
-		// 		Checar se o usuário que faz a edição é realmente o dono da conta.
-		// 		Até o momento essa checagem não existe.
-
-		const { cpf, data } = req.body;
-		const user = await UserBase.updateOne({ cpf }, data);
+		const { id, data } = req.body;
+		const user = await UserBase.updateOne({ id }, data);
 		if (user.nModified) return res.status(200).json({ status: "Success" });
 		else
 			return res
