@@ -8,6 +8,7 @@
 | 22/03/2021 |  0.2   |             Introdução e Metodologia Decorator      | [Victor Amaral](https://github.com/victoramaralc) |
 | 22/03/2021 |  0.3   |             Criação do GoF Decorator            | [Arthur Paiva](https://github.com/ArthurPaivaT) e [Victor Amaral](https://github.com/victoramaralc) |
 | 22/03/2021 |  0.4   |             Adição dos Pontos positivos e negativos do decorator   | [Arthur Paiva](https://github.com/ArthurPaivaT) |
+| 23/03/2021 |  0.5   |             Criação do GoF Facade   | [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
 
 
 ## Decorator
@@ -48,8 +49,15 @@ Neste caso, o Medical Report é uma classe cujos objetos serão gerenciados pelo
 - É difícil implementar um decorador de tal maneira que seu comportamento não dependa da ordem do pilha de decoradores.
 - A configuração inicial do código de camadas pode ficar bastante feia.
 
+## Facade
+<p style="text-align: justify;"> &emsp;&emsp;
+O Facade é um padrão de projeto que simplifica a interface para uma biblioteca, framework ou qualquer conjunto completo de classes. Em uma situação em que há a necessidade de inicializar vários objetos para que a implementação funcione, o código fica confuso a pessoas não familiarizadas com o processo e também há a dificuldade de manutenção, o padrão de projeto Facade implementa uma classe de "Fachada" que fornece uma interface simples para um subsistema mais complexo, por mais que a Fachada seja limitada em relação as funcionalidades de tal subsistema ela concentra as funcionalidades que o cliente se importa.
+</p>
+
 ## Referências
 
 - Padrão de projeto decorator, Disponível em <https://www.devmedia.com.br/padrao-de-projeto-decorator-em-java/26238>, último acesso: 22 de março de 2021
 - Refactoring Guru - Decorator Pattern, Disponível em <https://refactoring.guru/design-patterns/decorator>, último acesso: 22 de março de 2021
-- Projeto Stock, Disponível em <https://unbarqdsw.github.io/2020.1_G12_Stock/#/DesignPatterns/Decorator>, último acesso: 22 de março de 2021
+- Projeto Stock Decorator, Disponível em <https://unbarqdsw.github.io/2020.1_G12_Stock/#/DesignPatterns/Decorator>, último acesso: 22 de março de 2021
+- Refactoring Guru - Facade Pattern, Disponível em <https://refactoring.guru/pt-br/design-patterns/facade>, último acesso: 23 de março de 2021
+- Projeto Stock Facade, Disponível em <https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Estudos/estrutural?id=facade>, último acesso: 23 de março de 2021
