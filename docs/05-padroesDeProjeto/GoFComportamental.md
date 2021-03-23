@@ -8,6 +8,7 @@
 | 22/03/2021 |  0.2   |             Adição de exemplos da aplicação        | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo)  |
 | 22/03/2021 | 1.0 |            Adição de imagens                          | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo)  |
 | 23/03/2021 | 1.1 |            Introdução do state e adição de referências                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 23/03/2021 | 1.2 |            Adição de imagens e suas explicações                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 
 
 ## Observer
@@ -40,18 +41,24 @@ O padrão GoF Observer é um padrão de projeto comportamental que permite defin
 
 ## State
 <p style="text-align: justify;"> &emsp;&emsp;
-O State é um padrão de design de comportamento que permite alterear o comportamento de um objeto quando seu estado interno muda. Sua ideia principal é que, dado um momento qualquer, exite um número finito de estados do qual o programa pode se encontrar. A partir de um único estado, o programa pode se comportar de diferentes maneiras, e também pode alterar seu estado instantaneamente. Contudo, dependendo do estado atual em que se encontra, o programa pode ou não ir para certos estados pré-definidos. 
+O State é um padrão de projeto de comportamento que permite alterear o comportamento de um objeto quando seu estado interno muda. Sua ideia principal é que, dado um momento qualquer, exite um número finito de estados do qual o programa pode se encontrar. A partir de um único estado, o programa pode se comportar de diferentes maneiras, e também pode alterar seu estado instantaneamente. Contudo, dependendo do estado atual em que se encontra, o programa pode ou não ir para certos estados pré-definidos. 
 </p>
 
 ### Exemplo
 
+![State Exemplo](../assets/images/05-padroesDeProjeto/GoFComportamental/stateExample.png)
+
 Como ilustrado no diagrama acima, o State exige uma mudança de comportamento para que se possa tomar uma decisão do que fazer em relação ao estado atual da aplicação.
 
-### Aplicação
+### Aplicação - Tela de login
 
-Dentro do Hígia usaremos o State em diversas partes do projeto, para fins de exemplificação usaremos o sistema de login, que é uma maneira simplificada de ilustrar o sistema de comportamento State.
+Dentro do Hígia usaremos o State com a função do React Native useState em diversas partes do projeto, o useState é utilizado para alterar o estado interno de uma variável, para fins de exemplificação usaremos o sistema de login, que é uma maneira simplificada de ilustrar o padrão de projeto de comportamento State.
 
--> imagem
+#### Declaração do useState
+![State Application 1](../assets/images/05-padroesDeProjeto/GoFComportamental/stateApplication1.png)
+
+#### Manipulação do useState
+![State Application 2](../assets/images/05-padroesDeProjeto/GoFComportamental/stateApplication2.png)
 
 Como se pode ver, ao acessar com suas credenciais, o usuário muda o estado do programa para ativo, gerando um token de login para o usuário logado, que servirá para manter a área de acesso do usuário (ficha médica, pesquisa, configurações, funcionalidades em geral) acessável.
 
