@@ -9,6 +9,7 @@
 | 22/03/2021 | 1.0 |            Adição de imagens                          | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo)  |
 | 23/03/2021 | 1.1 |            Introdução do state e adição de referências                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 | 23/03/2021 | 1.2 |            Adição de imagens e suas explicações                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 23/03/2021 | 1.3 |            Adicionados pontos positivos e negativos                        |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 
 
 ## Observer
@@ -61,6 +62,15 @@ Dentro do Hígia usaremos o State com a função do React Native useState em div
 ![State Application 2](../assets/images/05-padroesDeProjeto/GoFComportamental/stateApplication2.png)
 
 Como se pode ver, ao acessar com suas credenciais, o usuário muda o estado do programa para ativo, gerando um token de login para o usuário logado, que servirá para manter a área de acesso do usuário (ficha médica, pesquisa, configurações, funcionalidades em geral) acessável.
+
+### Pontos positivos
+    - Os estados podem ser melhor codificados sem a necessidade de ficar duplicando código.
+    - Simplificação de código.
+    - Organização de código relacionado a estados particulares em classes separadas.
+### Pontos negativos
+    - Aplicar o padrão pode ser um exagero se existem apenas algumas mudanças de estado ou um leque limitado de estados diferentes.
+    - Pode ser misturado e confundido com o padrão de projeto Strategy.
+    - Dependendo do tamanho das condições dos estados e o número de estados diferentes o código pode se tornar difícil de realizar manutenções.
 
 ## Referências
 
