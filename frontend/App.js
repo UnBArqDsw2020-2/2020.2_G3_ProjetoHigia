@@ -5,6 +5,7 @@ import firebase from 'firebase';
 import apiKeys from './src/utils/firebaseKeys.js';
 import Routes from './src/routes';
 
+
 const App = () => {
   if (!firebase.apps.length) {
     console.log('Connected with Firebase');

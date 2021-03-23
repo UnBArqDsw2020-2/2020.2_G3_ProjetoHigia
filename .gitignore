@@ -1,7 +1,13 @@
 backend/node_modules
-backend/serviceAccountKey.json
+backend/src/config/serviceAccountKey.json
+backend/package-lock.json
+backend/.env
+
 frontend/node_modules
+frontend/.env
 frontend/.expo
 frontend/.expo-shared
-frontend/.env
 frontend/yarn.lock
+frontend/package-lock.json
+
+.vscode

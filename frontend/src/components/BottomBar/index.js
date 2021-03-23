@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../Home/index';
 import { MaterialIcons } from '@expo/vector-icons'; 
 
-export default function BottomBar(){
+export default function BottomBar(props){
     const Tab = createBottomTabNavigator();
 
     return(
