@@ -11,8 +11,10 @@
   - [Estimativas](./03-projeto/estimativas.md)
   - [BPMN](./03-projeto/bpmn.md)
 - Sprints
-  - [Sprint 0](./00-sprint/sprint00)
-  - [Sprint 1](./00-sprint/sprint01)
+  - [Sprint 0](./00-sprint/sprint00.md)
+  - [Sprint 1](./00-sprint/sprint01.md)
+  - [Sprint 2](./00-sprint/sprint02.md)
+  - [Sprint 3](./00-sprint/sprint03.md)
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
