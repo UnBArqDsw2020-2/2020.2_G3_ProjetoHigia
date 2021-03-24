@@ -4,6 +4,8 @@
 |    Data    | Versão |      Descrição       |                                                                         Autor(es)                                                                         |
 | :--------: | :----: | :------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | 24/03/2021 |  1.0   | Criação do documento | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 24/03/2021 |  1.1   | Topicos 3 e 4 | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 24/03/2021 |  1.2   | Topicos de 5 a 8 | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 
 ## 1. Introdução
 ### 1.1 Propósito
@@ -87,3 +89,43 @@ O projeto Hígia busca fornecer um sistema que auxilie profissionais da saúde e
 | Paciente                        | Maior organização de requisições e resultados de exame, arquivos médicos no geral  | Arquivos     | Com a opção de fazer uploads de arquivos, o paciente pode possuir um local único para armazenar os documentos                                                |
 | Paciente                        | Facilidade no transporte e apresentação dos resultados de exames do paciente       | Arquivos     | Com a opção de armazenar os arquivos no aplicativo, o paciente poderá levar seus documentos a qualquer lugar, sem precisar carregar consigo papéis físicos   |
 | Profissional da saúde           | Facilidade no acesso do profisisonal da saúde aos resultados de exames do paciente | Arquivos     | Com a opção de compartilhamento de arquivos no aplicativo, o profissional poderá solicitar acesso aos documentos do paciente, resultando em um acesso rápido |
+
+## 5. Recursos do produto
+### 5.1 Recursos do usuário paciente
+| Recurso                                    | Descrição do recurso                                                                                                                                                               |
+| :----------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Ficha médica                               | Na ficha médica, estarão dispostas informações gerais do paciente como: nome, peso, idade, tipo de sangue e altura; comorbidades; contatos de emergência; medicamentos utilizados; |
+| Gerenciamento de arquivos                  | O usuário poderá visualizar seus arquivos armazenados e realizar upload, download e exclusão de arquivos.                                                                          |
+| Compartilhamento de informações com médico | O usuário poderá conceder acesso do médico a sua ficha médica, a todos os arquivos ou a arquivos específicos.                                                                      |
+### 5.2 Recursos do usuário médico
+| Recurso                              | Descrição do recurso                                                          |
+| :----------------------------------- | :---------------------------------------------------------------------------- |
+| Buscar pacientes                     | O médico poderá buscar por pacientes                                          |
+| Visualizar ficha médica              | O médico poderá visualizar a ficha médica de um paciente                      |
+| Solicitar acesso a arquivos privados | O médico poderá pedir acesso a informações e arquivos privados de um paciente |
+
+## 6. Restrições
+ - A primeira versão do aplicativo deve estar funcionando até o final de maio de 2021
+ - O desenvolvimento do aplicativo deve ocorrer durante o caminhar da disciplina de ADS
+ - Os integrantes devem possuir um meio de interagir com o professor/Monitor da disciplina
+ - O Aplicativo deve rodar em sistemas Android e IOS
+ - Os arquivos devem ser todos em PDF
+ - Necessita de acesso a internet para busca de pacientes
+
+## 7. Faixas de qualidade
+### 7.1 Requisitos de Desempenho
+O tempo de resposta do aplicativo depende do processamento do aparelho, necessitando de acesso a internet apenas para a busca de paciente.
+### 7.2 Requisitos de Design
+O aplicativo contará com uma interface intuitiva e clara em relação as suas funcionalidades, visando maior adaptabilidade do usuário. O App também contará com cores mais pastéis com o objetivo de ser visivelmente mais agradável. 
+### 7.3 Requisitos de Portabilidade
+O aplicativo deve funcionar tanto em sistemas Android quanto IOS. A versão inicial do app não contará com suporte web.
+### 7.4 Requisitos de Confiabilidade
+Alguns dos dados coletados pelo aplicativo são de uso pessoal de identificação do usuário, portanto o aplicativo deve ter a segurança necessária de não exibir estes dados para outros perfis.
+### 7.5 Requisitos de Privacidade
+Arquivos e dados como cpf do usuário são estritamente pessoais e não devem ser possíveis de acessar por outros perfis.
+
+## 8. Precedência e prioridade
+As principais prioridades do aplicativo são o armazenamento das informações médicas do usuário, a pesquisa por pacientes e o gerenciamento de arquivos por parte do usuário.
+Para mais detalhes das prioridades do projeto você pode acessar nosso
+[Backlog](./02-requisitos/modelagem/backlog?id=backlog-v1).
+
