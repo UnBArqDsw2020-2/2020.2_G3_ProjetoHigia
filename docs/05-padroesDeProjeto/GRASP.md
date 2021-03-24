@@ -85,9 +85,21 @@ Este padrão determina que as classes devem se focar apenas na sua responsabilid
 
 Este padrão não foi diretamente aplicado ao projeto devido a existência de estruturas onde os dados referentes a um usuário estarão salvos também na classe Medical Report, que contém dados relativos à saúde e informações médicas gerais pertencentes ao usuário.
 
+### Fabricação própria
+
+É uma classe que não representa nenhum conceito no domínio do problema, ela apenas funciona como uma classe prestadora de serviços, e é projetada para que possamos ter um baixo acoplamento e alta coesão no sistema.
+
+Não foram usadas classes de fabricação própria, já que na aplicação os eventos são tratados em métodos diretos entre as classes. Além disso, os padrões de baixo acoplamento e alta coesão não foram diretamente aplicados.
+
+### Proteção contra Variações
+
+Protege o sistema com a variação de componentes, encapsulando o comportamento que realmente importa.
+
+Não foram identificados pontos de instabilidade previsíveis no escopo do projeto. Dessa forma, não foi necessário, a princípio, aplicar o padrão de Proteção contra variações.
 
 
 ## Referências
 - GRASP: Designing Objetos com Responsabilidades. Acesso em: https://www.ic.unicamp.br/~ariadne/mc436/1s2017/Lar16GRASP.pdf. Último de acesso: 16/03/2021.
 - Padrões GRASP. Acesso em: http://www.facom.ufu.br/~bacala/ESOF/05a-Padrões%20GRASP.pdf. Último de acesso: 16/03/2021.
 - Desenvolvimento com qualidade com GRASP. Acesso em: https://www.devmedia.com.br/desenvolvimento-com-qualidade-com-grasp/28704. Último de acesso: 16/03/2021.
+- Padrões GRASP - Padrões de Atribuir Responsabilidades. Acesso em: https://medium.com/@leandrovboas/padr%C3%B5es-grasp-padr%C3%B5es-de-atribuir-responsabilidades-1ae4351eb204. Último de acesso: 24/03/2021.
