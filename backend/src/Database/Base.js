@@ -6,8 +6,8 @@ export default class Base {
 		const res = await this.collectionType.create(data);
 		return res;
 	}
-	async updateOne(data, update) {
-		const res = await this.collectionType.updateOne(data, update);
+	async updateOne(id, update) {
+		const res = await this.collectionType.updateOne(id, update);
 		return res;
 	}
 	async findOne(data) {

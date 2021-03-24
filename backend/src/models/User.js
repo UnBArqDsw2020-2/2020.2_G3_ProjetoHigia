@@ -13,7 +13,8 @@ const UserSchema = new mongoose.Schema({
 		},
 	],
 	birthday: { type: Date, required: true },
-	crm: {type: String, default: null},
+	crm: { type: String, default: null },
+	photo: String,
 });
 
 export default mongoose.model("User", UserSchema);
