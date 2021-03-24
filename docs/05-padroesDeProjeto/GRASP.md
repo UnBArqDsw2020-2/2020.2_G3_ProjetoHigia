@@ -2,17 +2,17 @@
 
 ## Histórico de versionamento                                                                                    
 
-|    Data    | Versão |                   Descrição                   |                                                                         Autor(es)                                                                         |
-| :--------: | :----: | :-------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 16/03/2021 |  0.1   |             Criação do documento              | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-| 16/03/2021 |  0.2   |               Adição de imagens               |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
-| 16/03/2021 |  0.3   |          Introduzindo padrões GRASP           |                                                   [Gabriel Hussein](https://github.com/GabrielHussein)                                                    |
-| 16/03/2021 |  0.4   |   Adição dos padrões Criador e Especialista   |                                                      [Aline Lermen](https://github.com/AlineLermen)                                                       |
-| 16/03/2021 |  0.5   |       Adição do padrão de polimorfismo        |                                                   [Gabriel Hussein](https://github.com/GabrielHussein)                                                    |
-| 16/03/2021 |  1.0   | Revisão do documento e adição das referências |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)
-| 23/03/2021 |  1.1   | Revisão do documento e adição de links ao github |                                                    [Gabriel Hussein](https://github.com/GabrielHussein)                                                     |
-| 24/03/2021 |  1.2   | Adição de informações dos GRASPs não utilizados |                                                    [Arthur Paiva](https://github.com/ArthurPaivaT)                                                     |
-| 24/03/2021 |  1.3   | Adição de mais GRASPs não utilizados e atualização das referências|                                                    [Aline Lermen](https://github.com/AlineLermen)                                                     |
+|    Data    | Versão |                             Descrição                              |                                                                         Autor(es)                                                                         |
+| :--------: | :----: | :----------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 16/03/2021 |  0.1   |                        Criação do documento                        | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+| 16/03/2021 |  0.2   |                         Adição de imagens                          |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
+| 16/03/2021 |  0.3   |                     Introduzindo padrões GRASP                     |                                                   [Gabriel Hussein](https://github.com/GabrielHussein)                                                    |
+| 16/03/2021 |  0.4   |             Adição dos padrões Criador e Especialista              |                                                      [Aline Lermen](https://github.com/AlineLermen)                                                       |
+| 16/03/2021 |  0.5   |                  Adição do padrão de polimorfismo                  |                                                   [Gabriel Hussein](https://github.com/GabrielHussein)                                                    |
+| 16/03/2021 |  1.0   |           Revisão do documento e adição das referências            |                                                    [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
+| 23/03/2021 |  1.1   |          Revisão do documento e adição de links ao github          |                                                   [Gabriel Hussein](https://github.com/GabrielHussein)                                                    |
+| 24/03/2021 |  1.2   |          Adição de informações dos GRASPs não utilizados           |                                                      [Arthur Paiva](https://github.com/ArthurPaivaT)                                                      |
+| 24/03/2021 |  1.3   | Adição de mais GRASPs não utilizados e atualização das referências |                                                      [Aline Lermen](https://github.com/AlineLermen)                                                       |
 
 ## Introdução
  
