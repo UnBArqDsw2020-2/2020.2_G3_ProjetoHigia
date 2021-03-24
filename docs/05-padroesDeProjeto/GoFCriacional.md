@@ -15,10 +15,10 @@
 <p style="text-align: justify;"> &emsp;&emsp;
 O objetivo principal do padrão de projeto GoF Singleton é garantir que uma classe tenha apenas uma única instância e que forneça um acesso global a essa mesma instância. Esse padrão de projeto é muito útil quando queremos ter o controle de acesso a recursos compartilhados como, por exemplo, uma base de dados de uma aplicação.
 </p>
- 
+
 ### Estrutura Genérica
- 
-![basicStructureSingleton](../assets/images/05-padroesDeProjeto/GoFCriacional/basicStructureSingleton.png)
+
+![basicStructureSingleton](../assets/images/05-padroesDeProjeto/GoFCriacional/basicStructureSingleton.png)  
  
 ### Pontos positivos
  
@@ -41,14 +41,14 @@ Em nosso Backend, criamos uma classe especialista em personalizar o Express (Fra
 ## Builder
  
 <p style="text-align: justify;"> &emsp;&emsp;
-O objetivo principal do GoF Builder é permitir a construção de um objeto gradativamente. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder para evitar passar todos os parâmetros sempre que o método for chamado.
+O objetivo principal do GoF Builder é permitir a construção de um objeto gradativamente. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder, para evitar passar todos os parâmetros sempre que o método for chamado, escolhendo qual parâmetro deve ser passado ou não. 
 </p>
  
 ### Pontos positivos
  
 - Com esse padrão é possível construir objetos passo a passo, adiar etapas da construção ou até executar etapas recursivamente;
 - É possível reutilizar o mesmo código de construção quando estiver construindo várias representações de produtos ;
-- _ Princípio de responsabilidade única _. Pode-se realizar a manutenção do código sem afetar outros componentes diretamente.
+- *Princípio de responsabilidade única*. Pode-se realizar a manutenção do código sem afetar outros componentes diretamente.
  
 ### Pontos negativos
  

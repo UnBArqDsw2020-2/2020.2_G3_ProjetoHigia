@@ -49,4 +49,5 @@
 - Padrões de Projeto
   - [GRASP](./05-padroesDeProjeto/GRASP.md)
   - [GoF Criacional](./05-padroesDeProjeto/GoFCriacional.md)
-  - [GoF Decorator](./05-padroesDeProjeto/decorator.md)
+  - [GoF Estrutural](./05-padroesDeProjeto/GoFEstrutural.md)
+  - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
