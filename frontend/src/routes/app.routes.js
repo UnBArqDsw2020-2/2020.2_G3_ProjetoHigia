@@ -5,7 +5,7 @@ import SearchPacient from '../pages/SearchPacient';
 const AppStack = createStackNavigator();
 
 const AppRoutes = () => (
-  <AppStack.Navigator>
+  <AppStack.Navigator headerMode={'none'}>
     <AppStack.Screen name="SearchPacient" component={SearchPacient} />
   </AppStack.Navigator>
 );
