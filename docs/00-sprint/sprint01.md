@@ -22,9 +22,10 @@
 ### Resultado
 
 Todas as issues propostas ao decorrer da sprint foram realizadas e todos os documentos foram revisados . Não houve dívida técnica.
-### Culmutative Flow
 
-![culmutativeFlow01](../assets/images/00-sprint/culmutativeFlow/culmutativeFlow01.png)
+### Cumulative Flow
+
+![cumulativeFlow01](../assets/images/00-sprint/cumulativeFlow/cumulativeFlow01.png)
 
 ### Burndown Report
 
