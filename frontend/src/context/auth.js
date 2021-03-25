@@ -29,9 +29,9 @@ export const AuthProvider = ({ children }) => {
 
     try {
       const response = await firebase
-        .auth()
-        .signInWithEmailAndPassword(email, password);
-
+      .auth()
+      .signInWithEmailAndPassword(email, password);
+      
       setUser(response.user.providerData[0]);
 
       api.defaults.headers.Authorization = `Bearer ${JSON.stringify(

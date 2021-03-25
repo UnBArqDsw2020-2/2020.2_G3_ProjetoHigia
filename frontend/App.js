@@ -8,6 +8,7 @@ import AppLoading from 'expo-app-loading';
 import Routes from './src/routes';
 import MedicalReport from './src/pages/MedicalReport';
 
+
 const App = () => {
   var [fontsLoaded] = useFonts({ Junge_400Regular });
 
