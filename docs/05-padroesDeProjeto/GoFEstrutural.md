@@ -12,7 +12,7 @@
 | 23/03/2021 |  0.6   |             Adição das imagens de exemplo e implantação   | [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
 | 23/03/2021 |  0.7   |             Adição de pontos positivos e negativos e aplicação  | [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
 | 23/03/2021 |  1.0   |             Adição de referências   | [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-| 23/03/2021 |  1.1   |             Revisão e ajuste do documento   | [Aline Lermen](https://github.com/AlineLermen) |
+| 24/03/2021 |  1.1   |             Revisão e ajuste do documento   | [Aline Lermen](https://github.com/AlineLermen) |
 
 
 ## Decorator
