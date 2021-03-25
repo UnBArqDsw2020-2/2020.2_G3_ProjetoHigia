@@ -35,4 +35,4 @@ Todas as issues propostas ao decorrer da sprint foram realizadas. Não houve dí
 
 ### Velocity Tracking
 
-![velocity03](../assets/images/00-sprint/velocity/velocity03.png)
+![velocity02](../assets/images/00-sprint/velocity/velocity02.png)

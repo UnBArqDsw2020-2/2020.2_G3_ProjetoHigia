@@ -16,6 +16,7 @@
   - [Sprint 1](./00-sprint/sprint01.md)
   - [Sprint 2](./00-sprint/sprint02.md)
   - [Sprint 3](./00-sprint/sprint03.md)
+  <!-- - [Sprint 4](./00-sprint/sprint04.md) -->
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
