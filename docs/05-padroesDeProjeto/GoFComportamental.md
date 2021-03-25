@@ -6,10 +6,11 @@
 | :--------: | :----: | :----------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
 | 22/03/2021 |  0.1   |             Criação do documento GoF Comportamental        | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo)  |
 | 22/03/2021 |  0.2   |             Adição de exemplos da aplicação        | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo)  |
-| 22/03/2021 | 1.0 |            Adição de imagens                          | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo)  |
-| 23/03/2021 | 1.1 |            Introdução do state e adição de referências                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
-| 23/03/2021 | 1.2 |            Adição de imagens e suas explicações                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
-| 23/03/2021 | 1.3 |            Adicionados pontos positivos e negativos                        |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 22/03/2021 | 0.3 |            Adição de imagens                          | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo)  |
+| 23/03/2021 | 0.4 |            Introdução do state e adição de referências                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 23/03/2021 | 0.5 |            Adição de imagens e suas explicações                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 23/03/2021 | 0.6 |            Adicionados pontos positivos e negativos                        |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 25/03/2021 |  1.0   |            Adicionando GoFs criacionais não utilizados            |                           [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein)                 |
 
 
 ## Observer
@@ -64,13 +65,209 @@ Dentro do Hígia usaremos o State com a função do React Native useState em div
 Como se pode ver, ao acessar com suas credenciais, o usuário muda o estado do programa para ativo, gerando um token de login para o usuário logado, que servirá para manter a área de acesso do usuário (ficha médica, pesquisa, configurações, funcionalidades em geral) acessável.
 
 ### Pontos positivos
-    - Os estados podem ser melhor codificados sem a necessidade de ficar duplicando código.
-    - Simplificação de código.
-    - Organização de código relacionado a estados particulares em classes separadas.
+- Os estados podem ser melhor codificados sem a necessidade de ficar duplicando código.
+- Simplificação de código.
+- Organização de código relacionado a estados particulares em classes separadas.
 ### Pontos negativos
-    - Aplicar o padrão pode ser um exagero se existem apenas algumas mudanças de estado ou um leque limitado de estados diferentes.
-    - Pode ser misturado e confundido com o padrão de projeto Strategy.
-    - Dependendo do tamanho das condições dos estados e o número de estados diferentes o código pode se tornar difícil de realizar manutenções.
+- Aplicar o padrão pode ser um exagero se existem apenas algumas mudanças de estado ou um leque limitado de estados diferentes.
+- Pode ser misturado e confundido com o padrão de projeto Strategy.
+- Dependendo do tamanho das condições dos estados e o número de estados diferentes o código pode se tornar difícil de realizar manutenções.
+
+
+
+## GoFs não utilizados
+
+
+### Chain of Responsability
+<p style="text-align: justify;"> &emsp;&emsp;
+É um padrão de projeto comportamental que permite que você passe pedidos por uma corrente de handlers. Ao receber um pedido, cada handler decide se processa o pedido ou o passa adiante para o próximo handler na corrente.
+</p>
+
+#### Exemplo
+
+![chainOfRespExample](../assets/images/05-padroesDeProjeto/GoFComportamental/chainOfRespExample.png)
+
+Como observado no exemplo, o Chain of Responsability passa o pedido por vários handlers, caso os dados estejam corretos o comportamento padrão é utilizado, caso algo esteja errado o handler impede o resto do processo de continuar.
+
+
+#### Pontos positivos
+- Pode-se controlar a ordem de tratamento dos pedidos;
+- *Princípio de responsabilidade única*. Pode-se desacoplar classes que invocam operações de classes que realizam operações;
+- *Princípio aberto/fechado*. Pode-se introduzir novos handlers na aplicação sem quebrar o código cliente existente.
+
+#### Pontos negativos
+- Alguns pedidos podem acabar sem tratamento.
+
+
+
+
+### Command
+<p style="text-align: justify;"> &emsp;&emsp;
+Esse é um padrão que transforma um pedido em um objeto independente que contém toda a informação sobre o pedido. Essa transformação permite que você parametrize métodos com diferentes pedidos, atrase ou coloque a execução do pedido em uma fila, e suporte operações que não podem ser feitas.
+</p>
+
+#### Exemplo
+
+![commandExample](../assets/images/05-padroesDeProjeto/GoFComportamental/commandExample.png)
+
+Como é possível observar no exemplo, a Command parametriza todos os métodos relacionados a um objeto específico em uma única interface que realiza a execução da ação.
+
+
+#### Pontos positivos
+- *Princípio de responsabilidade única*. Pode-se desacoplar classes que invocam operações de classes que fazem essas operações;
+- *Princípio aberto/fechado*. Pode-se introduzir novos comandos na aplicação sem quebrar o código cliente existente;
+- Pode-se implementar desfazer/refazer;
+- É possível implementar a execução adiada de operações;
+- Pode-se montar um conjunto de comandos simples em um complexo.
+
+
+#### Pontos negativos
+- O código pode ficar mais complicado uma vez que está sendo introduzindo uma nova camada entre remetentes e destinatários.
+
+
+
+
+### Iterator
+<p style="text-align: justify;"> &emsp;&emsp;
+É um padrão de projeto comportamental que permite a você percorrer elementos de uma coleção sem expor as representações dele (lista, pilha, árvore, etc.)
+</p>
+
+#### Exemplo
+
+![iteratorExample](../assets/images/05-padroesDeProjeto/GoFComportamental/iteratorExample.png)
+
+Neste exemplo o Iterator é utilizado para percorrer a coleção que encapsula o acesso ao grafo social do Facebook. A coleção fornece vários Iterators que podem percorrer os perfis de diferentes maneiras.
+
+
+#### Pontos positivos
+- *Princípio de responsabilidade única*. Pode-se limpar o código e as coleções ao extrair os pesados algoritmos de travessia para classes separadas;
+- *Princípio aberto/fechado*. Pode-se implementar novos tipos de coleções e iteradores e passá-los para o código existente sem quebrar coisa alguma;
+- Pode-se iterar sobre a mesma coleção em paralelo porque cada objeto iterador contém seu próprio estado de iteração;
+- Pelas mesmas razões, pode-se atrasar uma iteração e continuá-la quando necessário.
+
+#### Pontos negativos
+- Aplicar o padrão pode ser um preciosismo se a aplicação só trabalha com coleções simples;
+- Usar um iterador pode ser menos eficiente que percorrer elementos de algumas coleções especializadas diretamente.
+
+
+
+
+### Mediator
+<p style="text-align: justify;"> &emsp;&emsp;
+Esse é um padrão de projeto comportamental que permite reduzir as dependências caóticas entre objetos. O padrão restringe comunicações diretas entre objetos e os força a colaborar apenas através do objeto mediador.</p>
+
+#### Exemplo
+
+![mediatorExample](../assets/images/05-padroesDeProjeto/GoFComportamental/mediatorExample.png)
+
+Como observado neste exemplo, o Mediator auxilia na redução das dependências entre as várias classes de interface de usuário. 
+
+
+#### Pontos positivos
+- *Princípio de responsabilidade única*. Pode-se extrair as comunicações entre vários componentes para um único lugar, tornando as de mais fácil entendimento e manutenção;
+- *Princípio aberto/fechado*. Pode-se introduzir novos mediadores sem ter que mudar os próprios componentes;
+- É possível reduzir o acoplamento entre os vários componentes de um programa;
+- Pode-se reutilizar componentes individuais mais facilmente.
+
+#### Pontos negativos
+- Com o tempo, um mediador pode evoluir para um *Objeto Deus*.
+
+
+
+
+### Memento
+<p style="text-align: justify;"> &emsp;&emsp;
+É um padrão de projeto comportamental que permite que salvar e restaurar o estado anterior de um objeto sem revelar os detalhes de sua implementação.
+</p>
+
+#### Exemplo
+
+![mementoExample](../assets/images/05-padroesDeProjeto/GoFComportamental/mementoExample.png)
+
+Neste exemplo, o Memento trabalha junto com o Command para armazenar retratos do estado de um editor de texto complexo e restaurá-lo para um estado anterior desses retratos quando necessário.
+
+
+#### Pontos positivos
+- Pode-se produzir retratos do estado de um objeto sem violar seu encapsulamento;
+- Pode-se simplificar o código da originadora permitindo que a cuidadora mantenha o histórico do estado da originadora.
+
+#### Pontos negativos
+- A aplicação pode consumir muita RAM se os clientes criarem mementos com muita frequência;
+- Cuidadoras devem acompanhar o ciclo de vida da originadora para serem capazes de destruir mementos obsoletos;
+- A maioria das linguagens de programação dinâmicas, tais como PHP, Python e JavaScript, não conseguem garantir que o estado dentro do memento permaneça intacto.
+
+
+
+
+
+### Strategy
+<p style="text-align: justify;"> &emsp;&emsp;
+Esse é um padrão que permite definir uma família de algoritmos, colocá-los em classes separadas, e fazer os objetos deles intercambiáveis.
+</p>
+
+#### Exemplo
+
+![strategyExample](../assets/images/05-padroesDeProjeto/GoFComportamental/strategyExample.png)
+
+<!-- Breve explicação do diagrama -->
+
+
+#### Pontos positivos
+- Pode-se trocar algoritmos usados dentro de um objeto durante a execução;
+- Pode-se isolar os detalhes de implementação de um algoritmo do código que usa ele;
+- Pode-se substituir a herança por composição;
+- *Princípio aberto/fechado*. Pode-se introduzir novas estratégias sem mudar o contexto.
+
+#### Pontos negativos
+- Se só há um par de algoritmos e eles raramente mudam, não há motivo real para deixar o programa mais complicado com novas classes e interfaces que vêm junto com o padrão;
+- Muitas linguagens de programação modernas tem suporte do tipo funcional que permite que sejam implementadas implemente diferentes versões de um algoritmo dentro de um conjunto de funções anônimas. Então você poderia usar essas funções exatamente como se estivesse usando objetos estratégia, mas sem inchar seu código com classes e interfaces adicionais.
+
+
+
+
+### Template Method
+<p style="text-align: justify;"> &emsp;&emsp;
+É um padrão de projeto comportamental que define o esqueleto de um algoritmo na superclasse mas deixa as subclasses sobrescreverem etapas específicas do algoritmo sem modificar sua estrutura.</p>
+
+#### Exemplo
+
+![templateMethodExample](../assets/images/05-padroesDeProjeto/GoFComportamental/templateMethodExample.png)
+
+<!-- Breve explicação do diagrama --> 
+
+
+#### Pontos positivos
+- Pode-se deixar clientes sobrescrever apenas certas partes de um algoritmo grande, tornando-os menos afetados por mudanças que acontece por outras partes do algoritmo;
+- Pode-se elevar o código duplicado para uma superclasse.
+
+#### Pontos negativos
+- Alguns clientes podem ser limitados ao fornecer o esqueleto de um algoritmo;
+- Implementações do padrão Template Method tendem a ser mais difíceis de se manter, quanto mais etapas eles tiverem.
+
+
+
+
+### Visitor
+<p style="text-align: justify;"> &emsp;&emsp;
+É um padrão de projeto comportamental que permite separar algoritmos dos objetos nos quais eles operam.
+</p>
+
+#### Exemplo
+
+![visitorExample](../assets/images/05-padroesDeProjeto/GoFComportamental/visitorExample.png)
+
+<!-- Breve explicação do diagrama --> 
+
+
+#### Pontos positivos
+- *Princípio aberto/fechado*. Pode-se introduzir um novo comportamento que pode funcionar com objetos de diferentes classes sem mudar essas classes;
+- *Princípio de responsabilidade única*. Pode-se mover múltiplas versões do mesmo comportamento para dentro da mesma classe;
+- Um objeto visitante pode acumular algumas informações úteis enquanto trabalha com vários objetos. Isso pode ser interessante quando se quer percorrer algum objeto de estrutura complexa, tais como um objeto árvore, e aplicar o visitante para cada objeto da estrutura.
+
+#### Pontos negativos
+- É necessário atualizar todos os visitantes a cada vez que a classe é adicionada ou removida da hierarquia de elementos.
+- Visitantes podem não ter seu acesso permitido para campos e métodos privados dos elementos que eles deveriam estar trabalhando.
+
 
 ## Referências
 
