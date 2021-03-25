@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { View, Text, Image, ImageBackground, ScrollView } from 'react-native';
-import { FontAwesome as Icon } from '@expo/vector-icons';
+import { MaterialIcons as Icon } from '@expo/vector-icons';
 import styles from './styles';
-import Card from '../../components/Card';
+import CardInfo from '../../components/CardInfo';
 import FloatingButton from '../../components/FloatingButton';
 import { user } from '../../utils/mocks.js';
+import CardEmergencyContact from '../../components/CardEmergencyContact';
 
 const MedicalReport = () => {
-  const [edit, setEdit] = useState(true);
+  const [edit, setEdit] = useState(false);
 
   return (
     <ImageBackground
@@ -34,9 +35,9 @@ const MedicalReport = () => {
         <View style={styles.line} />
 
         <Text style={styles.title}>Grupo sanguíneo</Text>
-        <Card
+        <CardInfo
           name={user.bloodGroup}
-          value={user.bloodGroup}
+          description={user.bloodGroup}
           onChangeText={() => {}}
           edit={edit}
         />
@@ -45,13 +46,12 @@ const MedicalReport = () => {
 
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Medicamentos</Text>
-          {edit ? null : <Icon name="plus-circle" size={20} color="#86172D" />}
+          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
         </View>
         {user.medicament.map((item) => (
-          <Card
+          <CardInfo
             key={item.id}
-            name={item.name}
-            value={item.name}
+            description={item.name}
             onChangeText={() => {}}
             edit={edit}
           />
@@ -61,15 +61,14 @@ const MedicalReport = () => {
 
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Alergias</Text>
-          {edit ? null : <Icon name="plus-circle" size={20} color="#86172D" />}
+          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
         </View>
         {user.allergy.map((item) => (
-          <Card
+          <CardInfo
             key={item.id}
-            edit={edit}
-            name={item.name}
-            value={item.name}
+            description={item.name}
             onChangeText={() => {}}
+            edit={edit}
           />
         ))}
 
@@ -77,17 +76,14 @@ const MedicalReport = () => {
 
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Contatos de Emergência</Text>
-          {edit ? null : <Icon name="plus-circle" size={20} color="#86172D" />}
+          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
         </View>
         {user.emergencyContacts.map((item) => (
-          <Card
+          <CardEmergencyContact
             key={item.id}
-            edit={edit}
             name={item.name}
             number={item.number}
-            emergencyContact
-            value={item.name}
-            onChangeText={() => {}}
+            edit={edit}
           />
         ))}
       </ScrollView>
