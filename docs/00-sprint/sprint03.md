@@ -34,9 +34,9 @@ As métricas ficaram com qualidade ruim, pois a equipe não fez a utilização c
 
 Dos 32 pontos propostos no início da sprint 29 foram concluídos. A issue [#48](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/48) foi adiada para a sprint seguinte.
 
-### Culmutative Flow
+### Cumulative Flow
 
-![culmutativeFlow03](../assets/images/00-sprint/culmutativeFlow/culmutativeFlow03.png)
+![cumulativeFlow03](../assets/images/00-sprint/cumulativeFlow/cumulativeFlow03.png)
 
 ### Burndown Report
 
