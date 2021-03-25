@@ -36,4 +36,30 @@ export const user = {
       number: '(61) 99999-9999  ',
     },
   ],
+  folders: [
+    {
+      id: 1,
+      name: 'Exame de Sangue',
+      files: [
+        {
+          id: 1,
+          name: 'Exame do dia 20/11/2020',
+        },
+        {
+          id: 2,
+          name: 'Exame do dia 15/01/2021',
+        },
+      ],
+    },
+    {
+      id: 2,
+      name: 'Receitas',
+      files: [
+        {
+          id: 1,
+          name: 'Receita do Rivotril',
+        },
+      ],
+    },
+  ],
 };
