@@ -8,9 +8,10 @@
   - [Entrega 02](./videos/entrega2.md)
 - Projeto
   - [Metodologias](./03-projeto/metodologias.md)
-  - [Documento de Visão](./03-projeto/docVisao.md)
   - [Estimativas](./03-projeto/estimativas.md)
   - [BPMN](./03-projeto/bpmn.md)
+  - [Documento de Visão](./03-projeto/docVisao.md)
+  - [Guia de Estilo](03-projeto/guiaDeEstilo.md)
 - Sprints
   - [Sprint 0](./00-sprint/sprint00.md)
   - [Sprint 1](./00-sprint/sprint01.md)
