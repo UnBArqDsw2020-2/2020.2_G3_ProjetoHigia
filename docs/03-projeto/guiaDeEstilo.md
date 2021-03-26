@@ -55,10 +55,10 @@ Para dar um aspecto mais amigável ao aplicativo foi adotada uma padronização 
 ![btnExample](../assets/images/01-projeto/btnExample.png)
 
 #### 3.5.2 Header
-![headerStyle](../assets/images/01-projeto/header.png)
+![headerStyle](../assets/images/01-projeto/headerStyle.png)
 
 ### 3.5.3 Bottom Bar
-![bottomBarStyle](../assets/images/01-projeto/bottomBarExample.png)
+![bottomBarStyle](../assets/images/01-projeto/bottomBarStyle.png)
 
 ## Referências
 - Hígia. Acesso em:<https://pt.wikipedia.org/wiki/Hígia>. Último acesso em: 26/03/2021.
