@@ -11,7 +11,7 @@
 | 23/03/2021 | 0.5 |            Adição de imagens e suas explicações                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 | 23/03/2021 | 0.6 |            Adicionados pontos positivos e negativos                        |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 | 25/03/2021 |  1.0   |            Adicionando GoFs criacionais não utilizados            |                           [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein)                 |
-| 26/03/2021 |  1.1   |            Adicionando GoFs criacionais não utilizados            |      [Danillo Souza](https://github.com/danillogs) e [Arthur Paiva](https://github.com/ArthurPaivaT)                 |
+| 26/03/2021 |  1.1   |            Adicionando GoF extra            |      [Danillo Souza](https://github.com/danillogs) e [Arthur Paiva](https://github.com/ArthurPaivaT)                 |
 
 
 
