@@ -11,27 +11,30 @@
 | 23/03/2021 | 0.5 |            Adição de imagens e suas explicações                         |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 | 23/03/2021 | 0.6 |            Adicionados pontos positivos e negativos                        |[Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 | 25/03/2021 |  1.0   |            Adicionando GoFs criacionais não utilizados            |                           [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein)                 |
+| 26/03/2021 |  1.1   |            Adicionando GoFs criacionais não utilizados            |      [Danillo Souza](https://github.com/danillogs) e [Arthur Paiva](https://github.com/ArthurPaivaT)                 |
 
 
-## Observer
+
+## GoFs utilizados
+### Observer
 <p style="text-align: justify;"> &emsp;&emsp;
 O padrão GoF Observer é um padrão de projeto comportamental que permite definir um mecanismo de assinatura para notificar múltiplos objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando.
 </p>
 
-### Diagrama Genérico
+#### Diagrama Genérico
 
 ![Generic Diagram](../assets/images/05-padroesDeProjeto/GoFComportamental/observerGeneric.png)
 
-### Pontos positivos
+#### Pontos positivos
 - *Princípio aberto/fechado*. É possível introduzir novas classes assinantes sem ter que mudar o código da publicadora (e vice versa se existe uma interface publicadora);
 - É possível estabelecer relações entre objetos durante a execução.
 
 
-### Pontos negativos
+#### Pontos negativos
 - Os assinantes são notificados em ordem aleatória.
 
 
-### Aplicação
+#### Aplicação
 
 -  Subject
 
@@ -41,18 +44,18 @@ O padrão GoF Observer é um padrão de projeto comportamental que permite defin
 
 ![Auth Controller](../assets/images/05-padroesDeProjeto/GoFComportamental/authSubject.png)
 
-## State
+### State
 <p style="text-align: justify;"> &emsp;&emsp;
 O State é um padrão de projeto de comportamento que permite alterear o comportamento de um objeto quando seu estado interno muda. Sua ideia principal é que, dado um momento qualquer, exite um número finito de estados do qual o programa pode se encontrar. A partir de um único estado, o programa pode se comportar de diferentes maneiras, e também pode alterar seu estado instantaneamente. Contudo, dependendo do estado atual em que se encontra, o programa pode ou não ir para certos estados pré-definidos. 
 </p>
 
-### Exemplo
+#### Exemplo
 
 ![State Exemplo](../assets/images/05-padroesDeProjeto/GoFComportamental/stateExample.png)
 
 Como ilustrado no diagrama acima, o State exige uma mudança de comportamento para que se possa tomar uma decisão do que fazer em relação ao estado atual da aplicação.
 
-### Aplicação - Tela de login
+#### Aplicação - Tela de login
 
 Dentro do Hígia usaremos o State com a função do React Native useState em diversas partes do projeto, o useState é utilizado para alterar o estado interno de uma variável, para fins de exemplificação usaremos o sistema de login, que é uma maneira simplificada de ilustrar o padrão de projeto de comportamento State.
 
@@ -74,8 +77,7 @@ Como se pode ver, ao acessar com suas credenciais, o usuário muda o estado do p
 - Dependendo do tamanho das condições dos estados e o número de estados diferentes o código pode se tornar difícil de realizar manutenções.
 
 
-
-## GoFs não utilizados
+## GoF extra
 
 
 ### Chain of Responsability
@@ -89,6 +91,16 @@ Como se pode ver, ao acessar com suas credenciais, o usuário muda o estado do p
 
 Como observado no exemplo, o Chain of Responsability passa o pedido por vários handlers, caso os dados estejam corretos o comportamento padrão é utilizado, caso algo esteja errado o handler impede o resto do processo de continuar.
 
+#### Aplicação - Verificação de Autenticação
+<p style="text-align: justify;"> &emsp;&emsp;
+O padrão Chain of Responsibility está sendo usado com um handler de verificação de permissão de acesso, o handler verifica se a autenticação do usuário é válida e só então passa adiante para o próximo handler que irá efetuar a requisição.
+</p>
+
+#### Middleware
+![middleware](../assets/images/05-padroesDeProjeto/GoFComportamental/middleware.png)
+
+#### Rotas definindo a ordem dos handlers
+![rotasMiddleware](../assets/images/05-padroesDeProjeto/GoFComportamental/rotasMiddleware.png)
 
 #### Pontos positivos
 - Pode-se controlar a ordem de tratamento dos pedidos;
@@ -100,6 +112,7 @@ Como observado no exemplo, o Chain of Responsability passa o pedido por vários 
 
 
 
+## GoFs não utilizados
 
 ### Command
 <p style="text-align: justify;"> &emsp;&emsp;
@@ -275,3 +288,4 @@ Esse é um padrão que permite definir uma família de algoritmos, colocá-los e
 - Refactoring Guru - Observer. Acesso em: https://refactoring.guru/pt-br/design-patterns/observer. Último acesso em: 22/03/2021.
 - Refactoring Guru - State. Acesso em: https://refactoring.guru/design-patterns/state. Último acesso em: 23/03/2021.
 - Projeto Stock. Acesso em: https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Estudos/comportamental?id=state. Último acesso em: 23/03/2021.
+- Projeto Stock. Acesso em: https://unbarqdsw.github.io/2020.1_G12_Stock/#/DesignPatterns/ChainResponsibility. Último acesso em: 25/03/2021.

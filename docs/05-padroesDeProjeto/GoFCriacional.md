@@ -11,28 +11,29 @@
 | 22/03/2021 |  0.5   |            Adicionado imagem do Builder            |                            [Danillo Souza](https://github.com/danillogs)                            |
 | 25/03/2021 |  1.0   |            Adicionando GoFs criacionais não utilizados            |                           [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein)                 |
 
+## GoFs utilizados
 
-## Singleton
+### Singleton
 
 <p style="text-align: justify;"> &emsp;&emsp;
 O objetivo principal do padrão de projeto GoF Singleton é garantir que uma classe tenha apenas uma única instância e que forneça um acesso global a essa mesma instância. Esse padrão de projeto é muito útil quando queremos ter o controle de acesso a recursos compartilhados como, por exemplo, uma base de dados de uma aplicação.
 </p>
 
-### Estrutura Genérica
+#### Estrutura Genérica
 
 ![basicStructureSingleton](../assets/images/05-padroesDeProjeto/GoFCriacional/basicStructureSingleton.png)  
  
-### Pontos positivos
+#### Pontos positivos
  
 - Pelo fato das classes nunca mudarem de estado e possuírem somente uma instância executando, melhora o desempenho e qualidade do software;
 - O código se torna mais legível.
  
-### Pontos negativos
+#### Pontos negativos
  
 - Caso o software não vá utilizar com frequencia a classe que implementa esse padrão, pode trazer problemas de desempenho;
 - Torna mais complexo a realização de testes unitários.
  
-### Aplicação
+#### Aplicação
  
 <p style="text-align: justify;"> &emsp;&emsp;
 Em nosso Backend, criamos uma classe especialista em personalizar o Express (Framework especializado na construção de aplicações web e API's) a SetupServer. A SetupServer foi idealizada com o objetivo de tornar o arquivo de nosso servidor mais limpo. O único propósito dessa classe é subir o servidor de nossa API, portanto, a mesma é instanciada uma única vez e de forma global.
@@ -40,23 +41,23 @@ Em nosso Backend, criamos uma classe especialista em personalizar o Express (Fra
  
 ![singleton](../assets/images/05-padroesDeProjeto/GoFCriacional/singleton.png)
  
-## Builder
+### Builder
  
 <p style="text-align: justify;"> &emsp;&emsp;
 O objetivo principal do GoF Builder é permitir a construção de um objeto gradativamente. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder, para evitar passar todos os parâmetros sempre que o método for chamado, escolhendo qual parâmetro deve ser passado ou não. 
 </p>
  
-### Pontos positivos
+#### Pontos positivos
  
 - Com esse padrão é possível construir objetos passo a passo, adiar etapas da construção ou até executar etapas recursivamente;
 - É possível reutilizar o mesmo código de construção quando estiver construindo várias representações de produtos ;
 - *Princípio de responsabilidade única*. Pode-se realizar a manutenção do código sem afetar outros componentes diretamente.
  
-### Pontos negativos
+#### Pontos negativos
  
 - A complexidade do código aumenta, pois esse padrão exige a criação de classes novas.
  
-### Aplicação
+#### Aplicação
  
 <p style="text-align: justify;"> &emsp;&emsp;
 O Builder foi utilizado na seguinte classe. Estamos utilizando o padrão para a montagem da ficha médica, nesse caso em especifico para a manipulação dos exames do usuário.

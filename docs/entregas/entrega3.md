@@ -10,6 +10,7 @@
 - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
   
 ### Módulo Padrões de Projeto Extras
+- [Chain of Responsibility](./05-padroesDeProjeto/GoFComportamental?id=gof-extra)
 
 ### Iniciativas extras
 - [Sprint 2](./00-sprint/sprint02.md)
