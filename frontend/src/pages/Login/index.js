@@ -52,7 +52,7 @@ const Login = (props) => {
           <View style={styles.container2}>
             <TouchableOpacity
               style={styles.btn}
-              onPress={() => signIn({ email }, { password })}
+              onPress={() => signIn(email, password)}
             >
               <Text style={styles.btnText}>Entrar</Text>
             </TouchableOpacity>

@@ -10,6 +10,7 @@ export default function SignUp(props) {
   const { signIn } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isDoctor, setIsDoctor] = useState(false);
 
   return (
     <ImageBackground
@@ -38,7 +39,10 @@ export default function SignUp(props) {
           <TouchableOpacity style={styles.btn}>
             <Text
               style={styles.btnText}
-              onPress={() => navigation.navigate("SignUpDoctor")}
+              onPress={() => {
+                setIsDoctor(true);
+                navigation.navigate("SignUpPatient", { isDoctor });
+              }}
             >
               Médico
             </Text>
@@ -46,7 +50,10 @@ export default function SignUp(props) {
           <TouchableOpacity style={styles.btn}>
             <Text
               style={styles.btnText}
-              onPress={() => navigation.navigate("SignUpPatient")}
+              onPress={() => {
+                setIsDoctor(false);
+                navigation.navigate("SignUpPatient", { isDoctor })
+              }}
             >
               Paciente
             </Text>

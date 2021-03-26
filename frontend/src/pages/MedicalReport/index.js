@@ -5,9 +5,10 @@ import styles from './styles';
 import CardInfo from '../../components/CardInfo';
 import FloatingButton from '../../components/FloatingButton';
 import { user } from '../../utils/mocks.js';
+import Header from '../../components/Header'
 import CardEmergencyContact from '../../components/CardEmergencyContact';
 
-const MedicalReport = () => {
+const MedicalReport = ({navigation}) => {
   const [edit, setEdit] = useState(false);
 
   return (
@@ -16,77 +17,78 @@ const MedicalReport = () => {
       source={require('../../../assets/logo.jpg')}
       imageStyle={{ width: '100%', height: '100%' }}
     >
-      <FloatingButton edit={edit} setEdit={() => setEdit(!edit)} />
-      <View style={styles.infoUser}>
-        <Image source={require('../../../assets/profile.png')} />
+      <Header title = 'Ficha medica' navigation={navigation}/>
+        <FloatingButton edit={edit} setEdit={() => setEdit(!edit)} />
+        <View style={styles.infoUser}>
+          <Image source={require('../../../assets/profile.png')} />
 
-        <View style={styles.dataUser}>
-          <Text style={styles.userName}>{user.name}</Text>
-          <Text>{user.age} anos</Text>
+          <View style={styles.dataUser}>
+            <Text style={styles.userName}>{user.name}</Text>
+            <Text>{user.age} anos</Text>
 
-          <View style={styles.heightWeight}>
-            <Text>{user.height} cm</Text>
-            <Text>{user.weight} kg</Text>
+            <View style={styles.heightWeight}>
+              <Text>{user.height} cm</Text>
+              <Text>{user.weight} kg</Text>
+            </View>
           </View>
         </View>
-      </View>
 
-      <ScrollView>
-        <View style={styles.line} />
+        <ScrollView>
+          <View style={styles.line} />
 
-        <Text style={styles.title}>Grupo sanguíneo</Text>
-        <CardInfo
-          name={user.bloodGroup}
-          description={user.bloodGroup}
-          onChangeText={() => {}}
-          edit={edit}
-        />
-
-        <View style={styles.line} />
-
-        <View style={styles.titleContainer}>
-          <Text style={styles.title}>Medicamentos</Text>
-          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
-        </View>
-        {user.medicament.map((item) => (
+          <Text style={styles.title}>Grupo sanguíneo</Text>
           <CardInfo
-            key={item.id}
-            description={item.name}
+            name={user.bloodGroup}
+            description={user.bloodGroup}
             onChangeText={() => {}}
             edit={edit}
           />
-        ))}
 
-        <View style={styles.line} />
+          <View style={styles.line} />
 
-        <View style={styles.titleContainer}>
-          <Text style={styles.title}>Alergias</Text>
-          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
-        </View>
-        {user.allergy.map((item) => (
-          <CardInfo
-            key={item.id}
-            description={item.name}
-            onChangeText={() => {}}
-            edit={edit}
-          />
-        ))}
+          <View style={styles.titleContainer}>
+            <Text style={styles.title}>Medicamentos</Text>
+            {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
+          </View>
+          {user.medicament.map((item) => (
+            <CardInfo
+              key={item.id}
+              description={item.name}
+              onChangeText={() => {}}
+              edit={edit}
+            />
+          ))}
 
-        <View style={styles.line} />
+          <View style={styles.line} />
 
-        <View style={styles.titleContainer}>
-          <Text style={styles.title}>Contatos de Emergência</Text>
-          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
-        </View>
-        {user.emergencyContacts.map((item) => (
-          <CardEmergencyContact
-            key={item.id}
-            name={item.name}
-            number={item.number}
-            edit={edit}
-          />
-        ))}
-      </ScrollView>
+          <View style={styles.titleContainer}>
+            <Text style={styles.title}>Alergias</Text>
+            {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
+          </View>
+          {user.allergy.map((item) => (
+            <CardInfo
+              key={item.id}
+              description={item.name}
+              onChangeText={() => {}}
+              edit={edit}
+            />
+          ))}
+
+          <View style={styles.line} />
+
+          <View style={styles.titleContainer}>
+            <Text style={styles.title}>Contatos de Emergência</Text>
+            {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
+          </View>
+          {user.emergencyContacts.map((item) => (
+            <CardEmergencyContact
+              key={item.id}
+              name={item.name}
+              number={item.number}
+              edit={edit}
+            />
+          ))}
+        </ScrollView>
     </ImageBackground>
   );
 };
