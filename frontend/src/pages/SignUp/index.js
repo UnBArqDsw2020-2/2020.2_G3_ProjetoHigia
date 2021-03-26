@@ -10,7 +10,7 @@ export default function SignUp(props) {
   const { signIn } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isDoctor, setIsDoctor] = useState(false);
+  const [isDoctor] = useState(false);
 
   return (
     <ImageBackground
@@ -40,8 +40,7 @@ export default function SignUp(props) {
             <Text
               style={styles.btnText}
               onPress={() => {
-                setIsDoctor(true);
-                navigation.navigate("SignUpPatient", { isDoctor });
+                navigation.navigate("SignUpPatient", { isDoctor: "true" });
               }}
             >
               Médico
@@ -51,8 +50,7 @@ export default function SignUp(props) {
             <Text
               style={styles.btnText}
               onPress={() => {
-                setIsDoctor(false);
-                navigation.navigate("SignUpPatient", { isDoctor })
+                navigation.navigate("SignUpPatient", { isDoctor: "false" })
               }}
             >
               Paciente
