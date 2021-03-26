@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import { View, Text, Image, ImageBackground, ScrollView } from 'react-native';
-import { MaterialIcons as Icon } from '@expo/vector-icons';
-import styles from './styles';
-import CardInfo from '../../components/CardInfo';
-import FloatingButton from '../../components/FloatingButton';
-import { user } from '../../utils/mocks.js';
-import CardEmergencyContact from '../../components/CardEmergencyContact';
+import React, { useState } from "react";
+import { View, Text, Image, ImageBackground, ScrollView } from "react-native";
+import { MaterialIcons as Icon } from "@expo/vector-icons";
+import styles from "./styles";
+import CardInfo from "../../components/CardInfo";
+import FloatingButton from "../../components/FloatingButton";
+import UserInfo from "../../components/UserInfo";
+import { user } from "../../utils/mocks.js";
+import CardEmergencyContact from "../../components/CardEmergencyContact";
 
 const MedicalReport = () => {
   const [edit, setEdit] = useState(false);
@@ -13,23 +14,17 @@ const MedicalReport = () => {
   return (
     <ImageBackground
       style={styles.container}
-      source={require('../../../assets/logo.jpg')}
-      imageStyle={{ width: '100%', height: '100%' }}
+      source={require("../../../assets/logo.jpg")}
+      imageStyle={{ width: "100%", height: "100%" }}
     >
       <FloatingButton edit={edit} setEdit={() => setEdit(!edit)} />
-      <View style={styles.infoUser}>
-        <Image source={require('../../../assets/profile.png')} />
 
-        <View style={styles.dataUser}>
-          <Text style={styles.userName}>{user.name}</Text>
-          <Text>{user.age} anos</Text>
-
-          <View style={styles.heightWeight}>
-            <Text>{user.height} cm</Text>
-            <Text>{user.weight} kg</Text>
-          </View>
-        </View>
-      </View>
+      <UserInfo
+        name={user.name}
+        age={user.age}
+        height={user.height}
+        weight={user.weight}
+      />
 
       <ScrollView>
         <View style={styles.line} />
