@@ -7,7 +7,8 @@
 ## Histórico de versionamento
 |    Data    | Versão |      Descrição       |                                                                            Autor(es)                                                                            |
 | :--------: | :----: | :------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 25/03/2021 |  0.1   | Criação do documento | [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 26/03/2021 |  0.1   | Criação do documento | [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 26/03/2021 |  0.2   | Adição de imagens de grid e tipografia | [Gabriel Hussein](https://github.com/GabrielHussein) |
 
 ## 1. Objetivo
 O objetivo desse documento é apresentar a identidade visual do nosso projeto, as nossas escolhas de design e padronizar os componentes que serão utilizados no nosso software.
@@ -55,7 +56,7 @@ Para dar um aspecto mais amigável ao aplicativo foi adotada uma padronização 
 #### 3.5.2 Header
 ![headerStyle](../assets/images/01-projeto/header.png)
 
-## # 3.5.3 Bottom Bar
+### 3.5.3 Bottom Bar
 ![bottomBarStyle](../assets/images/01-projeto/bottomBarExample.png)
 
 ## Referências
