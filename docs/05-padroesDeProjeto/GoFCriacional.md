@@ -10,8 +10,10 @@
 | 22/03/2021 |  0.4   | Adição dos pontos positivos e negativos do Builder |                           [Aline Lermen](https://github.com/AlineLermen)                            |
 | 22/03/2021 |  0.5   |            Adicionado imagem do Builder            |                            [Danillo Souza](https://github.com/danillogs)                            |
 | 25/03/2021 |  1.0   |            Adicionando GoFs criacionais não utilizados            |                           [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein)                 |
+| 28/03/2021 |  1.1   |            Adição da imagem de exemplo Builder e ajuste da imagem de aplicação            |                    [Arthur Paiva](https://github.com/arthurpaivat) e [Gabriel Hussein](https://github.com/GabrielHussein)                 |
+| 28/03/2021 |  1.2   |            Revisão dos GoFs criacionais            |                    [Arthur Paiva](https://github.com/arthurpaivat) e [Gabriel Hussein](https://github.com/GabrielHussein)                 |
 
-## GoFs utilizados
+## GoFs Utilizados
 
 ### Singleton
 
@@ -19,34 +21,51 @@
 O objetivo principal do padrão de projeto GoF Singleton é garantir que uma classe tenha apenas uma única instância e que forneça um acesso global a essa mesma instância. Esse padrão de projeto é muito útil quando queremos ter o controle de acesso a recursos compartilhados como, por exemplo, uma base de dados de uma aplicação.
 </p>
 
-#### Estrutura Genérica
+#### Exemplo
 
-![basicStructureSingleton](../assets/images/05-padroesDeProjeto/GoFCriacional/basicStructureSingleton.png)  
- 
-#### Pontos positivos
- 
-- Pelo fato das classes nunca mudarem de estado e possuírem somente uma instância executando, melhora o desempenho e qualidade do software;
-- O código se torna mais legível.
- 
-#### Pontos negativos
- 
-- Caso o software não vá utilizar com frequencia a classe que implementa esse padrão, pode trazer problemas de desempenho;
-- Torna mais complexo a realização de testes unitários.
- 
+![basicStructureSingleton](../assets/images/05-padroesDeProjeto/GoFCriacional/basicStructureSingleton.png) 
+
+Neste exemplo, o diagrama demonstra que a classe Button possui apenas uma instância que é criada a partir do método createButton() caso ainda não exista ou que é somente renderizada com o método render() caso já exista.
+
 #### Aplicação
  
 <p style="text-align: justify;"> &emsp;&emsp;
 Em nosso Backend, criamos uma classe especialista em personalizar o Express (Framework especializado na construção de aplicações web e API's) a SetupServer. A SetupServer foi idealizada com o objetivo de tornar o arquivo de nosso servidor mais limpo. O único propósito dessa classe é subir o servidor de nossa API, portanto, a mesma é instanciada uma única vez e de forma global.
 </p>
- 
+
 ![singleton](../assets/images/05-padroesDeProjeto/GoFCriacional/singleton.png)
+ 
+#### Pontos positivos
+ 
+- Pelo fato das classes nunca mudarem de estado e possuírem somente uma instância sendo executada, há uma melhora no desempenho e na qualidade do software;
+- O código se torna mais legível.
+ 
+#### Pontos negativos
+ 
+- Caso o software não vá utilizar com frequencia a classe que implementa esse padrão, pode trazer problemas de desempenho;
+- Torna mais complexo a implementação de testes unitários.
+ 
  
 ### Builder
  
 <p style="text-align: justify;"> &emsp;&emsp;
-O objetivo principal do GoF Builder é permitir a construção de um objeto gradativamente. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder, para evitar passar todos os parâmetros sempre que o método for chamado, escolhendo qual parâmetro deve ser passado ou não. 
+O objetivo principal do padrão de projeto GoF Builder é permitir a construção gradativa de um objeto. Por exemplo, em uma situação em que um método construtor possui diversos parâmetros podemos utilizar o Builder, para evitar passar todos os parâmetros sempre que o método for chamado, escolhendo qual parâmetro deve ser passado ou não. 
 </p>
+
+#### Exemplo 
  
+![builderExample](../assets/images/05-padroesDeProjeto/GoFCriacional/builderExample.png)
+
+Neste exemplo, o objeto da classe mais complexa Carro pode ser construído de várias maneiras, ao invés de usar um único construtor enorme, nós extraímos o código de montagem do carro em uma classe de construção de carro separada. Essa classe tem um conjunto de métodos para configurar as várias partes de um carro.
+
+#### Aplicação
+ 
+<p style="text-align: justify;"> &emsp;&emsp;
+O Builder foi utilizado na seguinte classe. Estamos utilizando o padrão para a montagem da ficha médica, nesse caso em especifico para a manipulação dos exames do usuário.
+</p>
+
+![builder](../assets/images/05-padroesDeProjeto/GoFCriacional/builderApplication.png)
+
 #### Pontos positivos
  
 - Com esse padrão é possível construir objetos passo a passo, adiar etapas da construção ou até executar etapas recursivamente;
@@ -56,16 +75,6 @@ O objetivo principal do GoF Builder é permitir a construção de um objeto grad
 #### Pontos negativos
  
 - A complexidade do código aumenta, pois esse padrão exige a criação de classes novas.
- 
-#### Aplicação
- 
-<p style="text-align: justify;"> &emsp;&emsp;
-O Builder foi utilizado na seguinte classe. Estamos utilizando o padrão para a montagem da ficha médica, nesse caso em especifico para a manipulação dos exames do usuário.
-</p>
-
-![builder](../assets/images/05-padroesDeProjeto/GoFCriacional/builder.png)
-
-
 
 ## GoFs não utilizados
 
@@ -144,7 +153,7 @@ Como observado no exemplo, o Prototype permitiu criar cópias exatas das formas 
 
 #### Comentários
 <p style="text-align: justify;"> &emsp;&emsp;
-O Prototype não tem cabimento em nosso projeto, pois todos os objetos presentes em nossa aplicação são únicos o que torna inviável a criação de objetos genêricos. 
+O Prototype não tem cabimento em nosso projeto, pois todos os objetos presentes em nossa aplicação são únicos, o que torna inviável a criação de objetos genêricos. 
 </p>
 
 ## Referências
