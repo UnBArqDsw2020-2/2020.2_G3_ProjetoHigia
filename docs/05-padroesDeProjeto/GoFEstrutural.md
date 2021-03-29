@@ -102,7 +102,9 @@ Adapter é um padrão estrutural de projeto que possibilita a integração de in
 
 ![adapterExample](../assets/images/05-padroesDeProjeto/GoFEstrutural/adapterExample.png)
 
+<p style="text-align: justify;"> &emsp;&emsp;
 Como observado no exemplo, o Adapter, ou Adaptador nesse caso, implementa a interface Alvo de interagir com a classe Adaptado.
+</p>
 
 #### Pontos positivos
 
@@ -112,6 +114,11 @@ Como observado no exemplo, o Adapter, ou Adaptador nesse caso, implementa a inte
 #### Pontos negativos
 
 - A complexidade do código aumenta consideravelmete, pois há a necessidade de adicionar um conjunto de classes e interfaces. Nem sempre a adição desses conjuntos é a forma mais simples.
+
+#### Comentários
+<p style="text-align: justify;"> &emsp;&emsp;
+Por conta da utilização do padrão Decorator, o que evitou a duplicação de código em nosso projeto, não hove a necessidade de utilizar também o padrão Adapter e além disso, o código não possui classes que não sejam incompativeis com nossa interface.
+</p>
 
 ### Bridge
 
@@ -136,6 +143,12 @@ Como observado no exemplo, o Bridge age como a ligação entre duas classes gran
 
 - Pode tornar o código mais complicado ao aplicar o padrão em uma classe altamente coesa.
 
+#### Comentários
+
+<p style="text-align: justify;"> &emsp;&emsp;
+Por conta de outros padrões de projeto que foram implementados em nosso código, a implementação do Bridge perdeu o sentido.
+</p>
+
 ### Composite
 
 <p style="text-align: justify;"> &emsp;&emsp;
@@ -157,6 +170,12 @@ No exemplo o Composite permite a implementação da composição de várias figu
 
 - Pode ser difícil providenciar uma interface comum para classes cuja funcionalidade difere muito. Em certos cenários, precisaria generalizar muito a interface componente, fazendo dela uma interface de difícil compreensão.
 
+#### Comentários
+
+<p style="text-align: justify;"> &emsp;&emsp;
+Por conta do escopo reduzido, o projeto Hígia não possuirá classes o suficiente para a implementação do padrão Composite. O padrão trabalha com a ideia de criação de "árvores", a partir da herança de herança.
+</p>
+
 ### Flyweight
 
 <p style="text-align: justify;"> &emsp;&emsp;
@@ -177,6 +196,12 @@ O padrão extrai o estado intrínseco repetido para uma classe Árvore principal
 
 - Pode estar trocando RAM por ciclos de CPU quando parte dos dados de contexto precisa ser recalculado cada vez que alguém chama um método flyweight;
 - O código fica muito mais complicado. Novos membros de equipe sempre se perguntarão por que o estado de uma entidade foi separado de tal forma.
+
+#### Comentários
+
+<p style="text-align: justify;"> &emsp;&emsp;
+O padrão geralmente é implementado quando um serviço necessita utilizar muita memória RAM. Como o projeto Hígia não terá um processamento de dados tão grande, não há a necessidade da implentação do Flyweight.
+</p>
 
 ### Proxy
 
@@ -200,6 +225,12 @@ Como observado no exemplo, o Proxy fornece um substituto para a biblioteca de do
 
 - O código pode ficar mais complicado uma vez que precisa introduzir uma série de novas classes;
 - A resposta de um serviço pode ter atrasos.
+
+#### Comentários
+
+<p style="text-align: justify;"> &emsp;&emsp;
+O Proxy é possui diveras caracteristicas que o tornaria um excelente padrão de projeto para o Hígia, porém por diversas das funcionalidades que o Proxy proveria para nosso app já estão sendo cobertas com a aplicação de outros padrões. 
+</p>
 
 ## Referências
 
