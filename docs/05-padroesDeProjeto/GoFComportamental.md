@@ -10,8 +10,10 @@
 | 23/03/2021 |  0.4   | Introdução do state e adição de referências |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
 | 23/03/2021 |  0.5   |    Adição de imagens e suas explicações     |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
 | 23/03/2021 |  0.6   |  Adicionados pontos positivos e negativos   |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
-| 25/03/2021 |  1.0   | Adicionando GoFs criacionais não utilizados | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 25/03/2021 |  1.0   | Adicionando GoFs comportamentais não utilizados | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein) |
 | 26/03/2021 |  1.1   |            Adicionando GoF extra            |                           [Danillo Souza](https://github.com/danillogs) e [Arthur Paiva](https://github.com/ArthurPaivaT)                            |
+| 28/03/2021 |  1.2   | Adicionando mais GoFs comportamentais não utilizados | [Aline Lermen](https://github.com/AlineLermen) e [Gabriel Hussein](https://github.com/GabrielHussein) |
+
 
 ## GoFs utilizados
 
@@ -20,9 +22,9 @@
 <p style="text-align: justify;"> &emsp;&emsp;
 O padrão GoF Observer é um padrão de projeto comportamental que permite definir um mecanismo de assinatura para notificar múltiplos objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando.
 </p>
- 
-#### Diagrama Genérico
- 
+
+#### Diagrama genérico 
+
 ![Generic Diagram](../assets/images/05-padroesDeProjeto/GoFComportamental/observerGeneric.png)
  
 #### Pontos positivos
@@ -164,8 +166,8 @@ Neste exemplo o Iterator é utilizado para percorrer a coleção que encapsula o
  
 #### Pontos positivos
  
-- _Princípio de responsabilidade única_. Pode-se limpar o código e as coleções ao extrair os pesados algoritmos de travessia para classes separadas;
-- _Princípio aberto/fechado_. Pode-se implementar novos tipos de coleções e iteradores e passá-los para o código existente sem quebrar coisa alguma;
+- *Princípio de responsabilidade única*. Pode-se limpar o código e as coleções ao extrair os pesados algoritmos de travessia para classes separadas;
+- *Princípio aberto/fechado*. Pode-se implementar novos tipos de coleções e iteradores e passá-los para o código existente sem quebrar coisa alguma;
 - Pode-se iterar sobre a mesma coleção em paralelo porque cada objeto iterador contém seu próprio estado de iteração;
 - Pelas mesmas razões, pode-se atrasar uma iteração e continuá-la quando necessário.
  
@@ -176,88 +178,96 @@ Neste exemplo o Iterator é utilizado para percorrer a coleção que encapsula o
  
 #### Comentários
 - O aplicativo Hígia não possui um funcionamento extremamente complexo, então como citado nos pontos negativos, o padrão seria um preciosismo para ser aplicado em nosso código. Algo complexo de se fazer para pouca usabilidade na hora do desenvolvimento.
+
 ### Mediator
- 
+
 <p style="text-align: justify;"> &emsp;&emsp;
 Esse é um padrão de projeto comportamental que permite reduzir as dependências caóticas entre objetos. O padrão restringe comunicações diretas entre objetos e os força a colaborar apenas através do objeto mediador.</p>
- 
+
 #### Exemplo
- 
+
 ![mediatorExample](../assets/images/05-padroesDeProjeto/GoFComportamental/mediatorExample.png)
- 
+
 Como observado neste exemplo, o Mediator auxilia na redução das dependências entre as várias classes de interface de usuário.
- 
+
 #### Pontos positivos
- 
-- _Princípio de responsabilidade única_. Pode-se extrair as comunicações entre vários componentes para um único lugar, tornando as de mais fácil entendimento e manutenção;
-- _Princípio aberto/fechado_. Pode-se introduzir novos mediadores sem ter que mudar os próprios componentes;
+
+- *Princípio de responsabilidade única*. Pode-se extrair as comunicações entre vários componentes para um único lugar, tornando as de mais fácil entendimento e manutenção;
+- *Princípio aberto/fechado*. Pode-se introduzir novos mediadores sem ter que mudar os próprios componentes;
 - É possível reduzir o acoplamento entre os vários componentes de um programa;
 - Pode-se reutilizar componentes individuais mais facilmente.
- 
+
 #### Pontos negativos
- 
+
 - Com o tempo, um mediador pode evoluir para um _Objeto Deus_ (Um objeto que faz mais do que deveria, possui várias utilidades causando bagunça durante o desenvolvimento).
- 
+
 #### Comentários
-- O Memento, geralmente, é utilizado para criação de retratos/versões dos estados de objetos para que seja capaz de restaurar os seus valores no futuro. A aplicabilidade citada é excelente para aplicações que necessitam de um histórico de versionamento, o que não é o caso do app Hígia.
- 
+- Por ser utilizado para diminuir dependências entre objetos, o padrão Mediator não se encaixa diretamente no aplicativo Hígia, devido ao tamanho do escopo.
+
 ### Memento
- 
+
 <p style="text-align: justify;"> &emsp;&emsp;
 É um padrão de projeto comportamental que permite salvar e restaurar o estado anterior de um objeto sem revelar os detalhes de sua implementação.
 </p>
- 
+
 #### Exemplo
- 
+
 ![mementoExample](../assets/images/05-padroesDeProjeto/GoFComportamental/mementoExample.png)
- 
+
 Neste exemplo, o Memento trabalha junto com o Command para armazenar retratos do estado de um editor de texto complexo e restaurá-lo para um estado anterior desses retratos quando necessário.
- 
+
 #### Pontos positivos
- 
+
 - Pode-se produzir retratos do estado de um objeto sem violar seu encapsulamento;
 - Pode-se simplificar o código da originadora permitindo que a cuidadora mantenha o histórico do estado da originadora.
- 
+
 #### Pontos negativos
- 
+
 - A aplicação pode consumir muita RAM se os clientes criarem mementos com muita frequência;
 - Cuidadoras devem acompanhar o ciclo de vida da originadora para serem capazes de destruir mementos obsoletos;
 - A maioria das linguagens de programação dinâmicas, tais como PHP, Python e JavaScript, não conseguem garantir que o estado dentro do memento permaneça intacto.
- 
+
+#### Comentários
+- O Memento, geralmente, é utilizado para criação de retratos/versões dos estados de objetos para que seja capaz de restaurar os seus valores no futuro. A aplicabilidade citada é excelente para aplicações que necessitam de um histórico de versionamento, o que não é o caso do app Hígia.
+
 ### Strategy
- 
+
 <p style="text-align: justify;"> &emsp;&emsp;
 Esse é um padrão que permite definir uma família de algoritmos, colocá-los em classes separadas, e fazer os objetos deles intercambiáveis.
 </p>
- 
+
 #### Exemplo
- 
+
 ![strategyExample](../assets/images/05-padroesDeProjeto/GoFComportamental/strategyExample.png)
- 
-<!-- Breve explicação do diagrama -->
- 
+
+No exemplo é possível observar a extração de uma classe original, que executa navegação de rotas de várias maneiras diferentes, em várias subclasses em que cada uma se especializa em uma rota específica.
+
 #### Pontos positivos
- 
+
 - Pode-se trocar algoritmos usados dentro de um objeto durante a execução;
 - Pode-se isolar os detalhes de implementação de um algoritmo do código que usa ele;
 - Pode-se substituir a herança por composição;
-- _Princípio aberto/fechado_. Pode-se introduzir novas estratégias sem mudar o contexto.
- 
+- *Princípio aberto/fechado*. Pode-se introduzir novas estratégias sem mudar o contexto.
+
 #### Pontos negativos
- 
+
 - Se só há um par de algoritmos e eles raramente mudam, não há motivo real para deixar o programa mais complicado com novas classes e interfaces que vêm junto com o padrão;
 - Muitas linguagens de programação modernas tem suporte do tipo funcional que permite que sejam implementadas implemente diferentes versões de um algoritmo dentro de um conjunto de funções anônimas. Então você poderia usar essas funções exatamente como se estivesse usando objetos estratégia, mas sem inchar seu código com classes e interfaces adicionais.
- 
+
+#### Comentários
+- No projeto não há tanto espaço para desenvolver diferentes estratégias, pois não há uma classe que executa a mesma função de várias maneiras diferentes.
+
 ### Template Method
- 
+
 <p style="text-align: justify;"> &emsp;&emsp;
 É um padrão de projeto comportamental que define o esqueleto de um algoritmo na superclasse, mas deixa as subclasses sobrescrever em etapas específicas do algoritmo sem modificar sua estrutura.</p>
- 
+
 #### Exemplo
  
 ![templateMethodExample](../assets/images/05-padroesDeProjeto/GoFComportamental/templateMethodExample.png)
  
-<!-- Breve explicação do diagrama -->
+
+No exemplo é mostrado que as raças "OrcsAI" e "MonstersAI" possuem quase o mesmo tipo de unidades e construções. Assim, está sendo reutilizada a mesma estrutura AI para várias raças, sendo possível sobrescrever alguns detalhes. Assim, a classe "GameAI" está agindo como a classe "esqueleto".
  
 #### Pontos positivos
  
@@ -268,6 +278,9 @@ Esse é um padrão que permite definir uma família de algoritmos, colocá-los e
  
 - Alguns clientes podem ser limitados ao fornecer o esqueleto de um algoritmo;
 - Implementações do padrão Template Method tendem a ser mais difíceis de se manter, quanto mais etapas eles tiverem.
+
+#### Comentários
+- Não foi utilizado por não haver grande necessidade de estender etapas particulares de uma estrutura para outra, além de não conter uma grande quantidade de algoritmos quase idênticos que justifiquem o uso do padrão.
  
 ### Visitor
  
@@ -280,22 +293,33 @@ Esse é um padrão que permite definir uma família de algoritmos, colocá-los e
 ![visitorExample](../assets/images/05-padroesDeProjeto/GoFComportamental/visitorExample.png)
  
 <!-- Breve explicação do diagrama -->
- 
+
 #### Pontos positivos
  
-- _Princípio aberto/fechado_. Pode-se introduzir um novo comportamento que pode funcionar com objetos de diferentes classes sem mudar essas classes;
-- _Princípio de responsabilidade única_. Pode-se mover múltiplas versões do mesmo comportamento para dentro da mesma classe;
+- *Princípio aberto/fechado*. Pode-se introduzir um novo comportamento que pode funcionar com objetos de diferentes classes sem mudar essas classes;
+- *Princípio de responsabilidade única*. Pode-se mover múltiplas versões do mesmo comportamento para dentro da mesma classe;
 - Um objeto visitante pode acumular algumas informações úteis enquanto trabalha com vários objetos. Isso pode ser interessante quando se quer percorrer algum objeto de estrutura complexa, tais como um objeto árvore, e aplicar o visitante para cada objeto da estrutura.
  
 #### Pontos negativos
  
 - É necessário atualizar todos os visitantes a cada vez que a classe é adicionada ou removida da hierarquia de elementos.
 - Visitantes podem não ter seu acesso permitido para campos e métodos privados dos elementos que eles deveriam estar trabalhando.
+
+#### Comentários
+- No projeto não há uma estrutura de objetos complexa o suficiente para justificar o uso do padrão Visitor. O Visitor auxilia a extrair os comportamentos auxiliares de classes para que elas possam focar no seu trabalho principal, o que não se aplica diretamente ao aplicativo Hígia, pois não há uma quantidade significativa de comportamentos auxiliares que possam ser retirados para organizar a classe.
  
 ## Referências
  
 - Projeto Diário da Saúde. Acesso em: https://unbarqdsw.github.io/2020.1_G5_Diario_da_Saude/#gofs_comportamentais/. Último acesso em: 22/03/2021.
 - Refactoring Guru - Observer. Acesso em: https://refactoring.guru/pt-br/design-patterns/observer. Último acesso em: 22/03/2021.
 - Refactoring Guru - State. Acesso em: https://refactoring.guru/design-patterns/state. Último acesso em: 23/03/2021.
+- Refactoring Guru - Command. Acesso em: https://refactoring.guru/design-patterns/command. Último acesso em: 29/03/2021.
+- Refactoring Guru - Iterator. Acesso em: https://refactoring.guru/design-patterns/iterator. Último acesso em: 29/03/2021.
+- Refactoring Guru - Mediator. Acesso em: https://refactoring.guru/design-patterns/mediator. Último acesso em: 29/03/2021.
+- Refactoring Guru - Memento. Acesso em: https://refactoring.guru/design-patterns/memento. Último acesso em: 29/03/2021.
+- Refactoring Guru - Strategy. Acesso em: https://refactoring.guru/design-patterns/strategy. Último acesso em: 29/03/2021.
+- Refactoring Guru - Template Method. Acesso em: https://refactoring.guru/design-patterns/state. Último acesso em: 29/03/2021.
+- Refactoring Guru - Visitor. Acesso em: https://refactoring.guru/design-patterns/visitor. Último acesso em: 29/03/2021.
 - Projeto Stock. Acesso em: https://unbarqdsw.github.io/2020.1_G12_Stock/#/Project/Estudos/comportamental?id=state. Último acesso em: 23/03/2021.
 - Projeto Stock. Acesso em: https://unbarqdsw.github.io/2020.1_G12_Stock/#/DesignPatterns/ChainResponsibility. Último acesso em: 25/03/2021.
+
