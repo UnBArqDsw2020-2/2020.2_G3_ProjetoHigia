@@ -1,17 +1,30 @@
 import React from 'react';
-import { View, StyleSheet, Button } from 'react-native';
-import { useAuth } from '../../context/auth';
-import Header from '../../components/Header/index'
-import styles from './style'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import MedicalReport from '../MedicalReport';
+import SearchPatient from '../SearchPatient';
+import { MaterialIcons } from '@expo/vector-icons'; 
 
-const Home = ({navigation}) => {
-  const { signOut } = useAuth();
+export default function Home(){
+    const Tab = createBottomTabNavigator();
 
-  return (
-    <View style={styles.container}>
-      <Header title='Perfil' navigation = {navigation}></Header>
-    </View>
-  );
-};
-
-export default Home;
+    return(
+        <Tab.Navigator tabBarOptions={{activeBackgroundColor:"#7E162B", activeTintColor:"#FFF", inactiveBackgroundColor: "#EFEFEF"}}>
+            <Tab.Screen name="Perfil" component={MedicalReport} 
+                options={{
+                    tabBarIcon:()=>(<MaterialIcons name="account-circle" size={25} color="white" />)
+            }} />
+            <Tab.Screen name="Arquivos" component={MedicalReport} 
+                options={{
+                    tabBarIcon:()=>(<MaterialIcons name="archive" size={25} color="white" />)
+            }}/>
+            <Tab.Screen name="Buscar" component={SearchPatient} 
+            options={{
+                tabBarIcon:()=>(<MaterialIcons name="search" size={25} color="white" />)
+            }}/>
+            <Tab.Screen name="Configuracao" component={MedicalReport} 
+                options={{
+                    tabBarIcon:()=>(<MaterialIcons name="build" size={25} color="white" />)
+            }}/>
+        </Tab.Navigator>
+    );
+}

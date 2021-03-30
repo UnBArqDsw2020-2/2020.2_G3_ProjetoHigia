@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
 
-  pacientName: {
+  patientName: {
     fontSize: 25,
     marginVertical: 30,
   },
