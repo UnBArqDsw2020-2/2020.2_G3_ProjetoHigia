@@ -13,7 +13,7 @@
 | 25/03/2021 |  1.0   | Adicionando GoFs comportamentais não utilizados | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein) |
 | 26/03/2021 |  1.1   |            Adicionando GoF extra            |                           [Danillo Souza](https://github.com/danillogs) e [Arthur Paiva](https://github.com/ArthurPaivaT)                            |
 | 28/03/2021 |  1.2   | Adicionando mais GoFs comportamentais não utilizados | [Aline Lermen](https://github.com/AlineLermen) e [Gabriel Hussein](https://github.com/GabrielHussein) |
-
+| 30/03/2021 |  1.3   |             Revisão dos GoFs estruturais             |                          [Danillo Souza](https://github.com/danillogs) e [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
 
 ## GoFs utilizados
 
@@ -55,12 +55,14 @@ O State é um padrão de projeto de comportamento que permite alterar o comporta
 #### Exemplo
  
 ![State Exemplo](../assets/images/05-padroesDeProjeto/GoFComportamental/stateExample.png)
- 
+<p style="text-align: justify;"> &emsp;&emsp;
 Como ilustrado no diagrama acima, o State exige uma mudança de comportamento para que se possa tomar uma decisão do que fazer em relação ao estado atual da aplicação.
+</p>
  
 #### Aplicação - Tela de login
- 
+<p style="text-align: justify;"> &emsp;&emsp;
 Dentro do Hígia usaremos o State com a função do React Native useState em diversas partes do projeto, o useState é utilizado para alterar o estado interno de uma variável, para fins de exemplificação usaremos o sistema de login, que é uma maneira simplificada de ilustrar o padrão de projeto de comportamento State.
+</p>
  
 #### Declaração do useState
  
@@ -69,16 +71,17 @@ Dentro do Hígia usaremos o State com a função do React Native useState em div
 #### Manipulação do useState
  
 ![State Application 2](../assets/images/05-padroesDeProjeto/GoFComportamental/stateApplication2.png)
- 
+<p style="text-align: justify;"> &emsp;&emsp;
 Como se pode ver, ao acessar com suas credenciais, o usuário muda o estado do programa para ativo, gerando um token de login para o usuário logado, que servirá para manter a área de acesso do usuário (ficha médica, pesquisa, configurações, funcionalidades em geral) acessível.
+</p>
  
-### Pontos positivos
+#### Pontos positivos
  
 - Os estados podem ser melhor codificados sem a necessidade de ficar duplicando código.
 - Simplificação de código.
 - Organização de código relacionado a estados particulares em classes separadas.
  
-### Pontos negativos
+#### Pontos negativos
  
 - Aplicar o padrão pode ser um exagero se existem apenas algumas mudanças de estado ou um leque limitado de estados diferentes.
 - Pode ser misturado e confundido com o padrão de projeto Strategy.
@@ -95,8 +98,9 @@ Como se pode ver, ao acessar com suas credenciais, o usuário muda o estado do p
 #### Exemplo
  
 ![chainOfRespExample](../assets/images/05-padroesDeProjeto/GoFComportamental/chainOfRespExample.png)
- 
+<p style="text-align: justify;"> &emsp;&emsp;
 Como observado no exemplo, o Chain of Responsability passa o pedido por vários handlers, caso os dados estejam corretos o comportamento padrão é utilizado, caso algo esteja errado o handler impede o resto do processo de continuar.
+</p>
  
 #### Aplicação - Verificação de Autenticação
  
@@ -133,8 +137,9 @@ Esse é um padrão que transforma um pedido em um objeto independente que conté
 #### Exemplo
  
 ![commandExample](../assets/images/05-padroesDeProjeto/GoFComportamental/commandExample.png)
- 
+<p style="text-align: justify;"> &emsp;&emsp;
 Como é possível observar no exemplo, a Command parametriza todos os métodos relacionados a um objeto específico em uma única interface que realiza a execução da ação.
+</p>
  
 #### Pontos positivos
  
@@ -149,20 +154,22 @@ Como é possível observar no exemplo, a Command parametriza todos os métodos r
 - O código pode ficar mais complicado uma vez que está sendo introduzindo uma nova camada entre remetentes e destinatários.
  
 #### Comentários
- 
-- O Command não é interessante para nosso projeto, pois não temos a necessidade de agendar execução de operações ou criar filas de operações e também não temos a necessidade de implementar operações que sejam reversíveis. Ambas as aplicações citadas encaixariam perfeitamente no funcionamento do padrão Command.
- 
+<p style="text-align: justify;"> &emsp;&emsp; 
+O Command não é interessante para nosso projeto, pois não temos a necessidade de agendar execução de operações ou criar filas de operações e também não temos a necessidade de implementar operações que sejam reversíveis. Ambas as aplicações citadas encaixariam perfeitamente no funcionamento do padrão Command.
+</p>
+
 ### Iterator
  
 <p style="text-align: justify;"> &emsp;&emsp;
-É um padrão de projeto comportamental que permite a você percorrer elementos de uma coleção sem expor as representações dele (lista, pilha, árvore, etc.)
-</p>
+É um padrão de projeto comportamental que permite a você percorrer elementos de uma coleção sem expor as representações dele (lista, pilha, árvore, etc.)</p>
+
  
 #### Exemplo
  
 ![iteratorExample](../assets/images/05-padroesDeProjeto/GoFComportamental/iteratorExample.png)
- 
-Neste exemplo o Iterator é utilizado para percorrer a coleção que encapsula o acesso ao grafo social do Facebook. A coleção fornece vários Iterators que podem percorrer os perfis de diferentes maneiras.
+<p style="text-align: justify;"> &emsp;&emsp;
+Neste exemplo o Iterator é utilizado para percorrer a coleção que encapsula o acesso ao grafo social do Facebook. A coleção fornece vários Iterators que podem percorrer os perfis de diferentes maneiras.</p>
+
  
 #### Pontos positivos
  
@@ -177,7 +184,9 @@ Neste exemplo o Iterator é utilizado para percorrer a coleção que encapsula o
 - Usar um iterador pode ser menos eficiente que percorrer elementos de algumas coleções especializadas diretamente.
  
 #### Comentários
-- O aplicativo Hígia não possui um funcionamento extremamente complexo, então como citado nos pontos negativos, o padrão seria um preciosismo para ser aplicado em nosso código. Algo complexo de se fazer para pouca usabilidade na hora do desenvolvimento.
+<p style="text-align: justify;"> &emsp;&emsp;
+O aplicativo Hígia não possui um funcionamento extremamente complexo, então como citado nos pontos negativos, o padrão seria um preciosismo para ser aplicado em nosso código. Algo complexo de se fazer para pouca usabilidade na hora do desenvolvimento.</p>
+
 
 ### Mediator
 
@@ -188,7 +197,8 @@ Esse é um padrão de projeto comportamental que permite reduzir as dependência
 
 ![mediatorExample](../assets/images/05-padroesDeProjeto/GoFComportamental/mediatorExample.png)
 
-Como observado neste exemplo, o Mediator auxilia na redução das dependências entre as várias classes de interface de usuário.
+<p style="text-align: justify;"> &emsp;&emsp;
+Como observado neste exemplo, o Mediator auxilia na redução das dependências entre as várias classes de interface de usuário.</p>
 
 #### Pontos positivos
 
@@ -202,19 +212,21 @@ Como observado neste exemplo, o Mediator auxilia na redução das dependências 
 - Com o tempo, um mediador pode evoluir para um _Objeto Deus_ (Um objeto que faz mais do que deveria, possui várias utilidades causando bagunça durante o desenvolvimento).
 
 #### Comentários
-- Por ser utilizado para diminuir dependências entre objetos, o padrão Mediator não se encaixa diretamente no aplicativo Hígia, devido ao tamanho do escopo.
+<p style="text-align: justify;"> &emsp;&emsp;
+Por ser utilizado para diminuir dependências entre objetos, o padrão Mediator não se encaixa diretamente no aplicativo Hígia, devido ao tamanho do escopo.</p>
 
 ### Memento
 
 <p style="text-align: justify;"> &emsp;&emsp;
-É um padrão de projeto comportamental que permite salvar e restaurar o estado anterior de um objeto sem revelar os detalhes de sua implementação.
-</p>
+É um padrão de projeto comportamental que permite salvar e restaurar o estado anterior de um objeto sem revelar os detalhes de sua implementação.</p>
 
 #### Exemplo
 
 ![mementoExample](../assets/images/05-padroesDeProjeto/GoFComportamental/mementoExample.png)
 
-Neste exemplo, o Memento trabalha junto com o Command para armazenar retratos do estado de um editor de texto complexo e restaurá-lo para um estado anterior desses retratos quando necessário.
+<p style="text-align: justify;"> &emsp;&emsp;
+Neste exemplo, o Memento trabalha junto com o Command para armazenar retratos do estado de um editor de texto complexo e restaurá-lo para um estado anterior desses retratos quando necessário.</p>
+
 
 #### Pontos positivos
 
@@ -228,19 +240,21 @@ Neste exemplo, o Memento trabalha junto com o Command para armazenar retratos do
 - A maioria das linguagens de programação dinâmicas, tais como PHP, Python e JavaScript, não conseguem garantir que o estado dentro do memento permaneça intacto.
 
 #### Comentários
-- O Memento, geralmente, é utilizado para criação de retratos/versões dos estados de objetos para que seja capaz de restaurar os seus valores no futuro. A aplicabilidade citada é excelente para aplicações que necessitam de um histórico de versionamento, o que não é o caso do app Hígia.
+<p style="text-align: justify;"> &emsp;&emsp;
+O Memento, geralmente, é utilizado para criação de retratos/versões dos estados de objetos para que seja capaz de restaurar os seus valores no futuro. A aplicabilidade citada é excelente para aplicações que necessitam de um histórico de versionamento, o que não é o caso do app Hígia.</p>
+
 
 ### Strategy
 
 <p style="text-align: justify;"> &emsp;&emsp;
-Esse é um padrão que permite definir uma família de algoritmos, colocá-los em classes separadas, e fazer os objetos deles intercambiáveis.
-</p>
+Esse é um padrão que permite definir uma família de algoritmos, colocá-los em classes separadas, e fazer os objetos deles intercambiáveis.</p>
 
 #### Exemplo
 
 ![strategyExample](../assets/images/05-padroesDeProjeto/GoFComportamental/strategyExample.png)
 
-No exemplo é possível observar a extração de uma classe original, que executa navegação de rotas de várias maneiras diferentes, em várias subclasses em que cada uma se especializa em uma rota específica.
+<p style="text-align: justify;"> &emsp;&emsp;
+No exemplo é possível observar a extração de uma classe original, que executa navegação de rotas de várias maneiras diferentes, em várias subclasses em que cada uma se especializa em uma rota específica.</p>
 
 #### Pontos positivos
 
@@ -255,7 +269,8 @@ No exemplo é possível observar a extração de uma classe original, que execut
 - Muitas linguagens de programação modernas tem suporte do tipo funcional que permite que sejam implementadas implemente diferentes versões de um algoritmo dentro de um conjunto de funções anônimas. Então você poderia usar essas funções exatamente como se estivesse usando objetos estratégia, mas sem inchar seu código com classes e interfaces adicionais.
 
 #### Comentários
-- No projeto não há tanto espaço para desenvolver diferentes estratégias, pois não há uma classe que executa a mesma função de várias maneiras diferentes.
+<p style="text-align: justify;"> &emsp;&emsp;
+No projeto não há tanto espaço para desenvolver diferentes estratégias, pois não há uma classe que executa a mesma função de várias maneiras diferentes.</p>
 
 ### Template Method
 
@@ -266,27 +281,30 @@ No exemplo é possível observar a extração de uma classe original, que execut
  
 ![templateMethodExample](../assets/images/05-padroesDeProjeto/GoFComportamental/templateMethodExample.png)
  
+<p style="text-align: justify;"> &emsp;&emsp;
+No exemplo é mostrado que as raças "OrcsAI" e "MonstersAI" possuem quase o mesmo tipo de unidades e construções. Assim, está sendo reutilizada a mesma estrutura AI para várias raças, sendo possível sobrescrever alguns detalhes. Assim, a classe "GameAI" está agindo como a classe "esqueleto".</p>
 
-No exemplo é mostrado que as raças "OrcsAI" e "MonstersAI" possuem quase o mesmo tipo de unidades e construções. Assim, está sendo reutilizada a mesma estrutura AI para várias raças, sendo possível sobrescrever alguns detalhes. Assim, a classe "GameAI" está agindo como a classe "esqueleto".
- 
 #### Pontos positivos
- 
 - Pode-se deixar clientes sobrescrever apenas certas partes de um algoritmo grande, tornando-os menos afetados por mudanças que acontece por outras partes do algoritmo;
 - Pode-se elevar o código duplicado para uma superclasse.
- 
+
 #### Pontos negativos
  
 - Alguns clientes podem ser limitados ao fornecer o esqueleto de um algoritmo;
 - Implementações do padrão Template Method tendem a ser mais difíceis de se manter, quanto mais etapas eles tiverem.
 
 #### Comentários
-- Não foi utilizado por não haver grande necessidade de estender etapas particulares de uma estrutura para outra, além de não conter uma grande quantidade de algoritmos quase idênticos que justifiquem o uso do padrão.
- 
+<p style="text-align: justify;"> &emsp;&emsp;
+Não foi utilizado por não haver grande necessidade de estender etapas particulares de uma estrutura para outra, além de não conter uma grande quantidade de algoritmos quase idênticos que justifiquem o uso do padrão.</p>
+
+
+
 ### Visitor
  
 <p style="text-align: justify;"> &emsp;&emsp;
-É um padrão de projeto comportamental que permite separar algoritmos dos objetos nos quais eles operam.
-</p>
+É um padrão de projeto comportamental que permite separar algoritmos dos objetos nos quais eles operam.</p>
+
+
  
 #### Exemplo
  
@@ -306,7 +324,10 @@ No exemplo é mostrado que as raças "OrcsAI" e "MonstersAI" possuem quase o mes
 - Visitantes podem não ter seu acesso permitido para campos e métodos privados dos elementos que eles deveriam estar trabalhando.
 
 #### Comentários
-- No projeto não há uma estrutura de objetos complexa o suficiente para justificar o uso do padrão Visitor. O Visitor auxilia a extrair os comportamentos auxiliares de classes para que elas possam focar no seu trabalho principal, o que não se aplica diretamente ao aplicativo Hígia, pois não há uma quantidade significativa de comportamentos auxiliares que possam ser retirados para organizar a classe.
+<p style="text-align: justify;"> &emsp;&emsp;
+No projeto não há uma estrutura de objetos complexa o suficiente para justificar o uso do padrão Visitor. O Visitor auxilia a extrair os comportamentos auxiliares de classes para que elas possam focar no seu trabalho principal, o que não se aplica diretamente ao aplicativo Hígia, pois não há uma quantidade significativa de comportamentos auxiliares que possam ser retirados para organizar a classe.</p>
+
+
  
 ## Referências
  
