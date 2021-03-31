@@ -57,3 +57,4 @@
   - [GoF Criacional](./05-padroesDeProjeto/GoFCriacional.md)
   - [GoF Estrutural](./05-padroesDeProjeto/GoFEstrutural.md)
   - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
+  - [Padrão Emergente](./05-padroesDeProjeto/PadraoEmergente.md)
