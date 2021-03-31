@@ -39,3 +39,21 @@ Explicação de onde e como foi aplicado o padrão de projeto
 ![CardInfo_styles](../assets/images/05-padroesDeProjeto/PadraoEmergente/componente_exemploStyles.png)
 - Diferentes componentes sendo utilizados na tela da ficha médica:
 ![MedicalReport](../assets/images/05-padroesDeProjeto/PadraoEmergente/componente_exemploTela.png)
+
+
+
+#### Pontos positivos
+
+- Adaptável. Com os componentes, torna-se mais fácil de adaptar em caso de modificações necessárias, pois o código também fica menos repetitivo;
+- Reutilizável. Como os componentes são reutilizáveis, há uma redução de tempo e custo.
+
+#### Pontos negativos
+
+- Complexidade. Se o código for extremamente componentizado, a sua complexidade pode aumentar.
+  
+### Referências
+
+- React Native Component Patterns. Acesso em: <https://dev.to/mohit199thd/design-patterns-in-react-native-component-patterns-352f>. Último acesso em: 31/03/2021.
+- React Components. Acesso em: <https://reactjs.org/docs/glossary.html#components>. Último acesso: 31/03/2021. 
+- Components and props. Acesso em: <https://reactjs.org/docs/components-and-props.html>. Último acesso: 31/03/2021.
+- Padrões em react: criando componentes. Acesso em: <https://oieduardorabelo.medium.com/padrões-em-react-criando-componentes-d35422034d75>. Último acesso em: 31/03/2020.
