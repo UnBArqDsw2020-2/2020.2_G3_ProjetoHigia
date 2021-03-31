@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "Frontend",
-    "slug": "Frontend",
+    "name": "Hígia",
+    "slug": "Higia",
     "version": "1.0.0",
+    "icon":"./assets/img/icon.png",
     "orientation": "portrait",
     "splash": {
       "image": "./assets/img/splash.png",
@@ -24,7 +25,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/img/favicon.png"
+      "favicon": "./assets/img/icon.png"
     }
   }
 }
