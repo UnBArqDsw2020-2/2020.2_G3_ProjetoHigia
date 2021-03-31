@@ -17,7 +17,8 @@
   - [Sprint 1](./00-sprint/sprint01.md)
   - [Sprint 2](./00-sprint/sprint02.md)
   - [Sprint 3](./00-sprint/sprint03.md)
-  <!-- - [Sprint 4](./00-sprint/sprint04.md) -->
+  - [Sprint 4](./00-sprint/sprint04.md)
+  <!-- - [Sprint 5](./00-sprint/sprint05.md) -->
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
@@ -50,7 +51,7 @@
     - [Sequência](./04-diagramasUML/diagramaSequencia.md)
     - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
     - [Atividade](./04-diagramasUML/diagramaAtividade.md)
-    - [Estados](./04-diagramasUML/diagramaEstado.md) 
+    - [Estados](./04-diagramasUML/diagramaEstado.md)
 - Padrões de Projeto
   - [GRASP](./05-padroesDeProjeto/GRASP.md)
   - [GoF Criacional](./05-padroesDeProjeto/GoFCriacional.md)
