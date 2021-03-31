@@ -1,21 +1,21 @@
-import React from "react";
-import { View, Text, ImageBackground, ScrollView } from "react-native";
-import UserInfo from "../../components/UserInfo";
-import PacientCardInfo from "../../components/PacientCardInfo";
-import FloatingAccessButton from "../../components/FloatingAccessButton";
-import CardEmergencyContact from "../../components/CardEmergencyContact";
-import { pacient } from "../../utils/mocks.js";
-import styles from "./styles";
+import React from 'react';
+import { View, Text, ImageBackground, ScrollView } from 'react-native';
+import UserInfo from '../../components/UserInfo';
+import PacientCardInfo from '../../components/PacientCardInfo';
+import FloatingAccessButton from '../../components/FloatingAccessButton';
+import CardEmergencyContact from '../../components/CardEmergencyContact';
+import { pacient } from '../../utils/mocks.js';
+import styles from './styles';
 
 const PacientReport = () => {
   return (
     <ImageBackground
       style={[
         styles.container,
-        { paddingBottom: pacient.hasFullAccess ? null : "25%" },
+        { paddingBottom: pacient.hasFullAccess ? null : '25%' },
       ]}
-      source={require("../../../assets/logo.jpg")}
-      imageStyle={{ width: "100%", height: "100%" }}
+      source={require('../../../assets/logo.jpg')}
+      imageStyle={{ width: '100%', height: '100%' }}
     >
       <UserInfo
         name={pacient.name}
@@ -27,7 +27,7 @@ const PacientReport = () => {
       {pacient.hasFullAccess ? null : <FloatingAccessButton />}
       <ScrollView
         style={styles.content}
-        contentContainerStyle={{ alignItems: "center" }}
+        contentContainerStyle={{ alignItems: 'center' }}
       >
         <View style={styles.line} />
 
@@ -68,7 +68,7 @@ const PacientReport = () => {
             key={item.id}
             name={item.name}
             number={item.number}
-            width={"80%"}
+            width={'80%'}
           />
         ))}
       </ScrollView>

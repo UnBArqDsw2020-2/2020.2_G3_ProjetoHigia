@@ -1,27 +1,27 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F8F7F7",
+    backgroundColor: '#F8F7F7',
   },
 
   line: {
-    width: "90%",
+    width: '90%',
     height: 1,
-    alignSelf: "center",
-    backgroundColor: "#86172D",
+    alignSelf: 'center',
+    backgroundColor: '#86172D',
     marginVertical: 10,
   },
 
   titleContainer: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
 
   title: {
-    alignSelf: "flex-start",
+    alignSelf: 'flex-start',
     marginHorizontal: 20,
-    color: "#86172D",
+    color: '#86172D',
   },
 });
 

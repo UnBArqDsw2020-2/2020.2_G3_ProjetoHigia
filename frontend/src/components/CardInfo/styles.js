@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     borderRadius: 6,
     marginVertical: 10,
-    marginHorizontal: 20
+    marginHorizontal: 20,
   },
 
   description: {

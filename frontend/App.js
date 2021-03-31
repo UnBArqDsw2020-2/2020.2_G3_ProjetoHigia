@@ -7,7 +7,6 @@ import { useFonts, Junge_400Regular } from '@expo-google-fonts/junge';
 import AppLoading from 'expo-app-loading';
 import Routes from './src/routes';
 
-
 const App = () => {
   var [fontsLoaded] = useFonts({ Junge_400Regular });
 

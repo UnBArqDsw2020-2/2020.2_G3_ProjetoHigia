@@ -1,27 +1,24 @@
-import React, { useState } from "react";
-import { Text, View, ImageBackground } from "react-native";
-import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
-import { useNavigation } from "@react-navigation/native";
-import styles from "./styles";
-import { useAuth } from "../../context/auth";
+import React, { useState } from 'react';
+import { Text, View, ImageBackground } from 'react-native';
+import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
+import styles from './styles';
 
-export default function SignUp(props) {
+export default function SignUp() {
   const navigation = useNavigation();
-  const { signIn } = useAuth();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [isDoctor] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <ImageBackground
       style={styles.container}
-      source={require("../../../assets/img/background.jpg")}
-      imageStyle={{ width: "100%", height: "100%" }}
+      source={require('../../../assets/img/background.jpg')}
+      imageStyle={{ width: '100%', height: '100%' }}
     >
-      <View style={{ width: "80%" }}>
+      <View style={{ width: '80%' }}>
         <Text style={styles.text}>Dados para Login</Text>
         <TextInput
-          placeholder={"Email"}
+          placeholder={'Email'}
           style={styles.inputText}
           value={email}
           onChangeText={setEmail}
@@ -40,7 +37,7 @@ export default function SignUp(props) {
             <Text
               style={styles.btnText}
               onPress={() => {
-                navigation.navigate("SignUpPatient", { isDoctor: "true" });
+                navigation.navigate('SignUpPatient', { isDoctor: 'true' });
               }}
             >
               Médico
@@ -50,7 +47,7 @@ export default function SignUp(props) {
             <Text
               style={styles.btnText}
               onPress={() => {
-                navigation.navigate("SignUpPatient", { isDoctor: "false" })
+                navigation.navigate('SignUpPatient', { isDoctor: 'false' });
               }}
             >
               Paciente
