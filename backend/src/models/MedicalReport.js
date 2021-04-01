@@ -10,7 +10,6 @@ const MedicalReportSchema = new mongoose.Schema({
 	smoker: Boolean,
 	foodRestriction: [String],
 	allergies: [String],
-	exams: [{ name: String, base64: String, show: Boolean }],
 });
 
 export default mongoose.model("MedicalReport", MedicalReportSchema);
