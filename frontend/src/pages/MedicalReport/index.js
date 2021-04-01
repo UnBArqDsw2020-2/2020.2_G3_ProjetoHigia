@@ -81,6 +81,7 @@ const MedicalReport = ({ navigation }) => {
             name={item.name}
             number={item.number}
             edit={edit}
+            width="70%"
           />
         ))}
       </ScrollView>
