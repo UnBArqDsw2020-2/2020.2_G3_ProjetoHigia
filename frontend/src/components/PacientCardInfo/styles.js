@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    width: '70%',
+    width: '80%',
 
     backgroundColor: '#FCFCFC',
     paddingVertical: 5,
@@ -20,13 +20,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 20,
   },
 
-  name: {
-    alignSelf: 'center',
-    paddingVertical: 5,
-    color: '#86172D',
-  },
-
-  number: {
+  description: {
     alignSelf: 'center',
     paddingVertical: 5,
     color: '#39393A',

@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F8F7F7',
+    alignItems: 'center',
   },
 
   line: {
@@ -14,14 +15,20 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
 
-  titleContainer: {
-    flexDirection: 'row',
+  content: {
+    width: '100%',
+    backgroundColor: '#F8F7F7',
   },
 
   title: {
     alignSelf: 'flex-start',
-    marginHorizontal: 20,
+    marginHorizontal: '10%',
     color: '#86172D',
+  },
+
+  foldersContainer: {
+    width: '100%',
+    alignItems: 'center',
   },
 });
 
