@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Constants from "expo-constants";
+import Constants from 'expo-constants';
 const { manifest } = Constants;
 
 const ipAddress = manifest.debuggerHost.split(`:`).shift().concat(`:3000`);

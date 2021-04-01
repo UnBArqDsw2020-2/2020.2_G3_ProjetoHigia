@@ -1,34 +1,32 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   Text,
   View,
   KeyboardAvoidingView,
   Image,
   Platform,
-} from "react-native";
-import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
-import { useNavigation } from "@react-navigation/native";
-import styles from "./styles";
-import { useAuth } from "../../context/auth";
+} from 'react-native';
+import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
+import styles from './styles';
+import { useAuth } from '../../context/auth';
 
 const Login = (props) => {
   const { signIn } = useAuth();
-  const navigation = useNavigation();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
     <KeyboardAvoidingView
-      behavior={Platform.OS == "ios" ? "padding" : "height"}
+      behavior={Platform.OS == 'ios' ? 'padding' : 'height'}
       style={styles.container}
     >
       <View style={styles.fieldsView}>
         <Image
-          source={require("../../../assets/img/iconBackground.png")}
+          source={require('../../../assets/img/iconBackground.png')}
           style={{
             width: 100,
             height: 100,
-            alignSelf: "center",
+            alignSelf: 'center',
             marginBottom: 20,
           }}
         />
@@ -36,14 +34,14 @@ const Login = (props) => {
         <View style={styles.form}>
           <TextInput
             style={styles.input}
-            placeholder={"Email"}
+            placeholder={'Email'}
             value={email}
             onChangeText={setEmail}
           />
 
           <TextInput
             style={styles.input}
-            placeholder={"Senha"}
+            placeholder={'Senha'}
             value={password}
             onChangeText={setPassword}
             secureTextEntry={true}
@@ -57,7 +55,7 @@ const Login = (props) => {
               <Text style={styles.btnText}>Entrar</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={() => props.navigation.navigate("SignUp")}
+              onPress={() => props.navigation.navigate('SignUp')}
               style={styles.btn1}
             >
               <Text style={styles.btnText1}>Criar uma conta</Text>
