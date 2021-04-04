@@ -10,7 +10,7 @@ routes.post("/user", UserController.createUser);
 
 // Rota de buscar usuário
 // Passar dados com Query
-routes.get("/user", isAuthenticated, UserController.findOneUser);
+routes.get("/user", UserController.findOneUser);
 
 //Rota de atualizar usuário
 // Passar dados com Body
