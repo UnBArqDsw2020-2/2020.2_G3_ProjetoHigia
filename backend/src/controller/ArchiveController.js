@@ -64,6 +64,18 @@ class ArchiveController {
 				return res.status(400).json({ status: "Failed" });
 			});
 	}
+
+	async deleteExam(req, res) {
+		const { cpf, idFile } = req.body;
+		await ArchiveBase.deleteExam({ cpf: cpf }, idFile)
+			.then(() => {
+				return res.status(200).json({ status: "Success" });
+			})
+			.catch(() => {
+				console.log();
+				return res.status(400).json({ status: "Failed" });
+			});
+	}
 }
 
 export default new ArchiveController();

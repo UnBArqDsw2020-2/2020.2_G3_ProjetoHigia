@@ -50,21 +50,21 @@ class ArchiveBase extends Base {
 	async updateExam(cpf, idFile, name, base64, idExam, title, extension) {
 		let userArchive = await this.collectionType.findOne(cpf);
 		if (userArchive) {
-			userArchive.documents.exams.forEach((exam, index) => {
+			userArchive.documents.exams.forEach((exam) => {
 				if (JSON.stringify(exam._id) === JSON.stringify(idExam)) {
-					userArchive.documents.exams[index].title = title;
+					exam.title = title;
 				}
 				const fileFound = exam.files.find(
 					(file) => JSON.stringify(file._id) === JSON.stringify(idFile)
 				);
-				const counter = exam.files.indexOf(fileFound);
+				const index = exam.files.indexOf(fileFound);
 				if (fileFound) {
 					if (name) {
-						exam.files[counter].name = name;
+						exam.files[index].name = name;
 					}
 					if (base64) {
-						exam.files[counter].base64 = base64;
-						exam.files[counter].base64 = extension;
+						exam.files[index].base64 = base64;
+						exam.files[index].base64 = extension;
 					}
 				}
 			});
@@ -74,13 +74,15 @@ class ArchiveBase extends Base {
 		}
 	}
 
-	async deleteExam(cpf, id) {
+	async deleteExam(cpf, idFile) {
 		let userArchive = await this.collectionType.findOne(cpf);
 		if (userArchive) {
-			const examUpdated = userArchive.exams.filter(
-				(exam) => JSON.stringify(exam._id) !== JSON.stringify(id)
-			);
-			userArchive.exams = examUpdated;
+			userArchive.documents.exams.forEach((exam) => {
+				const updateFile = exam.files.filter(
+					(file) => JSON.stringify(file._id) !== JSON.stringify(idFile)
+				);
+				exam.files = updateFile;
+			});
 			await this.collectionType.updateOne(cpf, userArchive);
 		} else throw Error("Não foi possível deletar o exame");
 	}
