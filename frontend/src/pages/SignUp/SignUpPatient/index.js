@@ -9,6 +9,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import styles from "../styles";
 import crmApi from "../../../services/crmApi";
 import axios from "axios";
+import DropdownButton from "../../../components/DropdownButton";
 
 export default function SignUpPatient(props) {
   const navigation = useNavigation();
@@ -64,9 +65,7 @@ export default function SignUpPatient(props) {
                 placeholder="CRM"
                 onChangeText={setCrm}
               />
-              <TextInput
-                style={styles.inputText}
-                placeholder="Estado"
+              <DropdownButton
                 onChangeText={setUF}
               />
             </>
@@ -99,3 +98,5 @@ export default function SignUpPatient(props) {
     </ImageBackground>
   );
 }
+
+
