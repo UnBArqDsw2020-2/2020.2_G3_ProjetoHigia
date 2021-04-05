@@ -21,7 +21,7 @@ Os diagramas foram produzidos utilizando a ferramenta Draw.io. Nele há todas as
 ### V.3 
 Uma nova classe foi introduzida, a classe Archive é a classe que realiza as funções de gerenciamento de arquivos do projeto.
 
-![Classev2](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v2.jpg)
+![Classev2](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v3.jpg)
 
 ### V.2 
 Após o começo do desenvolvimento em código verificamos a necessidade de fazer algumas alterações no diagrama de classes para se adequar ao andamento do projeto, retiramos as heranças de usuário pois não havia atributo específico para paciente e condensamos médico e paciente na mesma classe com atributos opcionais para caso o usuário seja médico, também foram adicionados vários novos atributos a classe de ficha médica para refletir o que realmente será utilizado na aplicação.
