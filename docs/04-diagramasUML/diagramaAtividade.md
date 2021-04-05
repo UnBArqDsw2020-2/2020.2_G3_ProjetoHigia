@@ -19,13 +19,13 @@ Diagramas de atividade são considerados diagramas de comportamento, pois descre
 
 Na autenticação de usuário foi alterado o fluxo de login e cadastro, uma vez que o usuário seleciona o tipo de usuário durante o cadastro e não durante o login.
 
-![autenticacao](../assets/images/04-diagramasUML/diagramaAtividade/Autenticacao.jpg)
+![autenticacao](../assets/images/04-diagramasUML/diagramaAtividade/Autenticacao_v1.jpg)
 
 ### Gerenciar Arquivos (V.1)
 
 No gerenciamento de arquivos o fluxo de upload de arquivos foi alterado pois não há personalização de dados do arquivo, o arquivo é salvo com o nome original em que foi enviado pelo usuário.
 
-![gerenciarArquivo](../assets/images/04-diagramasUML/diagramaAtividade/gerenciarArquivo.jpg)
+![gerenciarArquivo](../assets/images/04-diagramasUML/diagramaAtividade/gerenciarArquivo_v1.jpg)
 
 ### Autenticação (V.0)
 
