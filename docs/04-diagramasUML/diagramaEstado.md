@@ -19,9 +19,9 @@ Os diagramas de estado são representações dos estados de um objeto durante o 
 
 ### Diagrama de  Arquivos (V.1)
 
-No diagrama de arquivos houve alterações para retirar a seção de preenchimento de informações do arquivo uma vez que o arquivo é salvo com o nome original enviado pelo usuário e também foi adicionada uma nova seção para o download de arquivos.
+No diagrama de arquivos houve alterações para retirar a seção de preenchimento de informações do arquivo uma vez que o arquivo é salvo com o nome original enviado pelo usuário.
 
-![](../assets/images/04-diagramasUML/diagramaEstado/arquivoMedico.jpg)
+![](../assets/images/04-diagramasUML/diagramaEstado/arquivoMedico_v1.jpg)
 
 ### Diagrama de  Autenticação (V.0)
 ![](../assets/images/04-diagramasUML/diagramaEstado/autenticação.jpg)
