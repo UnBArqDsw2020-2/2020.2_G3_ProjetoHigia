@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@expo-google-fonts/junge": "^0.1.0",
+    "@react-native-picker/picker": "1.9.2",
     "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/bottom-tabs": "^5.11.8",
