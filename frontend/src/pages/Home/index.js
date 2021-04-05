@@ -2,6 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MedicalReport from '../MedicalReport';
 import SearchPatient from '../SearchPatient';
+import EditProfile from '../../pages/EditProfile';
 import { MaterialIcons } from '@expo/vector-icons';
 
 export default function Home() {
@@ -43,8 +44,8 @@ export default function Home() {
         }}
       />
       <Tab.Screen
-        name="Configuracao"
-        component={MedicalReport}
+        name="Configuração"
+        component={EditProfile}
         options={{
           tabBarIcon: () => (
             <MaterialIcons name="build" size={25} color="white" />
