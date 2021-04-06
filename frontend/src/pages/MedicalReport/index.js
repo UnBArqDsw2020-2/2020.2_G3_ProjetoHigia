@@ -97,6 +97,19 @@ const MedicalReport = ({ navigation }) => {
             width="70%"
           />
         ))}
+
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>Comentários</Text>
+          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
+        </View>
+        {user.allergy.map((item) => (
+          <CardInfo
+            key={item.id}
+            description={item.name}
+            onChangeText={() => {}}
+            edit={edit}
+          />
+        ))}
       </ScrollView>
     </ImageBackground>
   );
