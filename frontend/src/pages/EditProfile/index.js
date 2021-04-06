@@ -6,7 +6,7 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
-  Alert
+  Alert,
 } from 'react-native';
 import { MaterialIcons as Icon } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -23,7 +23,27 @@ const EditProfile = () => {
   const navigation = useNavigation();
 
   const updateData = () => {
-    
+    var user = firebase.auth().currentUser;
+    var credential = firebase.auth.EmailAuthProvider.credential(
+      firebase.auth().currentUser.email,
+      oldPassword
+    );
+
+    user
+      .reauthenticateWithCredential(credential)
+      .then(function () {
+        user
+          .updatePassword(newPassword)
+          .then(function () {
+            Alert.alert('Senha atualizada com sucesso');
+          })
+          .catch(function (error) {
+            Alert.alert(error);
+          });
+      })
+      .catch(function (error) {
+        Alert.alert(error);
+      });
   };
 
   return (
