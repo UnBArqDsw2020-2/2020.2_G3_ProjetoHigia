@@ -10,7 +10,7 @@
 - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
   
 ### Módulo Padrões de Projeto Emergentes
-- [Padrão Emergente](./05-padroesDeProjeto/PadraoEmergente.md)
+- [Componentização em react native](./05-padroesDeProjeto/PadraoEmergente.md)
 
 
 ### Iniciativas extras
