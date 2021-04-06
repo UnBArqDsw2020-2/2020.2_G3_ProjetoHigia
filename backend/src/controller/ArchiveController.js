@@ -45,6 +45,25 @@ class ArchiveController {
 			});
 	}
 
+	async updateExam(req, res) {
+		const { cpf, name, base64, title, extension, idFile, idExam } = req.body;
+		await ArchiveBase.updateExam(
+			{ cpf: cpf },
+			idFile,
+			name,
+			base64,
+			idExam,
+			title,
+			extension
+		)
+			.then(() => {
+				return res.status(200).json({ status: "Success" });
+			})
+			.catch(() => {
+				console.log();
+				return res.status(400).json({ status: "Failed" });
+			});
+	}
 }
 
 export default new ArchiveController();

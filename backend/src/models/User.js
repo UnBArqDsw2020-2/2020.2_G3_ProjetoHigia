@@ -15,6 +15,7 @@ const UserSchema = new mongoose.Schema({
 	birthday: { type: Date, required: true },
 	crm: { type: String, default: null },
 	photo: String,
+	// userId: String, //Id from Firebase
 });
 
 export default mongoose.model("User", UserSchema);

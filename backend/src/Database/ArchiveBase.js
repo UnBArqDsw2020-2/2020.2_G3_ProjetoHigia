@@ -47,6 +47,43 @@ class ArchiveBase extends Base {
 		} else throw Error("Não foi possível criar o exame");
 	}
 
+	async updateExam(cpf, idFile, name, base64, idExam, title, extension) {
+		let userArchive = await this.collectionType.findOne(cpf);
+		if (userArchive) {
+			userArchive.documents.exams.forEach((exam, index) => {
+				if (JSON.stringify(exam._id) === JSON.stringify(idExam)) {
+					userArchive.documents.exams[index].title = title;
+				}
+				const fileFound = exam.files.find(
+					(file) => JSON.stringify(file._id) === JSON.stringify(idFile)
+				);
+				const counter = exam.files.indexOf(fileFound);
+				if (fileFound) {
+					if (name) {
+						exam.files[counter].name = name;
+					}
+					if (base64) {
+						exam.files[counter].base64 = base64;
+						exam.files[counter].base64 = extension;
+					}
+				}
+			});
+			await this.collectionType.updateOne(cpf, userArchive);
+		} else {
+			throw Error("Não foi possível editar o exame");
+		}
+	}
+
+	async deleteExam(cpf, id) {
+		let userArchive = await this.collectionType.findOne(cpf);
+		if (userArchive) {
+			const examUpdated = userArchive.exams.filter(
+				(exam) => JSON.stringify(exam._id) !== JSON.stringify(id)
+			);
+			userArchive.exams = examUpdated;
+			await this.collectionType.updateOne(cpf, userArchive);
+		} else throw Error("Não foi possível deletar o exame");
+	}
 }
 
 export default new ArchiveBase(Archive);
