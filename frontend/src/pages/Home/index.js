@@ -2,6 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MedicalReport from '../MedicalReport';
 import SearchPatient from '../SearchPatient';
+import Files from '../Files';
 import { MaterialIcons } from '@expo/vector-icons';
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
       />
       <Tab.Screen
         name="Arquivos"
-        component={MedicalReport}
+        component={Files}
         options={{
           tabBarIcon: () => (
             <MaterialIcons name="archive" size={25} color="white" />
