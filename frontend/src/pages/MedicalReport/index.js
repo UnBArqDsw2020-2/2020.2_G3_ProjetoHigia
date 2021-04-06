@@ -102,7 +102,7 @@ const MedicalReport = ({ navigation }) => {
           <Text style={styles.title}>Comentários</Text>
           {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
         </View>
-        {user.allergy.map((item) => (
+        {user.coments.map((item) => (
           <CardInfo
             key={item.id}
             description={item.name}

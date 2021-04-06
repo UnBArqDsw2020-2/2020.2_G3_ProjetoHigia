@@ -30,6 +30,12 @@ export const user = {
       name: 'Diabetes',
     },
   ],
+  coments:[
+    {
+      id: 1,
+      name: 'Nao possui comentarios',
+    },
+  ],
   emergencyContacts: [
     {
       id: 1,
