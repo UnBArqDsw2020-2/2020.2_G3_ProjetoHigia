@@ -69,6 +69,19 @@ const MedicalReport = ({ navigation }) => {
           />
         ))}
 
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>Comorbidades</Text>
+          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
+        </View>
+        {user.allergy.map((item) => (
+          <CardInfo
+            key={item.id}
+            description={item.name}
+            onChangeText={() => {}}
+            edit={edit}
+          />
+        ))}
+
         <View style={styles.line} />
 
         <View style={styles.titleContainer}>
