@@ -51,7 +51,6 @@ No [diagrama de pacotes](https://unbarqdsw2020-2.github.io/2020.2_G3_ProjetoHigi
 
 ## Especialista
 O padrão Especialista é o que determina a atribuição de responsabilidades para a entidade mais especialista em um dado aspecto, não somente a criação de instâncias, mas também aspectos como a melhor entidade para calcular algo ou ordenar.
-### Nível de modelagem
 ### Nível de código
 - [**Link para o github**](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/backend/src/config/SetupServer.js)
 ![](../assets/images/05-padroesDeProjeto/GRASP/especialista.png)

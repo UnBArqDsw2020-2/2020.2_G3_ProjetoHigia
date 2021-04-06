@@ -63,7 +63,7 @@ Neste exemplo, o objeto da classe mais complexa Carro pode ser construído de v�
 O Builder foi utilizado na seguinte classe. Estamos utilizando o padrão para a montagem da ficha médica, nesse caso em especifico para a manipulação dos exames do usuário.
 </p>
 
-![builder](../assets/images/05-padroesDeProjeto/GoFCriacional/builderApplication.png)
+![builder](../assets/images/05-padroesDeProjeto/GoFCriacional/builder.png)
 
 #### Pontos positivos
 

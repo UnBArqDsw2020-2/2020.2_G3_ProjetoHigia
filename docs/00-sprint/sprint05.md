@@ -25,7 +25,7 @@
 **Pontuação total:** 33
 
 ### Resultado
-
+Tanto a issue [#90](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/90) e [#92](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/92) não foram finalizadas, apenas 28 foram concluídos.
 
 ### Cumulative Flow
 
