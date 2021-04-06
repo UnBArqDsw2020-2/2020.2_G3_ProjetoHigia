@@ -73,7 +73,7 @@ const MedicalReport = ({ navigation }) => {
           <Text style={styles.title}>Comorbidades</Text>
           {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
         </View>
-        {user.allergy.map((item) => (
+        {user.comorbidities.map((item) => (
           <CardInfo
             key={item.id}
             description={item.name}

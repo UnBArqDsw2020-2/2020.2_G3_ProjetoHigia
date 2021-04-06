@@ -24,6 +24,12 @@ export const user = {
       name: 'Amendoim',
     },
   ],
+  comorbidities:[
+    {
+      id: 1,
+      name: 'Diabetes',
+    },
+  ],
   emergencyContacts: [
     {
       id: 1,
