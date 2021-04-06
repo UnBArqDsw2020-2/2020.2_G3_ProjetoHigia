@@ -69,6 +69,19 @@ const MedicalReport = ({ navigation }) => {
           />
         ))}
 
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>Comorbidades</Text>
+          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
+        </View>
+        {user.comorbidities.map((item) => (
+          <CardInfo
+            key={item.id}
+            description={item.name}
+            onChangeText={() => {}}
+            edit={edit}
+          />
+        ))}
+
         <View style={styles.line} />
 
         <View style={styles.titleContainer}>
@@ -82,6 +95,19 @@ const MedicalReport = ({ navigation }) => {
             number={item.number}
             edit={edit}
             width="70%"
+          />
+        ))}
+
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>Comentários</Text>
+          {edit ? <Icon name="add-circle" size={20} color="#86172D" /> : null}
+        </View>
+        {user.coments.map((item) => (
+          <CardInfo
+            key={item.id}
+            description={item.name}
+            onChangeText={() => {}}
+            edit={edit}
           />
         ))}
       </ScrollView>
