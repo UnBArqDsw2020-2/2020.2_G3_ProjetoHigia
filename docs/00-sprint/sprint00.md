@@ -1,7 +1,7 @@
 # Sprint 00
 
-- **Data de início da sprint**: 09/02/2020
-- **Data do fim da sprint**: 19/02/2020
+- **Data de início da sprint**: 10/02/2021
+- **Data do fim da sprint**: 23/02/2021
 - **Horário da Planning**:
   - **Início**: 19:00
   - **Fim**: 21:00
@@ -28,7 +28,7 @@
 
 - **Pontuação total**: 41
  
-## Review
+## Comentários
  
 Ao decorrer da sprint, a equipe sentiu que haveria a necessidade de adicionar novas issues. As issues adicionadas ao decorrer da semana foram:
 
@@ -45,4 +45,14 @@ Foi adicionado também o documento [BPMN](/03-projeto/bpmn.md), porém não foi 
 
 Todas as issues propostas ao decorrer da sprint foram realizadas. Não houve dívida técnica.
 
-![culmutativeFlow00](../assets/images/00-sprint/culmutativeFlow00.png)
+### Cumulative Flow
+
+![cumulativeFlow00](../assets/images/00-sprint/cumulativeFlow/cumulativeFlow00.png)
+
+### Burndown Report
+
+![burndown00](../assets/images/00-sprint/burndown/burndown00.png)
+
+### Velocity Tracking
+
+![velocity00](../assets/images/00-sprint/velocity/velocity00.png)

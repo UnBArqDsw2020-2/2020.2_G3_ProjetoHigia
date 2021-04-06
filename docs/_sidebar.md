@@ -10,9 +10,16 @@
   - [Metodologias](./03-projeto/metodologias.md)
   - [Estimativas](./03-projeto/estimativas.md)
   - [BPMN](./03-projeto/bpmn.md)
+  - [Documento de Visão](./03-projeto/docVisao.md)
+  - [Guia de Estilo](03-projeto/guiaDeEstilo.md)
 - Sprints
-  - [Sprint 0](./00-sprint/sprint00)
-  - [Sprint 1](./00-sprint/sprint01)
+  - [Sprint 0](./00-sprint/sprint00.md)
+  - [Sprint 1](./00-sprint/sprint01.md)
+  - [Sprint 2](./00-sprint/sprint02.md)
+  - [Sprint 3](./00-sprint/sprint03.md)
+  - [Sprint 4](./00-sprint/sprint04.md)
+  - [Sprint 5](./00-sprint/sprint05.md)
+  <!-- - [Sprint 6](./00-sprint/sprint06.md) -->
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
@@ -45,4 +52,10 @@
     - [Sequência](./04-diagramasUML/diagramaSequencia.md)
     - [Comunicação](./04-diagramasUML/diagramaComunicacao.md)
     - [Atividade](./04-diagramasUML/diagramaAtividade.md)
-    - [Estados](./04-diagramasUML/diagramaEstado.md) 
+    - [Estados](./04-diagramasUML/diagramaEstado.md)
+- Padrões de Projeto
+  - [GRASP](./05-padroesDeProjeto/GRASP.md)
+  - [GoF Criacional](./05-padroesDeProjeto/GoFCriacional.md)
+  - [GoF Estrutural](./05-padroesDeProjeto/GoFEstrutural.md)
+  - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
+  - [Padrão Emergente](./05-padroesDeProjeto/PadraoEmergente.md)
