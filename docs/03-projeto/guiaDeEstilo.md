@@ -1,9 +1,5 @@
 # Guia de estilo 
 
-[Gabriel Hussein](https://github.com/GabrielHussein)
-[Ithalo Azevedo](https://github.com/ithaloazevedo)
-[Victor Cerqueira](https://github.com/VictorAmaralC)
-
 ## Histórico de versionamento
 |    Data    | Versão |      Descrição       |                                                                            Autor(es)                                                                            |
 | :--------: | :----: | :------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
