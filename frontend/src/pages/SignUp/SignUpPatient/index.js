@@ -73,7 +73,7 @@ export default function SignUpPatient(props) {
           <TextInput style={styles.inputText} placeholder="Altura" />
           <TextInput style={styles.inputText} placeholder="Peso" />
           <TextInput style={styles.inputText} placeholder="Tipo Sanguineo" />
-          <View s tyle={styles.container1}>
+          <View style={styles.container1}>
             <TouchableOpacity style={styles.btn}>
               <Text
                 style={styles.btnText}
@@ -81,7 +81,7 @@ export default function SignUpPatient(props) {
                   checkCRM()
                     .then((response) => {
                       response
-                        ? navigation.navigate("SignUpEmergency")
+                        ? navigation.navigate("SignUpPhoto")
                         : console.log("CRM Inválido");
                     })
                     .catch((error) => {
