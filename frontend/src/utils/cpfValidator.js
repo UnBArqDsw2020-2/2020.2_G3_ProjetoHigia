@@ -1,24 +1,25 @@
-const cpfValidator = (strCPF) => {
-  var Soma;
-  var Resto;
-  Soma = 0;
-  if (strCPF == "00000000000") return false;
+const isAllEqual = (value) => {
+	for (let i = 1; i < value.length; i++) {
+		if (value[i] != value[i - 1]) return false;
+	}
+	return true;
+};
 
-  for (i = 1; i <= 9; i++)
-    Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (11 - i);
-  Resto = (Soma * 10) % 11;
-
-  if (Resto == 10 || Resto == 11) Resto = 0;
-  if (Resto != parseInt(strCPF.substring(9, 10))) return false;
-
-  Soma = 0;
-  for (i = 1; i <= 10; i++)
-    Soma = Soma + parseInt(strCPF.substring(i - 1, i)) * (12 - i);
-  Resto = (Soma * 10) % 11;
-
-  if (Resto == 10 || Resto == 11) Resto = 0;
-  if (Resto != parseInt(strCPF.substring(10, 11))) return false;
-  return true;
-}
+const cpfValidator = (cpf) => {
+	if (cpf == "") return false;
+	if (cpf.length != 11 || isAllEqual(cpf)) return false;
+	let add = 0;
+	let rev;
+	for (let i = 0; i < 9; i++) add += parseInt(cpf.charAt(i)) * (10 - i);
+	rev = 11 - (add % 11);
+	if (rev == 10 || rev == 11) rev = 0;
+	if (rev != parseInt(cpf.charAt(9))) return false;
+	add = 0;
+	for (let i = 0; i < 10; i++) add += parseInt(cpf.charAt(i)) * (11 - i);
+	rev = 11 - (add % 11);
+	if (rev == 10 || rev == 11) rev = 0;
+	if (rev != parseInt(cpf.charAt(10))) return false;
+	return true;
+};
 
 export default cpfValidator;
