@@ -67,11 +67,23 @@ O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicaçã
 
 ## Screenshots Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 
-Adicione 2 ou mais screenshots do projeto em termos de artefatos da Terceira Entrega.
+### Padrões GRASPs
+
+![GRASPs](./assets/primeiraEntrega/padroesGrasps.png)
+
+### Padrões GoFs
+
+![GoFs](./assets/primeiraEntrega/padroesGofs.png)
+
+### Padrão Emergente
+
+![padraoEmergente](./assets/primeiraEntrega/padraoEmergente.png)
 
 ## Vídeo(s) Terceira Entrega <<FOCO: DSW(Padrões de Projeto)>>
 
-Adicione o(s)s vídeo(s) da Terceira Entrega.
+[Módulo Padrões de Projeto GRASPs](https://youtu.be/n9shiFCyHC8)  
+[Módulo Padrões de Projeto GoFs](https://youtu.be/y3WaFK6YfCQ)  
+[Módulo Padrões de Projeto Extras](https://youtu.be/prgdaiVpM2A)  
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 
