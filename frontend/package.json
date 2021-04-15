@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "@expo-google-fonts/junge": "^0.1.0",
-    "@react-native-picker/picker": "1.9.2",
     "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "0.1.10",
+    "@react-native-picker/picker": "1.9.2",
     "@react-navigation/bottom-tabs": "^5.11.8",
     "@react-navigation/native": "^5.9.3",
     "@react-navigation/stack": "^5.14.3",
@@ -32,7 +32,9 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "~7.9.0"
+    "@babel/core": "~7.9.0",
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2"
   },
   "private": true
 }
