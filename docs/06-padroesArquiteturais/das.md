@@ -2,10 +2,10 @@
 
 ## Histórico de versionamento
 
-|    Data    | Versão |       Descrição       |                     Autor(es)                      |
-| :--------: | :----: | :-------------------: | :------------------------------------------------: |
-| 15/04/2021 |  0.1   | Criação do documento  | [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-| 16/04/2021 |  0.1   | Adicionada introdução | [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+|    Data    | Versão |      Descrição       |                     Autor(es)                      |
+| :--------: | :----: | :------------------: | :------------------------------------------------: |
+| 15/04/2021 |  0.1   | Criação do documento | [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+| 16/04/2021 |  0.1   | Adicionado tópico 1  | [Ithalo Azevedo](https://github.com/ithaloazevedo) |
 
 
 ## 1. Introdução

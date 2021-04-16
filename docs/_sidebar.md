@@ -60,3 +60,5 @@
   - [GoF Estrutural](./05-padroesDeProjeto/GoFEstrutural.md)
   - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
   - [Padrão Emergente](./05-padroesDeProjeto/PadraoEmergente.md)
+- Padrões arquiteturais
+  - [Documento de Arquitetura](06-padroesArquiteturais/das.md)
