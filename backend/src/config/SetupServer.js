@@ -1,10 +1,10 @@
 import express from "express";
-import admin from "firebase-admin";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-import serviceAccount from "./serviceAccountKey.json";
 import setUpRoute from "../routes/index.routes";
+import http from "http";
+import { setUpSocket } from "../webSocket";
 
 class SetupServer {
 	constructor() {
@@ -38,6 +38,11 @@ class SetupServer {
 				console.log("Database connection failed");
 			});
 	}
+
+	setUpSocket() {
+		const server = http.Server(this._app);
+		setUpSocket(server);
+	  }
 
 	getApp() {
 		return this._app;
