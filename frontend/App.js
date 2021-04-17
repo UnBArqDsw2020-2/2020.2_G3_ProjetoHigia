@@ -6,29 +6,42 @@ import apiKeys from "./src/utils/firebaseKeys.js";
 import { useFonts, Junge_400Regular } from "@expo-google-fonts/junge";
 import AppLoading from "expo-app-loading";
 import Routes from "./src/routes";
-import SignUpPhoto from "./src/pages/SignUp/SignUpPhoto";
 import { StatusBar } from "react-native";
+import { Provider } from "react-redux";
+import LoadingCircle from "./src/components/Loading";
+import loadingStore from "./src/store/loading";
+
+require("react-dom");
+window.React2 = require("react");
+//TODO enquanto isto estiver imprimindo falso, os react hooks não vão funcionar
+console.log("ISEQUAL", window.React1 === window.React2);
 
 const App = () => {
-  var [fontsLoaded] = useFonts({ Junge_400Regular });
+	var [fontsLoaded] = useFonts({ Junge_400Regular });
 
-  if (!fontsLoaded) {
-    return <AppLoading />;
-  }
+	if (!fontsLoaded) {
+		return <AppLoading />;
+	}
 
-  if (!firebase.apps.length) {
-    console.log("Connected with Firebase");
-    firebase.initializeApp(apiKeys.firebaseConfig);
-  }
+	if (!firebase.apps.length) {
+		console.log("Connected with Firebase");
+		firebase.initializeApp(apiKeys.firebaseConfig);
+	}
 
-  return (
-    <NavigationContainer>
-      <AuthProvider>
-        <StatusBar barStyle="light-content" backgroundColor="#7E162B" />
-        <Routes />
-      </AuthProvider>
-    </NavigationContainer>
-  );
+	return (
+		<Provider store={loadingStore}>
+			<NavigationContainer>
+				<AuthProvider>
+					<StatusBar
+						barStyle="light-content"
+						backgroundColor="#7E162B"
+					/>
+					<Routes />
+				</AuthProvider>
+			</NavigationContainer>
+			<LoadingCircle></LoadingCircle>
+		</Provider>
+	);
 };
 
 export default App;
