@@ -1,7 +1,7 @@
 import axios from "axios";
 import Constants from "expo-constants";
-import { useContext, createContext, useState } from "react";
 const { manifest } = Constants;
+import { useDispatch } from "react-redux";
 
 const ipAddress = manifest.debuggerHost.split(`:`).shift().concat(`:3000`);
 
@@ -10,8 +10,9 @@ const api = axios.create({
 });
 
 api.interceptors.request.use(async (config) => {
+	const dispatch = useDispatch();
 	try {
-		setLoading(true);
+		dispatch({ type: "setValue", value: true });
 	} catch (e) {
 		alert("Error response" + e);
 	}
@@ -20,10 +21,10 @@ api.interceptors.request.use(async (config) => {
 });
 
 api.interceptors.response.use(async (config) => {
-	const [loading, setLoading] = useState(null);
+	const dispatch = useDispatch();
 
 	try {
-		setLoading(false);
+		dispatch({ type: "setValue", value: false });
 	} catch (e) {
 		alert("Error response" + e);
 	}
