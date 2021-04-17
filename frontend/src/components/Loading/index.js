@@ -1,19 +1,30 @@
 import React from "react";
 import { View, ActivityIndicator } from "react-native";
 import styles from "./style";
+import { useSelector, Provider } from "react-redux";
 
-export default function LoadingCircle(show = false) {
-	const { showLoading } = apiContext;
+import loadingStore from "../../store/loading";
 
-	if (showLoading) {
+function LoadingCircle() {
+	const loading = useSelector((state) => state.loading);
+
+	console.log("loading:", loading);
+
+	if (loading) {
 		return (
-			<View style={styles.container}>
-				<ActivityIndicator
-					size="large"
-					animating={show}
-					color="#86172D"
-				/>
-			</View>
+			<Provider store={loadingStore}>
+				<View style={styles.container}>
+					{/* <ActivityIndicator
+						size="large"
+						animating={loading}
+						color="#86172D"
+					/> */}
+				</View>
+			</Provider>
 		);
+	} else {
+		return <></>;
 	}
 }
+
+export default LoadingCircle;

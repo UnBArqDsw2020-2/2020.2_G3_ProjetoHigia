@@ -8,6 +8,8 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "center",
 		position: "absolute",
+		backgroundColor: "white",
+		opacity: 0.8,
 	},
 });
 
