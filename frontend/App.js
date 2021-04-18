@@ -11,11 +11,6 @@ import { Provider } from "react-redux";
 import LoadingCircle from "./src/components/Loading";
 import loadingStore from "./src/store/loading";
 
-require("react-dom");
-window.React2 = require("react");
-//TODO enquanto isto estiver imprimindo falso, os react hooks não vão funcionar
-console.log("ISEQUAL", window.React1 === window.React2);
-
 const App = () => {
 	var [fontsLoaded] = useFonts({ Junge_400Regular });
 
