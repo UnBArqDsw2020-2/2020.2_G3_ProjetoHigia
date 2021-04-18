@@ -1,31 +1,18 @@
 import axios from "axios";
-import { useDispatch } from "react-redux";
+import loadingStore from "../store/loading";
 
 const crmApi = axios.create({
 	baseURL: `https://www.consultacrm.com.br/api/index.php`,
 });
 
-function setLoading(loadingValue) {
-	const dispatch = useDispatch();
-	dispatch({ type: "setValue", value: loadingValue });
-}
-
 crmApi.interceptors.request.use(async (config) => {
-	try {
-		setLoading(true);
-	} catch (e) {
-		alert("Error response" + e);
-	}
+	loadingStore.dispatch({ type: "setValue", value: true });
 
 	return config;
 });
 
 crmApi.interceptors.response.use(async (config) => {
-	try {
-		setLoading(false);
-	} catch (e) {
-		alert("Error response" + e);
-	}
+	loadingStore.dispatch({ type: "setValue", value: false });
 
 	return config;
 });
