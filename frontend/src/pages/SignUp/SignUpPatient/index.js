@@ -45,15 +45,15 @@ export default function SignUpPatient() {
 		return result;
 	}
 
-  return (
-    <ImageBackground
-      style={styles.container}
-      source={require("../../../../assets/img/background.jpg")}
-      imageStyle={{ width: "100%", height: "100%" }}
-    >
-      <ScrollView style={{ flex: 1, marginTop: "20%" }}>
-        <View style={styles.form}>
-          <Text style={styles.text}>Dados para Perfil</Text>
+	return (
+		<ImageBackground
+			style={styles.container}
+			source={require("../../../../assets/img/background.jpg")}
+			imageStyle={{ width: "100%", height: "100%" }}
+		>
+			<ScrollView style={{ flex: 1, marginTop: "20%" }}>
+				<View style={styles.form}>
+					<Text style={styles.text}>Dados para Perfil</Text>
 					<TextInput
 						style={styles.inputText}
 						placeholder="Primeiro Nome"
@@ -85,43 +85,46 @@ export default function SignUpPatient() {
 							<Text style={styles.errorText}>CPF inválido</Text>
 						)}
 					</View>
-          {isDoctor === "true" ? (
-            <>
-              <TextInput
-                style={styles.inputText}
-                placeholder="CRM"
-                onChangeText={setCrm}
-              />
-              <DropdownButton
-                onChangeText={setUF}
-              />
-            </>
-          ) : null}
-          <TextInput style={styles.inputText} placeholder="Altura" />
-          <TextInput style={styles.inputText} placeholder="Peso" />
-          <TextInput style={styles.inputText} placeholder="Tipo Sanguineo" />
-          <View style={styles.container1}>
-            <TouchableOpacity style={styles.btn}>
-              <Text
-                style={styles.btnText}
-                onPress={() => {
-                  checkCRM()
-                    .then((response) => {
-                      response
-                        ? navigation.navigate("SignUpPhoto")
-                        : console.log("CRM Inválido");
-                    })
-                    .catch((error) => {
-                      console.error(error);
-                    });
-                }}
-              >
-                Próximo
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </ScrollView>
-    </ImageBackground>
-  );
+					{isDoctor === "true" ? (
+						<>
+							<TextInput
+								style={styles.inputText}
+								placeholder="CRM"
+								onChangeText={setCrm}
+							/>
+							<DropdownButton onChangeText={setUF} />
+						</>
+					) : null}
+					<TextInput style={styles.inputText} placeholder="Altura" />
+					<TextInput style={styles.inputText} placeholder="Peso" />
+					<TextInput
+						style={styles.inputText}
+						placeholder="Tipo Sanguineo"
+					/>
+					<View style={styles.container1}>
+						<TouchableOpacity style={styles.btn}>
+							<Text
+								style={styles.btnText}
+								onPress={() => {
+									checkCRM()
+										.then((response) => {
+											response
+												? navigation.navigate(
+														"SignUpPhoto"
+												  )
+												: console.log("CRM Inválido");
+										})
+										.catch((error) => {
+											console.error(error);
+										});
+								}}
+							>
+								Próximo
+							</Text>
+						</TouchableOpacity>
+					</View>
+				</View>
+			</ScrollView>
+		</ImageBackground>
+	);
 }
