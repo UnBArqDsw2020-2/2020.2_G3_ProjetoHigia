@@ -9,6 +9,7 @@
 | 18/04/2021 |  0.3   |         Adicionado tópico 2.1         |                        [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                         |
 | 18/04/2021 |  0.4   | Adicionadas tecnologias no tópico 2.1 |                         [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
 | 18/04/2021 |  0.5   |          Adicionado tópico 3          | [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+| 18/04/2021 |  0.6   |          Adicionado tópico 4          |                        [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                         |
 
 
 ## 1. Introdução
@@ -56,10 +57,35 @@ Expo: o que é, para que serve e quando utilizar?. Disponível em: <https://blog
 - **Equipe:** a equipe possui 7 integrantes.
 - **Prazo:** o escopo deverá estar pronto até o dia 03/05/2021.
 - **Metodologias:** o sistema deve ser desenvolvido utilizando metodologias ágeis. 
-  
-## 4. Visões de caso de uso
-## 5. Visão lógica
-## 6. Visão de processos
-## 7. Visão de implantação
-## 8. Visão de implementação 
-## 9. Qualidade do software
+
+## 4. Padrão arquitetural
+O padrão arquitetural que utilizamos é o MVC (Model-View-Controller). Esse padrão separa a apresentação e a interação de dados do sistema. Estruturando o sistema em três camadas que interagem entre si:
+
+- **View**: é a camada de apresentação ao usuário, responsável por exibir os dados. A View também é responsável por criar e inicializar a controller associada e solicitar a atualização das models. 
+
+A View disponibiliza para o usuário a controller createUser:
+
+![userView](../assets/images/06-padroesDeArquitetura/userView.png)
+
+- **Controller**: é responsável pela comunicação entre View e Model. Todas as requisições do usuário são encaminhadas pela View para a Controller que as transforma em requisições à Model. A Controller está diretamente associada ao padrão [GRASP Controlador](./05-padroesDeProjeto/GRASP?id=controlador), já que é ela quem recebe e lida com os eventos do sistema.   
+
+
+
+A Controller recebe a requisição da view e envia para a model (`UserBase.create(newUserInfo)`), e ao receber a resposta da model, retorna a informação de sucesso ou falha para a view: 
+
+![controller](../assets/images/06-padroesDeArquitetura/controller.png)
+
+- **Model**: responsável pela definição e contenção dos dados de cada entidade e detém a principal funcionalidade do sistema.
+
+A UserBase acionada pela controller é criada a partir da model User, que recebe da classe Base os métodos de interação com o banco.
+
+![userModel](../assets/images/06-padroesDeArquitetura/userModel.png)
+![userBase](../assets/images/06-padroesDeArquitetura/userBase.png)
+
+
+## 5. Visões de caso de uso
+## 6. Visão lógica
+## 7. Visão de processos
+## 8. Visão de implantação
+## 9. Visão de implementação 
+## 10. Qualidade do software

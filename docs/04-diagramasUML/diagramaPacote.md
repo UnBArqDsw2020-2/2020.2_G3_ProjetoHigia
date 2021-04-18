@@ -1,13 +1,13 @@
 # Diagrama de Pacotes
 
-## Histórico de versionamento
+## Histórico de versões
 
-|  Data  | Versão | Descrição | Autor(es) |
-| :----: | :----: | :-------: | :-------: |
-| 27/02/2021 | 0.1 | Elaboração da versão V.0 dos diagramas mobile e backend | [Fellipe Araujo](https://github.com/fellipe-araujo) |
-| 01/03/2021 | 1.0 | Criação do Documento | [Fellipe Araujo](https://github.com/fellipe-araujo) |
-| 04/03/2021 | 1.1 | Revisão do Documento | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 05/04/2021 | 2.0 | Adicionando nova versão do diagrama de pacotes - Backend | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) |
+|    Data    | Versão |                        Descrição                         |                                              Autor(es)                                               |
+| :--------: | :----: | :------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
+| 27/02/2021 |  0.1   | Elaboração da versão V.0 dos diagramas mobile e backend  |                         [Fellipe Araujo](https://github.com/fellipe-araujo)                          |
+| 01/03/2021 |  1.0   |                   Criação do Documento                   |                         [Fellipe Araujo](https://github.com/fellipe-araujo)                          |
+| 04/03/2021 |  1.1   |                   Revisão do Documento                   | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 05/04/2021 |  2.0   | Adicionando nova versão do diagrama de pacotes - Backend | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) |
 
 ## Introdução
 

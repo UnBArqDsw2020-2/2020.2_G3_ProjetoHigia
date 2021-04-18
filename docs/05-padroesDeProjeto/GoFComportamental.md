@@ -1,18 +1,18 @@
 # GoFs Comportamentais
 
-## Histórico de versionamento
+## Histórico de versões
 
-|    Data    | Versão |                  Descrição                  |                                                                      Autor(es)                                                                       |
-| :--------: | :----: | :-----------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 22/03/2021 |  0.1   |   Criação do documento GoF Comportamental   | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
-| 22/03/2021 |  0.2   |       Adição de exemplos da aplicação       | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
-| 22/03/2021 |  0.3   |              Adição de imagens              | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
-| 23/03/2021 |  0.4   | Introdução do state e adição de referências |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
-| 23/03/2021 |  0.5   |    Adição de imagens e suas explicações     |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
-| 23/03/2021 |  0.6   |  Adicionados pontos positivos e negativos   |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
-| 25/03/2021 |  1.0   | Adicionando GoFs comportamentais não utilizados | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 26/03/2021 |  1.1   |            Adicionando GoF extra            |                           [Danillo Souza](https://github.com/danillogs) e [Arthur Paiva](https://github.com/ArthurPaivaT)                            |
-| 28/03/2021 |  1.2   | Adicionando mais GoFs comportamentais não utilizados | [Aline Lermen](https://github.com/AlineLermen) e [Gabriel Hussein](https://github.com/GabrielHussein) |
+|    Data    | Versão |                      Descrição                       |                                                                      Autor(es)                                                                       |
+| :--------: | :----: | :--------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 22/03/2021 |  0.1   |       Criação do documento GoF Comportamental        | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
+| 22/03/2021 |  0.2   |           Adição de exemplos da aplicação            | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
+| 22/03/2021 |  0.3   |                  Adição de imagens                   | [Arthur Paiva](https://github.com/arthurpaivat), [Aline Lermen](https:/github.com/alinelermen) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
+| 23/03/2021 |  0.4   |     Introdução do state e adição de referências      |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
+| 23/03/2021 |  0.5   |         Adição de imagens e suas explicações         |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
+| 23/03/2021 |  0.6   |       Adicionados pontos positivos e negativos       |                     [Gabriel Hussein](https://github.com/GabrielHussein) e [Victor Cerqueira](https://github.com/VictorAmaralC)                      |
+| 25/03/2021 |  1.0   |   Adicionando GoFs comportamentais não utilizados    | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 26/03/2021 |  1.1   |                Adicionando GoF extra                 |                           [Danillo Souza](https://github.com/danillogs) e [Arthur Paiva](https://github.com/ArthurPaivaT)                            |
+| 28/03/2021 |  1.2   | Adicionando mais GoFs comportamentais não utilizados |                        [Aline Lermen](https://github.com/AlineLermen) e [Gabriel Hussein](https://github.com/GabrielHussein)                         |
 | 30/03/2021 |  1.3   |             Revisão dos GoFs estruturais             |                          [Danillo Souza](https://github.com/danillogs) e [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
 
 ## GoFs utilizados
@@ -241,7 +241,7 @@ Neste exemplo, o Memento trabalha junto com o Command para armazenar retratos do
 
 #### Comentários
 <p style="text-align: justify;"> &emsp;&emsp;
-O Memento, geralmente, é utilizado para criação de retratos/versões dos estados de objetos para que seja capaz de restaurar os seus valores no futuro. A aplicabilidade citada é excelente para aplicações que necessitam de um histórico de versionamento, o que não é o caso do app Hígia.</p>
+O Memento, geralmente, é utilizado para criação de retratos/versões dos estados de objetos para que seja capaz de restaurar os seus valores no futuro. A aplicabilidade citada é excelente para aplicações que necessitam de um histórico de versões, o que não é o caso do app Hígia.</p>
 
 
 ### Strategy

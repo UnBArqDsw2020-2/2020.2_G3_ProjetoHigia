@@ -1,14 +1,14 @@
 # Diagrama de comunicação
 
-## Histórico de versionamento
+## Histórico de versões
 
-|    Data    | Versão |                Descrição                 |                                              Autor(es)                                               |
-| :--------: | :----: | :--------------------------------------: | :--------------------------------------------------------------------------------------------------: |
-| 25/02/2021 |  0.1   |           Criação do documento           | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 25/02/2021 |  1.0   | Criação da primeira versão dos diagramas | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 02/03/2021 |  1.1   | Alteração do diagrama de editar perfil médico | [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 02/03/2021 |  1.2   | Alteração do diagrama de buscar paciente e permissão de acesso| [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 05/03/2021 |  1.3   | Revisão do documento | [Arthur Paiva](https://github.com/ArthurPaivaT), [Fellipe Araujo](https://github.com/fellipe-araujo) e [Victor Amaral](https://github.com/VictorAmaralc) |
+|    Data    | Versão |                           Descrição                            |                                                                        Autor(es)                                                                         |
+| :--------: | :----: | :------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 25/02/2021 |  0.1   |                      Criação do documento                      |                           [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein)                           |
+| 25/02/2021 |  1.0   |            Criação da primeira versão dos diagramas            |                           [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein)                           |
+| 02/03/2021 |  1.1   |         Alteração do diagrama de editar perfil médico          |                           [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein)                           |
+| 02/03/2021 |  1.2   | Alteração do diagrama de buscar paciente e permissão de acesso |                           [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein)                           |
+| 05/03/2021 |  1.3   |                      Revisão do documento                      | [Arthur Paiva](https://github.com/ArthurPaivaT), [Fellipe Araujo](https://github.com/fellipe-araujo) e [Victor Amaral](https://github.com/VictorAmaralc) |
 
 ## Introdução
 

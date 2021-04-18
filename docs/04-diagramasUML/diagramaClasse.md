@@ -1,14 +1,14 @@
 # Diagrama de Classe
 
-## Histórico de versionamento
+## Histórico de versões
 
-|    Data    | Versão |                Descrição                 |                                              Autor(es)                                               |
-| :--------: | :----: | :--------------------------------------: | :--------------------------------------------------------------------------------------------------: |
-| 01/03/2021 |  0.1   |           Criação do documento           | [Victor Amaral](https://github.com/VictorAmaralc)|
-| 01/03/2021 |  1.0   | Criação da primeira versão do diagrama | [Victor Amaral](https://github.com/VictorAmaralc) |
-| 04/03/2021 |  1.1   | Revisão do documento |[Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein)|
-| 21/03/2021 |  1.2   | Refatoração do diagrama de classes |[Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein)|
-| 05/04/2021 |  2.0   | Nova versão do diagrama de classes |[Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein)|
+|    Data    | Versão |               Descrição                |                                               Autor(es)                                                |
+| :--------: | :----: | :------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| 01/03/2021 |  0.1   |          Criação do documento          |                           [Victor Amaral](https://github.com/VictorAmaralc)                            |
+| 01/03/2021 |  1.0   | Criação da primeira versão do diagrama |                           [Victor Amaral](https://github.com/VictorAmaralc)                            |
+| 04/03/2021 |  1.1   |          Revisão do documento          | [Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 21/03/2021 |  1.2   |   Refatoração do diagrama de classes   | [Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 05/04/2021 |  2.0   |   Nova versão do diagrama de classes   | [Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein) |
 
 ## Introdução
 <p style="text-align: justify;"> &emsp;&emsp;

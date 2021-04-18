@@ -1,14 +1,14 @@
 # Diagramas de Estado
 
-## Histórico de versionamento
+## Histórico de versões
 
-|    Data    | Versão |        Descrição         |                                              Autor(es)                                               |
-| :--------: | :----: | :----------------------: | :--------------------------------------------------------------------------------------------------: |
-| 27/02/2021 |  0.1   | Elaboração dos diagramas | [Arthur Paiva](https://github.com/ArthurPaivaT),  [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-| 28/02/2021 |  1.0   |   Criação do documento   | [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)  |
-| 01/03/2021 |  1.1   | Revisão do documento e adição de referências | [Arthur Paiva](https://github.com/ArthurPaivaT) |
-| 05/03/2021 |  1.2   | Revisão do documento | [Arthur Paiva](https://github.com/ArthurPaivaT), [Fellipe Araujo](https://github.com/fellipe-araujo) e [Victor Amaral](https://github.com/VictorAmaralc) |
-| 05/04/2021 |  2.0   | Novas versões de diagramas | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) |
+|    Data    | Versão |                  Descrição                   |                                                                        Autor(es)                                                                         |
+| :--------: | :----: | :------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 27/02/2021 |  0.1   |           Elaboração dos diagramas           |                           [Arthur Paiva](https://github.com/ArthurPaivaT),  [Ithalo Azevedo](https://github.com/ithaloazevedo)                           |
+| 28/02/2021 |  1.0   |             Criação do documento             |                           [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                            |
+| 01/03/2021 |  1.1   | Revisão do documento e adição de referências |                                                     [Arthur Paiva](https://github.com/ArthurPaivaT)                                                      |
+| 05/03/2021 |  1.2   |             Revisão do documento             | [Arthur Paiva](https://github.com/ArthurPaivaT), [Fellipe Araujo](https://github.com/fellipe-araujo) e [Victor Amaral](https://github.com/VictorAmaralc) |
+| 05/04/2021 |  2.0   |          Novas versões de diagramas          |                           [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein)                           |
 
 
 ## Introdução

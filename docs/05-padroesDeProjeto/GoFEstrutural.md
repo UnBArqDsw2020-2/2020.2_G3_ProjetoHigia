@@ -1,6 +1,6 @@
 # GoFs Estruturais
 
-## Histórico de versionamento
+## Histórico de versões
 
 |    Data    | Versão |                      Descrição                       |                                                                      Autor(es)                                                                       |
 | :--------: | :----: | :--------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -14,7 +14,7 @@
 | 23/03/2021 |  0.8   |                Adição de referências                 |                      [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo)                       |
 | 24/03/2021 |  0.9   |            Revisão e ajuste do documento             |                                                    [Aline Lermen](https://github.com/AlineLermen)                                                    |
 | 25/03/2021 |  1.0   |     Adicionando GoFs estruturais não utilizados      | [Aline Lermen](https://github.com/AlineLermen), [Danillo Souza](https://github.com/danillogs) e [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 30/03/2021 |  1.1   |     Corrigindo erros de ortografia      | [Danillo Souza](https://github.com/danillogs) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+| 30/03/2021 |  1.1   |            Corrigindo erros de ortografia            |                          [Danillo Souza](https://github.com/danillogs) e [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
 
 ## GoFs utilizados
 

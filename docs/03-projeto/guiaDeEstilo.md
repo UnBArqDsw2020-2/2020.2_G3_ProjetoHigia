@@ -1,11 +1,11 @@
 # Guia de estilo 
 
-## Histórico de versionamento
-|    Data    | Versão |      Descrição       |                                                                            Autor(es)                                                                            |
-| :--------: | :----: | :------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 26/03/2021 |  0.1   | Criação do documento | [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
-| 26/03/2021 |  0.2   | Adição de imagens de grid e tipografia | [Gabriel Hussein](https://github.com/GabrielHussein) |
-| 26/03/2021 |  0.3   | Adição de imagens de Paleta de cores, icones e componentes | [Victor Amaral](https://github.com/VictorAmaralC) |
+## Histórico de versões
+|    Data    | Versão |                         Descrição                          |                                                                            Autor(es)                                                                            |
+| :--------: | :----: | :--------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 26/03/2021 |  0.1   |                    Criação do documento                    | [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 26/03/2021 |  0.2   |           Adição de imagens de grid e tipografia           |                                                      [Gabriel Hussein](https://github.com/GabrielHussein)                                                       |
+| 26/03/2021 |  0.3   | Adição de imagens de Paleta de cores, icones e componentes |                                                        [Victor Amaral](https://github.com/VictorAmaralC)                                                        |
 
 ## 1. Objetivo
 O objetivo desse documento é apresentar a identidade visual do nosso projeto, as nossas escolhas de design e padronizar os componentes que serão utilizados no nosso software.
