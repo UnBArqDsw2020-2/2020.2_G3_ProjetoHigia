@@ -61,21 +61,24 @@ Expo: o que é, para que serve e quando utilizar?. Disponível em: <https://blog
 ## 4. Padrão arquitetural
 O padrão arquitetural que utilizamos é o MVC (Model-View-Controller). Esse padrão separa a apresentação e a interação de dados do sistema. Estruturando o sistema em três camadas que interagem entre si:
 
-- **View**: é a camada de apresentação ao usuário, responsável por exibir os dados. A View também é responsável por criar e inicializar a controller associada e solicitar a atualização das models. 
+### View
+É a camada de apresentação ao usuário, responsável por exibir os dados. A View também é responsável por criar e inicializar a controller associada e solicitar a atualização das models. 
 
 A View disponibiliza para o usuário a controller createUser:
 
 ![userView](../assets/images/06-padroesDeArquitetura/userView.png)
+<br></br>
 
-- **Controller**: é responsável pela comunicação entre View e Model. Todas as requisições do usuário são encaminhadas pela View para a Controller que as transforma em requisições à Model. A Controller está diretamente associada ao padrão [GRASP Controlador](./05-padroesDeProjeto/GRASP?id=controlador), já que é ela quem recebe e lida com os eventos do sistema.   
-
-
+### Controller 
+É responsável pela comunicação entre View e Model. Todas as requisições do usuário são encaminhadas pela View para a Controller que as transforma em requisições à Model. A Controller está diretamente associada ao padrão [GRASP Controlador](./05-padroesDeProjeto/GRASP?id=controlador), já que é ela quem recebe e lida com os eventos do sistema.   
 
 A Controller recebe a requisição da view e envia para a model (`UserBase.create(newUserInfo)`), e ao receber a resposta da model, retorna a informação de sucesso ou falha para a view: 
 
 ![controller](../assets/images/06-padroesDeArquitetura/controller.png)
+<br></br>
 
-- **Model**: responsável pela definição e contenção dos dados de cada entidade e detém a principal funcionalidade do sistema.
+### Model
+É responsável pela definição e contenção dos dados de cada entidade e detém a principal funcionalidade do sistema.
 
 A UserBase acionada pela controller é criada a partir da model User, que recebe da classe Base os métodos de interação com o banco.
 
