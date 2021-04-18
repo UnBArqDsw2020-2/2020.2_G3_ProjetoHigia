@@ -62,3 +62,5 @@
   - [Padrão Emergente](./05-padroesDeProjeto/PadraoEmergente.md)
 - Padrões arquiteturais
   - [Documento de Arquitetura](06-padroesArquiteturais/das.md)
+- [Reutilização de Software](07-reutilizacaoSoftware/reutilizacao_Geral.md)
+    - [Backend](07-reutilizacaoSoftware/reutilizacao_Backend.md)
