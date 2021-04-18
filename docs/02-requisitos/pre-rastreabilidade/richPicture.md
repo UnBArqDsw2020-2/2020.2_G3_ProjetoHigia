@@ -1,12 +1,12 @@
 # Rich Picture
 
-## Históricos de Revisões
+## Históricos de versões
 
-|    Data    | Versão |          Descrição           |                   Autor(es)                    |
-| :--------: | :----: | :--------------------------: | :--------------------------------------------: |
-| 11/02/2021 |  0.1   | Elaboração dos rich pictures |              Todos os integrantes              |
-| 15/02/2021 |  1.0   |     Criação do documento     | [Aline Lermen](https://github.com/AlineLermen) |
-| 17/02/2021 |  1.0   |     Adição de mais Rich pictures     | [Arthur Paiva](https://github.com/ArthurPaivaT) |
+|    Data    | Versão |          Descrição           |                    Autor(es)                    |
+| :--------: | :----: | :--------------------------: | :---------------------------------------------: |
+| 11/02/2021 |  0.1   | Elaboração dos rich pictures |              Todos os integrantes               |
+| 15/02/2021 |  1.0   |     Criação do documento     | [Aline Lermen](https://github.com/AlineLermen)  |
+| 17/02/2021 |  1.0   | Adição de mais Rich pictures | [Arthur Paiva](https://github.com/ArthurPaivaT) |
 
 ## Introdução
 

@@ -1,12 +1,12 @@
 # Questionário
 
-## Históricos de Revisões
+## Históricos de versões
 
-|    Data    | Versão |                  Descrição                   |   Autor(es)    |
-| :--------: | :----: | :------------------------------------------: | :------------: |
-| 12/02/2021 |  0.1   | Criação do documento e adição da metodologia |  [Aline Lermen](https://github.com/AlineLermen)  |
-| 12/02/2021 |  0.2   | Correção da metodologia e adição das referências |  [Aline Lermen](https://github.com/AlineLermen)  |
-| 12/02/2021 |  1.0   | Adição dos dados e resultados |  [Aline Lermen](https://github.com/AlineLermen)  |
+|    Data    | Versão |                    Descrição                     |                   Autor(es)                    |
+| :--------: | :----: | :----------------------------------------------: | :--------------------------------------------: |
+| 12/02/2021 |  0.1   |   Criação do documento e adição da metodologia   | [Aline Lermen](https://github.com/AlineLermen) |
+| 12/02/2021 |  0.2   | Correção da metodologia e adição das referências | [Aline Lermen](https://github.com/AlineLermen) |
+| 12/02/2021 |  1.0   |          Adição dos dados e resultados           | [Aline Lermen](https://github.com/AlineLermen) |
 
 
 ## Introdução
