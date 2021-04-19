@@ -64,3 +64,4 @@
   - [Documento de Arquitetura](06-padroesArquiteturais/das.md)
 - [Reutilização de Software](07-reutilizacaoSoftware/reutilizacao_Geral.md)
     - [Backend](07-reutilizacaoSoftware/reutilizacao_Backend.md)
+    - [Frontend](07-reutilizacaoSoftware/reutilizacao_Frontend.md)

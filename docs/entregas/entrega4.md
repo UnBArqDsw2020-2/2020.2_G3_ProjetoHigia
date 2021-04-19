@@ -10,6 +10,7 @@
 
 ### Módulo Reutilização de Software
 - [Reutilização de Software](./07-reutilizacaoSoftware/reutilizacao_Geral.md)
-
+- [Reutilização Backend](./07-reutilizacaoSoftware/reutilizacao_Backend.md)
+- [Reutilização Frontend](./07-reutilizacaoSoftware/reutilizacao_Frontend.md)
 
 ### Iniciativas extras
