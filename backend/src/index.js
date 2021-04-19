@@ -1,6 +1,7 @@
 import SetupServer from "./config/SetupServer";
 import http from "http";
 import { setUpSocket } from "./webSocket";
+require("dotenv").config();
 
 const server = new SetupServer();
 const express = http.Server(server.getApp());
