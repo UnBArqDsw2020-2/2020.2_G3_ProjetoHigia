@@ -7,6 +7,7 @@
 | 19/04/2021 |  0.1   |   Criação do documento    | [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
 | 19/04/2021 |  0.2   | Componentes reutilizados  | [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
 | 19/04/2021 |  0.3   | Candidatos à reutilização | [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
+| 19/04/2021 |  0.4   | Adição de imagens | [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
 
 ## Componentes reutilizados
 
