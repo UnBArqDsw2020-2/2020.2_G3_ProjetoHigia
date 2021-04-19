@@ -3,10 +3,10 @@
 
 ## Histórico de versões
 
-|    Data    | Versão |               Descrição               |                                                                     Autor(es)                                                                      |
-| :--------: | :----: | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 18/04/2021 |  0.1   |         Criação do documento e adição das informações       |                                               [Aline Lermen](https://github.com/AlineLermen),  [Danillo Souza](https://github.com/DanilloGS), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                 |
-| 18/04/2021 |  1.0   |          Adição dos links e referências         |                                                 [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                 |
+|    Data    | Versão |                   Descrição                   |                                                                                                Autor(es)                                                                                                 |
+| :--------: | :----: | :-------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 18/04/2021 |  0.1   | Criação do documento e adição das informações | [Aline Lermen](https://github.com/AlineLermen),  [Danillo Souza](https://github.com/DanilloGS), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+| 18/04/2021 |  1.0   |        Adição dos links e referências         |                                                                            [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                                            |
 
 <p style="text-align: justify;"> &emsp;&emsp;
 A reutilização de software é uma estratégia de desenvolvimento que maximiza o reúso de componentes, objetos, funções, algoritmos e configurações de softwares já existentes. Com isso, conseguimos reduzir o custo e o tempo de produção, reduz o risco de erros no processo de desenvolvimento e mantém a conformidade com os padrões mais populares.
@@ -15,7 +15,7 @@ Nos documentos a seguir estão explicados os aspectos de como foi aplicada a reu
 </p>
 
 - [Reutilização Backend](07-reutilizacaoSoftware/reutilizacao_Backend.md)
-- [Reutilização Frontend]()
+- [Reutilização Frontend](07-reutilizacaoSoftware/reutilizacao_Frontend.md)
 
 ## Referências
 - Reutilização de software. Disponível em: <https://www.devmedia.com.br/reutilizacao-de-software-revista-engenharia-de-software-magazine-39/21956>. Último acesso em: 18/04/2021.
