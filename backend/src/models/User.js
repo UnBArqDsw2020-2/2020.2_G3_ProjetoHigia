@@ -16,6 +16,8 @@ const UserSchema = new mongoose.Schema({
 	crm: { type: String, default: null },
 	photo: String,
 	socketId: Number,
+	accessRequestedCRMs: [ String ],
+	accessAllowedCRMs: [ String ],
 });
 
 export default mongoose.model("User", UserSchema);
