@@ -28,7 +28,6 @@ A bottom bar é o nosso principal meio de navegação entre as telas, foi utiliz
  - Ícones
 ![bottomBar](../assets/images/07-reutilizacaoSoftware/frontend/bottomBar.png)
 
-
 ## Candidatos á reutilização
 Para facilitar o desenvolvimento dentro do projeto foram criadas uma série de componentes que seriam reutilizados entre as telas do aplicativo, diminuindo a necessidade de reescrita de código e tempo de desenvolvimento. Esses componentes, podem ser facilmente reutilizados em outros projetos.
 
