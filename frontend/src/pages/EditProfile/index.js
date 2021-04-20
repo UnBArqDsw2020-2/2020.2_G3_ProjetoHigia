@@ -76,16 +76,19 @@ const EditProfile = () => {
           <TextInput
             style={styles.inputText}
             placeholder="Idade"
+            keyboardType="numeric" maxLength={3}
             value={user.age.toString()}
           />
           <TextInput
             style={styles.inputText}
             placeholder="Peso"
+            keyboardType="numeric" maxLength={3}
             value={user.weight.toString()}
           />
           <TextInput
             style={styles.inputText}
             placeholder="Altura"
+            keyboardType="numeric" maxLength={4}
             value={user.height.toString()}
           />
           <TextInput

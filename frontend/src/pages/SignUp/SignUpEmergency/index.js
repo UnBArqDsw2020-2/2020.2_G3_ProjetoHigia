@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
 } from 'react-native-gesture-handler';
 import styles from '../styles';
+// import TextInputMask from 'react-native-text-input-mask';
 import { MaterialIcons } from '@expo/vector-icons';
 
 export default function SignUpEmergency(props) {
@@ -27,7 +28,7 @@ export default function SignUpEmergency(props) {
           Contato de emergência
         </Text>
         <TextInput style={styles.inputText} placeholder="Nome completo" />
-        <TextInput style={styles.inputText} placeholder="Celular" />
+        <TextInput style={styles.inputText} placeholder="Celular" keyboardType="numeric" maxLength={11} />
         <TextInput style={styles.inputText} placeholder="Relação" />
 
         <TouchableOpacity>

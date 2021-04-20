@@ -11,6 +11,7 @@ import crmApi from "../../../services/crmApi";
 import axios from "axios";
 import DropdownButton from "../../../components/DropdownButton";
 import cpfValidator from "../../../utils/cpfValidator";
+// import TextInputMask from 'react-native-text-input-mask';
 
 export default function SignUpPatient() {
 	const navigation = useNavigation();
@@ -64,6 +65,8 @@ export default function SignUpPatient() {
 					/>
 					<TextInput
 						style={styles.inputText}
+						//keyboardType="numeric"
+						//maxLength={11}
 						placeholder="Data de Nascimento"
 					/>
 					<View>
@@ -91,15 +94,18 @@ export default function SignUpPatient() {
 								style={styles.inputText}
 								placeholder="CRM"
 								onChangeText={setCrm}
+								keyboardType="numeric"
+								maxLength={11}
 							/>
 							<DropdownButton onChangeText={setUF} />
 						</>
 					) : null}
-					<TextInput style={styles.inputText} placeholder="Altura" />
-					<TextInput style={styles.inputText} placeholder="Peso" />
+					<TextInput style={styles.inputText} keyboardType="numeric" maxLength={4} placeholder="Altura" />
+					<TextInput style={styles.inputText} keyboardType="numeric" maxLength={3} placeholder="Peso" />
 					<TextInput
 						style={styles.inputText}
 						placeholder="Tipo Sanguineo"
+						maxLength={3}
 					/>
 					<View style={styles.container1}>
 						<TouchableOpacity style={styles.btn}>

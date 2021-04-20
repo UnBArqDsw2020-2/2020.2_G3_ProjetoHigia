@@ -37,6 +37,7 @@ const MedicalReport = ({ navigation }) => {
           description={user.bloodGroup}
           onChangeText={() => {}}
           edit={edit}
+          maxLength={3}
         />
 
         <View style={styles.line} />
@@ -94,6 +95,7 @@ const MedicalReport = ({ navigation }) => {
             name={item.name}
             number={item.number}
             edit={edit}
+            keyboardType="numeric" maxLength={11}
             width="70%"
           />
         ))}

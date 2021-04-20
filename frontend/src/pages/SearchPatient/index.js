@@ -15,7 +15,7 @@ const SearchPatient = ({ navigation }) => {
       <Header title="Buscar" navigation={navigation} />
       <View style={styles.inputContainer}>
         <Icon name="search" color="#BABABA" size={30} />
-        <TextInput style={styles.searchInput} placeholder="CPF do Paciente" />
+        <TextInput style={styles.searchInput} placeholder="CPF do Paciente" keyboardType="numeric" maxLength={11} />
       </View>
 
       <Text style={styles.patientName}> Paciente - Fulano </Text>

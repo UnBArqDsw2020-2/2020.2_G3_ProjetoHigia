@@ -9,6 +9,16 @@ export default function SignUp() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
+	validateEmail = (email) => {
+		let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if (reg.test(email) === false) {
+		  setEmail(email);
+		}
+		else {
+		  setEmail(email);
+		}
+	}
+
 	return (
 		<ImageBackground
 			style={styles.container}
@@ -16,12 +26,13 @@ export default function SignUp() {
 			imageStyle={{ width: "100%", height: "100%" }}
 		>
 			<View style={{ width: "80%" }}>
-				<Text style={styles.text}>Dados para Login</Text>
+				<Text style={styles.text}>Dados para Cadastro</Text>
+				
 				<TextInput
 					placeholder={"Email"}
 					style={styles.inputText}
-					value={email}
-					onChangeText={setEmail}
+					onChangeText={(email) => this.validateEmail(email)}
+  					value={email}
 				/>
 				<TextInput
 					style={styles.inputText}
