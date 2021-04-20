@@ -3,6 +3,7 @@ import Firebase from "../config/Firebase";
 class UserController {
 	async createUser(req, res) {
 		const newUserInfo = req.body;
+		newUserInfo.email = newUserInfo.email.toLowerCase(); 
 		await UserBase.create(newUserInfo)
 			.then(() => {
 				Firebase.createUser(newUserInfo);
@@ -16,7 +17,7 @@ class UserController {
 	async findOneUser(req, res) {
 		const query = req.query;
 		const user = await UserBase.findOne(query);
-		if (user) return res.status(200).json({ status: "Success", data: user });
+		if (user) return res.status(200).json(user);
 		else
 			return res
 				.status(400)

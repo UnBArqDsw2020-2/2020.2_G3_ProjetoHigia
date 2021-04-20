@@ -6,7 +6,6 @@ import apiKeys from './src/utils/firebaseKeys.js';
 import { useFonts, Junge_400Regular } from '@expo-google-fonts/junge';
 import AppLoading from 'expo-app-loading';
 import Routes from './src/routes';
-import WebSocket from './src/services/websocket.js'
 
 const App = () => {
   var [fontsLoaded] = useFonts({ Junge_400Regular });
@@ -14,8 +13,6 @@ const App = () => {
   if (!fontsLoaded) {
     return <AppLoading />;
   }
-
-  WebSocket.connect();
 
   if (!firebase.apps.length) {
     console.log('Connected with Firebase');

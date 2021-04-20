@@ -15,8 +15,8 @@ class MedicalReportController {
 
 	async findOneMedicalReport(req, res) {
 		const cpf = req.query;
-		const user = await MedicalReportBase.findOne(cpf);
-		if (user) return res.status(200).json({ status: "Success", data: user });
+		const medicalReport = await MedicalReportBase.findOne(cpf);
+		if (medicalReport) return res.status(200).json(medicalReport);
 		else
 			return res
 				.status(400)
