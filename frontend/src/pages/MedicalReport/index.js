@@ -16,6 +16,7 @@ const MedicalReport = ({ navigation }) => {
   const { currentUser } = useAuth();
 
   useEffect(() => {
+    console.log("TEste");
     if (currentUser && !currentMedicalReport)
       api
         .get(`/medicalReport?cpf=${currentUser?.cpf}`)
@@ -106,7 +107,7 @@ const MedicalReport = ({ navigation }) => {
         </View>
         {currentUser?.contact.map((item) => (
           <CardEmergencyContact
-            key={item.id}
+            key={item._id}
             name={item.name}
             number={item.number}
             edit={edit}

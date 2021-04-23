@@ -7,8 +7,16 @@ import {
 } from 'react-native-gesture-handler';
 import styles from '../styles';
 import { MaterialIcons } from '@expo/vector-icons';
+import api from '../../../services/api';
 
 export default function SignUpEmergency(props) {
+
+  const createUser = async () => {
+    // await api.post('/user', props);
+    // await api.post('/medicalReport', props);
+    // await api.post('/archive', props);
+  }
+
   return (
     <ImageBackground
       style={styles.container}
@@ -38,7 +46,7 @@ export default function SignUpEmergency(props) {
             style={{ alignSelf: 'flex-end' }}
           />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.btn}>
+        <TouchableOpacity style={styles.btn} onPress={()=>{createUser()}}>
           <Text style={styles.btnText}>Finalizar</Text>
         </TouchableOpacity>
       </ScrollView>
