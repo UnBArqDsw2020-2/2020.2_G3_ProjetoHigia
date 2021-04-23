@@ -10,7 +10,8 @@
 | 18/04/2021 |  0.4   | Adicionadas tecnologias no tópico 2.1 |                         [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
 | 18/04/2021 |  0.5   |          Adicionado tópico 3          | [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
 | 18/04/2021 |  0.6   |          Adicionado tópico 4          |                        [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                         |
-
+| 23/04/2021 |  0.7   |          Adicionado tópico 5          |                        [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                      |
+| 23/04/2021 |  0.8   |          Adicionado links para especificações no tópico 5          |                        [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                      |
 
 ## 1. Introdução
 ### 1.1. Finalidade
@@ -87,6 +88,18 @@ A UserBase acionada pela controller é criada a partir da model User, que recebe
 
 
 ## 5. Visões de caso de uso
+
+Caso de uso é uma técnica de especificação que descreve uma sequência de ações que o sistema deve realizar para produzir uma resposta para um ator. Tem-se a especificação do comportamento do sistema.
+
+Foram criadas as especificações de caso de uso:
+
+- [Especificações de Caso de Uso](06-padroesArquiteturais/especificacoes_caso_de_uso/especificacoes.md)
+
+E a partir destas, foi elaborado o diagrama de visão de caso de uso, com o relacionamento entre os casos de uso do sistema e os usuários.
+
+
+![diagramaCasosdeUso](../assets/images/06-padroesDeArquitetura/diagrama_casos_de_uso.png)
+
 ## 6. Visão lógica
 ## 7. Visão de processos
 ## 8. Visão de implantação
