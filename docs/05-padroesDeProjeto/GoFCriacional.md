@@ -33,6 +33,8 @@ Neste exemplo, o diagrama demonstra que a classe Button possui apenas uma instâ
 Em nosso Backend, criamos uma classe especialista em personalizar o Express (Framework especializado na construção de aplicações web e API's) a SetupServer. A SetupServer foi idealizada com o objetivo de tornar o arquivo de nosso servidor mais limpo. O único propósito dessa classe é subir o servidor de nossa API, portanto, a mesma é instanciada uma única vez e de forma global.
 </p>
 
+- [Link para o Github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/backend/src/config/SetupServer.js)
+
 ![singleton](../assets/images/05-padroesDeProjeto/GoFCriacional/singleton.png)
 
 #### Pontos positivos
@@ -63,6 +65,7 @@ Neste exemplo, o objeto da classe mais complexa Carro pode ser construído de v�
 O Builder foi utilizado na seguinte classe. Estamos utilizando o padrão para a montagem da ficha médica, nesse caso em especifico para a manipulação dos exames do usuário.
 </p>
 
+- [Link para o Github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/backend/src/Database/ArchiveBase.js)
 ![builder](../assets/images/05-padroesDeProjeto/GoFCriacional/builder.png)
 
 #### Pontos positivos

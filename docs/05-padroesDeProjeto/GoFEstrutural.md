@@ -39,7 +39,7 @@ Aqui o objetivo é criar uma nova camada para os métodos principais que o mongo
 </p>
 
 #### Decorator Base
-
+- [Link para o github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/backend/src/Database/Base.js)
 ![decoratorBase](../assets/images/05-padroesDeProjeto/GoFEstrutural/decoratorBase.png)
 
 #### Medical Report
@@ -48,6 +48,7 @@ Aqui o objetivo é criar uma nova camada para os métodos principais que o mongo
 Neste caso, o Medical Report é uma classe cujos objetos serão gerenciados pelo banco usando os métodos da classe Base
 </p>
 
+- [Link para o github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/backend/src/Database/MedicalReportBase.js)
 ![decoratorWindow](../assets/images/05-padroesDeProjeto/GoFEstrutural/decoratorWindow.png)
 
 #### Pontos positivos
@@ -84,7 +85,7 @@ No projeto utilizamos o Facade para condensar as nossas rotas em uma única inte
 </p>
 
 #### Medical Report Routes
-
+- [Link para o github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/backend/src/routes/MedicalReport.routes.js)
 ![facadeApplication](../assets/images/05-padroesDeProjeto/GoFEstrutural/facadeApplication.png)
 
 #### Pontos positivos
