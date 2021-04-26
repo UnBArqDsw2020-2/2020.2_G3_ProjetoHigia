@@ -36,7 +36,10 @@ const SearchPatient = ({ navigation }) => {
 				/>
 			</View>
 			{userFound ? (
-				<Text style={styles.patientName}> Paciente - {userFound.name} </Text>
+				<Text style={styles.patientName}>
+					{" "}
+					Paciente - {userFound.name}{" "}
+				</Text>
 			) : (
 				<Text style={styles.patientName}>Pesquise por um paciente</Text>
 			)}

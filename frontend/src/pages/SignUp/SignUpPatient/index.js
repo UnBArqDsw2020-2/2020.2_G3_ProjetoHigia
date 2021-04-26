@@ -60,7 +60,7 @@ export default function SignUpPatient() {
 					/>
 					<TextInput
 						style={styles.inputText}
-						placeholder="Ultimo Nome"
+						placeholder="Último Nome"
 					/>
 					<TextInput
 						style={styles.inputText}

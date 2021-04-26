@@ -20,17 +20,17 @@ class UserController {
 		if (user) return res.status(200).json(user);
 		else
 			return res
-				.status(400)
-				.json({ status: "Failed", data: "Usuário não encontrado" });
+				.status(200)
+				.json({error: true})
 	}
 
 	async updateUser(req, res) {
-		const { id, data } = req.body;
-		const user = await UserBase.updateOne({ id }, data);
+		const { cpf, data } = req.body;
+		const user = await UserBase.updateOne({ cpf }, data);
 		if (user.nModified) return res.status(200).json({ status: "Success" });
 		else
 			return res
-				.status(400)
+				.status(200)
 				.json({ status: "Failed", data: "Usuário não modificado" });
 	}
 }
