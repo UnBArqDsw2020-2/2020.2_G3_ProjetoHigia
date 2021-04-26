@@ -2,16 +2,17 @@
 
 ## Histórico de versões
 
-|    Data    | Versão |               Descrição               |                                                                     Autor(es)                                                                      |
-| :--------: | :----: | :-----------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 15/04/2021 |  0.1   |         Criação do documento          |                                                 [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                 |
-| 16/04/2021 |  0.2   |          Adicionado tópico 1          |                                                 [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                 |
-| 18/04/2021 |  0.3   |         Adicionado tópico 2.1         |                        [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                         |
-| 18/04/2021 |  0.4   | Adicionadas tecnologias no tópico 2.1 |                         [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo)                          |
-| 18/04/2021 |  0.5   |          Adicionado tópico 3          | [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-| 18/04/2021 |  0.6   |          Adicionado tópico 4          |                        [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                         |
-| 23/04/2021 |  0.7   |          Adicionado tópico 5          |                        [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                      |
-| 23/04/2021 |  0.8   |          Adicionado links para especificações no tópico 5          |                        [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                      |
+|    Data    | Versão |                    Descrição                     |                                                                                                  Autor(es)                                                                                                  |
+| :--------: | :----: | :----------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 15/04/2021 |  0.1   |               Criação do documento               |                                                                             [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                                              |
+| 16/04/2021 |  0.2   |               Adicionado tópico 1                |                                                                             [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                                              |
+| 18/04/2021 |  0.3   |              Adicionado tópico 2.1               |                                                     [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
+| 18/04/2021 |  0.4   |      Adicionadas tecnologias no tópico 2.1       |                                                      [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                      |
+| 18/04/2021 |  0.5   |               Adicionado tópico 3                |                             [Arthur Paiva](https://github.com/ArthurPaivaT), [Danillo Souza](https://github.com/DanilloGS), [Ithalo Azevedo](https://github.com/ithaloazevedo)                              |
+| 18/04/2021 |  0.6   |               Adicionado tópico 4                |                                                     [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
+| 23/04/2021 |  0.7   |               Adicionado tópico 5                |                                                       [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                                                       |
+| 23/04/2021 |  0.8   | Adicionado links para especificações no tópico 5 |                                                       [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                                                       |
+| 23/04/2021 |  0.9   |    Adicionado tópico 2.2 estilo arquitetural     | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
 
 ## 1. Introdução
 ### 1.1. Finalidade
@@ -37,6 +38,10 @@ NodeJS – O que é, como funciona e quais as vantagens. Disponível em: <https:
 Firebase. Disponível em: <https://firebase.google.com>. Último acesso em: 18/04/2021.
 React Native: o que é, quais as funcionalidades e as vantagens desse framework. Disponível em: <https://ateliware.com/blog/react-native>. Último acesso em: 18/04/2021.
 Expo: o que é, para que serve e quando utilizar?. Disponível em: <https://blog.rocketseat.com.br/expo-react-native/>. Último acesso em: 18/04/2021.
+CANALTI, Arquitetura cliente-servidor, Disponível em: <https://www.canalti.com.br/arquitetura-de-computadores/arquitetura-cliente-servidor/#:~:text=Definição,dos%20dados%20(os%20clientes).>. Último acesso em: 26/04/2021
+GAMA, Kiev. Estilos arquiteturais. Disponível em: <https://www.cin.ufpe.br/~kiev/IF682/12_Estilos_Arquiteturais_e_Padroes_de_Projeto.pdf>. Último acesso em: 26/04/2021
+MONTEIRO, Marcos. Exemplos de Arquitetura de Software. Disponível em: <https://www.marcosmonteiro.com.br/mm/Cursos/Arquitetura_Software/Exemplos_de_Arquiteturas.pdf>. Último acesso
+
 
 ## 2. Representação arquitetural 
 ### 2.1. Tecnologias
@@ -45,6 +50,33 @@ Expo: o que é, para que serve e quando utilizar?. Disponível em: <https://blog
 - **Firebase:** é uma plaforma que fornece aos desenvolvedores uma variedade de ferramentas e serviços para ajudá-los a desenvolver aplicativos de qualidade e facilita diversos fatores como: autenticação, segurança e transferência de dados.
 - **React Native:** é um framework híbrido, baseado em JavaScript, para desenvolvimento de aplicativos mobile. O React Native possui um acervo de bibliotecas que fornece diversas facilidades para os desenvolvedores. A escolha dessa tecnologia se deu principalmente pela sua versatilidade em podermos utilizar o mesmo código para desenvolver para iOS e para Android. 
 - **Expo:** é uma ferramenta utilizada no desenvolvimento mobile com React Native. Através dele, conseguimos acessar recursos nativos de forma bem simples. 
+
+### 2.2. Estilo Arquitetural
+O estilo arquitetural é uma forma de definir os tipos de elementos que compõem a arquitetura de um software. Um estilo arquitetural é um conjunto de padrões que impõem uma certa uniformidade à arquitetura e como ela deve ser composta. É um meio de organizar a estrutura da arquitetura ao mesmo tempo em que regras e diretrizes são utilizadas para relacionar subsistemas da aplicação. Nosso grupo utilizou o estilo Cliente-Servidor pois se encaixava com a proposta da aplicação.
+
+#### Estilo Cliente-Servidor
+Arquitetura Cliete-Servidor é um estilo arquitetural que divide o tratamento de informações em dois módulos distintos, chamados de cliente e de servidor em que cada um desempenha um papel específico:
+
+* Cliente: É o módulo que realiza requisições via algum determinado serviço da aplicação, realizando essas requisições enviando mensagens para o servidor. Durante o tempo em que o servidor não retorna uma resposta para a requisição o cliente pode realizar outras ações paralelas para não impedir o funcionamento do software. Geralmente após receber a resposta o cliente interpreta a resposta e a informa o usuário via interface gráfica.
+
+* Servidor: É o módulo que realiza os serviços para os usuários, trabalham com a requisição do cliente e tenta responder a requisição, seja com um status de sucesso ou erro. Servidores podem se comunicar entre si para troca de informações com o único intuito de atender a solicitação do cliente.
+
+#### Vantagens
+* FAc
+
+#### Desvantagens
+
+
+##### Cliente
+- [Link para o github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/frontend/src/context/auth.js)
+![auth.js](../assets/images/06-padroesDeArquitetura/authJS.png)
+
+##### Servidor
+- [Link para o github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/frontend/src/routes/app.routes.js)
+![app.routes.js](../assets/images/06-padroesDeArquitetura/)
+- [Link para o github]()
+![auth]()
+
 ## 3. Metas e restrição de arquitetura
 ### 3.1. Metas
 - **Responsividade:** o app deve ser responsivo sem que haja comprometimento das funcionalidades do app.
