@@ -12,7 +12,7 @@
 | 18/04/2021 |  0.6   |               Adicionado tópico 4                |                                                     [Arthur Paiva](https://github.com/ArthurPaivaT), [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                     |
 | 23/04/2021 |  0.7   |               Adicionado tópico 5                |                                                       [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                                                       |
 | 23/04/2021 |  0.8   | Adicionado links para especificações no tópico 5 |                                                       [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                                                       |
-| 23/04/2021 |  0.9   |    Adicionado tópico 2.2 estilo arquitetural     | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
+| 26/04/2021 |  0.9   |    Adicionado tópico 2.2 estilo arquitetural     | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
 
 ## 1. Introdução
 ### 1.1. Finalidade
