@@ -40,7 +40,7 @@ React Native: o que é, quais as funcionalidades e as vantagens desse framework.
 Expo: o que é, para que serve e quando utilizar?. Disponível em: <https://blog.rocketseat.com.br/expo-react-native/>. Último acesso em: 18/04/2021.
 CANALTI, Arquitetura cliente-servidor, Disponível em: <https://www.canalti.com.br/arquitetura-de-computadores/arquitetura-cliente-servidor/#:~:text=Definição,dos%20dados%20(os%20clientes).>. Último acesso em: 26/04/2021
 GAMA, Kiev. Estilos arquiteturais. Disponível em: <https://www.cin.ufpe.br/~kiev/IF682/12_Estilos_Arquiteturais_e_Padroes_de_Projeto.pdf>. Último acesso em: 26/04/2021
-MONTEIRO, Marcos. Exemplos de Arquitetura de Software. Disponível em: <https://www.marcosmonteiro.com.br/mm/Cursos/Arquitetura_Software/Exemplos_de_Arquiteturas.pdf>. Último acesso
+MONTEIRO, Marcos. Exemplos de Arquitetura de Software. Disponível em: <https://www.marcosmonteiro.com.br/mm/Cursos/Arquitetura_Software/Exemplos_de_Arquiteturas.pdf>. Último acesso em: 26/04/2021
 
 
 ## 2. Representação arquitetural 
@@ -62,20 +62,28 @@ Arquitetura Cliete-Servidor é um estilo arquitetural que divide o tratamento de
 * Servidor: É o módulo que realiza os serviços para os usuários, trabalham com a requisição do cliente e tenta responder a requisição, seja com um status de sucesso ou erro. Servidores podem se comunicar entre si para troca de informações com o único intuito de atender a solicitação do cliente.
 
 #### Vantagens
-* FAc
+* Facilidade de manutenção;
+* Por servidores trabalharem apenas com requisições há uma maior centralização de recursos uma vez que para utilizar um servidor é necessário uma requisição feita para que o processamento comece a ocorrer;
+* Com a separação de módulos é mais fácil identificar o que cada seção necessita fazer para manter o funcionamento do software da forma adequada;
+* Não há armazenamento de dados no lado do cliente, o que aumenta a segurança do software.
+
 
 #### Desvantagens
+* Pode gerar problemas de sobrecarga de servidor, em caso de múltiplos acessos simultâneos;
+* Não prevê o modelo de dados compartilhado, subsistemas existentes usam diferentes organizações de dados;
+* Pode haver redundância de serviços em diferentes servidores;
+* Não prevê registro central de serviços, ou seja, é difícil descobrir quais serviços estão disponíveis no momento.
 
-
-##### Cliente
+#### Cliente
 - [Link para o github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/frontend/src/context/auth.js)
 ![auth.js](../assets/images/06-padroesDeArquitetura/authJS.png)
 
-##### Servidor
+#### Servidor
 - [Link para o github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/frontend/src/routes/app.routes.js)
-![app.routes.js](../assets/images/06-padroesDeArquitetura/)
-- [Link para o github]()
-![auth]()
+![app.routes.js](../assets/images/06-padroesDeArquitetura/appRoutes.png)
+
+- [Link para o github](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/blob/devel/frontend/src/routes/auth.routes.js)
+![auth](../assets/images/06-padroesDeArquitetura/authRoutes.png)
 
 ## 3. Metas e restrição de arquitetura
 ### 3.1. Metas
