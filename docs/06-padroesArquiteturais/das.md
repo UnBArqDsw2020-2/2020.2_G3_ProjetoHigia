@@ -13,6 +13,7 @@
 | 23/04/2021 |  0.7   |               Adicionado tópico 5                |                                                       [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                                                       |
 | 23/04/2021 |  0.8   | Adicionado links para especificações no tópico 5 |                                                       [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                                                       |
 | 26/04/2021 |  0.9   |    Adicionado tópico 2.2 estilo arquitetural     | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
+| 27/04/2021 |  0.10  |    Corrigidos erros ortográficos no tópico 2     |                                                                             [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                                              |
 
 ## 1. Introdução
 ### 1.1. Finalidade
@@ -48,14 +49,14 @@ MONTEIRO, Marcos. Exemplos de Arquitetura de Software. Disponível em: <https://
 - **NodeJS:** é um ambiente de execução Javascript server-side, ele é muito popular e sua arquitetura flexível é uma ótima escolha para implementação de microsserviços e componentes da arquitetura <i>serveless</i>. O node possibilita a criação de aplicações javascript para rodar como uma aplicação <i>standalone</i> em uma máquina, não dependendo de um browser para a execução, como estamos acostumados. Uma particularidade do node é que ele se embasa na programação assícrona de <i>thread</i> de execução e fila de espera, o que permite a manipulação do fluxo de execução de código. 
 - **ExpressJS:** é um framework para aplicativo da web do Node.js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel.
 - **Firebase:** é uma plaforma que fornece aos desenvolvedores uma variedade de ferramentas e serviços para ajudá-los a desenvolver aplicativos de qualidade e facilita diversos fatores como: autenticação, segurança e transferência de dados.
-- **React Native:** é um framework híbrido, baseado em JavaScript, para desenvolvimento de aplicativos mobile. O React Native possui um acervo de bibliotecas que fornece diversas facilidades para os desenvolvedores. A escolha dessa tecnologia se deu principalmente pela sua versatilidade em podermos utilizar o mesmo código para desenvolver para iOS e para Android. 
+- **React Native:** é uma biblioteca JavaScript, para desenvolvimento de aplicativos mobile. O React Native possui um acervo de bibliotecas que fornece diversas facilidades para os desenvolvedores. A escolha dessa tecnologia se deu principalmente pela sua versatilidade em podermos utilizar o mesmo código para desenvolver para iOS e para Android. 
 - **Expo:** é uma ferramenta utilizada no desenvolvimento mobile com React Native. Através dele, conseguimos acessar recursos nativos de forma bem simples. 
 
 ### 2.2. Estilo Arquitetural
 O estilo arquitetural é uma forma de definir os tipos de elementos que compõem a arquitetura de um software. Um estilo arquitetural é um conjunto de padrões que impõem uma certa uniformidade à arquitetura e como ela deve ser composta. É um meio de organizar a estrutura da arquitetura ao mesmo tempo em que regras e diretrizes são utilizadas para relacionar subsistemas da aplicação. Nosso grupo utilizou o estilo Cliente-Servidor pois se encaixava com a proposta da aplicação.
 
 #### Estilo Cliente-Servidor
-Arquitetura Cliete-Servidor é um estilo arquitetural que divide o tratamento de informações em dois módulos distintos, chamados de cliente e de servidor em que cada um desempenha um papel específico:
+Arquitetura Cliente-Servidor é um estilo arquitetural que divide o tratamento de informações em dois módulos distintos, chamados de cliente e de servidor em que cada um desempenha um papel específico:
 
 * Cliente: É o módulo que realiza requisições via algum determinado serviço da aplicação, realizando essas requisições enviando mensagens para o servidor. Durante o tempo em que o servidor não retorna uma resposta para a requisição o cliente pode realizar outras ações paralelas para não impedir o funcionamento do software. Geralmente após receber a resposta o cliente interpreta a resposta e a informa o usuário via interface gráfica.
 
