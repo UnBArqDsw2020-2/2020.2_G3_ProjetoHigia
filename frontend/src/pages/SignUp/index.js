@@ -39,6 +39,8 @@ export default function SignUp() {
 							onPress={() => {
 								navigation.navigate("SignUpPatient", {
 									isDoctor: "true",
+									email: email,
+									password: password,
 								});
 							}}
 						>
@@ -51,6 +53,8 @@ export default function SignUp() {
 							onPress={() => {
 								navigation.navigate("SignUpPatient", {
 									isDoctor: "false",
+									email: email,
+									password: password,
 								});
 							}}
 						>

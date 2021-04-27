@@ -1,7 +1,8 @@
-import SetupServer from './config/SetupServer';
+import SetupServer from "./config/SetupServer";
+import http from "http";
 
 const server = new SetupServer();
-const express = server.getApp();
+const express = http.Server(server.getApp());
 
 express.listen(3000, () => {
 	server.connectDatabase();

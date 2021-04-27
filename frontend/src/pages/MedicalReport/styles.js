@@ -1,28 +1,33 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F8F7F7',
-  },
+	container: {
+		flex: 1,
+		backgroundColor: "#F8F7F7",
+	},
 
-  line: {
-    width: '90%',
-    height: 1,
-    alignSelf: 'center',
-    backgroundColor: '#86172D',
-    marginVertical: 10,
-  },
+	dropdownView: {
+		width: "70%",
+		marginLeft: 20,
+	},
 
-  titleContainer: {
-    flexDirection: 'row',
-  },
+	line: {
+		width: "90%",
+		height: 1,
+		alignSelf: "center",
+		backgroundColor: "#86172D",
+		marginVertical: 10,
+	},
 
-  title: {
-    alignSelf: 'flex-start',
-    marginHorizontal: 20,
-    color: '#86172D',
-  },
+	titleContainer: {
+		flexDirection: "row",
+	},
+
+	title: {
+		alignSelf: "flex-start",
+		marginHorizontal: 20,
+		color: "#86172D",
+	},
 });
 
 export default styles;
