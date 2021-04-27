@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
     alignItems: 'center',
     // justifyContent: 'space-between',
-    marginBottom: 15,
+    marginTop: 15,
     borderBottomWidth: 1.0,
     borderColor: '#7E162B',
   },

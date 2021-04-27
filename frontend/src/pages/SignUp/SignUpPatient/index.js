@@ -11,14 +11,23 @@ import crmApi from "../../../services/crmApi";
 import axios from "axios";
 import DropdownButton from "../../../components/DropdownButton";
 import cpfValidator from "../../../utils/cpfValidator";
+import statesMock from "../../../utils/statesMock";
+import bloodTypeMock from "../../../utils/bloodTypeMock";
 
 export default function SignUpPatient() {
 	const navigation = useNavigation();
-	const [crm, setCrm] = useState("");
-	const [cpf, setCpf] = useState(false);
-	const [uf, setUF] = useState("");
+	const [firstName, setFirstName] = useState("");
+	const [lastName, setLastName] = useState("");
+	const [crm, setCrm] = useState(null);
+	const [cpf, setCpf] = useState("");
+	const [uf, setUF] = useState(null);
+	const [weight, setWeight] = useState(null);
+	const [height, setHeight] = useState(null);
+	const [bloodType, setBloodType] = useState(null);
+	const [birthday, setBirthday] = useState(null);
 	const route = useRoute();
-	const isDoctor = route.params.isDoctor;
+	const { isDoctor } = route.params;
+	const user = route.params;
 	let isCpfValid = cpfValidator(cpf) || cpf == "";
 
 	async function checkCRM() {
@@ -45,6 +54,24 @@ export default function SignUpPatient() {
 		return result;
 	}
 
+	const goToNextPage = () => {
+		navigation.navigate("SignUpPhoto", {
+			userData: {
+				name: firstName + " " + lastName,
+				crm: uf && crm ? uf + crm : null,
+				cpf: cpf,
+				email: user.email,
+				password: user.password,
+				birthday: birthday,
+			},
+			medicalReport: {
+				bloodType: bloodType,
+				weight: weight,
+				height: height,
+			},
+		});
+	};
+
 	return (
 		<ImageBackground
 			style={styles.container}
@@ -57,14 +84,17 @@ export default function SignUpPatient() {
 					<TextInput
 						style={styles.inputText}
 						placeholder="Primeiro Nome"
+						onChangeText={setFirstName}
 					/>
 					<TextInput
 						style={styles.inputText}
 						placeholder="Último Nome"
+						onChangeText={setLastName}
 					/>
 					<TextInput
 						style={styles.inputText}
 						placeholder="Data de Nascimento"
+						onChangeText={setBirthday}
 					/>
 					<View>
 						<TextInput
@@ -92,31 +122,36 @@ export default function SignUpPatient() {
 								placeholder="CRM"
 								onChangeText={setCrm}
 							/>
-							<DropdownButton onChangeText={setUF} />
+							<DropdownButton
+								value={uf}
+								setValue={setUF}
+								mock={statesMock}
+							/>
 						</>
 					) : null}
-					<TextInput style={styles.inputText} placeholder="Altura" />
-					<TextInput style={styles.inputText} placeholder="Peso" />
 					<TextInput
 						style={styles.inputText}
-						placeholder="Tipo Sanguineo"
+						placeholder="Altura"
+						onChangeText={setHeight}
+					/>
+					<TextInput
+						style={styles.inputText}
+						placeholder="Peso"
+						onChangeText={setWeight}
+					/>
+					<DropdownButton
+						value={bloodType}
+						setValue={setBloodType}
+						mock={bloodTypeMock}
 					/>
 					<View style={styles.container1}>
 						<TouchableOpacity style={styles.btn}>
 							<Text
 								style={styles.btnText}
 								onPress={() => {
-									checkCRM()
-										.then((response) => {
-											response
-												? navigation.navigate(
-														"SignUpPhoto"
-												  )
-												: console.log("CRM Inválido");
-										})
-										.catch((error) => {
-											console.error(error);
-										});
+									crm
+										? checkCRM().then(() => goToNextPage())
+										: goToNextPage();
 								}}
 							>
 								Próximo

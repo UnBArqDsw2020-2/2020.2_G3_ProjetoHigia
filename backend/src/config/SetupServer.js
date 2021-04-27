@@ -14,8 +14,8 @@ class SetupServer {
 	}
 
 	config() {
-		this._app.use(express.urlencoded({ extended: true }));
-		this._app.use(express.json());
+		this._app.use(express.urlencoded({ extended: true, limit: "50mb" }));
+		this._app.use(express.json({ limit: "50mb" }));
 		this._app.use(cors());
 	}
 
@@ -42,7 +42,7 @@ class SetupServer {
 	setUpSocket() {
 		const server = http.Server(this._app);
 		setUpSocket(server);
-	  }
+	}
 
 	getApp() {
 		return this._app;

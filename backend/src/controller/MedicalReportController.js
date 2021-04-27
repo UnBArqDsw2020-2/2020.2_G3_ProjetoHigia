@@ -25,6 +25,7 @@ class MedicalReportController {
 
 	async updateMedicalReport(req, res) {
 		const { cpf, data } = req.body;
+		console.log(data,"<---");
 		const user = await MedicalReportBase.updateOne({ cpf }, data);
 		if (user.nModified) return res.status(200).json({ status: "Success" });
 		else

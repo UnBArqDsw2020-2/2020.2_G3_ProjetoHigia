@@ -68,7 +68,7 @@ const FloatingButton = ({ setEdit, edit, dataToSave, resetData, cpf }) => {
 		<HelpButtonAnimated
 			onPress={() => {
 				const saveData = {
-					cpf: cpf,
+					id: cpf,
 					data: {
 						medicines: dataToSave[0],
 						allergies: dataToSave[1],

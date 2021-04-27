@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
 	View,
 	TextInput,
@@ -13,35 +13,98 @@ import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 import Header from "../../components/Header";
 import Button from "../../components/Button";
-import { user } from "../../utils/mocks.js";
 import firebase from "firebase";
+import { useAuth } from "../../context/auth";
+import api from "../../services/api";
+import * as ImagePicker from "expo-image-picker";
 
 const EditProfile = () => {
+	const { currentUser } = useAuth();
 	const [oldPassword, setOldPassword] = useState("");
 	const [newPassword, setNewPassword] = useState("");
+	const [name, setName] = useState("");
+	const [birthday, setBirthday] = useState("");
+	const [weight, setWheight] = useState(null);
+	const [height, setHeight] = useState(null);
+	const [photo, setPhoto] = useState("");
+
+	async function requestPermission() {
+		const permissionResult = await ImagePicker.requestCameraPermissionsAsync();
+		if (permissionResult.granted === false) {
+			alertMessage("É preciso permissão para tirar foto.");
+			return;
+		}
+	}
+
+	async function takePhoto() {
+		requestPermission();
+		const pickerResult = await ImagePicker.launchCameraAsync({
+			base64: true,
+			allowsEditing: true,
+			quality: 0.5,
+			aspect: [2, 2],
+		});
+		if (pickerResult.cancelled === true) {
+			return;
+		}
+		setPhoto(pickerResult.base64);
+	}
+
+	useEffect(() => {
+		api.get(`medicalReport?cpf=${currentUser?.cpf}`).then(
+			(medicalReport) => {
+				setWheight(medicalReport.data.weight);
+				setHeight(medicalReport.data.height);
+			}
+		);
+		setName(currentUser.name);
+		// setName(currentUser.photo);
+		setBirthday(currentUser.birthday);
+	}, []);
 
 	const navigation = useNavigation();
 
-	const updateData = () => {
-		var user = firebase.auth().currentUser;
-		var credential = firebase.auth.EmailAuthProvider.credential(
-			firebase.auth().currentUser.email,
-			oldPassword
-		);
+	const updateData = async () => {
+		if (oldPassword && newPassword) {
+			var user = currentUser;
+			var credential = firebase.auth.EmailAuthProvider.credential(
+				currentUser?.email,
+				oldPassword
+			);
 
-		user.reauthenticateWithCredential(credential)
-			.then(function () {
-				user.updatePassword(newPassword)
-					.then(function () {
-						Alert.alert("Senha atualizada com sucesso");
-					})
-					.catch(function (error) {
-						Alert.alert(error);
-					});
-			})
-			.catch(function (error) {
-				Alert.alert(error);
-			});
+			user.reauthenticateWithCredential(credential)
+				.then(function () {
+					user.updatePassword(newPassword)
+						.then(function () {
+							Alert.alert("Senha atualizada com sucesso");
+						})
+						.catch(function (error) {
+							Alert.alert(error);
+						});
+				})
+				.catch(function (error) {
+					Alert.alert(error);
+				});
+		}
+		const dataToSaveMedicalReport = {
+			cpf: currentUser?.cpf,
+			data: {
+				weight: Number(weight),
+				height: Number(height),
+			},
+		};
+		api.put("medicalReport", dataToSaveMedicalReport).then(() =>
+			console.log("Updated medicalReport")
+		);
+		const dataToSaveUser = {
+			cpf: currentUser?.cpf,
+			data: {
+				name: name,
+				// photo: photo,
+				birthday: birthday,
+			},
+		};
+		api.put("user", dataToSaveUser).then(() => console.log("Updated user"));
 	};
 
 	return (
@@ -59,8 +122,11 @@ const EditProfile = () => {
 				}}
 			>
 				<View style={styles.imageContainer}>
-					<Image source={require("../../../assets/profile.png")} />
-					<TouchableOpacity style={styles.iconContainer}>
+					<Image source={{ uri: `data:image/png;base64,${photo}` }} />
+					<TouchableOpacity
+						style={styles.iconContainer}
+						onPress={() => takePhoto()}
+					>
 						<Icon
 							name="edit"
 							size={17}
@@ -74,22 +140,30 @@ const EditProfile = () => {
 					<TextInput
 						style={styles.inputText}
 						placeholder="Nome"
-						value={user.name}
+						value={name}
+						onChangeText={setName}
 					/>
 					<TextInput
 						style={styles.inputText}
 						placeholder="Idade"
-						value={user.age.toString()}
+						value={birthday}
+						onChangeText={setBirthday}
 					/>
 					<TextInput
 						style={styles.inputText}
 						placeholder="Peso"
-						value={user.weight.toString()}
+						value={weight?.toString()}
+						onChangeText={setWheight}
+						maxLength={3}
+						keyboardType="numeric"
 					/>
 					<TextInput
 						style={styles.inputText}
 						placeholder="Altura"
-						value={user.height.toString()}
+						value={height?.toString()}
+						onChangeText={setHeight}
+						maxLength={3}
+						keyboardType="numeric"
 					/>
 					<TextInput
 						style={styles.inputText}
@@ -110,7 +184,7 @@ const EditProfile = () => {
 				<Button
 					title="Atualizar"
 					onPress={() => updateData()}
-					defaultButton={true}
+					disabled={weight && height && name && birthday}
 				/>
 			</ScrollView>
 		</ImageBackground>
