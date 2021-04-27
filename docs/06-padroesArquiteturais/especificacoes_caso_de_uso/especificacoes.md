@@ -6,7 +6,7 @@ Com o intuito de elaborar a [visão de casos de uso](/06-padroesArquiteturais/da
 
 ## [UC01](06-padroesArquiteturais/especificacoes_caso_de_uso/UC01.md) - Cadastrar como Paciente
 
-## [UC02](06-padroesArquiteturais/especificacoes_caso_de_uso/UC02.md) - Cadastrar como Paciente
+## [UC02](06-padroesArquiteturais/especificacoes_caso_de_uso/UC02.md) - Cadastrar como Médico
 
 ## [UC03](06-padroesArquiteturais/especificacoes_caso_de_uso/UC03.md) - Realizar Login
 
