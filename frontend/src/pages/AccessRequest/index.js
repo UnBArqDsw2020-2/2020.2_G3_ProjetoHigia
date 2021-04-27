@@ -29,7 +29,45 @@ const EditProfile = () => {
 					alignItems: "center",
 					justifyContent: "center",
 				}}
-			></ScrollView>
+			>
+				{doctors.map((doctor) =>
+					user.accessRequestedCRMs.includes(doctor.id) ? (
+						<>
+							<View key={doctor.id} style={styles.infoGroup}>
+								<Text style={styles.textTitle}>Nome: </Text>
+								<Text style={styles.textValue}>
+									{doctor.name}
+								</Text>
+							</View>
+
+							<View style={styles.infoGroup}>
+								<Text style={styles.textTitle}>
+									Especialidade:{" "}
+								</Text>
+								<Text style={styles.textValue}>
+									{doctor.specialty}
+								</Text>
+							</View>
+
+							<View style={styles.infoGroup}>
+								<Text style={styles.textTitle}>
+									Solicitação de Acesso:{" "}
+								</Text>
+								<TouchableOpacity
+									style={styles.button}
+									onPress={() => {}}
+								>
+									<Text style={styles.buttonText}>
+										Permitir
+									</Text>
+								</TouchableOpacity>
+							</View>
+
+							<View style={styles.line} />
+						</>
+					) : null
+				)}
+			</ScrollView>
 		</ImageBackground>
 	);
 };
