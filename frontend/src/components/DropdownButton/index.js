@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import React from "react";
+import { View} from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { MaterialIcons as Icon } from "@expo/vector-icons";
 import styles from "./styles";

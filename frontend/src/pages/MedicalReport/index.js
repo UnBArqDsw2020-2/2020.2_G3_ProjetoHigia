@@ -11,6 +11,8 @@ import CardEmergencyContact from "../../components/CardEmergencyContact";
 import { useAuth } from "../../context/auth";
 import api from "../../services/api";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import DropdownButton from "../../components/DropdownButton";
+import bloodTypeMock from "../../utils/bloodTypeMock";
 
 const MedicalReport = ({ navigation }) => {
 	const [medicalReportDefault, setMedicalReportDefault] = useState(null);
@@ -18,6 +20,7 @@ const MedicalReport = ({ navigation }) => {
 	const [allergies, setAllergies] = useState([]);
 	const [comorbidities, setComorbidities] = useState([]);
 	const [contacts, setContacts] = useState([]);
+	const [bloodType, setBloodType] = useState(null);
 
 	const { currentUser } = useAuth();
 
@@ -35,6 +38,7 @@ const MedicalReport = ({ navigation }) => {
 				setAllergies(data.allergies);
 				setComorbidities(data.comorbidities);
 				setContacts(currentUser?.contact);
+				setBloodType(data.bloodType)
 			});
 	};
 
@@ -72,13 +76,13 @@ const MedicalReport = ({ navigation }) => {
 				<View style={styles.line} />
 
 				<Text style={styles.title}>Grupo sanguíneo</Text>
-				<CardInfo
-					name={user.bloodGroup}
-					description={medicalReportDefault?.bloodType}
-					onChangeText={() => {}}
-					edit={edit}
-				/>
-
+				<View style={styles.dropdownView}>
+					<DropdownButton
+						value={bloodType}
+						setValue={setBloodType}
+						mock={bloodTypeMock}
+					/>
+				</View>
 				<View style={styles.line} />
 
 				<View style={styles.titleContainer}>
@@ -202,12 +206,7 @@ const MedicalReport = ({ navigation }) => {
 							);
 						}}
 						onChangeText={(e) =>
-							updateFieldChanged(
-								index,
-								setContacts,
-								contacts,
-								e
-							)
+							updateFieldChanged(index, setContacts, contacts, e)
 						}
 						number={item.number}
 						edit={edit}

@@ -6,8 +6,10 @@ import Button from "../../components/Button";
 import Header from "../../components/Header";
 import api from "../../services/api";
 import { useState } from "react/cjs/react.development";
+import { useNavigation } from "@react-navigation/core";
 
 const SearchPatient = ({ navigation }) => {
+	const navigate = useNavigation();
 	const [cpf, setCpf] = useState("");
 	const [userFound, setUserFound] = useState(null);
 	return (
@@ -46,7 +48,7 @@ const SearchPatient = ({ navigation }) => {
 			<View style={styles.buttonsContainer}>
 				<Button
 					title="Ficha Médica"
-					onPress={() => {}}
+					onPress={() => {navigate.navigate("PatientFound")}}
 					disabled={userFound}
 				/>
 				<Button

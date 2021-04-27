@@ -69,7 +69,6 @@ export default function SignUpEmergency() {
 					placeholder="Celular"
 					onChangeText={setPhote}
 				/>
-				{/* <TextInput style={styles.inputText} placeholder="Relação" /> */}
 				<TouchableOpacity>
 					<MaterialIcons
 						name="add-circle"
