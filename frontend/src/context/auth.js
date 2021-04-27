@@ -1,26 +1,29 @@
-import React, { useContext, createContext, useState, useEffect } from 'react';
-import AsyncStorage from '@react-native-community/async-storage';
-import firebase from 'firebase';
-import api from '../services/api';
+import React, { useContext, createContext, useState, useEffect } from "react";
+import AsyncStorage from "@react-native-community/async-storage";
+import firebase from "firebase";
+import api from "../services/api";
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
     async function loadStoragedData() {
-      const storageUser = await AsyncStorage.getItem('@RNAuth:user');
-      const storageToken = await AsyncStorage.getItem('@RNAuth:token');
-
+      const storageUser = await AsyncStorage.getItem("@RNAuth:user");
+      const storageToken = await AsyncStorage.getItem("@RNAuth:token");
       if (storageUser && storageToken) {
         api.defaults.headers.Authorization = `Bearer ${storageToken}`;
+        const email = JSON.parse(storageUser).email;
+        api.get(`user?email=${email}`).then((user) => {
+          setCurrentUser(user.data);
+        });
         setUser(JSON.parse(storageUser));
       }
       setLoading(false);
     }
-
     loadStoragedData();
   }, []);
 
@@ -39,11 +42,12 @@ export const AuthProvider = ({ children }) => {
       )}`;
 
       await AsyncStorage.setItem(
-        '@RNAuth:user',
+        "@RNAuth:user",
         JSON.stringify(response.user.providerData[0])
       );
+
       await AsyncStorage.setItem(
-        '@RNAuth:token',
+        "@RNAuth:token",
         JSON.stringify(response.user.toJSON().stsTokenManager.accessToken)
       );
     } catch (err) {
@@ -61,7 +65,14 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ signed: !!user, user, loading, signIn, signOut }}
+      value={{
+        signed: !!user,
+        user,
+        loading,
+        signIn,
+        signOut,
+        currentUser
+      }}
     >
       {children}
     </AuthContext.Provider>

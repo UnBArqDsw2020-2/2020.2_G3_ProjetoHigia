@@ -15,8 +15,8 @@ class MedicalReportController {
 
 	async findOneMedicalReport(req, res) {
 		const cpf = req.query;
-		const user = await MedicalReportBase.findOne(cpf);
-		if (user) return res.status(200).json({ status: "Success", data: user });
+		const medicalReport = await MedicalReportBase.findOne(cpf);
+		if (medicalReport) return res.status(200).json(medicalReport);
 		else
 			return res
 				.status(400)
@@ -24,8 +24,9 @@ class MedicalReportController {
 	}
 
 	async updateMedicalReport(req, res) {
-		const { id, data } = req.body;
-		const user = await MedicalReportBase.updateOne({ id }, data);
+		const { cpf, data } = req.body;
+		console.log(data,"<---");
+		const user = await MedicalReportBase.updateOne({ cpf }, data);
 		if (user.nModified) return res.status(200).json({ status: "Success" });
 		else
 			return res

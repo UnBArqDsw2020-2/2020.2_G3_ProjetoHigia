@@ -14,6 +14,6 @@ routes.get("/user", UserController.findOneUser);
 
 //Rota de atualizar usuário
 // Passar dados com Body
-routes.put("/user", isAuthenticated, UserController.updateUser);
+routes.put("/user", UserController.updateUser);
 
 export default routes;

@@ -10,7 +10,8 @@ class Firebase {
 	async createUser(data) {
 		await this._firebase
 			.auth()
-			.createUser({ email: data.email, password: data.password });
+			.createUser({ email: data.email, password: data.password })
+			.then((l) => console.log(l));
 	}
 }
 

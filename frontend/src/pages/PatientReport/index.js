@@ -7,7 +7,7 @@ import CardEmergencyContact from '../../components/CardEmergencyContact';
 import { pacient } from '../../utils/mocks.js';
 import styles from './styles';
 
-const PacientReport = () => {
+const PatientReport = () => {
   return (
     <ImageBackground
       style={[
@@ -76,4 +76,4 @@ const PacientReport = () => {
   );
 };
 
-export default PacientReport;
+export default PatientReport;

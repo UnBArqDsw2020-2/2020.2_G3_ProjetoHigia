@@ -4,8 +4,8 @@ const windowWidth = Dimensions.get("window").width;
 
 const styles = StyleSheet.create({
   image: {
-    width: windowWidth * 0.7,
-    height: windowWidth * 0.7,
+    width: windowWidth * 0.6,
+    height: windowWidth * 0.6,
     borderRadius: windowWidth * 0.35,
     borderColor: "#7E162B",
     borderWidth: 10,

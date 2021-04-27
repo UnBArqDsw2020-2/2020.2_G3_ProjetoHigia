@@ -1,9 +1,7 @@
 import express from "express";
-import admin from "firebase-admin";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-import serviceAccount from "./serviceAccountKey.json";
 import setUpRoute from "../routes/index.routes";
 
 class SetupServer {
@@ -14,8 +12,8 @@ class SetupServer {
 	}
 
 	config() {
-		this._app.use(express.urlencoded({ extended: true }));
-		this._app.use(express.json());
+		this._app.use(express.urlencoded({ extended: true, limit: "50mb" }));
+		this._app.use(express.json({ limit: "50mb" }));
 		this._app.use(cors());
 	}
 
