@@ -14,6 +14,8 @@
 | 23/04/2021 |  0.8   | Adicionado links para especificações no tópico 5 |                                                       [Aline Lermen](https://github.com/AlineLermen), [Arthur Paiva](https://github.com/ArthurPaivaT)                                                       |
 | 26/04/2021 |  0.9   |    Adicionado tópico 2.2 estilo arquitetural     | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein), [Ithalo Azevedo](https://github.com/ithaloazevedo), [Victor Amaral](https://github.com/victoramaralc) |
 | 27/04/2021 |  0.10  |    Corrigidos erros ortográficos no tópico 2     |                                                                             [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                                              |
+| 27/04/2021 | 0.11 | Adicionado tópico 6 | [Fellipe Araujo](https://github.com/fellipe-araujo) |
+| 28/04/2021 | 0.12 | Adicionado link para diagrama de pacote no tópico 6 | [Fellipe Araujo](https://github.com/fellipe-araujo) |
 
 ## 1. Introdução
 ### 1.1. Finalidade
