@@ -149,7 +149,7 @@ A visão lógica descreve como o sistema é estruturado, em termos de unidade e 
 
 ### 6.1 Diagrama de Pacotes
 
-Diagramas de Pacotes são diagramas estruturais e também estáticos usados para mostrar, em uma forma de pacotes, a organização e disposição de vários elementos de modelos. Os diagramas de pacotes são bastante utilizados para proporcionar uma organização visual de uma arquitetura em camadas de qualquer classificador UML como, por exemplo, um sistema de software. Para o projeto Hígia, foi feita uma divisão entre mobile e backend para a análise de cada um deles, os quais irão apresentar a estrutura de diretórios e arquivos.
+[Diagramas de Pacotes](../04-diagramasUML/diagramaPacote?id=Diagramas) são diagramas estruturais e também estáticos usados para mostrar, em uma forma de pacotes, a organização e disposição de vários elementos de modelos. Os diagramas de pacotes são bastante utilizados para proporcionar uma organização visual de uma arquitetura em camadas de qualquer classificador UML como, por exemplo, um sistema de software. Para o projeto Hígia, foi feita uma divisão entre mobile e backend para a análise de cada um deles, os quais irão apresentar a estrutura de diretórios e arquivos.
 
 #### 6.1.1 Diagrama de Pacotes - Mobile
 
