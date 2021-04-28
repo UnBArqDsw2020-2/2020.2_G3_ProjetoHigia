@@ -21,7 +21,7 @@ Diagramas de Pacotes são diagramas estruturais e também estáticos usados para
 
 Ao longo do desenvolvimento do projeto foram necessárias algumas mudanças com a distribuições de pacotes do projeto. O pacote server.js foi retirado junto com o pacote utils enquanto que um novo pacote foi introduzido, o Database.
 
-![backend](../assets/images/04-diagramasUML/diagramaPacote/backend-v0.jpg)
+![backend](../assets/images/04-diagramasUML/diagramaPacote/backend-v1.jpg)
 
 ### Diagrama de Pacotes - Mobile (V.0)
 
