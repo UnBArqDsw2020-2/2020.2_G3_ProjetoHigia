@@ -142,6 +142,11 @@ E a partir destas, foi elaborado o diagrama de visão de caso de uso, com o rela
 ![diagramaCasosdeUso](../assets/images/06-padroesDeArquitetura/diagrama_casos_de_uso.png)
 
 ## 6. Visão lógica
+
+<p style="text-align: justify;"> &emsp;&emsp;
+A visão lógica descreve como o sistema é estruturado, em termos de unidade e implementação. Os elementos são pacotes, classes e interfaces. O relacionamento entre os elementos mostra as dependências, as realizações de interface, os relacionamentos parte-todo, entre outros. 
+</p>
+
 ## 7. Visão de processos
 ## 8. Visão de implantação
 ## 9. Visão de implementação 
