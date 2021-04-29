@@ -1,8 +1,7 @@
 import socketio from "socket.io";
-import UserBase from "./Database/UserBase";
 
 let io;
-export const setUpSocket = (server) => {
+const setUpSocket = (server) => {
 	io = socketio(server);
 
 	io.on("connection", (socket) => {
@@ -14,3 +13,9 @@ export const setUpSocket = (server) => {
 	});
 };
 
+const sendRequestMessage = (socketID, crm) => {
+	io.to(socketID).send("accessRequested", crm)
+};
+
+
+export { setUpSocket, sendRequestMessage }

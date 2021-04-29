@@ -18,4 +18,18 @@ export default class Base {
 		const res = await this.collectionType.findById(id);
 		return res;
 	}
+	async appendRequestAccess(id, crm) {
+		const user = await this.collectionType.findById(id);
+		user.accessRequestedCRMs.push(crm)
+		const res = await this.updateOne(id, user)
+		return res;
+	}
+	async allowRequestAccess(id, crm) {
+		const user = await this.collectionType.findById(id);
+		index = user.accessRequestedCRMs.indexOf(crm)
+		user.accessRequestedCRMs.splice(index, 1);
+		user.accessAllowedCRMs.push(crm)
+		const res = await this.updateOne(id, user)
+		return res;
+	}
 }
