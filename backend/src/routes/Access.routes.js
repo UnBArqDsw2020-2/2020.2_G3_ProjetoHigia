@@ -1,5 +1,5 @@
 import express from "express";
-import AccessController from "../controller/AcessController";
+import AccessController from "../controller/AccessController";
 
 const routes = express.Router();
 
