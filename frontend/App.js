@@ -10,6 +10,7 @@ import { StatusBar } from "react-native";
 import { Provider } from "react-redux";
 import LoadingCircle from "./src/components/Loading";
 import loadingStore from "./src/store/loading";
+import WebSocket from "./src/services/websocket.js";
 
 const App = () => {
 	var [fontsLoaded] = useFonts({ Junge_400Regular });
@@ -17,6 +18,8 @@ const App = () => {
 	if (!fontsLoaded) {
 		return <AppLoading />;
 	}
+
+	WebSocket.connect();
 
 	if (!firebase.apps.length) {
 		console.log("Connected with Firebase");
