@@ -26,8 +26,23 @@ class AcessController {
 
 	async allowAccess(req, res) {
 		const { id, crm } = req.body;
-		const user = await UserBase.allowRequestAccess({ id }, crm);
-		if (user.nModified) return res.status(200).json({ status: "Success" });
+		console.log("allowing access to", id, "for", crm);
+
+		const user = await UserBase.collectionType.findById(id);
+		user.accessAllowedCRMs.push(crm);
+		var index = user.accessRequestedCRMs.indexOf(crm);
+		user.accessRequestedCRMs.splice(index, 1);
+
+		var update = {
+			$set: {
+				accessAllowedCRMs: user.accessAllowedCRMs,
+				accessRequestedCRMs: user.accessRequestedCRMs,
+			},
+		};
+
+		const updatedUser = await UserBase.updateOne({ _id: id }, update);
+		if (updatedUser.nModified)
+			return res.status(200).json({ status: "Success" });
 		else
 			return res
 				.status(400)
