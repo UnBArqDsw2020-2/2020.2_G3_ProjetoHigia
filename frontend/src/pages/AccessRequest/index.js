@@ -1,12 +1,33 @@
-import React from "react";
-import { View, Text, ImageBackground, ScrollView } from "react-native";
+import React, { useState } from "react";
+import {
+	View,
+	Text,
+	ImageBackground,
+	ScrollView,
+	TouchableOpacity,
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import styles from "./styles";
 import Header from "../../components/Header";
 import { user, doctors } from "../../utils/mocks.js";
+import { useAuth } from "../../context/auth";
+import api from "../../services/api";
 
 const EditProfile = () => {
 	const navigation = useNavigation();
+	const authContext = useAuth();
+	const [doctors, setDoctors] = useState([]);
+
+	var doctorsArray = new Array();
+	authContext.currentUser.accessRequestedCRMs?.map((requestedCRM) => {
+		api.get(`user?crm=${requestedCRM}`).then((response) => {
+			console.log("response", response.data);
+			doctorsArray.push(response.data);
+			setDoctors(doctorsArray);
+		});
+	});
+
+	console.log("doctors: ", doctors);
 
 	return (
 		<ImageBackground
@@ -30,8 +51,8 @@ const EditProfile = () => {
 					justifyContent: "center",
 				}}
 			>
-				{doctors.map((doctor) =>
-					user.accessRequestedCRMs.includes(doctor.id) ? (
+				{doctors.map(
+					((doctor) => (
 						<>
 							<View key={doctor.id} style={styles.infoGroup}>
 								<Text style={styles.textTitle}>Nome: </Text>
@@ -40,12 +61,10 @@ const EditProfile = () => {
 								</Text>
 							</View>
 
-							<View style={styles.infoGroup}>
-								<Text style={styles.textTitle}>
-									Especialidade:{" "}
-								</Text>
+							<View key={doctor.id} style={styles.infoGroup}>
+								<Text style={styles.textTitle}>CRM: </Text>
 								<Text style={styles.textValue}>
-									{doctor.specialty}
+									{doctor.crm}
 								</Text>
 							</View>
 
@@ -65,7 +84,7 @@ const EditProfile = () => {
 
 							<View style={styles.line} />
 						</>
-					) : null
+					): null)
 				)}
 			</ScrollView>
 		</ImageBackground>
