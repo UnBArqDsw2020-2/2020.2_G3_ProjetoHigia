@@ -10,15 +10,22 @@ const api = axios.create({
 });
 
 api.interceptors.request.use(async (config) => {
-	loadingStore.dispatch({ type: "setValue", value: false });
+	loadingStore.dispatch({ type: "setValue", value: true });
 
 	return config;
 });
 
-api.interceptors.response.use(async (config) => {
-	loadingStore.dispatch({ type: "setValue", value: false });
+api.interceptors.response.use(
+	async (config) => {
+		loadingStore.dispatch({ type: "setValue", value: false });
 
-	return config;
-});
+		return config;
+	},
+	async (error) => {
+		loadingStore.dispatch({ type: "setValue", value: false });
+
+		return error;
+	}
+);
 
 export default api;
