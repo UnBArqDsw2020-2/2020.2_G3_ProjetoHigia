@@ -74,13 +74,16 @@ const SearchPatient = ({ navigation }) => {
 };
 
 function solicitarAcesso(patient, currentUser) {
-	//TODO pegar o crm do usuário e mandar no lugar do 2141231
 	api.post("/requestFullAccess", {
 		id: patient._id,
-		crm: "2141231",
-	}).then(() => {
-		alert("Solicitação enviada com sucesso");
-	});
+		crm: currentUser.crm,
+	})
+		.then(() => {
+			alert("Solicitação enviada com sucesso");
+		})
+		.catch(() => {
+			alert("Erro ao enviar solicitação");
+		});
 }
 
 export default SearchPatient;

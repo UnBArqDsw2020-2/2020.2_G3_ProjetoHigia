@@ -19,15 +19,12 @@ const EditProfile = () => {
 	const [doctors, setDoctors] = useState([]);
 
 	var doctorsArray = new Array();
-	authContext.currentUser.accessRequestedCRMs?.map((requestedCRM) => {
+	authContext.currentUser?.accessRequestedCRMs?.map((requestedCRM) => {
 		api.get(`user?crm=${requestedCRM}`).then((response) => {
-			console.log("response", response.data);
 			doctorsArray.push(response.data);
 			setDoctors(doctorsArray);
 		});
 	});
-
-	console.log("doctors: ", doctors);
 
 	return (
 		<ImageBackground
@@ -68,13 +65,18 @@ const EditProfile = () => {
 								</Text>
 							</View>
 
-							<View style={styles.infoGroup}>
+							<View key={doctor.id} style={styles.infoGroup}>
 								<Text style={styles.textTitle}>
 									Solicitação de Acesso:{" "}
 								</Text>
 								<TouchableOpacity
 									style={styles.button}
-									onPress={() => {}}
+									onPress={() => {
+										permitirAcesso(
+											authContext.currentUser,
+											doctor
+										);
+									}}
 								>
 									<Text style={styles.buttonText}>
 										Permitir
@@ -90,5 +92,18 @@ const EditProfile = () => {
 		</ImageBackground>
 	);
 };
+
+function permitirAcesso(user, doctor) {
+	api.post("/allowAccess", {
+		id: user._id,
+		crm: doctor.crm,
+	})
+		.then(() => {
+			alert("Permissão dada com sucesso");
+		})
+		.catch(() => {
+			alert("Erro ao enviar solicitação");
+		});
+}
 
 export default EditProfile;
