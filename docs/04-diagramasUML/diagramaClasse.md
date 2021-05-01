@@ -22,8 +22,8 @@ Os diagramas foram produzidos utilizando a ferramenta Draw.io. Nele há todas as
 
 ### V.4 
 Database foi removido e foi criado um novo relacionamento entre Arquivos e Usários.
-![Classev4](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v4.png)
 
+![Classev4](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v4.png)
 
 ### V.3 
 Uma nova classe foi introduzida, a classe Archive é a classe que realiza as funções de gerenciamento de arquivos do projeto.

@@ -28,12 +28,7 @@ A finalidade deste documento é detalhar as decisões arquiteturais do projeto H
 <p style="text-align: justify;"> &emsp;&emsp;
 Nesse documento, estão documentados os componentes, tecnologias e diferentes visões arquiteturais do Hígia. O produto, consiste em um software que visa facilitar o controle dos arquivos médicos pelos pacientes e inovar o compartilhamento de arquivos e informações entre pacientes e médicos. Trazendo soluções como:  armazenamento de arquivos e informações, controle do usuário sobre seus arquivos, obtenção de informações de forma imediata por parte de médicos e compartilhamento de arquivos entre médicos e pacientes. </p>
 
-### 1.3. Definições, acrônimos e abreviações
-| Acrônimos/abreviações | Definição |
-| :-------------------: | :-------: |
-|                       |           |
-
-### 1.4. Referências
+### 1.3. Referências
 Como documentar a Arquitetura de Software. Disponível em: <http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx>. Último acesso em: 15/04/2021.
 Chatbot Gaia - Documento de arquitetura. Disponível em: <https://fga-eps-mds.github.io/2019.1-Gaia/#/projeto/DocArquitetura>. Último acesso em: 16/04/2021.
 React Native. Disponível em: <https://reactnative.dev>. Último acesso em: 17/04/2021.
