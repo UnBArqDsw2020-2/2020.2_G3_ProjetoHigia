@@ -16,6 +16,7 @@
 | 27/04/2021 |  0.10  |    Corrigidos erros ortográficos no tópico 2     |                                                                             [Ithalo Azevedo](https://github.com/ithaloazevedo)                                                                              |
 | 27/04/2021 | 0.11 | Adicionado tópico 6 | [Fellipe Araujo](https://github.com/fellipe-araujo) |
 | 28/04/2021 | 0.12 | Adicionado link para diagrama de pacote no tópico 6 | [Fellipe Araujo](https://github.com/fellipe-araujo) |
+| 01/05/2021 | 0.13 | Adicionado tópico 8 visão de implantação | [Danillo Souza](https://github.com/DanilloGS) e  [Gabriel Hussein](https://github.com/GabrielHussein)|
 
 ## 1. Introdução
 ### 1.1. Finalidade
@@ -163,5 +164,11 @@ A visão lógica descreve como o sistema é estruturado, em termos de unidade e 
 
 ## 7. Visão de processos
 ## 8. Visão de implantação
-## 9. Visão de implementação 
-## 10. Qualidade do software
+<p style="text-align: justify;"> &emsp;&emsp;
+A visão de implantação é algo que pode ser observada diretamente no <a href="https://unbarqdsw2020-2.github.io/2020.2_G3_ProjetoHigia/#/./04-diagramasUML/diagramaClasse">Diagramas de Classe</a>, essa visão mostra a organização entre os objetos do software. Para o projeto Hígia o diagrama de classes mais atualizado pode ser encontrado abaixo.
+</p>
+
+
+#### 8.1 Diagrama de Classe
+
+![digramaClasse](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v4.png)
