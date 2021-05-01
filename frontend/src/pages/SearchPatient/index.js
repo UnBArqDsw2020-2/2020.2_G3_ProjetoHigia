@@ -7,11 +7,14 @@ import Header from "../../components/Header";
 import api from "../../services/api";
 import { useState } from "react/cjs/react.development";
 import { useNavigation } from "@react-navigation/core";
+import { useAuth } from "../../context/auth";
 
 const SearchPatient = ({ navigation }) => {
 	const navigate = useNavigation();
 	const [cpf, setCpf] = useState("");
 	const [userFound, setUserFound] = useState(null);
+	const { currentUser } = useAuth();
+
 	return (
 		<ImageBackground
 			style={styles.container}
@@ -48,7 +51,9 @@ const SearchPatient = ({ navigation }) => {
 			<View style={styles.buttonsContainer}>
 				<Button
 					title="Ficha Médica"
-					onPress={() => {navigate.navigate("PatientFound")}}
+					onPress={() => {
+						navigate.navigate("PatientFound");
+					}}
 					disabled={userFound}
 				/>
 				<Button
@@ -58,12 +63,27 @@ const SearchPatient = ({ navigation }) => {
 				/>
 				<Button
 					title="Solicitar Acesso"
-					onPress={() => {}}
+					onPress={() => {
+						solicitarAcesso(userFound, currentUser);
+					}}
 					disabled={userFound}
 				/>
 			</View>
 		</ImageBackground>
 	);
 };
+
+function solicitarAcesso(patient, currentUser) {
+	api.post("/requestFullAccess", {
+		id: patient._id,
+		crm: currentUser.crm,
+	})
+		.then(() => {
+			alert("Solicitação enviada com sucesso");
+		})
+		.catch(() => {
+			alert("Erro ao enviar solicitação");
+		});
+}
 
 export default SearchPatient;
