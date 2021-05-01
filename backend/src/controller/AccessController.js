@@ -16,10 +16,12 @@ class AcessController {
 		const updatedUser = await UserBase.updateOne({ _id: id }, update);
 
 		console.log("user:", updatedUser);
-		if (!updatedUser.nModified)
+		if (!updatedUser.nModified) {
+			sendRequestMessage(user.socketId, crm);
 			return res
 				.status(400)
 				.json({ status: "Failed", data: "Usuário não modificado" });
+		}
 
 		return res.status(200).json({ status: "Success" });
 	}
