@@ -11,13 +11,14 @@ import crmApi from "../../../services/crmApi";
 import axios from "axios";
 import DropdownButton from "../../../components/DropdownButton";
 import cpfValidator from "../../../utils/cpfValidator";
-// import TextInputMask from 'react-native-text-input-mask';
+import api from "../../../services/api.js";
 
 export default function SignUpPatient() {
 	const navigation = useNavigation();
 	const [crm, setCrm] = useState("");
 	const [cpf, setCpf] = useState(false);
 	const [uf, setUF] = useState("");
+	const [isCrmValid, setIsCrmValid] = useState(true);
 	const route = useRoute();
 	const isDoctor = route.params.isDoctor;
 	let isCpfValid = cpfValidator(cpf) || cpf == "";
@@ -65,8 +66,7 @@ export default function SignUpPatient() {
 					/>
 					<TextInput
 						style={styles.inputText}
-						//keyboardType="numeric"
-						//maxLength={11}
+						maxLength={11}
 						placeholder="Data de Nascimento"
 					/>
 					<View>
@@ -91,12 +91,19 @@ export default function SignUpPatient() {
 					{isDoctor === "true" ? (
 						<>
 							<TextInput
-								style={styles.inputText}
+								style={
+									isCrmValid
+									? styles.inputText
+									: styles.inputTextError
+								}
 								placeholder="CRM"
 								onChangeText={setCrm}
 								keyboardType="numeric"
 								maxLength={11}
 							/>
+							{isCrmValid ? null : (
+								<Text style={styles.errorText}>CRM inválido</Text>
+							)}
 							<DropdownButton onChangeText={setUF} />
 						</>
 					) : null}
@@ -111,18 +118,27 @@ export default function SignUpPatient() {
 						<TouchableOpacity style={styles.btn}>
 							<Text
 								style={styles.btnText}
-								onPress={() => {
-									checkCRM()
-										.then((response) => {
-											response
-												? navigation.navigate(
-														"SignUpPhoto"
-												  )
-												: console.log("CRM Inválido");
-										})
-										.catch((error) => {
-											console.error(error);
-										});
+								onPress={async () => {
+									api.get(`user?cpf=${cpf}`).then((user)=>{
+										console.log(user.data);
+										if(!user.data){
+											if(isDoctor) {
+												checkCRM()
+												.then((response) => {
+													response
+														? navigation.navigate(
+																"SignUpPhoto"
+															)
+														: setIsCrmValid(false);
+												})
+												.catch((error) => {
+													console.error(error);
+												});
+											}
+										}
+										else
+											alert("Este CPF já está sendo usado")
+									})
 								}}
 							>
 								Próximo
