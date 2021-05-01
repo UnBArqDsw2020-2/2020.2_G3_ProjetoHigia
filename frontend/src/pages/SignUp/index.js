@@ -1,165 +1,96 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Text, View, ImageBackground } from "react-native";
-import {
-	ScrollView,
-	TextInput,
-	TouchableOpacity,
-} from "react-native-gesture-handler";
-import { useNavigation, useRoute } from "@react-navigation/native";
-import styles from "../styles";
-import crmApi from "../../../services/crmApi";
-import axios from "axios";
-import DropdownButton from "../../../components/DropdownButton";
-import cpfValidator from "../../../utils/cpfValidator";
-import statesMock from "../../../utils/statesMock";
-import bloodTypeMock from "../../../utils/bloodTypeMock";
+import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
+import { useNavigation } from "@react-navigation/native";
+import styles from "./styles";
+import api from "../../services/api.js";
 
-export default function SignUpPatient() {
+export default function SignUp() {
 	const navigation = useNavigation();
-	const [firstName, setFirstName] = useState("");
-	const [lastName, setLastName] = useState("");
-	const [crm, setCrm] = useState(null);
-	const [cpf, setCpf] = useState("");
-	const [uf, setUF] = useState(null);
-	const [weight, setWeight] = useState(null);
-	const [height, setHeight] = useState(null);
-	const [bloodType, setBloodType] = useState(null);
-	const [birthday, setBirthday] = useState(null);
-	const route = useRoute();
-	const { isDoctor } = route.params;
-	const user = route.params;
-	let isCpfValid = cpfValidator(cpf) || cpf == "";
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+	const [isEmailValid, setIsEmailValid] = useState(true);
 
-	async function checkCRM() {
-		let params = {
-			uf: uf,
-			q: crm,
-			tipo: "crm",
-			chave: 9280370609,
-			destino: "json",
-		};
-
-		let result = false;
-
-		await crmApi
-			.get("", {
-				params: params,
-			})
-			.then((response) => {
-				result = response.data.total > 0;
-			})
-			.catch((error) => {
-				console.error(error);
-			});
-		return result;
+	validateEmail = (email) => {
+		let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if (reg.test(email) === false) {
+		  setEmail(email);
+		}
+		else {
+		  setEmail(email);
+		}
 	}
-
-	const goToNextPage = () => {
-		navigation.navigate("SignUpPhoto", {
-			userData: {
-				name: firstName + " " + lastName,
-				crm: uf && crm ? uf + crm : null,
-				cpf: cpf,
-				email: user.email,
-				password: user.password,
-				birthday: birthday,
-			},
-			medicalReport: {
-				bloodType: bloodType,
-				weight: weight,
-				height: height,
-			},
-		});
-	};
 
 	return (
 		<ImageBackground
 			style={styles.container}
-			source={require("../../../../assets/img/background.jpg")}
+			source={require("../../../assets/img/background.jpg")}
 			imageStyle={{ width: "100%", height: "100%" }}
 		>
-			<ScrollView style={{ flex: 1, marginTop: "20%" }}>
-				<View style={styles.form}>
-					<Text style={styles.text}>Dados para Perfil</Text>
-					<TextInput
-						style={styles.inputText}
-						placeholder="Primeiro Nome"
-						onChangeText={setFirstName}
-					/>
-					<TextInput
-						style={styles.inputText}
-						placeholder="Último Nome"
-						onChangeText={setLastName}
-					/>
-					<TextInput
-						style={styles.inputText}
-						placeholder="Data de Nascimento"
-						onChangeText={setBirthday}
-					/>
-					<View>
-						<TextInput
-							style={
-								isCpfValid
-									? styles.inputText
-									: styles.inputTextError
-							}
-							value={cpf}
-							onChange={(e) => {
-								setCpf(e.nativeEvent.text);
+			<View style={{ width: "80%" }}>
+				<Text style={styles.text}>Dados para Cadastro</Text>
+				
+				<TextInput
+					placeholder={"Email"}
+					style={
+						isEmailValid
+						? styles.inputText
+						: styles.inputTextError
+					}
+					onChangeText={(email) => this.validateEmail(email)}
+  					value={email}
+				/>
+				{isEmailValid ? null : (
+					<Text style={styles.errorText}>E-mail inválido</Text>
+				)}
+				<TextInput
+					style={styles.inputText}
+					placeholder="Senha"
+					value={password}
+					onChangeText={setPassword}
+					secureTextEntry={true}
+				/>
+				<Text style={styles.text1}>Deseja se cadastrar como:</Text>
+
+				<View style={styles.container1}>
+					<TouchableOpacity style={styles.btn}>
+						<Text
+							style={styles.btnText}
+							onPress={async() => {
+								api.get(`user?email=${email}`).then((user)=>{
+									if(user.data.status==="Failed"){
+										navigation.navigate("SignUpPatient", {
+											isDoctor: "true",
+										});
+									} else {
+										alert("Este email já está em uso")
+									}
+								})
 							}}
-							placeholder="CPF"
-							keyboardType="numeric"
-							maxLength={11}
-						/>
-						{isCpfValid ? null : (
-							<Text style={styles.errorText}>CPF inválido</Text>
-						)}
-					</View>
-					{isDoctor === "true" ? (
-						<>
-							<TextInput
-								style={styles.inputText}
-								placeholder="CRM"
-								onChangeText={setCrm}
-							/>
-							<DropdownButton
-								value={uf}
-								setValue={setUF}
-								mock={statesMock}
-							/>
-						</>
-					) : null}
-					<TextInput
-						style={styles.inputText}
-						placeholder="Altura"
-						onChangeText={setHeight}
-					/>
-					<TextInput
-						style={styles.inputText}
-						placeholder="Peso"
-						onChangeText={setWeight}
-					/>
-					<DropdownButton
-						value={bloodType}
-						setValue={setBloodType}
-						mock={bloodTypeMock}
-					/>
-					<View style={styles.container1}>
-						<TouchableOpacity style={styles.btn}>
-							<Text
-								style={styles.btnText}
-								onPress={() => {
-									crm
-										? checkCRM().then(() => goToNextPage())
-										: goToNextPage();
-								}}
-							>
-								Próximo
-							</Text>
-						</TouchableOpacity>
-					</View>
+						>
+							Médico
+						</Text>
+					</TouchableOpacity>
+					<TouchableOpacity style={styles.btn}>
+						<Text
+							style={styles.btnText}
+							onPress={async() => {
+								api.get(`user?email=${email}`).then((user)=>{
+									if(user.data.status==="Failed"){
+										navigation.navigate("SignUpPatient", {
+											isDoctor: "false",
+										});
+									} else {
+										alert("Este email já está em uso")
+									}
+								})
+							}}
+						>
+							Paciente
+						</Text>
+					</TouchableOpacity>
 				</View>
-			</ScrollView>
+			</View>
 		</ImageBackground>
 	);
 }

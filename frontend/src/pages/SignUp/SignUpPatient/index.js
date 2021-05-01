@@ -8,19 +8,27 @@ import {
 import { useNavigation, useRoute } from "@react-navigation/native";
 import styles from "../styles";
 import crmApi from "../../../services/crmApi";
-import axios from "axios";
 import DropdownButton from "../../../components/DropdownButton";
 import cpfValidator from "../../../utils/cpfValidator";
 import api from "../../../services/api.js";
+import statesMock from "../../../utils/statesMock";
+import bloodTypeMock from "../../../utils/bloodTypeMock";
 
 export default function SignUpPatient() {
 	const navigation = useNavigation();
-	const [crm, setCrm] = useState("");
-	const [cpf, setCpf] = useState(false);
-	const [uf, setUF] = useState("");
+	const [firstName, setFirstName] = useState("");
+	const [lastName, setLastName] = useState("");
+	const [crm, setCrm] = useState(null);
+	const [cpf, setCpf] = useState("");
+	const [uf, setUF] = useState(null);
+	const [weight, setWeight] = useState(null);
+	const [height, setHeight] = useState(null);
+	const [bloodType, setBloodType] = useState(null);
+	const [birthday, setBirthday] = useState(null);
 	const [isCrmValid, setIsCrmValid] = useState(true);
 	const route = useRoute();
-	const isDoctor = route.params.isDoctor;
+	const { isDoctor } = route.params;
+	const user = route.params;
 	let isCpfValid = cpfValidator(cpf) || cpf == "";
 
 	async function checkCRM() {
@@ -47,6 +55,24 @@ export default function SignUpPatient() {
 		return result;
 	}
 
+	const goToNextPage = () => {
+		navigation.navigate("SignUpPhoto", {
+			userData: {
+				name: firstName + " " + lastName,
+				crm: uf && crm ? uf + crm : null,
+				cpf: cpf,
+				email: user.email,
+				password: user.password,
+				birthday: birthday,
+			},
+			medicalReport: {
+				bloodType: bloodType,
+				weight: weight,
+				height: height,
+			},
+		});
+	};
+
 	return (
 		<ImageBackground
 			style={styles.container}
@@ -59,15 +85,18 @@ export default function SignUpPatient() {
 					<TextInput
 						style={styles.inputText}
 						placeholder="Primeiro Nome"
+						onChangeText={setFirstName}
 					/>
 					<TextInput
 						style={styles.inputText}
-						placeholder="Ultimo Nome"
+						placeholder="Último Nome"
+						onChangeText={setLastName}
 					/>
 					<TextInput
 						style={styles.inputText}
 						maxLength={11}
 						placeholder="Data de Nascimento"
+						onChangeText={setBirthday}
 					/>
 					<View>
 						<TextInput
@@ -101,44 +130,56 @@ export default function SignUpPatient() {
 								keyboardType="numeric"
 								maxLength={11}
 							/>
+
 							{isCrmValid ? null : (
 								<Text style={styles.errorText}>CRM inválido</Text>
 							)}
-							<DropdownButton onChangeText={setUF} />
+
+							<DropdownButton
+								value={uf}
+								setValue={setUF}
+								mock={statesMock}
+							/>
+
 						</>
 					) : null}
-					<TextInput style={styles.inputText} keyboardType="numeric" maxLength={4} placeholder="Altura" />
-					<TextInput style={styles.inputText} keyboardType="numeric" maxLength={3} placeholder="Peso" />
+					
 					<TextInput
 						style={styles.inputText}
-						placeholder="Tipo Sanguineo"
+						placeholder="Altura"
+						keyboardType="numeric" 
+						maxLength={4}
+						onChangeText={setHeight}
+					/>
+					<TextInput
+						style={styles.inputText}
+						placeholder="Peso"
+						onChangeText={setWeight}
+						keyboardType="numeric" 
 						maxLength={3}
+					/>
+					<DropdownButton
+						value={bloodType}
+						setValue={setBloodType}
+						mock={bloodTypeMock}
 					/>
 					<View style={styles.container1}>
 						<TouchableOpacity style={styles.btn}>
 							<Text
 								style={styles.btnText}
+
 								onPress={async () => {
-									api.get(`user?cpf=${cpf}`).then((user)=>{
-										console.log(user.data);
-										if(!user.data){
-											if(isDoctor) {
-												checkCRM()
-												.then((response) => {
-													response
-														? navigation.navigate(
-																"SignUpPhoto"
-															)
-														: setIsCrmValid(false);
-												})
-												.catch((error) => {
-													console.error(error);
-												});
+									api.get(`user?cpf=${cpf}`).then(user => {
+											if(user.data.status==="Failed"){
+												crm
+												? checkCRM().then(() => goToNextPage())
+												: goToNextPage();
 											}
-										}
-										else
-											alert("Este CPF já está sendo usado")
-									})
+											else {
+												alert("O CPF já está em uso")
+											}
+										}	
+									)
 								}}
 							>
 								Próximo
