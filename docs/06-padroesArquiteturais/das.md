@@ -179,9 +179,9 @@ A visão lógica descreve como o sistema é estruturado, em termos de unidade e 
 
 A visão de processos contém a organização do processo do sistema, uma visualização arquitetural que ilustra a decomposição dos processos do sistema, incluindo o mapeamento de classes e subsistemas para processos e encadeamentos. A visão de processos é refinada durante cada interação.
 
-No [Diagrama de Componentes](../04-diagramasUML/diagramaComponentes.md) identificamos a comunicação entre os componentes do sistema durante os processos da aplicação.
+No [Diagrama de Componentes](https://unbarqdsw2020-2.github.io/2020.2_G3_ProjetoHigia/#/04-diagramasUML/diagramaComponentes) identificamos a comunicação entre os componentes do sistema durante os processos da aplicação.
 
-Os diagramas de [Sequência](../04-diagramasUML/diagramaSequencia.md) e [Comunicação](../04-diagramasUML/diagramaComunicacao.md) mostram de forma semelhante o funcionamento de diversas funcionalidades da aplicação via demonstração da interação entre os objetos e suas partes e o comportamento de diferentes fluxos.
+Os diagramas de [Sequência](https://unbarqdsw2020-2.github.io/2020.2_G3_ProjetoHigia/#/04-diagramasUML/diagramaSequencia) e [Comunicação](https://unbarqdsw2020-2.github.io/2020.2_G3_ProjetoHigia/#/04-diagramasUML/diagramaComunicacao) mostram de forma semelhante o funcionamento de diversas funcionalidades da aplicação via demonstração da interação entre os objetos e suas partes e o comportamento de diferentes fluxos.
 
 ## 8. Visão de implantação
 
