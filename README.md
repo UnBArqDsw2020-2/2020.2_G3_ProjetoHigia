@@ -87,11 +87,21 @@ O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicaçã
 
 ## Screenshots Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+### Documento de arquitetura
+![DAS](./assets/primeiraEntrega/das.png)
+
+### Documento de reutilização do Backend
+![reutilizacaoBack](./assets/primeiraEntrega/reutilizacaoBack.png)
+
+### Documento de reutilização do Frontend
+![reutilizacaoFront](./assets/primeiraEntrega/reutilizacaoFront.png)
+
 
 ## Vídeo(s) Quarta Entrega (FINAL) <<FOCOS: Arquitetura & Reutilização de Software & PROJETO FINAL>>
 
-Adicione o(s)s vídeo(s) da Entrega Final.
+[Documento de arquitetura](https://youtu.be/cVlhFjSBMBk)
+
+[Documento de reutilização](https://youtu.be/ZmafJujQhtU)
 
 ## Descritivo dos Principais Aspectos Técnicos
 
