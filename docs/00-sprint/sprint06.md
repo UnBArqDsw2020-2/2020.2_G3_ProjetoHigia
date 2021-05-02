@@ -4,27 +4,21 @@
 - **Data do fim da sprint**: 13/04/2021
 - **Horário da Planning**:
   - **Início**:19:00
-  - **Fim**:
+  - **Fim**: 20:30
 
 ## Issues
 
-| Número | Issue | Pontuação | Responsáveis |
-| :----: | :---: | :-------: | :----------: |
+|                                   Número                                   |         Issue         | Pontuação |                                                                       Responsáveis                                                                        |
+| :------------------------------------------------------------------------: | :-------------------: | :-------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| [#90](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/90) | Tirar foto do usuário |     3     | [Danillo Souza](https://github.com/DanilloGS), [Fellipe Araujo](https://github.com/fellipe-araujo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| [#92](https://github.com/UnBArqDsw2020-2/2020.2_G3_ProjetoHigia/issues/92) |   Validação de CPF    |     2     | [Danillo Souza](https://github.com/DanilloGS), [Gabriel Hussein](https://github.com/GabrielHussein) e [Ithalo Azevedo](https://github.com/ithaloazevedo)  |
 
-- **Pontuação total**: XX
+- **Pontuação total**: 05
 
 ## Comentários
 
+- Sprint com pontuação extremamente reduzida, pois equipe estava focada em revisar os documentos desenvolvidos ao longo do semestre.
+- Documento não possui métricas
 ### Resultado
 
-### Cumulative Flow
-
-![cumulativeFlow00](../assets/images/00-sprint/cumulativeFlow/cumulativeFlow00.png)
-
-### Burndown Report
-
-![burndown00](../assets/images/00-sprint/burndown/burndown00.png)
-
-### Velocity Tracking
-
-![velocity00](../assets/images/00-sprint/velocity/velocity00.png)
+- Todos os pontos foram finalizados.

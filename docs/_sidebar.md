@@ -20,7 +20,9 @@
   - [Sprint 3](./00-sprint/sprint03.md)
   - [Sprint 4](./00-sprint/sprint04.md)
   - [Sprint 5](./00-sprint/sprint05.md)
-  <!-- - [Sprint 6](./00-sprint/sprint06.md) -->
+  - [Sprint 6](./00-sprint/sprint06.md)
+  - [Sprint 7](./00-sprint/sprint07.md)
+
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
