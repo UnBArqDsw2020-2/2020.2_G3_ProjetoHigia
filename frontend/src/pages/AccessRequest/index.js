@@ -12,19 +12,28 @@ import Header from "../../components/Header";
 import { user, doctors } from "../../utils/mocks.js";
 import { useAuth } from "../../context/auth";
 import api from "../../services/api";
+import { shouldUseActivityState } from "react-native-screens";
 
 const EditProfile = () => {
 	const navigation = useNavigation();
 	const authContext = useAuth();
 	const [doctors, setDoctors] = useState([]);
+	const [requestMade, setRequest] = useState(false);
 
+	console.log("made?", requestMade);
 	var doctorsArray = new Array();
-	authContext.currentUser?.accessRequestedCRMs?.map((requestedCRM) => {
-		api.get(`user?crm=${requestedCRM}`).then((response) => {
-			doctorsArray.push(response.data);
-			setDoctors(doctorsArray);
+	if (requestMade == false) {
+		authContext.currentUser?.accessRequestedCRMs?.map((requestedCRM) => {
+			api.get(`user?crm=${requestedCRM}`).then((response) => {
+				doctorsArray.push(response.data);
+				setDoctors(doctorsArray);
+				setRequest(true);
+			});
 		});
-	});
+		setRequest(true);
+	}
+
+	shouldUseActivityState;
 
 	return (
 		<ImageBackground
