@@ -6,10 +6,8 @@ import Button from "../../components/Button";
 import Header from "../../components/Header";
 import api from "../../services/api";
 import { useState } from "react/cjs/react.development";
-import { useNavigation } from "@react-navigation/core";
 
 const SearchPatient = ({ navigation }) => {
-	const navigate = useNavigation();
 	const [cpf, setCpf] = useState("");
 	const [userFound, setUserFound] = useState(null);
 	return (
@@ -39,8 +37,7 @@ const SearchPatient = ({ navigation }) => {
 			</View>
 			{userFound ? (
 				<Text style={styles.patientName}>
-					{" "}
-					Paciente - {userFound.name}{" "}
+					Paciente - {userFound.name}
 				</Text>
 			) : (
 				<Text style={styles.patientName}>Pesquise por um paciente</Text>
@@ -48,7 +45,17 @@ const SearchPatient = ({ navigation }) => {
 			<View style={styles.buttonsContainer}>
 				<Button
 					title="Ficha Médica"
-					onPress={() => {navigate.navigate("PatientFound")}}
+					onPress={async () => {
+						const { data } = await api.get(
+							`/medicalReport?cpf=${userFound?.cpf}`
+						);
+						const medicalReport = data;
+						console.log(medicalReport);
+						navigation.navigate("PatientFound", {
+							userFound,
+							medicalReport,
+						});
+					}}
 					disabled={userFound}
 				/>
 				<Button

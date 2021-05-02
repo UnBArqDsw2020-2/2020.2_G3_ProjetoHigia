@@ -38,7 +38,7 @@ const MedicalReport = ({ navigation }) => {
 				setAllergies(data.allergies);
 				setComorbidities(data.comorbidities);
 				setContacts(currentUser?.contact);
-				setBloodType(data.bloodType)
+				setBloodType(data.bloodType);
 			});
 	};
 
@@ -51,6 +51,19 @@ const MedicalReport = ({ navigation }) => {
 		setValue(newArr);
 	};
 
+	const saveData = () => {
+		const saveData = {
+			id: currentUser?.cpf,
+			data: {
+				medicines: medicines,
+				allergies: allergies,
+				comorbidities: comorbidities,
+				contacts: contacts,
+			},
+		};
+		api.put("/medicalReport", saveData);
+	};
+
 	return (
 		<ImageBackground
 			style={styles.container}
@@ -61,9 +74,8 @@ const MedicalReport = ({ navigation }) => {
 			<FloatingButton
 				edit={edit}
 				setEdit={() => setEdit(!edit)}
-				dataToSave={[medicines, allergies, comorbidities, contacts]}
+				saveData={saveData}
 				resetData={getDataApi}
-				cpf={currentUser?.cpf}
 			/>
 			<UserInfo
 				name={currentUser?.name}

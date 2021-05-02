@@ -10,7 +10,7 @@ class UserController {
 				return res.status(200).json({ status: "Success" });
 			})
 			.catch((e) => {
-				return res.status(400).json({ status: "Failed", data: e.message });
+				return res.status(200).json({ status: "Failed", data: e.message });
 			});
 	}
 
