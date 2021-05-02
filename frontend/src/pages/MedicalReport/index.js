@@ -53,7 +53,7 @@ const MedicalReport = ({ navigation }) => {
 
 	const saveData = () => {
 		const saveData = {
-			id: currentUser?.cpf,
+			cpf: currentUser?.cpf,
 			data: {
 				medicines: medicines,
 				allergies: allergies,
@@ -82,6 +82,7 @@ const MedicalReport = ({ navigation }) => {
 				age={user?.age}
 				height={medicalReportDefault?.height}
 				weight={medicalReportDefault?.weight}
+				photo={currentUser?.photo}
 			/>
 
 			<ScrollView>

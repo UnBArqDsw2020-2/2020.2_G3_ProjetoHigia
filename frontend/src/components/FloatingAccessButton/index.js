@@ -7,7 +7,7 @@ const FloatingAccessButton = ({ onPress }) => {
 		<TouchableOpacity style={styles.buttonContainer} onPress={onPress}>
 			<Text
 				style={styles.buttonText}
-				onClick={solicitarAcesso(userFound, currentUser)}
+				// onClick={solicitarAcesso(userFound, currentUser)}
 			>
 				{" "}
 				Solicitar Acesso Completo{" "}

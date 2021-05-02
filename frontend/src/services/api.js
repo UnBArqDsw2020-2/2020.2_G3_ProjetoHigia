@@ -3,10 +3,11 @@ import Constants from "expo-constants";
 const { manifest } = Constants;
 import loadingStore from "../store/loading";
 
-const ipAddress = "52.87.222.22:3000";
+const ipAddress = manifest.debuggerHost.split(`:`).shift().concat(`:3000`);
+// const ipAddress = "52.87.222.22:3000";
 
 const api = axios.create({
-	baseURL: `http://52.87.222.22:3000/api`,
+	baseURL: `http://${ipAddress}/api`,
 });
 
 api.interceptors.request.use(async (config) => {
