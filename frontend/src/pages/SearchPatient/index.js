@@ -10,7 +10,6 @@ import { useNavigation } from "@react-navigation/core";
 import { useAuth } from "../../context/auth";
 
 const SearchPatient = ({ navigation }) => {
-	const navigate = useNavigation();
 	const [cpf, setCpf] = useState("");
 	const [userFound, setUserFound] = useState(null);
 	const { currentUser } = useAuth();
@@ -42,8 +41,7 @@ const SearchPatient = ({ navigation }) => {
 			</View>
 			{userFound ? (
 				<Text style={styles.patientName}>
-					{" "}
-					Paciente - {userFound.name}{" "}
+					Paciente - {userFound.name}
 				</Text>
 			) : (
 				<Text style={styles.patientName}>Pesquise por um paciente</Text>
@@ -51,8 +49,17 @@ const SearchPatient = ({ navigation }) => {
 			<View style={styles.buttonsContainer}>
 				<Button
 					title="Ficha Médica"
-					onPress={() => {
-						navigate.navigate("PatientFound");
+
+					onPress={async () => {
+						const { data } = await api.get(
+							`/medicalReport?cpf=${userFound?.cpf}`
+						);
+						const medicalReport = data;
+						console.log(medicalReport);
+						navigation.navigate("PatientFound", {
+							userFound,
+							medicalReport,
+						});
 					}}
 					disabled={userFound}
 				/>

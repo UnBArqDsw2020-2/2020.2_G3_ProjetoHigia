@@ -6,8 +6,14 @@ import FloatingAccessButton from '../../components/FloatingAccessButton';
 import CardEmergencyContact from '../../components/CardEmergencyContact';
 import { pacient } from '../../utils/mocks.js';
 import styles from './styles';
+import Header from '../../components/Header';
+import { useEffect } from 'react/cjs/react.development';
+import { useRoute } from '@react-navigation/core';
 
 const PatientReport = () => {
+  const route = useRoute();
+  const {userFound, medicalReport} = route.params
+
   return (
     <ImageBackground
       style={[
@@ -18,10 +24,10 @@ const PatientReport = () => {
       imageStyle={{ width: '100%', height: '100%' }}
     >
       <UserInfo
-        name={pacient.name}
-        age={pacient.age}
-        height={pacient.height}
-        weight={pacient.weight}
+        name={userFound.name}
+        age={userFound.birthday}
+        height={medicalReport.height}
+        weight={medicalReport.weight}
       />
 
       {pacient.hasFullAccess ? null : <FloatingAccessButton />}
@@ -32,38 +38,26 @@ const PatientReport = () => {
         <View style={styles.line} />
 
         <Text style={styles.title}>Grupo sanguíneo</Text>
-        <PacientCardInfo description={pacient.bloodGroup} onPress={() => {}} />
+        <PacientCardInfo description={medicalReport.bloodType} onPress={() => {}} />
 
         <View style={styles.line} />
 
         <Text style={styles.title}>Medicamentos</Text>
-        {pacient.medicament.map((item) => (
-          <PacientCardInfo key={item.id} description={item.name} />
+        {medicalReport.medicines.map((item, index) => (
+          <PacientCardInfo key={index} description={item} />
         ))}
 
         <View style={styles.line} />
 
         <Text style={styles.title}>Alergias</Text>
-        {pacient.allergy.map((item) => (
-          <PacientCardInfo key={item.id} description={item.name} />
-        ))}
-
-        {pacient.folders.map((folder) => (
-          <View key={folder.id} style={styles.foldersContainer}>
-            <View style={styles.line} />
-
-            <Text style={styles.title}>{folder.name}</Text>
-
-            {folder.files.map((file) => (
-              <PacientCardInfo key={file.id} description={file.name} exam />
-            ))}
-          </View>
+        {medicalReport.allergies.map((item, index) => (
+          <PacientCardInfo key={index} description={item} />
         ))}
 
         <View style={styles.line} />
 
         <Text style={styles.title}> Contatos de Emergência </Text>
-        {pacient.emergencyContacts.map((item) => (
+        {userFound.contact.map((item) => (
           <CardEmergencyContact
             key={item.id}
             name={item.name}

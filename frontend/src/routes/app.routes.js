@@ -24,9 +24,17 @@ const AppRoutes = () => (
 			options={{ headerShown: false }}
 			component={SearchPatient}
 		/>
-    <AppStack.Screen
+		<AppStack.Screen
 			name="PatientFound"
-			options={{ headerShown: false }}
+			options={{
+				title: "Buscar",
+				headerStyle: {
+					backgroundColor: '#7E162B',
+          height:50
+				},
+        headerTintColor:"#FFF",
+        headerTitleAlign:"center"
+			}}
 			component={PatientReport}
 		/>
 	</AppStack.Navigator>

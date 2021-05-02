@@ -11,7 +11,7 @@ const BUTTON_MIN_HEIGHT = 0;
 
 const HelpButtonAnimated = Animated.createAnimatedComponent(TouchableOpacity);
 
-const FloatingButton = ({ setEdit, edit, dataToSave, resetData, cpf }) => {
+const FloatingButton = ({ setEdit, edit, saveData, resetData }) => {
 	const [isButtonsVisible, setButtonsVisible] = useState(false);
 	const toggleButtonsVisibility = () => {
 		if (isButtonsVisible) {
@@ -66,18 +66,9 @@ const FloatingButton = ({ setEdit, edit, dataToSave, resetData, cpf }) => {
 
 	const renderSaveButton = () => (
 		<HelpButtonAnimated
-			onPress={() => {
-				const saveData = {
-					id: cpf,
-					data: {
-						medicines: dataToSave[0],
-						allergies: dataToSave[1],
-						comorbidities: dataToSave[2],
-						contacts: dataToSave[3],
-					},
-				};
-				api.put("/medicalReport", saveData);
-			}}
+			onPress={() => 
+				saveData()
+			}
 			style={[
 				styles.helpButtonView,
 				{
