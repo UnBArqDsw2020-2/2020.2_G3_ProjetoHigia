@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MedicalReport from "../MedicalReport";
 import SearchPatient from "../SearchPatient";
 import EditProfile from "../../pages/EditProfile";
+import AccessRequest from "../../pages/AccessRequest";
 import Files from "../Files";
 import { MaterialIcons } from "@expo/vector-icons";
 import { useAuth } from "../../context/auth";
@@ -63,6 +64,19 @@ export default function Home() {
 				options={{
 					tabBarIcon: () => (
 						<MaterialIcons name="build" size={25} color="white" />
+					),
+				}}
+			/>
+			<Tab.Screen
+				name="Soli. Acesso"
+				component={AccessRequest}
+				options={{
+					tabBarIcon: () => (
+						<MaterialIcons
+							name="verified-user"
+							size={25}
+							color="white"
+						/>
 					),
 				}}
 			/>

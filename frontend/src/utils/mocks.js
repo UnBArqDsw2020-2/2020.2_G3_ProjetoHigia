@@ -1,5 +1,24 @@
+export const doctors = [
+  {
+    id: 1,
+    name: 'Fulano',
+    specialty: 'Clínico Geral',
+  },
+  {
+    id: 2,
+    name: 'Ciclano',
+    specialty: 'Dermatologista',
+  },
+  {
+    id: 3,
+    name: 'Beltrano',
+    specialty: 'Neurologista',
+  },
+]
+
 export const user = {
   name: 'Lorem Ipsum',
+  accessRequestedCRMs: [1, 3],
   age: 35,
   height: 170,
   weight: 70,

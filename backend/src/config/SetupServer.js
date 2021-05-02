@@ -3,6 +3,8 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 import setUpRoute from "../routes/index.routes";
+import http from "http";
+import { setUpSocket } from "../webSocket";
 
 class SetupServer {
 	constructor() {
@@ -35,6 +37,11 @@ class SetupServer {
 			.catch(() => {
 				console.log("Database connection failed");
 			});
+	}
+
+	setUpSocket() {
+		const server = http.Server(this._app);
+		setUpSocket(server);
 	}
 
 	getApp() {
