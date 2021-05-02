@@ -1,11 +1,11 @@
 # Prototype
 
-## Históricos de Revisões
+## Históricos de versões
 
-|    Data    | Versão |       Descrição        |                   Autor(es)                   |
-| :--------: | :----: | :--------------------: | :-------------------------------------------: |
-| 12/02/2021 |  0.1   | Criação do documento | [Danillo Souza](https://github.com/DanilloGS) |
-| 12/02/2021 |  1.0   | Criação do protótipo final  | [Arthur Paiva](https://github.com/ArthurPaivaT) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
+|    Data    | Versão |         Descrição          |                                               Autor(es)                                               |
+| :--------: | :----: | :------------------------: | :---------------------------------------------------------------------------------------------------: |
+| 12/02/2021 |  0.1   |    Criação do documento    |                             [Danillo Souza](https://github.com/DanilloGS)                             |
+| 12/02/2021 |  1.0   | Criação do protótipo final | [Arthur Paiva](https://github.com/ArthurPaivaT) e [Fellipe Araujo](https://github.com/fellipe-araujo) |
 
 
 ## Introdução

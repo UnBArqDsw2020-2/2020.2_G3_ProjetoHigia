@@ -6,6 +6,7 @@
 - Apresentações
   - [Entrega 01](./videos/entrega1.md)
   - [Entrega 02](./videos/entrega2.md)
+  - [Entrega 03](./videos/entrega3.md)
 - Projeto
   - [Metodologias](./03-projeto/metodologias.md)
   - [Estimativas](./03-projeto/estimativas.md)
@@ -19,7 +20,9 @@
   - [Sprint 3](./00-sprint/sprint03.md)
   - [Sprint 4](./00-sprint/sprint04.md)
   - [Sprint 5](./00-sprint/sprint05.md)
-  <!-- - [Sprint 6](./00-sprint/sprint06.md) -->
+  - [Sprint 6](./00-sprint/sprint06.md)
+  - [Sprint 7](./00-sprint/sprint07.md)
+
 - Design Sprint
   - [Metodologia](01-designSprint/metodologia.md)
   - [Unpack](./01-designSprint/brainstorming.md)
@@ -59,3 +62,8 @@
   - [GoF Estrutural](./05-padroesDeProjeto/GoFEstrutural.md)
   - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
   - [Padrão Emergente](./05-padroesDeProjeto/PadraoEmergente.md)
+- Padrões arquiteturais
+  - [Documento de Arquitetura](06-padroesArquiteturais/das.md)
+- [Reutilização de Software](07-reutilizacaoSoftware/reutilizacao_Geral.md)
+    - [Backend](07-reutilizacaoSoftware/reutilizacao_Backend.md)
+    - [Frontend](07-reutilizacaoSoftware/reutilizacao_Frontend.md)

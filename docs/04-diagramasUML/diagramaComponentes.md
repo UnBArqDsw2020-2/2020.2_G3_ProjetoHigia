@@ -1,14 +1,14 @@
 # Diagrama de Componentes
 
-## Histórico de versionamento
+## Histórico de versões
 
-|    Data    | Versão |             Descrição              |                                             Autor(es)                                              |
-| :--------: | :----: | :--------------------------------: | :------------------------------------------------------------------------------------------------: |
-| 01/03/2021 |  0.1   |        Criação do documento        |                          [Arthur Paiva](https://github.com/ArthurPaivaT)                           |
-| 01/03/2021 |  0.2   |      Adição da v0 do Diagrama      |                          [Arthur Paiva](https://github.com/ArthurPaivaT)                           |
-| 01/03/2021 |  1.0   |    Adição da Metodologia usada     |                          [Arthur Paiva](https://github.com/ArthurPaivaT)                           |
-| 05/03/2021 |  1.1   |         Documento revisado         | [Danillo Souza](https://github.com/DanilloGS) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
-| 05/03/2021 |  2.0   | Adicionado nova versão do diagrama | [Danillo Souza](https://github.com/DanilloGS) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
+|    Data    | Versão |                  Descrição                  |                                              Autor(es)                                               |
+| :--------: | :----: | :-----------------------------------------: | :--------------------------------------------------------------------------------------------------: |
+| 01/03/2021 |  0.1   |            Criação do documento             |                           [Arthur Paiva](https://github.com/ArthurPaivaT)                            |
+| 01/03/2021 |  0.2   |          Adição da v0 do Diagrama           |                           [Arthur Paiva](https://github.com/ArthurPaivaT)                            |
+| 01/03/2021 |  1.0   |         Adição da Metodologia usada         |                           [Arthur Paiva](https://github.com/ArthurPaivaT)                            |
+| 05/03/2021 |  1.1   |             Documento revisado              |  [Danillo Souza](https://github.com/DanilloGS) e [Ithalo Azevedo](https://github.com/ithaloazevedo)  |
+| 05/03/2021 |  2.0   |     Adicionado nova versão do diagrama      |  [Danillo Souza](https://github.com/DanilloGS) e [Ithalo Azevedo](https://github.com/ithaloazevedo)  |
 | 05/04/2021 |  2.1   | Revisando textos e composição dos diagramas | [Aline Lermen](https://github.com/AlineLermen), [Gabriel Hussein](https://github.com/GabrielHussein) |
 
 ## Introdução

@@ -1,7 +1,7 @@
 # Padrão de projeto emergente
 
 
-## Histórico de versionamento
+## Histórico de versões
 
 |    Data    | Versão |               Descrição               |                                             Autor(es)                                              |
 | :--------: | :----: | :-----------------------------------: | :------------------------------------------------------------------------------------------------: |

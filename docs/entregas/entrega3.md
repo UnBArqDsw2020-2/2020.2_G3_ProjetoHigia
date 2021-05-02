@@ -1,6 +1,8 @@
 ## Entrega 3 - Desenho de software (Padrões de projeto)
 
 ### Apresentação
+- [Videos](./videos/entrega3.md)
+  
 ### Módulo Padrões de Projeto GRASPs
 - [GRASP](./05-padroesDeProjeto/GRASP.md)
   
@@ -9,7 +11,7 @@
 - [GoF Estrutural](./05-padroesDeProjeto/GoFEstrutural.md)
 - [GoF Comportamental](./05-padroesDeProjeto/GoFComportamental.md)
   
-### Módulo Padrões de Projeto Emergentes
+### Módulo Padrões de Projeto Extras
 - [Componentização em react native](./05-padroesDeProjeto/PadraoEmergente.md)
 
 

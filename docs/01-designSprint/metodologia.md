@@ -1,6 +1,6 @@
 # Design Sprint
 
-## Históricos de Revisões
+## Históricos de versões
 
 |    Data    | Versão |      Descrição       |                     Autor(es)                      |
 | :--------: | :----: | :------------------: | :------------------------------------------------: |

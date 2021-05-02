@@ -1,12 +1,12 @@
 # Backlog do Produto
 
-## Históricos de Revisões
+## Históricos de versões
 
-|    Data    | Versão |                  Descrição                   |                      Autor(es)                      |
-| :--------: | :----: | :------------------------------------------: | :-------------------------------------------------: |
-| 13/02/2021 |  0.1   | Realização do backlog por meio de brainstorm |                Todos os integrantes                 |
-| 15/02/2021 |  1.0   |             Criação do documento             |  [Victor Amaral](https://github.com/VictorAmaralC)  |
-| 02/03/2021 |  2.0   |  Criação e adição da versão 1.0 do backlog   | [Fellipe Araujo](https://github.com/fellipe-araujo) |
+|    Data    | Versão |                  Descrição                   |                                             Autor(es)                                              |
+| :--------: | :----: | :------------------------------------------: | :------------------------------------------------------------------------------------------------: |
+| 13/02/2021 |  0.1   | Realização do backlog por meio de brainstorm |                                        Todos os integrantes                                        |
+| 15/02/2021 |  1.0   |             Criação do documento             |                         [Victor Amaral](https://github.com/VictorAmaralC)                          |
+| 02/03/2021 |  2.0   |  Criação e adição da versão 1.0 do backlog   |                        [Fellipe Araujo](https://github.com/fellipe-araujo)                         |
 | 05/03/2021 |  2.1   |              Documento revisado              | [Danillo Souza](https://github.com/DanilloGS) e [Ithalo Azevedo](https://github.com/ithaloazevedo) |
 
 ## Introdução

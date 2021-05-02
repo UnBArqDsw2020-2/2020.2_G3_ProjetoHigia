@@ -1,5 +1,5 @@
 # Metodologias
-## Histórico de Revisões 
+## Histórico de versões 
 |    Data    | Versão |      Descrição       |                     Autor(es)                      |
 | :--------: | :----: | :------------------: | :------------------------------------------------: |
 | 12/02/2021 |  1.0   | Criação do documento | [Ithalo Azevedo](https://github.com/ithaloazevedo) |

@@ -1,14 +1,16 @@
 # Diagrama de Classe
 
-## Histórico de versionamento
+## Histórico de versões
 
-|    Data    | Versão |                Descrição                 |                                              Autor(es)                                               |
-| :--------: | :----: | :--------------------------------------: | :--------------------------------------------------------------------------------------------------: |
-| 01/03/2021 |  0.1   |           Criação do documento           | [Victor Amaral](https://github.com/VictorAmaralc)|
-| 01/03/2021 |  1.0   | Criação da primeira versão do diagrama | [Victor Amaral](https://github.com/VictorAmaralc) |
-| 04/03/2021 |  1.1   | Revisão do documento |[Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein)|
-| 21/03/2021 |  1.2   | Refatoração do diagrama de classes |[Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein)|
-| 05/04/2021 |  2.0   | Nova versão do diagrama de classes |[Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein)|
+|    Data    | Versão |               Descrição                |                                               Autor(es)                                                |
+| :--------: | :----: | :------------------------------------: | :----------------------------------------------------------------------------------------------------: |
+| 01/03/2021 |  0.1   |          Criação do documento          |                           [Victor Amaral](https://github.com/VictorAmaralc)                            |
+| 01/03/2021 |  1.0   | Criação da primeira versão do diagrama |                           [Victor Amaral](https://github.com/VictorAmaralc)                            |
+| 04/03/2021 |  1.1   |          Revisão do documento          | [Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 21/03/2021 |  1.2   |   Refatoração do diagrama de classes   | [Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 05/04/2021 |  2.0   |   Nova versão do diagrama de classes   | [Aline Lermen](https://github.com/AlineLermen)  e [Gabriel Hussein](https://github.com/GabrielHussein) |
+| 05/04/2021 |  3.0   |   Nova versão do diagrama de classes   | [Danillo Souza](https://github.com/danillogs)  e [Gabriel Hussein](https://github.com/GabrielHussein) |
+
 
 ## Introdução
 <p style="text-align: justify;"> &emsp;&emsp;
@@ -18,10 +20,15 @@ Os diagramas foram produzidos utilizando a ferramenta Draw.io. Nele há todas as
 
 ## Diagrama
 
+### V.4 
+Database foi removido e foi criado um novo relacionamento entre Arquivos e Usários.
+
+![Classev4](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v4.png)
+
 ### V.3 
 Uma nova classe foi introduzida, a classe Archive é a classe que realiza as funções de gerenciamento de arquivos do projeto.
 
-![Classev2](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v3.jpg)
+![Classev3](../assets/images/04-diagramasUML/diagramaClasse/diagramaClasse_v3.jpg)
 
 ### V.2 
 Após o começo do desenvolvimento em código verificamos a necessidade de fazer algumas alterações no diagrama de classes para se adequar ao andamento do projeto, retiramos as heranças de usuário pois não havia atributo específico para paciente e condensamos médico e paciente na mesma classe com atributos opcionais para caso o usuário seja médico, também foram adicionados vários novos atributos a classe de ficha médica para refletir o que realmente será utilizado na aplicação.

@@ -1,10 +1,10 @@
 # Especificação Suplementar
 
-## Históricos de Revisões
+## Históricos de versões
 
-|  Data  | Versão | Descrição | Autor(es) |
-| :----: | :----: | :-------: | :-------: |
-| 16/02/2021 | 1.0 | Criação da Especificação Suplementar | [Fellipe Araujo](https://github.com/fellipe-araujo) |
+|    Data    | Versão |              Descrição               |                      Autor(es)                      |
+| :--------: | :----: | :----------------------------------: | :-------------------------------------------------: |
+| 16/02/2021 |  1.0   | Criação da Especificação Suplementar | [Fellipe Araujo](https://github.com/fellipe-araujo) |
 
 ## Introdução
 
@@ -14,15 +14,15 @@ Uma especificação suplementar lista os requisitos não-funcionais do sistema. 
 
 ## [Requisitos Não Funcionais](./../02-requisitos/elicitacao/requisitosElicitados.md)
 
-| Identificador | Requisito |
-| :-----------: | :-------: |
-| RNF-01 | O sistema deve ser consistente e padronizado |
-| RNF-02 | O usuário deve ter controle e informação sobre o que acontece na aplicação |
-| RNF-03 | O sistema deve estar disponível a qualquer momento para o usuário |
-| RNF-04 | O sistema deve manter a segurança e privacidade do usuário |
-| RNF-05 | O sistema deve ser acessível em dipositivos móveis |
-| RNF-06 | O sistema deve ser descomplicado para fácil aprendizagem do usuário |
-| RNF-07 | O sistema deve prevenir o usuário de ações indesejadas |
+| Identificador |                                 Requisito                                  |
+| :-----------: | :------------------------------------------------------------------------: |
+|    RNF-01     |                O sistema deve ser consistente e padronizado                |
+|    RNF-02     | O usuário deve ter controle e informação sobre o que acontece na aplicação |
+|    RNF-03     |     O sistema deve estar disponível a qualquer momento para o usuário      |
+|    RNF-04     |         O sistema deve manter a segurança e privacidade do usuário         |
+|    RNF-05     |             O sistema deve ser acessível em dipositivos móveis             |
+|    RNF-06     |    O sistema deve ser descomplicado para fácil aprendizagem do usuário     |
+|    RNF-07     |           O sistema deve prevenir o usuário de ações indesejadas           |
 
 ## Visão Geral
 

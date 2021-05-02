@@ -1,9 +1,9 @@
 # Mapa Mental
 
-## Históricos de Revisões
+## Históricos de versões
 
-|    Data    | Versão |      Descrição       |                                             Autor(es)                                              |
-| :--------: | :----: | :------------------: | :------------------------------------------------------------------------------------------------: |
+|    Data    | Versão |      Descrição       |                                               Autor(es)                                               |
+| :--------: | :----: | :------------------: | :---------------------------------------------------------------------------------------------------: |
 | 10/02/2021 |  1.0   | Criação do documento | [Aline Lermen](https://github.com/AlineLermen) e [Gabriel Hussein](https://github.com/GabrielHussein) |
 
 ## Introdução

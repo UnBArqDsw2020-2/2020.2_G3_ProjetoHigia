@@ -1,6 +1,6 @@
 # Estimativas
 
-## Histórico de versionamento
+## Histórico de versões
 
 |    Data    | Versão |          Descrição           |                                                                     Autor(es)                                                                      |
 | :--------: | :----: | :--------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -483,11 +483,11 @@ onde:
 
 Tabela para os valores dos coeficientes "a" e "b" de acordo com o tipo do projeto, a mesma tabela utilizada no COCOMO básico:
 
-| Projeto de Software |  a   |  b   |  c   |  d   |
-| :-----------------: | :--: | :--: | :--: | :--: |
-|      Orgânico       | 2.40 | 1.05 | 2.50 | 0.38 |
-|    Semidestacado    | 3.00 | 1.12 | 2.50 | 0.35 |
-|      Embutido       | 3.60 | 1.20 | 2.50 | 0.32 |
+| Projeto de Software |   a   |   b   |   c   |   d   |
+| :-----------------: | :---: | :---: | :---: | :---: |
+|      Orgânico       | 2.40  | 1.05  | 2.50  | 0.38  |
+|    Semidestacado    | 3.00  | 1.12  | 2.50  | 0.35  |
+|      Embutido       | 3.60  | 1.20  | 2.50  | 0.32  |
 
 Nosso projeto é do tipo Semidestacado de nível intermediário, logo, os valores utilizados dentro dos multiplicadores serão de **a = 3.00** e **b = 1.12**
 

@@ -1,11 +1,11 @@
 # Documento de visão
 
-## Histórico de versionamento
+## Histórico de versões
 |    Data    | Versão |      Descrição       |                                                                         Autor(es)                                                                         |
 | :--------: | :----: | :------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | 24/03/2021 |  1.0   | Criação do documento | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
-| 24/03/2021 |  1.1   | Topicos 3 e 4 | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
-| 24/03/2021 |  1.2   | Topicos de 5 a 8 | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 24/03/2021 |  1.1   |    Topicos 3 e 4     | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
+| 24/03/2021 |  1.2   |   Topicos de 5 a 8   | [Aline Lermen](https://github.com/AlineLermen), [Ithalo Azevedo](https://github.com/ithaloazevedo) e [Victor Cerqueira](https://github.com/VictorAmaralC) |
 
 ## 1. Introdução
 ### 1.1 Propósito
