@@ -17,6 +17,8 @@
 | 27/04/2021 |  0.11  |                 Adicionado tópico 6                 |                                                                             [Fellipe Araujo](https://github.com/fellipe-araujo)                                                                             |
 | 28/04/2021 |  0.12  | Adicionado link para diagrama de pacote no tópico 6 |                                                                             [Fellipe Araujo](https://github.com/fellipe-araujo)                                                                             |
 | 01/05/2021 |  0.13  |      Adicionado tópico 8 visão de implantação       |                                                    [Danillo Souza](https://github.com/DanilloGS) e [Gabriel Hussein](https://github.com/GabrielHussein)                                                     |
+| 02/05/2021 |  0.14  |                  Revisão tópico 2                   |                                                   [Arthur Paiva](https://github.com/ArthurPaivaT) e [Victor Cerqueira](https://github.com/VictorAmaralC)                                                    |
+| 02/05/2021 |  0.15  |       Adicionado tópico 7 visão de Processos        |                                                   [Arthur Paiva](https://github.com/ArthurPaivaT) e [Victor Cerqueira](https://github.com/VictorAmaralC)                                                    |
 
 ## 1. Introdução
 
@@ -43,6 +45,7 @@ Expo: o que é, para que serve e quando utilizar?. Disponível em: <https://blog
 CANALTI, Arquitetura cliente-servidor, Disponível em: <https://www.canalti.com.br/arquitetura-de-computadores/arquitetura-cliente-servidor/#:~:text=Definição,dos%20dados%20(os%20clientes).>. Último acesso em: 26/04/2021
 GAMA, Kiev. Estilos arquiteturais. Disponível em: <https://www.cin.ufpe.br/~kiev/IF682/12_Estilos_Arquiteturais_e_Padroes_de_Projeto.pdf>. Último acesso em: 26/04/2021
 MONTEIRO, Marcos. Exemplos de Arquitetura de Software. Disponível em: <https://www.marcosmonteiro.com.br/mm/Cursos/Arquitetura_Software/Exemplos_de_Arquiteturas.pdf>. Último acesso em: 26/04/2021
+UFPE, VISÃO DE PROCESSOS, Disponível em <https://www.cin.ufpe.br/~gta/rup-vc/core.base_rup/guidances/concepts/process_view_E3DD0B09.html#:~:text=A%20visão%20de%20processos%20mostra%20a%20organização%20do%20processo%20do%20sistema.&text=A%20arquitetura%20é%20um%20importante,durante%20o%20desenvolvimento%20do%20sistema.>, Último acesso em: 02/04/2021
 
 ## 2. Representação arquitetural
 
@@ -173,6 +176,12 @@ A visão lógica descreve como o sistema é estruturado, em termos de unidade e 
 ![Backend](../assets/images/04-diagramasUML/diagramaPacote/backend-v1.jpg)
 
 ## 7. Visão de processos
+
+A visão de processos contém a organização do processo do sistema, uma visualização arquitetural que ilustra a decomposição dos processos do sistema, incluindo o mapeamento de classes e subsistemas para processos e encadeamentos. A visão de processos é refinada durante cada interação.
+
+No [Diagrama de Componentes](../04-diagramasUML/diagramaComponentes.md) identificamos a comunicação entre os componentes do sistema durante os processos da aplicação.
+
+Os diagramas de [Sequência](../04-diagramasUML/diagramaSequencia.md) e [Comunicação](../04-diagramasUML/diagramaComunicacao.md) mostram de forma semelhante o funcionamento de diversas funcionalidades da aplicação via demonstração da interação entre os objetos e suas partes e o comportamento de diferentes fluxos.
 
 ## 8. Visão de implantação
 
