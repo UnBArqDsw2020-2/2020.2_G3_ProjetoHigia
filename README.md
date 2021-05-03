@@ -105,10 +105,10 @@ O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicaçã
 
 ## Descritivo dos Principais Aspectos Técnicos
 
-**Principal(is) Metodologia(s) Adotada(s)**: xxxxxx<br>
-**Principais Linguagens Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principais Tecnologias Utilizadas e/ou Pretendidas**: xxxxxx<br>
-**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: xxxxxx<br>
+**Principal(is) Metodologia(s) Adotada(s)**: SCRUM, Kanban, XP, Cumulative Flow.<br>
+**Principais Linguagens Utilizadas e/ou Pretendidas**: Javascript.<br>
+**Principais Tecnologias Utilizadas e/ou Pretendidas**: React Native(Frontend), NodeJS(Backend).<br>
+**Principal(is) Estilo(s) Arquitetural(is) Adotado(s)**: Cliente-Servidor.<br>
 
 ## O Projeto está rodando?
 
