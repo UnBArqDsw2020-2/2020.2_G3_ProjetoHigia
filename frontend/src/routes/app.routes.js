@@ -29,11 +29,11 @@ const AppRoutes = () => (
 			options={{
 				title: "Buscar",
 				headerStyle: {
-					backgroundColor: '#7E162B',
-          height:50
+					backgroundColor: "#7E162B",
+					height: 50,
 				},
-        headerTintColor:"#FFF",
-        headerTitleAlign:"center"
+				headerTintColor: "#FFF",
+				headerTitleAlign: "center",
 			}}
 			component={PatientReport}
 		/>

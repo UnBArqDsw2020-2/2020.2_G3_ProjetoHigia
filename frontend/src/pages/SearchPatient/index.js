@@ -49,17 +49,16 @@ const SearchPatient = ({ navigation }) => {
 			<View style={styles.buttonsContainer}>
 				<Button
 					title="Ficha Médica"
-
 					onPress={async () => {
-						const { data } = await api.get(
-							`/medicalReport?cpf=${userFound?.cpf}`
+						api.get(`/medicalReport?cpf=${userFound?.cpf}`).then(
+							(report) => {
+								const medicalReport = report.data;
+								navigation.navigate("PatientFound", {
+									userFound,
+									medicalReport,
+								});
+							}
 						);
-						const medicalReport = data;
-						console.log(medicalReport);
-						navigation.navigate("PatientFound", {
-							userFound,
-							medicalReport,
-						});
 					}}
 					disabled={userFound}
 				/>

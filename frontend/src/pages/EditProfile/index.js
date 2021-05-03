@@ -122,7 +122,15 @@ const EditProfile = () => {
 				}}
 			>
 				<View style={styles.imageContainer}>
-					<Image source={{ uri: `data:image/png;base64,${photo}` }} />
+					{currentUser?.photo ? (
+						<Image
+							source={{ uri: `data:image/png;base64,${photo}` }}
+						/>
+					) : (
+						<Image
+							source={require("../../../assets/profile.png")}
+						/>
+					)}
 					<TouchableOpacity
 						style={styles.iconContainer}
 						onPress={() => takePhoto()}
@@ -146,7 +154,8 @@ const EditProfile = () => {
 					<TextInput
 						style={styles.inputText}
 						placeholder="Idade"
-						value={birthday}
+						// value={birthday}
+						value={20}
 						onChangeText={setBirthday}
 					/>
 					<TextInput

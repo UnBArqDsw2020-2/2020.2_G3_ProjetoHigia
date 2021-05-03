@@ -1,31 +1,32 @@
-import React from 'react';
-import { View, Text, ImageBackground, ScrollView } from 'react-native';
-import UserInfo from '../../components/UserInfo';
-import PacientCardInfo from '../../components/PacientCardInfo';
-import FloatingAccessButton from '../../components/FloatingAccessButton';
-import CardEmergencyContact from '../../components/CardEmergencyContact';
-import { pacient } from '../../utils/mocks.js';
-import styles from './styles';
-import Header from '../../components/Header';
-import { useEffect } from 'react/cjs/react.development';
-import { useRoute } from '@react-navigation/core';
+import React from "react";
+import { View, Text, ImageBackground, ScrollView } from "react-native";
+import UserInfo from "../../components/UserInfo";
+import PacientCardInfo from "../../components/PacientCardInfo";
+import FloatingAccessButton from "../../components/FloatingAccessButton";
+import CardEmergencyContact from "../../components/CardEmergencyContact";
+import { pacient } from "../../utils/mocks.js";
+import styles from "./styles";
+import Header from "../../components/Header";
+import { useEffect } from "react/cjs/react.development";
+import { useRoute } from "@react-navigation/core";
 
 const PatientReport = () => {
-  const route = useRoute();
-  const {userFound, medicalReport} = route.params
+	const route = useRoute();
+  const { userFound, medicalReport } = route.params;
 
-  return (
-    <ImageBackground
-      style={[
-        styles.container,
-        { paddingBottom: pacient.hasFullAccess ? null : '25%' },
-      ]}
-      source={require('../../../assets/logo.jpg')}
-      imageStyle={{ width: '100%', height: '100%' }}
-    >
-      <UserInfo
+	return (
+		<ImageBackground
+			style={[
+				styles.container,
+				{ paddingBottom: pacient.hasFullAccess ? null : "25%" },
+			]}
+			source={require("../../../assets/logo.jpg")}
+			imageStyle={{ width: "100%", height: "100%" }}
+		>
+			<UserInfo
         name={userFound.name}
-        age={userFound.birthday}
+        age={"20"}
+        // age={userFound.birthday}
         height={medicalReport.height}
         weight={medicalReport.weight}
       />
@@ -66,8 +67,8 @@ const PatientReport = () => {
           />
         ))}
       </ScrollView>
-    </ImageBackground>
-  );
+		</ImageBackground>
+	);
 };
 
 export default PatientReport;
