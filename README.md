@@ -112,10 +112,41 @@ O objetivo do nosso projeto é desenhar, arquitetar e desenvolver uma aplicaçã
 
 ## O Projeto está rodando?
 
-( ) SIM
+(X) SIM
 ( ) NÃO
-Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados em consultar o projeto.
-
-## Informações Complementares
-
-Quaisquer outras informações sobre seu projeto podem ser descritas nessa seção.
+### Instalar 
+- NodeJS
+- NPM ou Yarn
+- Expo
+### Variaveis de ambiente
+#### Frontend
+- *.env* na raíz do projeto com a seguinte estrutura (Gerado no Firebase)
+```
+API_KEY=
+AUTH_DOMAIN=
+PROJECT_ID=
+STORAGE_BUCKET=
+MESSAGING_SENDER_ID=
+APP_ID=
+MEASUREMENT_ID=
+```
+#### Backend
+- *.env* na raíz do projeto com a seguinte estrutura (Conection String do mongodb)
+```
+CONNECTION_STRING=
+```
+- *serviceAccountKey.json* na pasta src/config do projeto com a seguinte estrutura (Gerado no Firebase)
+```
+{
+  "type":
+  "project_id": 
+  "private_key_id": 
+  "private_key":
+  "client_email":
+  "client_id":
+  "auth_uri":
+  "token_uri": 
+  "auth_provider_x509_cert_url":
+  "client_x509_cert_url": 
+}
+```
